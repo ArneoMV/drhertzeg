@@ -1,0 +1,32 @@
+
+@use "./_variable.scss" as *;
+@use "../abstract/_color.scss" as *;
+
+@mixin card_tamplate {
+    border-radius: $base-border-radius-sm;
+    background-color: $neutral-100;
+    background-color: $neutral-100;
+    padding: $pading-lg;
+    box-sizing: border-box;
+}
+
+
+@mixin column {
+    display: flex;
+    flex-direction: column;
+    // gap: $col-gap-sm;
+    border: 1px solid green;
+}
+
+
+@mixin row {
+    display: flex;
+    flex-flow: row;
+    // gap: $col-gap-sm;
+}
+
+@mixin flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

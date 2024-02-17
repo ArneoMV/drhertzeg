@@ -1,0 +1,68 @@
+@use './variable' as *;
+@use './mixin' as *;
+@use '../abstract/color' as *;
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html, body {
+    height: 100vh;
+}
+body {
+    background-color: $neutral-100;
+    margin: 0;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin: 0 $margin-lg;
+}
+
+
+img, iframe, object, embed, video {
+	width: auto;
+	max-width: 100%;
+}
+
+a {
+    text-decoration: underline;
+}
+article {
+    height: auto;
+}
+
+
+.padding {
+    padding: $base-padding;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+    height: 0.5px;
+}
+::-webkit-scrollbar-thumb {
+    background: $primary-500;
+}
+::-webkit-scrollbar-track {
+    background: $neutral-200;
+}
+
+
+.link-active, .link {
+    font-family: "Work Sans", sans-serif;
+    font-size: 18px;
+}
+
+.link-active {
+    font-weight: 900;
+}
+.link {
+    font-weight: 500;
+}

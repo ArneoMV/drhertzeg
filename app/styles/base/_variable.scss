@@ -1,0 +1,55 @@
+// spacing
+$base-padding: 1.5rem;
+$base-margin: 1.5rem;
+$base-gap: 1.5rem;
+
+$base-lineHeight: 0;
+
+// Page Margin
+$margin-sm: 12px;
+$margin-md: 48px;
+$margin-lg: 192px;
+
+// Padding (10,20,30px)
+$pading-sm: 10px;
+$pading-md: 1.3em;
+$pading-lg: 1.875em;
+
+// borders
+$base-border-thickness: 1px;
+
+// Gap
+$gap-xs: 4px;
+$gap-sm: 8px;
+$gap-md: 16px;
+$gap-lg: 32px;
+$gap-xl: 64px;
+$gap-xxl: 128px;
+
+// border-radius
+$base-border-radius-sm: 10px;
+$base-border-radius-md: 20px;
+$base-border-radius-lg: 30px;
+
+// box-shadow
+$base-box-shadow: 1px 3px 30px rgba(52, 52, 52, 0.15);
+
+// font-sizes
+$base-font-size: 1rem;
+$font-size-sm: $base-font-size * 0.75;
+$font-size-lg: $base-font-size * 1.5;
+$font-size-xl: $base-font-size * 2;
+$font-size-xxl: $base-font-size * 3;
+
+// z-index
+$layer-0: 0;
+$layer-1: 100;
+$layer-2: 200;
+$layer-3: 300;
+
+// shadow
+$shadow-sm: 1px 1px 4px 0px rgba(22, 24, 27, 0.16);
+$shadow-md: 1px 1px 4px 0px rgba(22, 24, 27, 0.13);
+$shadow-lg: 1px 5px 30px 0px rgba(22, 24, 27, 0.1);
+$shadow-primary: 3px 3px 12px 0px rgba(131, 169, 218, 0.4);
+

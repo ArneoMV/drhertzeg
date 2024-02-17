@@ -1,0 +1,77 @@
+@use '../../styles/abstract/_color' as *;
+@use '../../styles/layout/_breakpoint' as *;
+@use '../../styles/base/_variable' as *;
+
+
+footer {
+    position: relative; 
+    padding: $margin-md $margin-lg;
+    background-color: $primary-700;
+    color: white;
+    gap: $gap-xl;
+    overflow: visible;
+
+    &::before {
+        content: "";
+        position: absolute; 
+        top: -26px;
+        left: 0;
+        width: 100%;
+        height: 26px;
+        background-image: url(../../assets/image/vawe.svg);
+        background-size: cover; 
+        z-index: 1; 
+    }
+
+    .logo {
+        align-items: flex-start;
+        gap: $gap-md;
+    }
+    .footerContainer {
+        display: flex;
+        flex-direction: column;
+        gap: $gap-xl;
+        
+    }
+    .footerTop {
+        display: flex;
+        justify-content: space-between;
+        align-content: flex-start;
+        nav {
+            gap: $gap-lg;
+            a {
+                color: white;
+                text-decoration: none;
+            }
+            .column {
+                gap: $gap-sm;
+                a {
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 130%;
+                }
+            }
+        } 
+        .social {
+            gap: $gap-sm;
+            align-items: center;
+            .row {
+                gap: $gap-sm;
+            }
+        }
+    }
+    .line {
+        height: 1px;
+        width: 100%;
+        background-color: $neutral-100;
+    }
+    .footerBottom{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .row {
+            gap: $gap-md; 
+        }
+    }
+
+}
