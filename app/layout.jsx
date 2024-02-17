@@ -11,7 +11,7 @@ export const metadata = {
 
 
 // components
-import Navbar from './components/navbar/Navbar'
+import Header from './components/header/header'
 import Footer from './components/footer/footer'
 
 
@@ -19,10 +19,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <header>
-          <Navbar/>
-        </header>
-        
+        <Header />
         {children}
         <Footer />
       </body>
