@@ -1,0 +1,85 @@
+@use '../layout/_breakpoint' as *;
+@use '../base/_variable' as *;
+@use '../abstract/_color' as *;
+@use '../base/_mixin' as *;
+
+.homepage {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-xl;
+
+    .hero {
+        align-items: center;
+        margin: 0 $margin-lg;
+        .heroImage {
+            img {
+                max-width: 100%;
+            }
+            .slide {
+                gap: 10px;
+                .timelineSlide {
+                    height: 10px;
+                    width: 100%;
+                    background-color: $neutral-400;
+                }
+            }
+        }
+    }
+
+    .postBackground {
+        position: relative; 
+        padding: $margin-md $margin-lg;
+        background-color: $primary-300;
+        color: white;
+        gap: $gap-xl;
+        overflow: visible;
+        @include vaweUp;
+        @include vaweDown;
+    }
+    .vision {
+        display: flex;
+        gap: $gap-md;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        text-align: center;
+        color: $primary-900;
+    }
+    .products{
+        margin: 0 $margin-lg;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h3 {
+            text-align: center;
+        }
+    }
+
+    .blogHomepage {
+        align-items: center;
+        justify-content: space-around;
+        .blogHomepageInfo {
+            gap: $gap-sm;
+            color: $neutral-900;
+        }
+        a {
+            text-decoration: none;
+        }
+       
+    }
+
+    .follow {
+        margin: 0 $margin-lg;
+        align-items: center;
+        gap: $gap-md;
+        .socialImage {
+            height: 380px;
+            width: auto;
+
+            &.row {
+                gap: $gap-md;
+            }
+        }
+
+    }
+}

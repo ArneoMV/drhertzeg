@@ -30,3 +30,31 @@
     align-items: center;
     justify-content: center;
 }
+
+@mixin vaweUp {
+    &::before {
+        content: "";
+        position: absolute; 
+        top: -26px;
+        left: 0;
+        width: 100%;
+        height: 26px;
+        background-image: url(../../assets/image/vawe-top.svg);
+        background-size: cover; 
+        z-index: 1; 
+    }
+}
+
+@mixin vaweDown {
+    &::after {
+        content: "";
+        position: absolute; 
+        bottom: -26px;
+        left: 0;
+        width: 100%;
+        height: 26px;
+        background-image: url(../../assets/image/vawe-bottom.svg);
+        background-size: cover; 
+        z-index: 1; 
+    }
+}

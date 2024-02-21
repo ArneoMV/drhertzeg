@@ -1,0 +1,17 @@
+@use '../../styles/layout/_breakpoint' as *;
+@use '../../styles/base/_variable' as *;
+@use '../../styles/abstract/_color' as *;
+
+.chip {
+    width: fit-content;;
+    background: #FBF107;
+    padding: $pading-xs $pading-md;
+    border-radius: $base-border-radius-sm;
+
+    color: $orange-800;
+    font-family: "Work Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 130%;
+  }
+

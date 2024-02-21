@@ -1,7 +1,7 @@
 
 @use '../../styles/layout/_breakpoint' as *;
 @use '../../styles/base/_variable' as *;
-@use '../../styles/base/_variable' as *;
+@use '../../styles/abstract/_color' as *;
 
 // .navbar {
 //     border: 1px solid red;
@@ -82,9 +82,8 @@
 
 
 header {
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.07), 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  color: #212529;
-
+  background: $neutral-100;
+  color: $neutral-900;
   .nav-area {
     display: flex;
     align-items: center;

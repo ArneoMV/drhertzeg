@@ -1,10 +1,10 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import Logo from '../../assets/Logo-white.svg'
-import Facebook from '../../assets/icon/Facebook-fill.svg'
-import Instagram from '../../assets/icon/Instagram-fill.svg'
-import Linkedin from '../../assets/icon/Linkedin-fill.svg'
-import TikTok from '../../assets/icon/TikTok-fill.svg'
+import Facebook from '../../assets/icon/socialLogo/Facebook-fill.svg'
+import Instagram from '../../assets/icon/socialLogo/Instagram-fill.svg'
+import Linkedin from '../../assets/icon/socialLogo/Linkedin-fill.svg'
+import TikTok from '../../assets/icon/socialLogo/TikTok-fill.svg'
 
 import BABIO101 from '../../assets/image/BA-BIO-101.svg'
 import Organic from '../../assets/image/Organic.svg'
@@ -17,8 +17,9 @@ export default function Footer() {
   return (
     <footer>
       <div className="footerContainer">
+
         <div className="footerTop">
-          <div className='column logo'>
+          <div className='logo'>
             <Image 
                 src={Logo}
                 alt='Dr Hertzeg logo'
@@ -28,52 +29,54 @@ export default function Footer() {
             <h2>Neki nas cool slogan</h2>
           </div>
 
-          <nav className="row ">
-            <div className="column">
-              <h3>Brendovi</h3>
-              <Link href="/cajevi">Cajevi</Link>
-              <Link href="/kozmetika">Kozmetika</Link>
-            </div>
-            <div className="column">
-              <h3>Info</h3>
-              <Link href="/contact">Kontakt</Link>
-              <Link href="/blog">Blog</Link>
-              <Link href="/faq">Cesta Pitanja</Link>
-            </div>
-            <div className="column">
-              <h3>Ostalo</h3>
-              <Link href="/certifikati">Certifikati</Link>
-              <Link href="/uvijeti">Uvijeti kupovine</Link>
-            </div>
-          </nav>
+          <div className='topNav'>
+            <nav className="row">
+              <div className="column">
+                <h4>Brendovi</h4>
+                <Link href="/cajevi">Cajevi</Link>
+                <Link href="/kozmetika">Kozmetika</Link>
+              </div>
+              <div className="column">
+                <h4>Info</h4>
+                <Link href="/contact">Kontakt</Link>
+                <Link href="/blog">Blog</Link>
+                <Link href="/faq">Cesta Pitanja</Link>
+              </div>
+              <div className="column">
+                <h4>Ostalo</h4>
+                <Link href="/certifikati">Certifikati</Link>
+                <Link href="/uvijeti">Uvijeti kupovine</Link>
+              </div>
+            </nav>
 
-          <div className='column social'>
-            <p>Pratite nas</p>
-            <div className="row">
-              <Image 
-                src={Facebook}
-                alt='facebook'
-                width={32}
-                quality={100}
-              />
-              <Image 
-                src={Instagram}
-                alt='facebook'
-                width={32}
-                quality={100}
-              />
-              <Image 
-                src={TikTok}
-                alt='facebook'
-                width={32}
-                quality={100}
-              />
-              <Image 
-                src={Linkedin}
-                alt='facebook'
-                width={32}
-                quality={100}
-              />
+            <div className='column social'>
+              <p>Pratite nas</p>
+              <div className="row">
+                <Image 
+                  src={Facebook}
+                  alt='facebook'
+                  width={32}
+                  quality={100}
+                />
+                <Image 
+                  src={Instagram}
+                  alt='facebook'
+                  width={32}
+                  quality={100}
+                />
+                <Image 
+                  src={TikTok}
+                  alt='facebook'
+                  width={32}
+                  quality={100}
+                />
+                <Image 
+                  src={Linkedin}
+                  alt='facebook'
+                  width={32}
+                  quality={100}
+                />
+              </div>
             </div>
           </div>
         </div>

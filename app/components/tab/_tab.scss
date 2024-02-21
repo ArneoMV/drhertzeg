@@ -1,0 +1,52 @@
+@use '../../styles/layout/_breakpoint' as *;
+@use '../../styles/base/_variable' as *;
+@use '../../styles/abstract/_color' as *;
+@use '../../styles/base/_mixin' as *;
+
+/* Tab Container */
+
+.tabs {
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: $gap-md;
+    flex-direction: column;
+    gap: $gap-lg;
+    background: transparent;
+    color: $neutral-900;
+
+    .row {
+      gap: $gap-md;
+      justify-content: center;
+    }
+  
+  }
+  .tabButton {
+    background-color: transparent;
+    padding: $pading-md;
+    border-radius: 999px;
+
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 130%;
+
+    &.active {
+      background-color: $primary-500;
+      color: $neutral-100;
+    }
+  }
+  
+  
+  /* First and Second Tab Styles */
+  .firstTab p,
+  .secondTab p {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+.firstTab {
+  .row {
+    gap: $gap-xl;
+  }
+}

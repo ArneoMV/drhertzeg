@@ -5,15 +5,31 @@ $base-gap: 1.5rem;
 
 $base-lineHeight: 0;
 
+
+
+// Sizes
+$size-2: 2px;
+$size-4: 4px;
+$size-8: 8px;
+$size-16: 16px;
+$size-32: 32px;
+$size-128: 128px;
+$size-256: 256px;
+
+
 // Page Margin
 $margin-sm: 12px;
 $margin-md: 48px;
 $margin-lg: 192px;
+$margin-xxl: 256px;
 
 // Padding (10,20,30px)
-$pading-sm: 10px;
-$pading-md: 1.3em;
-$pading-lg: 1.875em;
+$pading-xs: 4px;
+$pading-sm: 8px;
+$pading-md: 16px;
+$pading-lg: 32px;
+$pading-xl: 64px;
+$pading-xxl: 128px;
 
 // borders
 $base-border-thickness: 1px;
@@ -27,9 +43,10 @@ $gap-xl: 64px;
 $gap-xxl: 128px;
 
 // border-radius
-$base-border-radius-sm: 10px;
-$base-border-radius-md: 20px;
-$base-border-radius-lg: 30px;
+$base-border-radius-xm: 8px;
+$base-border-radius-sm: 16px;
+$base-border-radius-md: 32px;
+$base-border-radius-lg: 64px;
 
 // box-shadow
 $base-box-shadow: 1px 3px 30px rgba(52, 52, 52, 0.15);

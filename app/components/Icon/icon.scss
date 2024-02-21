@@ -1,0 +1,13 @@
+
+@use '../../styles/abstract/color' as *;
+
+.icon {
+    .row {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+  .icon-color {
+    fill: $neutral-300;
+}
