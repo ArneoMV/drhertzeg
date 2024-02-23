@@ -13,8 +13,6 @@ $grid-gaps: (
 
 $layout-values: flex-start, flex-end, center, space-between, space-around;
 
-
-
 // justify content classes
 @each $val in $layout-values {
     .justify-#{$val} {
@@ -22,9 +20,7 @@ $layout-values: flex-start, flex-end, center, space-between, space-around;
     }
 }
 
-
 // base layout classes
-
 .container {
     height: auto;
     box-sizing: border-box;
@@ -35,92 +31,58 @@ $layout-values: flex-start, flex-end, center, space-between, space-around;
 .column {
     display: flex;
     flex-direction: column;
-    // gap: $col-gap-sm;
 }
-
 
 .row {
     display: flex;
     flex-flow: row;
-    // gap: $col-gap-sm;
 }
 
 // grid gaps
 @each $key, $val in $grid-gaps {
     .gap-#{$key} > * {
-        padding: $val;
-    }
-    .gap-#{$key} {
-        margin-left: -$val;
-        margin-right: -$val;
+        margin: $val / -2;
+        box-sizing: border-box;
+        padding: $val / 2;
     }
 }
 
-// col classes
-@include xxs {
+// Mixin to generate column classes for different breakpoints
+@mixin generate-column-classes($breakpoint) {
     @for $i from 1 through $grid-columns {
-        .col-#{$i}-xxs {
+        .col-#{$i}-#{$breakpoint} {
             box-sizing: border-box;
             flex-grow: 0;
-            width: math.div($i * 100%, $grid-columns);
+            width: percentage($i / $grid-columns);
         }
     }
 }
+
+// Generate column classes for each breakpoint
+@include xxs {
+    @include generate-column-classes(xxs);
+}
+
 @include xs {
-    @for $i from 1 through $grid-columns {
-        .col-#{$i}-xs {
-            box-sizing: border-box;
-            flex-grow: 0;
-            width: math.div($i * 100%, $grid-columns);
-        }
-    }
+    @include generate-column-classes(xs);
 }
 
 @include sm {
-    @for $i from 1 through $grid-columns {
-        .col-#{$i}-sm {
-            box-sizing: border-box;
-            flex-grow: 0;
-            width: math.div($i * 100%, $grid-columns);
-        }
-    }
+    @include generate-column-classes(sm);
 }
 
 @include md {
-    @for $i from 1 through $grid-columns {
-        .col-#{$i}-md {
-            box-sizing: border-box;
-            flex-grow: 0;
-            width: math.div($i * 100%, $grid-columns);
-        }
-    }
+    @include generate-column-classes(md);
 }
 
 @include lg {
-    @for $i from 1 through $grid-columns {
-        .col-#{$i}-lg {
-            box-sizing: border-box;
-            flex-grow: 0;
-            width: math.div($i * 100%, $grid-columns);
-        }
-    }
+    @include generate-column-classes(lg);
 }
 
 @include xl {
-    @for $i from 1 through $grid-columns {
-        .col-#{$i}-xl {
-            box-sizing: border-box;
-            flex-grow: 0;
-            width: math.div($i * 100%, $grid-columns);
-        }
-    }
+    @include generate-column-classes(xl);
 }
+
 @include xxl {
-    @for $i from 1 through $grid-columns {
-        .col-#{$i}-xxl {
-            box-sizing: border-box;
-            flex-grow: 0;
-            width: math.div($i * 100%, $grid-columns);
-        }
-    }
+    @include generate-column-classes(xxl);
 }

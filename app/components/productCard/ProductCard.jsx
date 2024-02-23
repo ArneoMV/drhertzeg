@@ -1,13 +1,12 @@
 import React from 'react'
-import './_productCardTab.scss';
+import './_productCard.scss';
 import Image from 'next/image'
 import Link from 'next/link'
 
 
 export default function ProductCardTab({ imageUrl, title, link, alt }) {
   return (
-    <div className='productCardTab'>
-        <Link href={link}>
+        <Link href={link} className='productCard'>
             <Image 
               src={imageUrl}
               alt={alt}
@@ -15,6 +14,5 @@ export default function ProductCardTab({ imageUrl, title, link, alt }) {
             />
           <h6>{title}</h6>
         </Link>
-    </div>
   )
 }

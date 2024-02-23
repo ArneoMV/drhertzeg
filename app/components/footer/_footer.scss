@@ -5,7 +5,7 @@
 
 footer {
     position: relative;
-    margin-top: $margin-xxl; 
+    // margin-top: $margin-xxl; 
     background-color: $primary-700;
     color: white;
     overflow: visible;
@@ -79,7 +79,6 @@ footer {
 
     @media (min-width: map-get($breakpoints, "xxs")) {
         padding: $margin-md $margin-sm;
-        background-color: pink;
         .footerContainer {
             align-items: center;
             .footerTop {
@@ -108,7 +107,6 @@ footer {
     }
     @media (min-width: map-get($breakpoints, "xs")) {
         padding: $margin-md $margin-md;
-        background-color: goldenrod;
         .footerContainer {
             .footerTop {
                 flex-direction: column;
@@ -133,7 +131,6 @@ footer {
     }
     @media (min-width: map-get($breakpoints, "sm")) {
         padding: $margin-md $margin-md;
-        background-color: red;
         .footerContainer {
             .footerTop {
                 flex-direction: column;
@@ -155,7 +152,6 @@ footer {
     }
     @media (min-width: map-get($breakpoints, "md")) {
         padding: $margin-md $margin-md;
-        background-color: purple;
         .footerContainer {
             .footerTop {
                 flex-direction: column;
@@ -178,7 +174,6 @@ footer {
     @media (min-width: map-get($breakpoints, "lg")) {
         padding: $margin-md $margin-md;
         flex-wrap: wrap;
-        background-color: blue;
         .footerContainer {
             .footerTop {
                 flex-direction: row;
@@ -203,7 +198,6 @@ footer {
     }
     @media (min-width: map-get($breakpoints, "xl")) {
         padding: $margin-md $margin-md;
-        background-color: brown;
         .footerContainer {
             .footerTop {
                 flex-direction: row;
@@ -226,7 +220,6 @@ footer {
     }
     @media (min-width: map-get($breakpoints, "xxl")) {
         padding: $margin-md $margin-lg;
-        background-color: $neutral-900;
         .footerContainer {
             width: auto;
             .footerTop {

@@ -1,3 +1,5 @@
+@use '../abstract/_color' as *;
+
 $breakpoints: (
     "xxs": 480px,
     "xs": 600px,
@@ -49,3 +51,29 @@ $breakpoints: (
         @content;
     }
 }
+
+// body {
+
+//     @media (min-width: map-get($breakpoints, "xxs")) {
+//         background-color: pink;
+//     }
+//     @media (min-width: map-get($breakpoints, "xs")) {
+//         background-color: goldenrod;
+//     }
+//     @media (min-width: map-get($breakpoints, "sm")) {
+//         background-color: red;
+//     }
+//     @media (min-width: map-get($breakpoints, "md")) {
+//         background-color: purple;
+//     }
+//     @media (min-width: map-get($breakpoints, "lg")) {
+//         background-color: blue;
+//     }
+//     @media (min-width: map-get($breakpoints, "xl")) {
+//         background-color: brown;
+//     }
+//     @media (min-width: map-get($breakpoints, "xxl")) {
+//         background-color: $neutral-900;
+//     }
+    
+// }

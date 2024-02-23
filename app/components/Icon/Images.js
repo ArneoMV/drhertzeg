@@ -11,6 +11,7 @@ const IconImage = {
   checkCircleFill: require('./images/check-circle-fill.svg').default,
   chevronCompactLeft: require('./images/chevron-compact-left.svg').default,
   chevronCompactRight: require('./images/chevron-compact-right.svg').default,
+  chevronCompactRightLight: require('./images/chevron-compact-right-light.svg').default,
   chevronLeft2: require('./images/chevron-left-2.svg').default,
   chevronRight2: require('./images/chevron-right-2.svg').default,
   exclamationCircleFill: require('./images/exclamation-circle-fill.svg').default,

@@ -1,5 +1,6 @@
 import React from "react";
-import ProductCardTab from '../productCardTab/ProductCardTab'
+import './_firstTab.scss';
+import ProductCard from '../productCard/ProductCard'
 import CajDetox from '../../assets/image/product/Proizvod_Detox.png'
 import CajEnergija from '../../assets/image/product/Proizvod_Energija.png'
 import CajImuno from '../../assets/image/product/Proizvod_Imuno.png'
@@ -9,34 +10,30 @@ import CajSmokva from '../../assets/image/product/Proizvod_Smokva.png'
 const FirstTab = () => {
   return (
     <div className="firstTab">
-
-      <div className="row"> 
-        <ProductCardTab
+        <ProductCard
           imageUrl={CajSmokva}
           title="Smokvin list"
           link="/"
           alt="Smokvin list"
         />
-        <ProductCardTab
+        <ProductCard
           imageUrl={CajPelin}
           title="Slatki pelin"
           link="/"
           alt="Slatki pelin"
         />
-        <ProductCardTab
+        <ProductCard
           imageUrl={CajEnergija}
           title="Energija jutra"
           link="/"
           alt="Energija jutra"
         />
-        <ProductCardTab
+        <ProductCard
           imageUrl={CajDetox}
           title="Detox"
           link="/"
           alt="Detox"
         />
-
-        </div>
     </div>
   );
 };
