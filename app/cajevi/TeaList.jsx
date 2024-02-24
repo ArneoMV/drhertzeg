@@ -1,38 +1,29 @@
 import Link from 'next/link'
 
-async function getTickets() {
-
+async function getCajevi() {
     // imitate delay
     await new Promise(resolve => setTimeout(resolve, 3000))
-    
-
-    const res = await fetch('http://localhost:4002/Cajevi', {
+    const res = await fetch('http://localhost:4001/cajevi', {
       next: {
         revalidate: 0 // use 0 to opt out of using cache
       }
     })
-  
     return res.json()
   }
   
-  export default async function TicketList() {
-    const teas = await getTickets()
-  
+  export default async function TeaList() {
+    const cajevi = await getCajevi()
     return (
       <>
-        {teas.map((tea) => (
-          <div key={tea.id} className="card my-5">
-            <Link href={`/caj/${tea.id} `}>
-                <h3>{tea.title}</h3>
-                <p>{tea.body.slice(0, 200)}...</p>
-                <div className={`pill ${tea.priority}`}>
-                {tea.priority} priority
-                </div>
+        {cajevi.map((caj) => (
+          <div key={caj.id} className="card my-5">
+            <Link href={`/cajevi/${caj.id} `}>
+                <h3>{caj.title}</h3>
+                <p>{caj.body.slice(0, 200)}...</p>
             </Link>
-
           </div>
         ))}
-        {teas.length === 0 && (
+        {cajevi.length === 0 && (
           <p className="text-center">There are no open teas, yay!</p>
         )}
       </>

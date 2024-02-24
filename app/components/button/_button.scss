@@ -5,7 +5,7 @@
 @mixin Button {
   height: 48px;
   max-width: fit-content;
-  padding: 0 $pading-md;
+  padding: 0 $padding-md;
   border: none;
   border-radius: $base-border-radius-sm;
   cursor: pointer;

@@ -6,7 +6,7 @@ async function getBlogs() {
     await new Promise(resolve => setTimeout(resolve, 3000))
     
 
-    const res = await fetch('http://localhost:4001/blogs', {
+    const res = await fetch('http://localhost:4002/clanci', {
       next: {
         revalidate: 0 // use 0 to opt out of using cache
       }

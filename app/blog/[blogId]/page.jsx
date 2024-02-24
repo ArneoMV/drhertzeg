@@ -3,7 +3,7 @@ import { notFound } from "next/navigation"
 export const dynamicParams = true
 
 export async function generateStaticParams() {
-  const res = await fetch('http://localhost:4001/blogs')
+  const res = await fetch('http://localhost:4002/clanci')
 
   const blogs = await res.json()
 
@@ -13,10 +13,10 @@ export async function generateStaticParams() {
 }
 
 
-async function getTicket(id) {
+async function getBlog(id) {
   // imitate delay
   await new Promise(resolve => setTimeout(resolve, 1000))
-  const res = await fetch('http://localhost:4001/blogs/' + id, {
+  const res = await fetch('http://localhost:4002/clanci/' + id, {
     next: {
       revalidate: 60
     }
@@ -30,14 +30,14 @@ async function getTicket(id) {
 }
 
 
-export default async function TicketDetails({ params }) {
+export default async function BlogDetails({ params }) {
 
-    const blog = await getTicket(params.blogId)
+    const blog = await getBlog(params.blogId)
 
   return (
     <main>
         <nav>
-            <h2>Ticket details</h2>
+            <h2>blog details</h2>
         </nav>
         <div className="card">
             <h3>{blog.title}</h3>

@@ -5,7 +5,7 @@
 .chip {
   width: fit-content;;
   background: #FBF107;
-  padding: $pading-xs $pading-md;
+  padding: $padding-xs $padding-md;
   border-radius: $base-border-radius-sm;
 
   color: $orange-800;
@@ -17,7 +17,7 @@
 
 
   @media (min-width: map-get($breakpoints, "xxs")) {
-    padding: $pading-xs $pading-md;
+    padding: $padding-xs $padding-md;
     font-size: 15px;
 
   }

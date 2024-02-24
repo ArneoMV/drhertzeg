@@ -101,7 +101,7 @@
         @include flexColumn;
         align-items: center;
         gap: $gap-xl;
-        padding: $pading-xxl 0;
+        padding: $padding-xxl 0;
         .followTitle {
             @include flexColumn;
             gap: $gap-md;
@@ -403,7 +403,7 @@
         }
         .follow {
             .items {
-                padding-left: $pading-lg;
+                padding-left: $padding-lg;
             }
         }
     }
