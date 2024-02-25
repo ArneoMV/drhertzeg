@@ -1,6 +1,7 @@
 @use '../../styles/layout/_breakpoint' as *;
 @use '../../styles/base/_variable' as *;
 @use '../../styles/abstract/_color' as *;
+@use '../../styles/base/_mixin' as *;
 
 .chip {
   width: fit-content;;
@@ -23,3 +24,38 @@
   }
 }
 
+.titleWithChip {
+  @include flexColumn;
+  gap: $gap-sm;
+  align-items: flex-start;
+  h3 {
+    text-align: left;
+  }
+
+  @media (min-width: map-get($breakpoints, "xxs")) {
+
+  }
+  
+  @media (min-width: map-get($breakpoints, "xs")) {
+
+  }
+  
+  @media (min-width: map-get($breakpoints, "sm")) {
+
+  }
+  
+  @media (min-width: map-get($breakpoints, "md")) {
+
+  }
+  
+  @media (min-width: map-get($breakpoints, "lg")) {
+    width: 100%;
+  }
+  
+  @media (min-width: map-get($breakpoints, "xl")) {
+  }
+  
+  @media (min-width: map-get($breakpoints, "xxl")) {
+  }
+
+}

@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 async function getCajevi() {
     // imitate delay
@@ -14,18 +15,33 @@ async function getCajevi() {
   export default async function TeaList() {
     const cajevi = await getCajevi()
     return (
-      <>
-        {cajevi.map((caj) => (
-          <div key={caj.id} className="card my-5">
-            <Link href={`/cajevi/${caj.id} `}>
-                <h3>{caj.title}</h3>
-                <p>{caj.body.slice(0, 200)}...</p>
-            </Link>
-          </div>
-        ))}
+      <div className='productList' >
+        <div className="productListContainer">
+          {cajevi.map((caj) => (
+              <Link 
+                key={caj.id} 
+                href={`/cajevi/${caj.id} `} 
+                className="productCard">
+                <Image 
+                  src={caj.image}
+                  alt='image'
+                  quality={100}
+                  width={150}
+                  height={300}
+                />
+                <div className="productCardInfo">
+                  <h4>{caj.title}</h4>
+                  <p>{caj.certifikat}</p>
+                  <p>{caj.kolicina}</p>
+                </div>
+                
+              </Link>
+          ))}
+        </div>
+
         {cajevi.length === 0 && (
           <p className="text-center">There are no open teas, yay!</p>
         )}
-      </>
+      </div>
     )
   }

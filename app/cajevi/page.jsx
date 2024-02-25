@@ -11,7 +11,7 @@ import "./_style.scss";
 
 export default function Caj() {
     return (
-      <main className="teas">
+      <main className="productPage">
 
 
         <div className="heroContainer">
@@ -31,7 +31,7 @@ export default function Caj() {
           <div className="heroContent">
             <div className="heroContentInner">
               <div className="heroContent_heading">
-                <div className="column">
+                <div className="titleWithChip">
                   <Chip text="cajevi" />
                   <h3>Zdravlje u šalici</h3>
                 </div>

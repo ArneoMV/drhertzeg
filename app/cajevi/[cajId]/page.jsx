@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation"
+import Image from 'next/image'
 
 export const dynamicParams = true
 
@@ -42,6 +43,13 @@ export default async function CajDetails({ params }) {
         <div className="card">
             <h3>{caj.title}</h3>
             <p>{caj.body}</p>
+            <Image 
+              src={caj.image}
+              alt='image'
+              quality={100}
+              width={100}
+              height={100}
+            />
         </div>
     </main>
   )

@@ -60,7 +60,7 @@ export default function Page() {
         <div className="blogHomepageContainer">
           <div className="blogHomepageContent">
             <div className="blogHomeText">
-              <div className="blogHomeTitle">
+              <div className="titleWithChip">
                 <Chip text="blog" />
                 <h3>Prirodni uzgoj</h3>
               </div>

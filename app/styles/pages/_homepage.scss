@@ -13,6 +13,9 @@
 
     .hero {
         display: flex;
+        flex-direction: column;
+        padding: $margin-md 0;
+        gap: $gap-lg;
         align-items: center;
         .heroImage {
             display: flex;
@@ -45,6 +48,7 @@
     }
 
     .visionHomepage { 
+        padding: $margin-xmd $margin-sm;
         .vision {
             display: flex;
             gap: $gap-lg;
@@ -57,6 +61,7 @@
     }
     .products {
         display: flex;
+        flex-direction: column;
         align-items: center;
         h3 {
             text-align: center;
@@ -68,18 +73,25 @@
         justify-content: space-around;
         .blogHomepageContainer {
             display: flex;
+            padding: $margin-xmd $margin-sm;
+            flex-direction: column;
+            align-items: center;
+            gap: $gap-lg;
             .blogHomepageContent {
                 display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: left;
+                gap: $gap-lg;
                 .blogHomeText {
                     @include flexColumn;
                     gap: $gap-sm;
+                    align-items: center;
                     p {
                         max-width: 450px;
                         min-width: 340px;
-                    }
-                    .blogHomeTitle {
-                        @include flexColumn;
-                        gap: $gap-sm;
+                        text-align: center;
                     }
                 }
                 p, h3 {
@@ -110,6 +122,11 @@
 
     }
     section {
+        &:nth-child(1) { margin: 0 $margin-sm; }
+        &:nth-child(3) { margin: $margin-xmd $margin-sm; }
+        &:nth-child(5) { margin: 0 $margin-sm; }
+    }
+    section {
         &:nth-child(2) { margin: 0 0 }
         &:nth-child(4) { margin: 0 0 }
     }
@@ -130,7 +147,6 @@
         .products {
             flex-direction: column;
         }
-        .visionHomepage { padding: $margin-xmd $margin-md; }
         .blogHomepage {
             .blogHomepageContainer { 
                 padding: $margin-xmd $margin-sm;
@@ -147,13 +163,6 @@
                         align-items: center;
                         p {
                             text-align: center;
-                        }
-                        .blogHomeTitle {
-                            @include flexColumn;
-                            align-items: flex-start;
-                            h3 {
-                                text-align: left;
-                            }
                         }
                     }
                 }
@@ -194,13 +203,6 @@
                         p {
                             text-align: center;
                         }
-                        .blogHomeTitle {
-                            @include flexColumn;
-                            align-items: flex-start;
-                            h3 {
-                                text-align: left;
-                            }
-                        }
                     }
                 }
             }
@@ -239,13 +241,6 @@
                         p {
                             text-align: center;
                         }
-                        .blogHomeTitle {
-                            @include flexColumn;
-                            align-items: flex-start;
-                            h3 {
-                                text-align: left;
-                            }
-                        }
                     }
                 }
             }
@@ -283,13 +278,6 @@
                         p {
                             text-align: center;
                         }
-                        .blogHomeTitle {
-                            @include flexColumn;
-                            align-items: flex-start;
-                            h3 {
-                                text-align: left;
-                            }
-                        }
                     }
                 }
             }
@@ -325,14 +313,6 @@
                         align-items: center;
                         p {
                             text-align: left;
-                        }
-                        .blogHomeTitle {
-                            @include flexColumn;
-                            width: 100%;
-                            align-items: flex-start;
-                            h3 {
-                                text-align: left;
-                            }
                         }
                     }
                 }
