@@ -5,9 +5,12 @@ import Chip from "../components/chip/Chip";
 
 import HeroImage from '../assets/image/CoverCaj.png'
 
+
 import TeaList from "./TeaList";
 import Loading from "../loading";
 import "./_style.scss";
+
+import FollowSocial from "../components/followSocial/FollowSocial";
 
 export default function Caj() {
     return (
@@ -46,6 +49,9 @@ export default function Caj() {
         <Suspense fallback={<Loading />}>
           <TeaList />
         </Suspense>
+        
+
+        <FollowSocial />
         
       </main>
     )
