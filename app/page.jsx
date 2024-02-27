@@ -64,7 +64,7 @@ export default function Page() {
                 <Chip text="blog" />
                 <h3>Prirodni uzgoj</h3>
               </div>
-              <p >Dessert jelly chocolate cake cheesecake bear claw gummies pastry bear claw. Marzipan marzipan ice cream soufflé dessert dessert. Dragée chocolate cookie sugar plum jelly.</p>
+              <p>Dessert jelly chocolate cake cheesecake bear claw gummies pastry bear claw. Marzipan marzipan ice cream soufflé dessert dessert. Dragée chocolate cookie sugar plum jelly.</p>
             </div>
             <Link href="/blog">
               <Button 

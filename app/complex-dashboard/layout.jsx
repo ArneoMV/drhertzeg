@@ -1,27 +1,20 @@
 import React from 'react';
+import FollowSocial from "../components/followSocial/FollowSocial";
 
 export default function DashboardLayout({
   children,
-  users,
-  revenue,
-  notifications,
-  login,
+  productCard,
 }) {
 
-  const isLoggedIn = true;
-
-  return isLoggedIn ? (
+  return (
     <div>
       <h1>{children}</h1>
       <div style={{ display: "flex" }}>
-        <div style={{ display: "flex", flexDirection: "column" }}>
-          <div>{users}</div>
-          <div>{revenue}</div>
-        </div>
-        <div style={{ display: "flex", flex: 1 }}>{notifications}</div>
+        <div style={{ display: "flex", flex: 1 }}>{productCard}</div>
       </div>
+
+
+      <FollowSocial />
     </div>
-  ): (
-    login
   )
 }

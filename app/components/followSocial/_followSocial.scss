@@ -6,7 +6,7 @@
 
 
 .followSocial {
-    background-color: $primary-500;
+    background-color: $primary-100;
     padding: $padding-xl;
     position: relative;
     @include flexRow;
@@ -31,8 +31,10 @@
     .followSocialTitle {
         @include flexColumn;
         gap: $gap-md;
+        align-items: center;
         h4 {
-            width: 350px
+            width: 350px;
+            text-align: center;
         }
         .row {
             @include flexRow;
