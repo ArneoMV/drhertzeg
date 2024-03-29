@@ -75,6 +75,5 @@ export default function ComplexDashboardPage() {
           </div>
         </div>
       </main>
-
   );
 }
