@@ -11,8 +11,8 @@ export const metadata = {
 
 
 // components
-import Header from './components/header/header'
-import Footer from './components/footer/footer'
+import Header from './components/organism/header/header'
+import Footer from './components/organism/footer/footer'
 
 
 export default function RootLayout({ children }) {

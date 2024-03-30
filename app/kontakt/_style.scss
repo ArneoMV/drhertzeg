@@ -1,0 +1,107 @@
+@use '../styles/base/_variable' as *;
+@use '../styles/abstract/_color' as *;
+@use '../styles/abstract/_typo' as *;
+@use '../styles/layout/_breakpoint' as *;
+@use '../styles/base/_mixin' as *;
+
+.contact {
+    @include flexColumn;
+    padding-bottom: $size-98;
+    .layout-main {
+        @include flexColumn;
+        gap: $size-48;
+        .layout-main-container {
+            @include flexColumn;
+            gap: $size-24;
+            justify-content: space-between;
+            .contact-container {
+                @include flexColumn;
+                gap: $size-24;
+                .flex {
+                    @include flexColumn;
+                    align-items: flex-start;
+                    gap: 16px;
+                    width: 100%;
+                    .contact-icon {
+                        @include flexRow;
+                        align-items: center;
+                        gap: $size-24;
+                        .icon {
+                            background-color: $neutral-200;
+                            border-radius: $base-border-radius-lg;
+                            width: $size-48;
+                            height: $size-48;
+                            @include flexColumn;
+                            align-items: center;
+                            justify-content: center;
+                            img {
+                                width: $size-24;
+                                height: $size-24;
+                            }
+                        }
+                    }
+                }
+            }
+            form {
+                @include flexColumn;
+                gap: $size-24;
+                align-items: center;
+                .column {
+                    @include flexColumn;
+                    gap: $size-2;
+                    width: 100%;
+                    .input {
+                        width: 100%;
+                    }
+                }
+                
+            }
+        }
+    }
+
+    @media (min-width: map-get($breakpoints, "xxs")) {
+        // background-color: pink;
+    }
+    @media (min-width: map-get($breakpoints, "xs")) {
+        // background-color: goldenrod;
+    }
+    @media (min-width: map-get($breakpoints, "sm")) {
+        // background-color: red;
+    }
+    @media (min-width: map-get($breakpoints, "md")) {
+        // background-color: purple;
+        .layout-main {
+            .layout-main-container {
+                @include flexRow;
+                .contact-container {
+                    .flex {
+                        @include flexRow;
+                        gap: $size-48;
+                        justify-content: space-around;
+                        .contact-icon {
+                            @include flexColumn;
+                            .icon {
+                                width: $size-64;
+                                height: $size-64;
+                                img {
+                                    width: $size-32;
+                                    height: $size-32;
+                                }
+                            } 
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+    @media (min-width: map-get($breakpoints, "lg")) {
+        // background-color: blue;
+    }
+    @media (min-width: map-get($breakpoints, "xl")) {
+        // background-color: brown;
+    }
+    @media (min-width: map-get($breakpoints, "xxl")) {
+        // background-color: $neutral-700;
+    }
+}

@@ -1,0 +1,61 @@
+@use '../../../styles/layout/_breakpoint' as *;
+@use '../../../styles/base/_variable' as *;
+@use '../../../styles/abstract/_color' as *;
+@use '../../../styles/base/_mixin' as *;
+
+.chip {
+  width: fit-content;;
+  background: #FBF107;
+  padding: $padding-xs $padding-md;
+  border-radius: $base-border-radius-sm;
+
+  color: $orange-800;
+  font-family: "Work Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 130%;
+  
+
+
+  @media (min-width: map-get($breakpoints, "xxs")) {
+    padding: $padding-xs $padding-md;
+    font-size: 15px;
+
+  }
+}
+
+.titleWithChip {
+  @include flexColumn;
+  gap: $gap-sm;
+  align-items: flex-start;
+  h3 {
+    text-align: left;
+  }
+
+  @media (min-width: map-get($breakpoints, "xxs")) {
+
+  }
+  
+  @media (min-width: map-get($breakpoints, "xs")) {
+
+  }
+  
+  @media (min-width: map-get($breakpoints, "sm")) {
+
+  }
+  
+  @media (min-width: map-get($breakpoints, "md")) {
+
+  }
+  
+  @media (min-width: map-get($breakpoints, "lg")) {
+    width: 100%;
+  }
+  
+  @media (min-width: map-get($breakpoints, "xl")) {
+  }
+  
+  @media (min-width: map-get($breakpoints, "xxl")) {
+  }
+
+}

@@ -1,18 +1,19 @@
 import { Suspense } from "react";
 import Image from 'next/image'
 import Link from 'next/link'
-import Chip from "../components/chip/Chip";
+import Chip from "../components/atoms/chip/Chip";
+import Icon from "../components/atoms/icon/Icon";
 
 import HeroImage from '../assets/image/CoverCaj.png'
-import OtherProductCard from '../components/otherProductCard/OtherProductCard'
-import BannerAddPelin from '../components/bannerAddPelin/BannerAddPelin'
+import OtherProductCard from '../components/organism/otherProductCard/OtherProductCard'
+import BannerAddPelin from '../components/organism/bannerAddPelin/BannerAddPelin'
 
 
 import TeaList from "./TeaList";
 import Loading from "../loading";
 import "./_style.scss";
 
-import FollowSocial from "../components/followSocial/FollowSocial";
+import FollowSocial from "../components/organism/followSocial/FollowSocial";
 
 export default function Caj() {
     return (

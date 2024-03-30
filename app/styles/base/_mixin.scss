@@ -15,6 +15,12 @@
     display: flex;
     flex-direction: row;
 }
+.row {
+    @include flexRow;
+}
+.column {
+    @include flexColumn;
+}
 
 
 @mixin vaweUp {

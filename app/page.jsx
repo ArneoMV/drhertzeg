@@ -1,10 +1,10 @@
 
 import { Metadata } from 'next'
 
-import Tabs from "./components/tab/Tabs";
-import Chip from "./components/chip/Chip";
-import Button from "./components/button/Button";
-import ScrollSocial from "./components/scrollSocial/ScrollSocial";
+import Tabs from "./components/molecules/tab/Tabs";
+import Chip from "./components/atoms/chip/Chip";
+import Button from "./components/atoms/button/Button";
+import ScrollSocial from "./components/organism/scrollSocial/ScrollSocial";
 
 import Image from 'next/image'
 import Link from 'next/link'

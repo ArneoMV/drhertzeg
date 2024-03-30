@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 import '../../styles/pages/_productPage.scss';
 
-import OtherProductCard from '../../components/otherProductCard/OtherProductCard'
+import OtherProductCard from '../../components/organism/otherProductCard/OtherProductCard'
 
 export const dynamicParams = true
 
