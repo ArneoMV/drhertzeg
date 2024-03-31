@@ -3,7 +3,7 @@ import './_button.scss';
 import Icon from '../icon/Icon';
 
 const Button = ({ type = 'default', children, disabled, onClick, iconName, className }) => {
-  const buttonClassName = `button ${type} ${disabled ? 'disabled' : ''} ${className || ''}`;
+  const buttonClassName = `button ${type}${disabled?'disabled':''}${className || ''}`;
 
   if (type === 'icon') {
     return (

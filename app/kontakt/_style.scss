@@ -48,11 +48,17 @@
                 align-items: center;
                 .column {
                     @include flexColumn;
-                    gap: $size-2;
+                    gap: $size-24;
                     width: 100%;
-                    .input {
+                    .input, .textbox {
                         width: 100%;
+                        label {
+                            color: $neutral-800;
+                        }
                     }
+                }
+                .button {
+                    color: $neutral-100;
                 }
                 
             }
@@ -77,7 +83,7 @@
                     .flex {
                         @include flexRow;
                         gap: $size-48;
-                        justify-content: space-around;
+                        justify-content: space-between;
                         .contact-icon {
                             @include flexColumn;
                             .icon {

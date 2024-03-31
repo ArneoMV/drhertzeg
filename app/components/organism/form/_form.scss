@@ -1,0 +1,59 @@
+@use '../../../styles/base/_variable' as *;
+@use '../../../styles/abstract/_color' as *;
+@use '../../../styles/abstract/_typo' as *;
+@use '../../../styles/layout/_breakpoint' as *;
+@use '../../../styles/base/_mixin' as *;
+
+.row {
+    @include flexRow;
+    gap: $size-12;
+}
+.col {
+    @include flexColumn;
+    gap: $size-12;
+}
+@mixin base-input {
+    border-radius: $size-12;
+    background-color: $neutral-100;
+    border: 1px solid $neutral-800;
+    height: 42px;
+    padding: 0 $size-12;
+    width: 100%
+}
+
+.text-neutral-800 { color: $neutral-800 }
+.text-red-400 { color: $red-400 }
+
+.form {
+    @include flexColumn;
+    align-items: center;
+    gap: $size-24;
+    width: auto;
+    .input-field, .select-field {
+        @include flexColumn;
+        gap: $size-4;
+        width: 100%;
+        label {
+            font-size: 16px;
+            font-family: 'Work Sans', sans-serif;
+            &.text-neutral-800 { color: $neutral-800 }
+            &.text-red-400 { color: $red-400 }
+        }
+        .text-neutral-800 { color: $neutral-800 }
+        .text-red-400 { color: $red-400 }
+        input, select {
+            @include base-input;
+            box-sizing: border-box;
+        }
+    }
+    button {
+        height: 52px;
+        width: fit-content;
+        padding: 0 $size-24;
+        border-radius: $size-12;
+        border: none;
+        background-color: $primary-500;
+        color: $neutral-100;
+        font-size: 21px;
+    }
+}

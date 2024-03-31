@@ -6,20 +6,23 @@ import Image from 'next/image'
 import "./_style.scss";
 import "../styles/layout/_layout.scss";
 import { IconImage } from "../utilities/images.js";
+// import { sendEmail } from "../utilities/sendEmail.jsx";
+
 import Input from '../components/molecules/input/input';
 import Button from '../components/atoms/button/button';
 import TextBox from '../components/molecules/textbox/textbox';
+import Form from '../components/organism/form/form'
 // export const metadata = {
 //   title: "Contact",
 // };
 
 
 export default function Contact() {
+
     return (
       <main className="contact">
 
         <div className="layout-main">
-          <h1>Kontakt</h1>
           <div className="layout-main-container">
             <div className="contact-container col-10-sm col-8-md col-5-lg">
               <div className="flex">
@@ -62,17 +65,41 @@ export default function Contact() {
                 </div>
 
               </div>
+              <h4>Pozivamo sve na suradnju</h4>
               <p>Shortbread dragée wafer cupcake ice cream cookie pie. Apple pie gummies pudding wafer pastry liquorice. Wafer tootsie roll cupcake ice cream liquorice. Tiramisu cupcake marshmallow halvah pastry sugar plum ice cream. </p>
             </div>
-
-            <form action="https://formspree.io/your_email_here" method="POST" className="col-10-sm col-8-md col-5-lg">
+            <Form 
+              className="col-10-sm col-8-md col-3-lg"
+            />
+            {/* <form 
+              onSubmit={handleSubmit}
+            >
+              <h3>Pozdravite nas</h3>
               <div className="column">
-                <Input label="Email" placeholder="Unesite email" type="email" name="_replyto" />
-                <Input label="Ime i prezime" placeholder="Unesite svoje ime" type="text" name="name" />
-                <TextBox label="Vaša poruka" placeholder="Kako Vam možemo pomoći" name="message" />
+                <Input 
+                  id="email"
+                  type="email" 
+                  name="email"
+                  label="Email" 
+                  placeholder="Vaša email adresa"
+                />
+                <Input 
+                  type="text" 
+                  name="name"
+                  label="Ime i prezime" 
+                  placeholder="Vaše cijenjeno ime" 
+                />
+                <TextBox
+                  type="text" 
+                  name="name"
+                  label="Vaša poruka" 
+                  placeholder="Kako Vam možemo pomoći"
+                />
               </div>
-              <Button type="submit">Pošalji</Button>
-            </form>
+              <button type="submit" disabled={state.submitting}>
+                Submit
+              </button>
+            </form> */}
 
           </div>
         </div>

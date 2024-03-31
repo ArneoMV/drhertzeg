@@ -17,11 +17,13 @@
     color: $neutral-100;
     letter-spacing: 1.23px;
   }
-  input {
+  textarea {
+    padding: $size-8 $size-12;
     height: $size-98;
-    width: 100%;
+    width: auto;
     border-radius: $size-12;
     &::placeholder {
+      font-size: 14px;
       color: $neutral-800;
       font-family: 'Work Sans', sans-serif;
       font-weight: 400;

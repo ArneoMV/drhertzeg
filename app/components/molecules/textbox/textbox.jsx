@@ -5,7 +5,7 @@ const TextBox = ({ label, placeholder }) => {
   return (
     <div className="textbox">
       <label>{label}</label>
-      <input type="text" placeholder={placeholder} className="textbox-input" />
+      <textarea placeholder={placeholder} rows="5" cols="10" className="textbox-input" required></textarea>
     </div>
   );
 };
