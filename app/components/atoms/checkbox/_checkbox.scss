@@ -39,16 +39,14 @@
 
 .checkbox-container {
     display: flex;
-    gap: 8px;
     align-items: center;
 }
 .checkbox-container {
     label.checkbox {
         @include checkbox-base();
-        background-color: $primary-300;
+        background-color: $primary-100;
         position: relative;
         cursor: pointer;
-        margin-right: 8px;
       
         // Kada postoji bratski element s klasom "checkbox--checked"
         // Promijenite pozadinsku boju checkboxa

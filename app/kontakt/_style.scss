@@ -20,7 +20,8 @@
                 .flex {
                     @include flexColumn;
                     align-items: flex-start;
-                    gap: 16px;
+                    justify-content: center;
+                    gap: $size-24;
                     width: 100%;
                     .contact-icon {
                         @include flexRow;
@@ -64,6 +65,19 @@
             }
         }
     }
+    .page-title {
+        width: fit-content;
+        border-radius: $size-16;
+        background-color: $primary-100;
+        padding: $size-16 $size-32;
+        h1 {
+            color: $primary-900;
+            width: fit-content;
+            font-size: 65px;
+            font-weight: bold;
+        }
+    }
+
 
     @media (min-width: map-get($breakpoints, "xxs")) {
         // background-color: pink;
@@ -80,10 +94,11 @@
             .layout-main-container {
                 @include flexRow;
                 .contact-container {
+                    gap: $size-24;
                     .flex {
                         @include flexRow;
                         gap: $size-48;
-                        justify-content: space-between;
+                        justify-content: center;
                         .contact-icon {
                             @include flexColumn;
                             .icon {

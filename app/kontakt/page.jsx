@@ -27,8 +27,12 @@ export default function Contact() {
         <div className="layout-main">
           <div className="layout-main-container">
             <div className="contact-container col-10-sm col-8-md col-5-lg">
+              <div className="page-title">
+                <h1>Kontakt</h1>
+              </div>
+              <p>Shortbread dragée wafer cupcake ice cream cookie pie. Apple pie gummies pudding wafer pastry liquorice. Wafer tootsie roll cupcake ice cream liquorice. Tiramisu cupcake marshmallow halvah pastry sugar plum ice cream. </p>
+              
               <div className="flex">
-
                 <div className="contact-icon">
                   <div className="icon-title">
                     <div className="icon">
@@ -41,7 +45,6 @@ export default function Contact() {
                   </div>
                   <p>Pantovčak 48,<br /> 10000 Zagreb</p>
                 </div>
-
                 <div className="contact-icon">
                   <div className="icon">
                     <Image 
@@ -52,7 +55,6 @@ export default function Contact() {
                   </div>
                   <p>info@colloidag.hr</p>
                 </div>
-
                 <div className="contact-icon">
                   <div className="icon">
                     <div className="icon">
@@ -65,10 +67,7 @@ export default function Contact() {
                   </div>
                   <p>+385 95 123 456</p>
                 </div>
-
               </div>
-              <h4>Pozivamo sve na suradnju</h4>
-              <p>Shortbread dragée wafer cupcake ice cream cookie pie. Apple pie gummies pudding wafer pastry liquorice. Wafer tootsie roll cupcake ice cream liquorice. Tiramisu cupcake marshmallow halvah pastry sugar plum ice cream. </p>
             </div>
             <FormContainer className="col-10-sm col-8-md col-5-lg"/>
           </div>

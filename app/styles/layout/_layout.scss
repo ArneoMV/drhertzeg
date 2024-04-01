@@ -8,25 +8,25 @@
 
 @mixin layout-main {
     @media (min-width: map-get($breakpoints, "xxs")) {
-        padding: $size-48 $size-12 $size-12 $size-12;
+        padding: $size-12 $size-12 $size-12 $size-12;
     }
     @media (min-width: map-get($breakpoints, "xs")) {
-        padding: $size-48 $size-12 $size-12 $size-12;
+        padding: $size-12 $size-12 $size-12 $size-12;
     }
     @media (min-width: map-get($breakpoints, "sm")) {
-        padding: $size-48 $size-48 $size-12 $size-48;
+        padding: $size-24 $size-48 $size-12 $size-48;
     }
     @media (min-width: map-get($breakpoints, "md")) {
-        padding: $size-64 $size-64 $size-12 $size-64;
+        padding: $size-24 $size-64 $size-12 $size-64;
     }
     @media (min-width: map-get($breakpoints, "lg")) {
-        padding: $size-64 $size-192 $size-12 $size-192;
+        padding: $size-24 $size-192 $size-12 $size-192;
     }
     @media (min-width: map-get($breakpoints, "xl")) {
-        padding: $size-64 $size-192 $size-12 $size-192;
+        padding: $size-24 $size-192 $size-12 $size-192;
     }
     @media (min-width: map-get($breakpoints, "xxl")) {
-        padding: $size-64 $size-192 $size-12 $size-192;
+        padding: $size-48 $size-192 $size-12 $size-192;
     }
 }
 
