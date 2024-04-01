@@ -4,6 +4,12 @@ import Resend from 'resend';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
+
+// NISAM IŠAO OVIM PRISTUPOM
+// POGLEDATI componenss/organisam/form
+
+
+
 export default function MyComponent() {
   useEffect(() => {
     async function sendEmail() {

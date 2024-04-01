@@ -11,7 +11,7 @@ import { IconImage } from "../utilities/images.js";
 import Input from '../components/molecules/input/input';
 import Button from '../components/atoms/button/button';
 import TextBox from '../components/molecules/textbox/textbox';
-import Form from '../components/organism/form/form'
+import FormContainer from '../components/organism/form/form'
 // import { ContactUs } from '../components/organism/contactUs/contactUs';
 
 // export const metadata = {
@@ -70,42 +70,7 @@ export default function Contact() {
               <h4>Pozivamo sve na suradnju</h4>
               <p>Shortbread dragée wafer cupcake ice cream cookie pie. Apple pie gummies pudding wafer pastry liquorice. Wafer tootsie roll cupcake ice cream liquorice. Tiramisu cupcake marshmallow halvah pastry sugar plum ice cream. </p>
             </div>
-            <Form />
-
-            
-
-
-
-            {/* <form 
-              onSubmit={handleSubmit}
-            >
-              <h3>Pozdravite nas</h3>
-              <div className="column">
-                <Input 
-                  id="email"
-                  type="email" 
-                  name="email"
-                  label="Email" 
-                  placeholder="Vaša email adresa"
-                />
-                <Input 
-                  type="text" 
-                  name="name"
-                  label="Ime i prezime" 
-                  placeholder="Vaše cijenjeno ime" 
-                />
-                <TextBox
-                  type="text" 
-                  name="name"
-                  label="Vaša poruka" 
-                  placeholder="Kako Vam možemo pomoći"
-                />
-              </div>
-              <button type="submit" disabled={state.submitting}>
-                Submit
-              </button>
-            </form> */}
-
+            <FormContainer className="col-10-sm col-8-md col-5-lg"/>
           </div>
         </div>
 
