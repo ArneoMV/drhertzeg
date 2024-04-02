@@ -1,11 +1,13 @@
 {
+  "homepage": "http://ArneoMV.github.io/drhertzeg",
   "name": "drhertzeg",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "next build",
-    "deploy": "gh-pages -d build",
     "start": "next start",
     "lint": "next lint"
   },
