@@ -9,7 +9,7 @@ import OtherProductCard from '../components/organism/otherProductCard/OtherProdu
 import BannerAddPelin from '../components/organism/bannerAddPelin/BannerAddPelin'
 
 
-import TeaList from "./TeaList";
+// import TeaList from "./TeaList";
 import Loading from "../loading";
 import "./_style.scss";
 
@@ -51,35 +51,35 @@ export default function Caj() {
             productDetailsKolicina="50g"
             productDetailsImageURL="/images/cajBiljka/cajBiljka_1.png"
             productDetailsImageAlt="Smokvin List"
-            productDetailsURL="/cajevi/1"
+            productDetailsURL="/cajevi/smokvinList"
           />
           <OtherProductCard
             productDetailsTitle="Slatki pelin"
             productDetailsKolicina="50g"
             productDetailsImageURL="/images/cajBiljka/cajBiljka_2.png"
             productDetailsImageAlt="Slatki pelin"
-            productDetailsURL="/cajevi/2"
+            productDetailsURL="/cajevi/slatkiPelin"
           />
           <OtherProductCard
             productDetailsTitle="Energija jutra"
             productDetailsKolicina="50g"
             productDetailsImageURL="/images/cajBiljka/cajBiljka_3.png"
             productDetailsImageAlt="Energija jutra"
-            productDetailsURL="/cajevi/3"
+            productDetailsURL="/cajevi/energijaJutra"
           />
           <OtherProductCard
             productDetailsTitle="Detox čaj"
             productDetailsKolicina="50g"
             productDetailsImageURL="/images/cajBiljka/cajBiljka_4.png"
             productDetailsImageAlt="Detox čaj"
-            productDetailsURL="/cajevi/4"
+            productDetailsURL="/cajevi/detox"
           />
           <OtherProductCard
             productDetailsTitle="Imuno čaj"
             productDetailsKolicina="50g"
             productDetailsImageURL="/images/cajBiljka/cajBiljka_5.png"
             productDetailsImageAlt="Imuno čaj"
-            productDetailsURL="/cajevi/5"
+            productDetailsURL="/cajevi/imuno"
           />
         </section>
 

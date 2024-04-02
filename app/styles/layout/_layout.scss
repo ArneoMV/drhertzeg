@@ -6,59 +6,62 @@
 @use '../base/_mixin' as *;
 @use '../abstract/_color' as *;
 
-@mixin layout-main {
-    @media (min-width: map-get($breakpoints, "xxs")) {
-        padding: $size-12 $size-12 $size-12 $size-12;
-    }
-    @media (min-width: map-get($breakpoints, "xs")) {
-        padding: $size-12 $size-12 $size-12 $size-12;
-    }
-    @media (min-width: map-get($breakpoints, "sm")) {
-        padding: $size-24 $size-48 $size-12 $size-48;
-    }
-    @media (min-width: map-get($breakpoints, "md")) {
-        padding: $size-24 $size-64 $size-12 $size-64;
-    }
-    @media (min-width: map-get($breakpoints, "lg")) {
-        padding: $size-24 $size-192 $size-12 $size-192;
-    }
-    @media (min-width: map-get($breakpoints, "xl")) {
-        padding: $size-24 $size-192 $size-12 $size-192;
-    }
-    @media (min-width: map-get($breakpoints, "xxl")) {
-        padding: $size-48 $size-192 $size-12 $size-192;
-    }
-}
+// @mixin layout-main {
+//     @media (min-width: map-get($breakpoints, "xxs")) {
+//         padding: $size-12 $size-12 $size-12 $size-12;
+//     }
+//     @media (min-width: map-get($breakpoints, "xs")) {
+//         padding: $size-12 $size-12 $size-12 $size-12;
+//     }
+//     @media (min-width: map-get($breakpoints, "sm")) {
+//         padding: $size-24 $size-48 $size-12 $size-48;
+//     }
+//     @media (min-width: map-get($breakpoints, "md")) {
+//         padding: $size-24 $size-64 $size-12 $size-64;
+//     }
+//     @media (min-width: map-get($breakpoints, "lg")) {
+//         padding: $size-24 $size-192 $size-12 $size-192;
+//     }
+//     @media (min-width: map-get($breakpoints, "xl")) {
+//         padding: $size-24 $size-192 $size-12 $size-192;
+//     }
+//     @media (min-width: map-get($breakpoints, "xxl")) {
+//         padding: $size-48 $size-192 $size-12 $size-192;
+//     }
+// }
 
-@mixin layout-demo-project-container {
+@mixin layout-container {
     @media (min-width: map-get($breakpoints, "xxs")) {
-        padding: 0 $size-12;
+        padding: 0 $margin-sm;
     }
     @media (min-width: map-get($breakpoints, "xs")) {
-        padding: 0 $size-24;
+        padding: 0 $margin-md;
     }
     @media (min-width: map-get($breakpoints, "sm")) {
-        padding: 0 $size-48;
+        padding: 0 $size-98;
     }
     @media (min-width: map-get($breakpoints, "md")) {
-        padding: 0 $size-64;
+        padding: 0 $size-98;
     }
     @media (min-width: map-get($breakpoints, "lg")) {
-        padding: 0 $size-64;
-    }
-    @media (min-width: map-get($breakpoints, "xl")) {
-        padding: 0 $size-64;
-    }
-    @media (min-width: map-get($breakpoints, "xxl")) {
         padding: 0 $size-128;
     }
+    @media (min-width: map-get($breakpoints, "xl")) {
+        padding: 0 $size-128;
+    }
+    @media (min-width: map-get($breakpoints, "xxl")) {
+        padding: 0 $size-192;
+    }
+
 }
 
 
-.layout-main {
-    @include flexColumn;
-    @include layout-main;
-}
+
+// .layout-main {
+//     @include flexColumn;
+//     @include layout-main;
+//     @include layout-container;
+// }
 
 
 

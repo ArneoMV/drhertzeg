@@ -1,0 +1,180 @@
+@use '../../styles/layout/_breakpoint' as *;
+@use '../../styles/layout/_layout' as *;
+@use '../../styles/base/_variable' as *;
+@use '../../styles/abstract/_color' as *;
+@use '../../styles/base/_mixin' as *;
+
+.row {
+    @include flexRow;
+}
+.column {
+    @include flexColumn;
+}
+
+
+.demoArticlePage {
+    @include layout-container;
+    @include flexColumn;
+    align-items: center;
+    gap: $size-98;
+    margin-bottom: $size-192;
+
+    section {
+        @include flexColumn;
+        gap: $size-48;
+    }
+
+    .blog-title {
+        .gooey-svg {
+            visibility: hidden;
+            position: absolute;
+          }
+        
+          .title-gooey {
+            line-height: 100%;
+            display: inline;
+            box-decoration-break: clone;
+            background: $primary-600;
+            padding: 0.5rem 1rem;
+            filter: url('#title-gooey');
+            color: $neutral-100;
+            line-height: 125%;
+        }
+        .title-gooey:focus {
+            outline: 0;
+        }
+        .row {
+            gap: $size-24;
+            .info {
+                @include flexRow;
+                gap: $size-8;
+                align-items: center;
+
+                background-color: $neutral-100;
+                padding: $size-12 $size-16;
+                border-radius: $size-16;
+                box-shadow: $base-shadow-1;
+                p { 
+                    color: $neutral-800;
+                    font-weight: 600;
+                }
+                img {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+        }
+    }
+
+    .blog-quote {
+        q {
+            quotes: "“" "”" "‘" "’";
+          }
+          q::before {
+              content: open-quote;
+          }
+          q::after {
+              content: close-quote;
+          }
+        p {
+            font-style: italic;
+            text-align: center;
+            font-size: 21px;
+            line-height: 130%;
+        }
+    }
+
+    .blog-content {
+        /* Styles for:
+        ** - Using IMG tag inside a container
+        ------------------------------------------ */
+        /* The image container */
+        figure.card-thumbnail {
+            position: relative;
+            overflow: hidden;  
+            display: flex;
+            justify-content: center; /* horizontal center */
+            align-items: center; /* vertical center */
+            @include flexColumn;
+            width: 100%; /* Thumbnail dimensions. */
+            height: 100%; /*** Change the height to make the image smaller ***/
+            margin: 0;
+            border-radius: $size-32;
+            img {
+                height: 400px;
+                width: 100%;
+                object-fit: cover;
+            }
+            /* Styles the title inside the img container */
+            span.blog-text-container {
+                position: absolute; 
+                left: 0; 
+                bottom: 0;
+                margin: $size-24;
+                background-color: $neutral-100;
+                padding: $size-4 $size-12;
+                border-radius: $size-12;
+                h3 {
+                    color: $neutral-100;
+                }
+                p {
+                    font-size: 15px;
+                    color: $neutral-800;
+                    font-weight: 600;
+                    line-height: 160%;
+                }
+            }
+                
+        }
+        
+
+        // Article card section
+        .blog-text-section {
+            @include flexColumn;
+            gap: $size-12;
+            width: 100%;
+            .row {
+                justify-content: space-between;
+                .blog-text-container {
+                    
+                }
+                .blog-tag-container {
+                    @include flexRow;
+                    justify-content: flex-end;
+                    gap: $size-8;
+                }
+            }
+        }
+    }
+
+    .blog-tag {
+        @include flexColumn;
+        gap: $size-12;
+        .row {
+            gap: $size-12;
+        }
+    }
+
+    @media (min-width: map-get($breakpoints, "xxs")) {
+        
+    }
+    @media (min-width: map-get($breakpoints, "xs")) {
+        
+    }
+    @media (min-width: map-get($breakpoints, "sm")) {
+        
+    }
+    @media (min-width: map-get($breakpoints, "md")) {
+        
+    }
+    @media (min-width: map-get($breakpoints, "lg")) {
+        
+    }
+    @media (min-width: map-get($breakpoints, "xl")) {
+        
+    }
+    @media (min-width: map-get($breakpoints, "xxl")) {
+        
+    }
+
+}

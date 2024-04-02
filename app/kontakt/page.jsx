@@ -5,7 +5,7 @@ import Loading from "../loading";
 import Image from 'next/image'
 import "./_style.scss";
 import "../styles/layout/_layout.scss";
-import { IconImage } from "../utilities/images.js";
+import { Icon } from "../utilities/images.js";
 // import { sendEmail } from "../utilities/sendEmail.jsx";
 
 import Input from '../components/molecules/input/input';
@@ -37,7 +37,7 @@ export default function Contact() {
                   <div className="icon-title">
                     <div className="icon">
                     <Image 
-                        src={IconImage.geoAlt}
+                        src={Icon.geoAlt}
                         alt='geoAlt'
                         quality={100}
                     />
@@ -48,7 +48,7 @@ export default function Contact() {
                 <div className="contact-icon">
                   <div className="icon">
                     <Image 
-                        src={IconImage.envelope}
+                        src={Icon.envelope}
                         alt='geoAlt'
                         quality={100}
                     />
@@ -59,7 +59,7 @@ export default function Contact() {
                   <div className="icon">
                     <div className="icon">
                       <Image 
-                          src={IconImage.telephone}
+                          src={Icon.telephone}
                           alt='geoAlt'
                           quality={100}
                       />

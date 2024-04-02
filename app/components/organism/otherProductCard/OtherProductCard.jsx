@@ -2,7 +2,6 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import "./_otherProductCard.scss";
-import Button from "../../atoms/button/Button";
 
 export default function OtherProductCard({ productDetailsTitle, productDetailsKolicina, productDetailsImageURL, productDetailsImageAlt, productDetailsURL }) {
   return (

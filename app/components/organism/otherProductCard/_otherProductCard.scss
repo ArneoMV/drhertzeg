@@ -7,8 +7,8 @@
 
 a.otherProductCard {
     background-color: $neutral-100;
-    box-shadow: $base-box-shadow;
-    border-radius: $base-border-radius-sm;
+    box-shadow: $base-shadow-3;
+    border-radius: $radius-sm;
     width: 100%;
     box-sizing: border-box;
     overflow: hidden;
@@ -26,9 +26,10 @@ a.otherProductCard {
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: $size-24 0;
         img {
             width: auto;
-            height: auto;
+            height: 100%;
             object-fit: cover;
         }
     }
@@ -63,7 +64,7 @@ a.otherProductCard {
 
 
     @media (min-width: map-get($breakpoints, "xxs")) {
-        border-radius:$base-border-radius-sm;
+        border-radius:$radius-sm;
         @include flexColumn;
         .otherProductCardDetails {
             gap: $gap-sm;
@@ -71,28 +72,28 @@ a.otherProductCard {
         }
     }
     @media (min-width: map-get($breakpoints, "xs")) {
-        border-radius:$base-border-radius-sm;
+        border-radius:$radius-sm;
         @include flexColumn;
     }
     @media (min-width: map-get($breakpoints, "sm")) {
-        border-radius:$base-border-radius-sm;
+        border-radius:$radius-sm;
         @include flexColumn;
 
     }
     @media (min-width: map-get($breakpoints, "md")) {
-        border-radius:$base-border-radius-sm;
+        border-radius:$radius-sm;
         @include flexColumn;
     }
     @media (min-width: map-get($breakpoints, "lg")) {
-        border-radius:$base-border-radius-md;
+        border-radius:$radius-md;
         @include flexColumn;
     }
     @media (min-width: map-get($breakpoints, "xl")) {
-        border-radius:$base-border-radius-md;
+        border-radius:$radius-md;
         @include flexColumn;
     }
     @media (min-width: map-get($breakpoints, "xxl")) {
-        border-radius:$base-border-radius-md;
+        border-radius:$radius-md;
         @include flexColumn;
     }
 

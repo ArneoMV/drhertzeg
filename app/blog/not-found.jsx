@@ -5,7 +5,7 @@ export default function NotFound() {
     <main className='text-center'>
         <h2 className='text-3xl'>We hit a brick wall.</h2>
         <p>We coulkd not found the ticket you were looking for.</p>
-        <p>Go back to all <Link href="/blogs">products</Link></p>
+        <p>Go back to all <Link href="/cosmetics">teas</Link></p>
         
     </main>
   )

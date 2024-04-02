@@ -140,7 +140,8 @@ export default function FormContainer({className}) {
           </label>
           <textarea
             name="message"
-            value={formik.values.message}
+            // value={formik.values.message}
+            onChange={(e) => formik.setFieldValue('message', e.target.value)}
             onBlur={formik.handleBlur}
             rows="4" 
             cols="50"

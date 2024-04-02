@@ -53,10 +53,11 @@ $gap-xl: 64px;
 $gap-xxl: 128px;
 
 // border-radius
-$base-border-radius-xm: 8px;
-$base-border-radius-sm: 16px;
-$base-border-radius-md: 32px;
-$base-border-radius-lg: 64px;
+$radius-xm: 8px;
+$radius-sm: 16px;
+$radius-md: 32px;
+$radius-lg: 64px;
+$radius-xxl: 999px;
 
 
 // font-sizes
@@ -77,5 +78,8 @@ $shadow-sm: 1px 1px 4px 0px rgba(22, 24, 27, 0.16);
 $shadow-md: 1px 1px 4px 0px rgba(22, 24, 27, 0.13);
 $shadow-lg: 1px 5px 30px 0px rgba(22, 24, 27, 0.1);
 
-// box-shadow
-$base-box-shadow: 0 6px 38px rgba(0, 0, 0, .07);
+
+$base-shadow-1: 1px 3px 30px rgba(52, 52, 52, 0.15);
+$base-shadow-2: 1px 3px 16px 0px rgba(240, 235, 235, 0.15);
+$base-shadow-3: 0 6px 38px rgba(0, 0, 0, .07);
+$base-shadow-4: 0 6px 38px rgba(0, 0, 0, .07);

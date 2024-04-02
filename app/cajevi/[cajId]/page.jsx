@@ -140,7 +140,7 @@ export default async function CajDetails({ params }) {
             productDetailsKolicina="50g"
             productDetailsImageURL="/images/cajBiljka/cajBiljka_1.png"
             productDetailsImageAlt="Smokvin List"
-            productDetailsURL="/cajevi/1"
+            productDetailsURL="/cajevi/smokvinList"
           />
           <OtherProductCard
             productDetailsTitle="Slatki pelin"

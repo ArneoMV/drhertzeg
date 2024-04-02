@@ -83,6 +83,9 @@
             // width: auto;
             text-decoration: none;
         }
+        .otherProductCard {
+
+        }
     }
     
 
@@ -188,18 +191,13 @@
         }
 
         section.otherProductContainer { 
-            margin: 0 $margin-md;
-            @include flexRow;
-            gap: $gap-md;
-            flex-wrap: nowrap;
-            justify-content: flex-start;
+            margin: 0 $size-98;
         }
     }
     @media (min-width: map-get($breakpoints, "md")) {
         // background-color: purple;
         .heroContainer {
             .heroAsset {
-
                 padding-bottom: 3rem;
             }
 
@@ -208,13 +206,13 @@
                 grid-area: 1 / 1;
                 justify-content: flex-end;
                 .heroContentInner {
-                    margin: 0 $margin-xmd;
+                    margin: 0 $size-98;
                     .heroContent_heading {
                         grid-area: span 1 / span 10;
                         padding: $padding-lg;
                         background-color: $neutral-100;
                         box-shadow: $shadow-lg;
-                        border-radius: $base-border-radius-md;
+                        border-radius: $radius-md;
     
                     }
                 }
@@ -222,11 +220,15 @@
         }
 
         section.otherProductContainer { 
-            margin: 0 $margin-xmd;
+            margin: 0 $size-98;
             @include flexRow;
             gap: $gap-md;
-            flex-wrap: nowrap;
-            
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            .otherProductCard {
+                width: 260px;
+            }
         }
     }
     @media (min-width: map-get($breakpoints, "lg")) {
@@ -248,25 +250,32 @@
                 grid-area: 1 / 1;
                 justify-content: flex-end;
                 .heroContentInner {
-                    margin: 0 $margin-xmd;
+                    margin: 0 $size-128;
                     .heroContent_heading {
                         grid-area: span 1 / span 8;
                         padding: $padding-lg;
                         background-color: $neutral-100;
                         box-shadow: $shadow-lg;
-                        border-radius: $base-border-radius-md;
+                        border-radius: $radius-md;
     
                     }
                 }
             }
         }
-
         section.otherProductContainer { 
-            margin: 0 $margin-xmd;
-            @include flexRow;
-            gap: $gap-md;
-            flex-wrap: nowrap;
-            
+            margin: 0 $size-128;
+
+            section.otherProductContainer { 
+                margin: 0 $size-192;
+                @include flexRow;
+                gap: $gap-md;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                .otherProductCard {
+                    width: 260px;
+                }
+            }
         }
     }
     @media (min-width: map-get($breakpoints, "xl")) {
@@ -282,33 +291,35 @@
                     }
                 }
             }
-
             .heroContent {
                 position: absolute;
                 grid-area: 1 / 1;
                 justify-content: flex-end;
                 .heroContentInner {
-                    margin: 0 $margin-lg;
+                    margin: 0 $size-128;
                     .heroContent_heading {
                         grid-area: span 1 / span 8;
                         padding: $padding-lg;
                         background-color: $neutral-100;
                         box-shadow: $shadow-lg;
-                        border-radius: $base-border-radius-md;
+                        border-radius: $radius-md;
     
                     }
                 }
             }
         }
-
         section.otherProductContainer { 
-            margin: 0 $margin-lg;
+            margin: 0 $size-192;
             @include flexRow;
             gap: $gap-md;
-            flex-wrap: nowrap;
-            width: auto;
-            
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            .otherProductCard {
+                width: 278px;
+            }
         }
+
     }
     @media (min-width: map-get($breakpoints, "xxl")) {
         // background-color: $neutral-700;
@@ -329,25 +340,28 @@
                 grid-area: 1 / 1;
                 justify-content: flex-end;
                 .heroContentInner {
-                    margin: 0 $margin-lg;
+                    margin: 0 $size-192;
                     .heroContent_heading {
                         grid-area: span 1 / span 6;
                         padding: $padding-lg;
                         background-color: $neutral-100;
                         box-shadow: $shadow-lg;
-                        border-radius: $base-border-radius-md;
+                        border-radius: $radius-md;
     
                     }
                 }
             }
         }
-
         section.otherProductContainer { 
-            margin: 0 $margin-lg;
+            margin: 0 $size-192;
             @include flexRow;
             gap: $gap-md;
+            flex-direction: row;
             flex-wrap: nowrap;
-            width: auto;
+            justify-content: flex-start;
+            .otherProductCard {
+                width: 100%;
+            }
         }
     }
 }
