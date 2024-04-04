@@ -5,58 +5,76 @@
 
 
 
-a.otherProductCard {
+a.product-card-link {
     background-color: $neutral-100;
-    box-shadow: $base-shadow-3;
-    border-radius: $radius-sm;
+    outline: 1px solid $neutral-100;
+    border-radius: $size-16;
     width: 100%;
     box-sizing: border-box;
     overflow: hidden;
-    outline: 1px solid $neutral-100;
-    @include flexRow;
 
+    @include flexColumn;
     a {
         text-decoration: none;
         box-sizing: border-box;
     }
-    .otherProductCardImage {
+    .product-card-image {
         width: auto;
-        height: 166px;
-        background-color: $neutral-200;
+        height: auto;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: $size-24 0;
+        padding: $size-48 0;
         img {
             width: auto;
-            height: 100%;
+            height: 160px;
             object-fit: cover;
         }
     }
-    .otherProductCardDetails {
+    .product-card-content {
         width: auto;
         height: auto;
         @include flexColumn;
-        padding: $padding-md;
-        gap: $gap-sm;
+        gap: $size-24;
         justify-content: space-between;
+        padding: $size-24;
+        box-sizing: border-box;
 
-        h5 {
-            color: $primary-600;
-            font-weight: bold;
-        }
-        h5, p {
-            color: $neutral-900;
+        .product-card-content-title {
+            @include flexColumn;
+            gap: $size-12;
+            h5, p {
+                text-align: center;
             }
+            h5 {
+                color: $primary-600;
+                font-weight: bold;
+                font-size: 32px;
+            }
+            p {
+                font-size: 26px;
+                color: $primary-900;
+            }
+        }
+        .product-card-content-chips {
+            @include flexRow;
+            gap: $size-12;
+            justify-content: center;
+        }
+       
     }
 
     &:hover {
         outline: 1px solid $primary-300;
-
-        transition: outline 0.3s;
-
+        transition: outline 0.2s;
         box-sizing: border-box;
-        box-shadow: $shadow-md;
+        box-shadow: $base-shadow-4;
+        .product-card-image  {
+            img {
+                transition: scale 0.2s;
+                scale: 1.06;
+            }
+        }
         h5 {
             color: $primary-500;
         }
@@ -65,35 +83,23 @@ a.otherProductCard {
 
     @media (min-width: map-get($breakpoints, "xxs")) {
         border-radius:$radius-sm;
-        @include flexColumn;
-        .otherProductCardDetails {
-            gap: $gap-sm;
-            padding: $padding-xmd;
-        }
     }
     @media (min-width: map-get($breakpoints, "xs")) {
         border-radius:$radius-sm;
-        @include flexColumn;
     }
     @media (min-width: map-get($breakpoints, "sm")) {
         border-radius:$radius-sm;
-        @include flexColumn;
-
     }
     @media (min-width: map-get($breakpoints, "md")) {
         border-radius:$radius-sm;
-        @include flexColumn;
     }
     @media (min-width: map-get($breakpoints, "lg")) {
         border-radius:$radius-md;
-        @include flexColumn;
     }
     @media (min-width: map-get($breakpoints, "xl")) {
         border-radius:$radius-md;
-        @include flexColumn;
     }
     @media (min-width: map-get($breakpoints, "xxl")) {
         border-radius:$radius-md;
-        @include flexColumn;
     }
 }

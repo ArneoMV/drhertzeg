@@ -4,7 +4,7 @@ import Loading from "../loading";
 // import { Metadata } from "next";
 import Image from 'next/image'
 import "./_style.scss";
-import "../styles/layout/_layout.scss";
+// import "../styles/layout/_layout.scss";
 import { Icon } from "../utilities/images.js";
 // import { sendEmail } from "../utilities/sendEmail.jsx";
 

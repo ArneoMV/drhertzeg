@@ -1,7 +1,7 @@
 
 import { Metadata } from 'next'
 
-import Tabs from "./components/molecules/tab/Tabs";
+// import Tabs from "./components/molecules/tab/Tabs";
 import Chip from "./components/atoms/chip/Chip";
 import Button from "./components/atoms/button/Button";
 import ScrollSocial from "./components/organism/scrollSocial/ScrollSocial";
@@ -53,7 +53,7 @@ export default function Page() {
       </section>
 
       <section className='products'>
-        <Tabs />
+        {/* <Tabs /> */}
       </section>
 
       <section className="blogHomepage postBackground">
@@ -69,7 +69,8 @@ export default function Page() {
             <Link href="/blog">
               <Button 
                 className="primary" 
-                type="iconRight" iconName="chevronCompactRightLight">
+                type="iconRight" 
+                iconName="chevronCompactRightLight">
                 Pročitaj više
               </Button>
             </Link>

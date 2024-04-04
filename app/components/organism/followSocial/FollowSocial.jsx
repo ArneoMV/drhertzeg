@@ -16,7 +16,7 @@ import Social4 from '../../../assets/image/social/Image4.png'
 
 export default function FollowSocial() {
   return (
-    <section className="followSocial">
+    <section className="follow-social">
         <div className="followSocialContainer">
             <div className="followSocialTitle">
                 <h4>Pratite nas na društvenim mrezama</h4>
@@ -72,7 +72,6 @@ export default function FollowSocial() {
                 />
             </div> 
         </div>
-        
     </section>
   )
 }

@@ -1,13 +1,14 @@
 @use '../../../styles/layout/_breakpoint' as *;
+@use '../../../styles/layout/_layout' as *;
 @use '../../../styles/base/_variable' as *;
 @use '../../../styles/abstract/_color' as *;
 @use '../../../styles/base/_mixin' as *;
 
 
 
-.followSocial {
+.follow-social {
+    @include flexRow;
     background-color: $primary-100;
-    padding: $padding-xl;
     position: relative;
     @include flexRow;
     justify-content: space-around;
@@ -53,26 +54,25 @@
     }
 
 
-
     @media (min-width: map-get($breakpoints, "xxs")) {
-        // background-color: pink;
+        padding: calc($size-48 + 28px) $margin-sm;
     }
     @media (min-width: map-get($breakpoints, "xs")) {
-        // background-color: goldenrod;
+        padding: calc($size-48 + 28px) $margin-md;
     }
     @media (min-width: map-get($breakpoints, "sm")) {
-        // background-color: red;
+        padding: calc($size-48 + 28px) $size-98;
     }
     @media (min-width: map-get($breakpoints, "md")) {
-        // background-color: purple;
+        padding: calc($size-48 + 28px) $size-98;
     }
     @media (min-width: map-get($breakpoints, "lg")) {
-        // background-color: blue;
+        padding: calc($size-48 + 28px) $size-128;
     }
     @media (min-width: map-get($breakpoints, "xl")) {
-        // background-color: brown;
+        padding: calc($size-48 + 28px) $size-128;
     }
     @media (min-width: map-get($breakpoints, "xxl")) {
-        // background-color: $neutral-900;
+        padding: calc($size-48 + 28px) $size-192;
     }
 }

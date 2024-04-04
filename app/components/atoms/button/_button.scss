@@ -5,9 +5,9 @@
 @mixin Button {
   height: 48px;
   max-width: fit-content;
-  padding: 0 $padding-lg;
+  padding: 0 $size-24;
   border: none;
-  border-radius: $radius-sm;
+  border-radius: $size-12;
   cursor: pointer;
   // text-transform: uppercase;
 
@@ -19,16 +19,21 @@
   text-align: left;
 }
 
+a .button {
+  text-decoration: none;
+}
+
 .button.primary {
   @include Button();
-  background-color: $primary-700;
+  background-color: $primary-500;
   display: flex;
   align-items: center;
   gap: $gap-sm;
+
   &:hover {
     box-sizing: border-box;
     box-shadow: $shadow-sm;
-    background-color: $primary-800;
+    background-color: $primary-600;
     box-shadow: $shadow-lg;
   }
   &:focus {
@@ -52,20 +57,21 @@
 .button.secondary {
   @include Button();
   background-color: transparent;
-  color: $primary-600;
-  border: 2px solid $primary-300;
+  color: $neutral-800;
+  border: 1px solid $neutral-800;
 
   &:hover {
-    background-color: $neutral-100;
-    box-shadow: $shadow-sm;
-    color: $primary-600;
-    border: 2px solid $primary-300;
+    background-color: transparent;
+    box-shadow: $base-shadow-4;
+    color: $neutral-800;
+    border: 2px solid $neutral-800;
+    text-decoration: underline;
   }
   &:focus {
     background-color: $neutral-100;
     box-shadow: $shadow-sm;
     color: $primary-600;
-    border: 2px solid $primary-300;
+    border: 2px solid $neutral-300;
   }
   &:disabled {
     background-color: transparent;
@@ -80,11 +86,11 @@
   border: none;
   cursor: pointer;
   height: auto;
-  font-family: "Rubik", sans-serif;
-  color: $primary-600;
-  font-size: 14px;
+  font-family: "Work Sans", sans-serif;
+  color: $primary-900;
+  font-size: 18px;
   font-weight: 500;
-  line-height: 1.4;
+  line-height: 115%;
   letter-spacing: 0.07em;
   text-align: left;
   background-color: transparent;
@@ -94,6 +100,7 @@
     background-color: transparent;
     color: $primary-600;
     text-decoration: underline;
+    font-weight: 600;
   }
   &:focus {
     background-color: transparent;

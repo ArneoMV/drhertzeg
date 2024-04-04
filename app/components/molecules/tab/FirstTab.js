@@ -1,6 +1,6 @@
 import React from "react";
 import './_firstTab.scss';
-import ProductCard from '../../../components/organism/productCard/ProductCard'
+import ProductCard from '../../organism/productCard/productCard'
 import CajDetox from '../../../assets/image/product/Proizvod_Detox.png'
 import CajEnergija from '../../../assets/image/product/Proizvod_Energija.png'
 import CajImuno from '../../../assets/image/product/Proizvod_Imuno.png'

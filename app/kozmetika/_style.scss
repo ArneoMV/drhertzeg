@@ -2,356 +2,148 @@
 @use '../styles/abstract/_color' as *;
 @use '../styles/abstract/_typo' as *;
 @use '../styles/layout/_breakpoint' as *;
+@use '../styles/layout/_layout' as *;
 @use '../styles/base/_mixin' as *;
 
 
-.productPage {
-    width: auto;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    gap: $gap-xl;
-    .heroContainer{
-        position: relative; 
-        display: grid;
-        // gap: $gap-md;
-        grid-template-columns: 1fr;
-        .heroAsset {
-            grid-area: 1 / 1;
-            align-items: flex-end;
-            padding-bottom: 0;
-            .heroAsset_inner {
-                height: 25rem;
-                margin-bottom: 0px;
-                position: relative;
-                overflow: hidden;
-                .heroAsset_asset {
-                    width: 100%;
-                    height: 100%;
-                    position: absolute;
-                    top: 0px;
-                    left: 0px;
-                    padding-bottom: 0px;
-                    object-fit: cover;
-                    object-position: right center;
-                    img {
-                        width: 100%;
-                        height: 100%;
-                        // position: absolute;
-                        top: 0px;
-                        left: 0px;
-                        object-fit: cover;
-                        object-position: center center;
-                    }
-                }
-            }
-            
-        }
-        .heroContent {
-            height: 100%;
-            position: relative;
-            grid-area: auto;
-            justify-content: flex-start;
-            top: 0;
-            left: 0;
-            display: flex;
-            flex-direction: column;
-            .heroContentInner {
-                max-width: none;
-                display: grid;
-                grid-template-columns: repeat(12, 1fr);
-                // gap: 2.5rem;
-                margin: 0 $margin-sm;
-                .heroContent_heading {
-                    grid-area: span 1 / span 12;
-                    padding: 0;
-                    background-color: transparent;
-                    box-shadow: none;
-                    border-radius: 0;
-                    max-width: 62.5rem;
-                }
-            }
-        }
-    }
-
-    .otherProductContainer {
+.products-page {
+    .products-page-container {
+        @include layout-container;
         @include flexColumn;
-        justify-content: space-between;
-        gap: $gap-sm;
-        box-sizing: border-box;
-        a {
-            // width: auto;
-            text-decoration: none;
-        }
-        .otherProductCard {
-            max-width: 420px;
-        }
-    }
-    
+        width: auto;
+        height: auto;
+        gap: $size-24;
+        background-color: $neutral-300;
 
-    section.otherProductContainer { margin: 0 $margin-sm; }
+        .product-promotion {
+            @include flexRow;
+            gap: $size-24;
+            width: 100%;
+            .product-promotion-card {
+                width: 100%;
+                height: 250px;
+                box-sizing: border-box;
+                overflow: hidden;
+                
+                &:nth-child(1) { 
+                    background-color: $primary-100;
+                    outline: 1px solid $primary-100;
+                    &:hover {
+                        outline: 1px solid $primary-300;
+                        transition: outline 0.3s;
+                    }
+                 }
+                &:nth-child(2) { 
+                    background-color: $blue-100;
+                    outline: 1px solid $blue-100;
+                    &:hover {
+                        outline: 1px solid $blue-300;
+                        transition: outline 0.3s;
+                    }
+                 }
+                &:nth-child(3) { 
+                    background-color: $orange-100;
+                    outline: 1px solid $orange-100;
+                    &:hover {
+                        outline: 1px solid $orange-300;
+                        transition: outline 0.3s;
+                    }
+                 }
+                @include flexRow;
+                gap: $size-24;
+                border-radius: $size-16;
+                padding: $size-24;
+                box-sizing: border-box;
 
-    @media (min-width: map-get($breakpoints, "xxs")) {
-        // background-color: pink;
-        gap: $gap-xl;
-        .heroContainer {
-            // gap: $gap-md;
-            .heroAsset {
-                padding-bottom: 0;
-            }
-
-            .heroContent {
-                position: relative;
-                grid-area: auto;
-                justify-content: flex-start;
-                .heroContentInner {
-                    margin: 0 $margin-sm;
-                    .heroContent_heading {
-                        grid-area: span 1 / span 12;
-                        padding: 0;
-                        background-color: transparent;
-                        box-shadow: none;
-                        border-radius: 0;
-    
+                .promotion-content {
+                    @include flexColumn;
+                    justify-content: space-between;
+                    .promotion-content-title {
+                        @include flexColumn;
+                        gap: $size-8;
+                    }
+                    a {
+                        text-decoration: none;
                     }
                 }
+                .promotion-image {
+                    width: 100%;
+                    display: grid;
+                    img {
+                        place-self: center;
+                        height: auto;
+                        width: auto;
+                        object-fit: cover;
+                    }
+                }
+                &:hover {
+                    box-shadow: $base-shadow-4;
+                    cursor: pointer;
+                    .promotion-image {
+                        transition: scale 0.2s;
+                        scale: 1.06;
+                    }
+                }   
             }
         }
 
-        section.otherProductContainer { 
-            margin: 0 $margin-sm;
+        .product-cards {
             @include flexColumn;
-            gap: $gap-sm;
+            gap: $size-24;
+            .product-cards-title {
+                h2 {
+                    text-align: center;
+                }
+            }
+            .product-cards-container {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                gap: $size-24;
+                box-sizing: border-box;
+                a {
+                    // width: auto;
+                    text-decoration: none;
+                }
+                .otherProductCard {
+                    max-width: 420px;
+                }
+            }
         }
         
-    }
-    @media (min-width: map-get($breakpoints, "xs")) {
-        // background-color: goldenrod;
-        gap: $gap-xl;
-        .heroContainer {
-            gap: $gap-lg;
-            .heroAsset {
-                padding-bottom: 0;
-            }
 
-            .heroContent {
-                position: relative;
-                grid-area: auto;
-                justify-content: flex-start;
-                .heroContentInner {
-                    margin: 0 $margin-md;
-                    .heroContent_heading {
-                        grid-area: span 1 / span 12;
-                        padding: 0;
-                        background-color: transparent;
-                        box-shadow: none;
-                        border-radius: 0;
-    
-                    }
-                }
-            }
-        }
-        section.otherProductContainer { 
-            margin: 0 $margin-md;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: $gap-md;
-        }
-    }
-    @media (min-width: map-get($breakpoints, "sm")) {
-        // background-color: red;
-        .heroContainer {
-            .heroAsset {
-                padding-bottom: 0;
-                .heroAsset_inner {
-                    .heroAsset_asset {
-                        img {
-                            object-position: center bottom;
-                        }
-                    }
-                }
-            }
+        @media (min-width: map-get($breakpoints, "xxs")) {
 
-            .heroContent {
-                position: relative;
-                grid-area: auto;
-                justify-content: flex-start;
-                .heroContentInner {
-                    margin: 0 $margin-md;
-                    .heroContent_heading {
-                        grid-area: span 1 / span 12;
-                        padding: 0;
-                        background-color: transparent;
-                        box-shadow: none;
-                        border-radius: 0;
-    
-                    }
+        }
+        @media (min-width: map-get($breakpoints, "xs")) {
+            .product-cards {
+                .product-cards-container { 
+                    grid-template-columns: 1fr 1fr;
                 }
             }
         }
+        @media (min-width: map-get($breakpoints, "sm")) {
+            .product-cards {
+                .product-cards-container { 
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+        }
+        @media (min-width: map-get($breakpoints, "md")) {
+            .product-cards {
+                .product-cards-container { 
+                    grid-template-columns: repeat(3, 1fr);
+                }
+            }
+        }
+        @media (min-width: map-get($breakpoints, "lg")) {
 
-        section.otherProductContainer { 
-            margin: 0 $size-98;
         }
-    }
-    @media (min-width: map-get($breakpoints, "md")) {
-        // background-color: purple;
-        .heroContainer {
-            .heroAsset {
-                padding-bottom: 3rem;
-            }
+        @media (min-width: map-get($breakpoints, "xl")) {
 
-            .heroContent {
-                position: absolute;
-                grid-area: 1 / 1;
-                justify-content: flex-end;
-                .heroContentInner {
-                    margin: 0 $size-98;
-                    .heroContent_heading {
-                        grid-area: span 1 / span 10;
-                        padding: $padding-lg;
-                        background-color: $neutral-100;
-                        box-shadow: $shadow-lg;
-                        border-radius: $radius-md;
-    
-                    }
-                }
-            }
         }
+        @media (min-width: map-get($breakpoints, "xxl")) {
 
-        section.otherProductContainer { 
-            margin: 0 $size-98;
-            display: grid;
-            gap: $size-24;
-            grid-template-columns: repeat(3, 1fr);
-            .otherProductCard {
-                width: 100%;
-            }
-        }
-    }
-    @media (min-width: map-get($breakpoints, "lg")) {
-        // background-color: blue;
-        .heroContainer {
-            .heroAsset {
-                padding-bottom: 3rem;
-                .heroAsset_inner {
-                    .heroAsset_asset {
-                        img {
-                            object-position: center bottom;
-                        }
-                    }
-                }
-            }
-
-            .heroContent {
-                position: absolute;
-                grid-area: 1 / 1;
-                justify-content: flex-end;
-                .heroContentInner {
-                    margin: 0 $size-128;
-                    .heroContent_heading {
-                        grid-area: span 1 / span 8;
-                        padding: $padding-lg;
-                        background-color: $neutral-100;
-                        box-shadow: $shadow-lg;
-                        border-radius: $radius-md;
-    
-                    }
-                }
-            }
-        }
-        section.otherProductContainer { 
-            margin: 0 $size-128;
-            display: grid;
-            gap: $size-24;
-            grid-template-columns: repeat(4, 1fr);
-            .otherProductCard {
-                width: 100%;
-            }
-        }
-    }
-    @media (min-width: map-get($breakpoints, "xl")) {
-        // background-color: brown;
-        .heroContainer {
-            .heroAsset {
-                padding-bottom: 3rem;
-                .heroAsset_inner {
-                    .heroAsset_asset {
-                        img {
-                            object-position: center bottom;
-                        }
-                    }
-                }
-            }
-            .heroContent {
-                position: absolute;
-                grid-area: 1 / 1;
-                justify-content: flex-end;
-                .heroContentInner {
-                    margin: 0 $size-128;
-                    .heroContent_heading {
-                        grid-area: span 1 / span 8;
-                        padding: $padding-lg;
-                        background-color: $neutral-100;
-                        box-shadow: $shadow-lg;
-                        border-radius: $radius-md;
-    
-                    }
-                }
-            }
-        }
-        section.otherProductContainer { 
-            margin: 0 $size-192;
-            display: grid;
-            gap: $size-24;
-            grid-template-columns: repeat(4, 1fr);
-            .otherProductCard {
-                width: 100%;
-            }
-        }
-
-    }
-    @media (min-width: map-get($breakpoints, "xxl")) {
-        // background-color: $neutral-700;
-        .heroContainer {
-            .heroAsset {
-                padding-bottom: 3rem;
-                .heroAsset_inner {
-                    .heroAsset_asset {
-                        img {
-                            object-position: center bottom;
-                        }
-                    }
-                }
-            }
-
-            .heroContent {
-                position: absolute;
-                grid-area: 1 / 1;
-                justify-content: flex-end;
-                .heroContentInner {
-                    margin: 0 $size-192;
-                    .heroContent_heading {
-                        grid-area: span 1 / span 6;
-                        padding: $padding-lg;
-                        background-color: $neutral-100;
-                        box-shadow: $shadow-lg;
-                        border-radius: $radius-md;
-    
-                    }
-                }
-            }
-        }
-        section.otherProductContainer { 
-            margin: 0 $size-192;
-            display: grid;
-            gap: $size-24;
-            grid-template-columns: repeat(4, 1fr);
-            .otherProductCard {
-                width: 100%;
-            }
         }
     }
 }
-
 

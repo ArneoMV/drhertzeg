@@ -4,12 +4,13 @@
 @use '../../../styles/base/_mixin' as *;
 
 section.productAdCard {
-    margin: 0 $margin-sm;
     @include flexColumn;
     height: auto;
     box-shadow: $base-shadow-3;
     border-radius: $radius-md;
     margin-bottom: $margin-sm;
+    background-color: $neutral-100;
+    width: 100%;
     .productCardDetailsContainer {
         @include flexColumn;
         justify-content: space-evenly;
@@ -83,8 +84,6 @@ section.productAdCard {
     }
 
     @media (min-width: map-get($breakpoints, "xxs")) {
-        // background-color: pink;
-        margin: 0 $margin-sm;
         margin-bottom: $margin-sm;
         .productCardDetailsContainer {
             .table {
@@ -98,8 +97,6 @@ section.productAdCard {
         }
     }
     @media (min-width: map-get($breakpoints, "xs")) {
-        // background-color: goldenrod;
-        margin: 0 $margin-md;
         margin-bottom: $margin-sm;
         .productCardImageContainer {
             img.productCardImageAbsolute {
@@ -108,9 +105,6 @@ section.productAdCard {
         }
     }
     @media (min-width: map-get($breakpoints, "sm")) {
-        // background-color: red;
-        margin: 0 $margin-md;
-
         .productCardImageContainer {
             img.productCardImageAbsolute {
                 display: none;
@@ -119,8 +113,6 @@ section.productAdCard {
         
     }
     @media (min-width: map-get($breakpoints, "md")) {
-        // background-color: purple;
-        margin: 0 $margin-xmd;
         margin-bottom: $margin-md;
         @include flexRow;
         height: 420px;
@@ -161,8 +153,6 @@ section.productAdCard {
         }
     }
     @media (min-width: map-get($breakpoints, "lg")) {
-        // background-color: blue;
-        margin: 0 $margin-xmd;
         margin-bottom: $margin-md;
         @include flexRow;
         height: 420px;
@@ -200,8 +190,6 @@ section.productAdCard {
         }
     }
     @media (min-width: map-get($breakpoints, "xl")) {
-        // background-color: brown;
-        margin: 0 $margin-lg;
         margin-bottom: $margin-md;
         @include flexRow;
         height: 420px;
@@ -239,8 +227,6 @@ section.productAdCard {
         }
     }
     @media (min-width: map-get($breakpoints, "xxl")) {
-        // background-color: $neutral-900;
-        margin: 0 $margin-lg;
         margin-bottom: $margin-md;
         @include flexRow;
         height: 420px;

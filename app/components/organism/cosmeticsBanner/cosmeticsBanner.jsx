@@ -37,11 +37,7 @@ export default function cosmeticsBanner() {
 
             </div>
             <Link href="/blog">
-              <Button 
-                className="primary" 
-                type="iconRight" iconName="chevronCompactRightLight">
-                Pročitaj više
-              </Button>
+                <Button type="secondary">Više</Button>
             </Link>
         </div>
         <div className="productCardImageContainer">

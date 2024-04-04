@@ -1,0 +1,159 @@
+@use '../../../styles/base/_variable' as *;
+@use '../../../styles/abstract/_color' as *;
+@use '../../../styles/abstract/_typo' as *;
+@use '../../../styles/layout/_breakpoint' as *;
+@use '../../../styles/layout/_layout' as *;
+@use '../../../styles/base/_mixin' as *;
+
+$background-rectangle: url('../../../assets/image/background-rectangle.png');
+
+.hero-banner {
+    width: 100%;
+    height: 360px;
+    padding: $size-16;
+    box-sizing: border-box;
+    @include flexRow;
+    background-color: $primary-100;
+    border-radius: $size-16;
+    
+    padding: 0 $size-48;
+    background-image: $background-rectangle;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: top left;
+    .hero-content-title  {
+        width: 100%;
+        @include flexColumn;
+        justify-content: space-between;
+        gap: $size-12;
+        .title-text {
+            @include flexColumn;
+            gap: $size-12;
+        }
+        a {
+            text-decoration: none;
+        }
+        h1 {
+            font-size: 28px;
+        }
+    }
+    .hero-image {
+        width: 100%;
+        width: 100%;
+        padding: $size-48 0 0 0;
+        display: flex;
+        justify-content: center;
+        img {
+            width: auto;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    // Extra Extra Small - pink
+    @media (min-width: map-get($breakpoints, "xxs")) {
+        height: auto; // media xxs
+        padding: $size-24; // media xxs
+        @include flexColumn;
+        border-radius: $size-24;
+
+        .hero-content-title  {
+            align-items: center; // media xxs
+            width: 100%;
+            gap: $size-24; // media xxs
+        }
+    }
+    // Extra Small - golden
+    @media (min-width: map-get($breakpoints, "xs")) {
+        @include flexRow;
+        height: auto;
+        overflow: hidden;
+        box-sizing: content-box;
+        padding: 0 $size-24;
+        border-radius: $size-24;
+        .hero-content-title  {
+            @include flexColumn;
+            padding: $size-24 0;
+            align-items: flex-start;
+            width: 100%;
+            gap: $size-24;
+            h1 {
+                font-size: 32px;
+            }
+        }
+        .hero-image {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            left: 60px;
+            height: 290px;
+            padding: $size-48 0 0 0;
+            img {
+                width: auto;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    // Small - red
+    @media (min-width: map-get($breakpoints, "sm")) {
+
+    }
+    // Medium - purple
+    @media (min-width: map-get($breakpoints, "md")) {
+        @include flexRow;
+        border-radius: $size-24;
+
+        .hero-content-title  {
+            align-items: flex-start;
+            padding: $size-48 0 $size-48 $size-48;
+            width: 100%;
+            gap: $size-24; // media sm
+            max-width: 560px;
+            h1 {
+                font-size: 58px;
+            }
+        }
+        .hero-image {
+            position: relative;
+            left: 60px;
+            bottom: 0;
+            display: block;
+            height: 360px;
+            padding: $size-24 0 0 0;
+            z-index: 99;
+
+        }
+    }
+    // Large - blue
+    @media (min-width: map-get($breakpoints, "lg")) {
+
+    }
+    // Extra Large - brown
+    @media (min-width: map-get($breakpoints, "xl")) {
+
+    }
+    // Extra Extra Large - black
+    @media (min-width: map-get($breakpoints, "xxl")) {
+        height: auto;
+        
+        @include flexRow;
+        border-radius: $size-24;
+
+        .hero-content-title  {
+            align-items: flex-start;
+            padding: $size-64 0 $size-64 $size-98;
+            width: 100%;
+            gap: $size-24; // media sm
+            max-width: 560px;
+            h1 {
+                font-size: 64px;
+            }
+        }
+        .hero-image {
+            height: 420px;
+            padding: $size-48 0 0 0;
+            left: 60px;
+        }
+    }
+}
