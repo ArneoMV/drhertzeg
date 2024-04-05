@@ -4,10 +4,9 @@ import Chip from "../components/atoms/chip/Chip";
 import Icon from "../components/atoms/icon/Icon";
 
 import BannerCosmetics from '../components/organism/bannerCosmetics/bannerCosmetics';
-import PromotionImageGreen from '../assets/image/product/product-promotion-card-green.png'
-import PromotionImageBlue from '../assets/image/product/product-promotion-card-blue.png'
-import PromotionImageOrange from '../assets/image/product/product-promotion-card-orange.png'
+import PlantIcon from '../assets/icon/plant-icon.svg'
 
+import ProductPromotioCard from '../components/organism/productPromotioCard/productPromotioCard';
 import ProductCard from '../components/organism/ProductCard/ProductCard'
 import CosmeticsBanner from '../components/organism/cosmeticsBanner/cosmeticsBanner'
 import Button from '../components/atoms/button/button';
@@ -23,75 +22,59 @@ export default function Caj() {
       <main className="products-page">
         <div className="products-page-container">
 
-          {/* Hero Banner */}
-          <BannerCosmetics />
 
-
-          {/* Promotion cards */}
+          {/* Promotion section */}
           <section className="product-promotion">
-            <div className="product-promotion-card">
-              <div className="promotion-content">
-                <div className="promotion-content-title">
-                  <h4>Njega kože</h4>
-                  <p>Marzipan caramels brownie jelly beans bear claw jelly-o shortbread macaroon candy canes. </p>
-                </div>
-                <Link href="/kozmetika/kozmetikaProduct">
-                  <Button type="link">Više</Button>
-                </Link>
-              </div>
-              <div className="promotion-image">
-                <Image 
-                  src={PromotionImageGreen}
-                  alt='BannerImage'
-                  quality={100}
-                />
-              </div>
+            <BannerCosmetics />
+            
+            <div className="promotion-title col-12-sm col-8md col-8-lg">
+              <h4>Dr Hertzeg</h4>
+              <p>Prepusti se očaravajućoj harmoniji prirode s našom kolekcijom prirodne kozmetike.</p>
             </div>
-
-            <div className="product-promotion-card">
-              <div className="promotion-content">
-                <div className="promotion-content-title">
-                  <h4>Pomlađivanje</h4>
-                  <p>Marzipan caramels brownie jelly beans bear claw jelly-o shortbread macaroon candy canes. </p>
-                </div>
-                <Link href="/kozmetika/kozmetikaProduct">
-                  <Button type="link">Više</Button>
-                </Link>
+            <div className="flex">
+              <div className="column">
+                <h5>Regeneracija</h5>
+                <p>Marzipan caramels brownie jelly beans bear claw jelly-o shortbread macaroon candy canes.</p>
               </div>
-              <div className="promotion-image">
-                <Image 
-                  src={PromotionImageBlue}
-                  alt='BannerImage'
-                  quality={100}
-                />
+              <div className="column">
+                <h5>Pomlađivanje</h5>
+                <p>Marzipan caramels brownie jelly beans bear claw jelly-o shortbread macaroon candy canes.</p>
               </div>
-            </div>
-
-            <div className="product-promotion-card">
-              <div className="promotion-content">
-                <div className="promotion-content-title">
-                  <h4>Regeneracija</h4>
-                  <p>Marzipan caramels brownie jelly beans bear claw jelly-o shortbread macaroon candy canes. </p>
-                </div>
-                <Link href="/kozmetika/kozmetikaProduct">
-                  <Button type="link">Više</Button>
-                </Link>
+              <div className="column">
+                <h5>Njega kože</h5>
+                <p>Marzipan caramels brownie jelly beans bear claw jelly-o shortbread macaroon candy canes.</p>
               </div>
-              <div className="promotion-image">
-                <Image 
-                  src={PromotionImageOrange}
-                  alt='BannerImage'
-                  quality={100}
-                />
+              <div className="column">
+                <h5>Opuštanje</h5>
+                <p>Marzipan caramels brownie jelly beans bear claw jelly-o shortbread macaroon candy canes.</p>
               </div>
             </div>
           </section>
 
           {/* Products container*/}
           <section className="product-cards">
-            <div className="product-cards-title">
-              <h2>Katalog proizvoda</h2>
+            <div className="product-cards-title col-12-sm col-6-md col-6-lg">
+              <div className="column">
+                <h3>Upoznaj proizvode</h3>
+                <p>Marzipan caramels brownie jelly beans bear claw jelly-o shortbread macaroon candy canes.</p>
+              </div>
+              <div className="column">
+                <div className="row">
+                  <Image 
+                    src={PlantIcon}
+                    alt='BannerImage'
+                    quality={100}
+                  />
+                  <p>100% PLANT BASE VEGAN</p>
+                </div>
+                <ul>
+                  <li>Marzipan caramels brownie</li>
+                  <li>Jelly beans bear claw</li>
+                  <li>Shortbread shortbread macaroon candy</li>
+                </ul>
+              </div>
             </div>
+
             <div className="product-cards-container">
               <ProductCard
                 productDetailsTitle="Kapi slatkog pelina"

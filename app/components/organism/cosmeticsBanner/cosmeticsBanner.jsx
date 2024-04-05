@@ -37,7 +37,7 @@ export default function cosmeticsBanner() {
 
             </div>
             <Link href="/blog">
-                <Button type="secondary">Više</Button>
+                <Button type="secondary">Saznaj Više</Button>
             </Link>
         </div>
         <div className="productCardImageContainer">

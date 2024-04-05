@@ -21,6 +21,7 @@ section.productAdCard {
         border-radius: $radius-md;
         a {
             text-decoration: none;
+            margin: 0 auto
         }
         .productCardDetails {
             @include flexColumn;
@@ -28,6 +29,7 @@ section.productAdCard {
             h4 {
                 color: $primary-700;
                 font-weight: bold;
+                max-width: 80%
             }
             .table {
                 @include flexColumn;
@@ -130,6 +132,9 @@ section.productAdCard {
                         }
                     }
                 }
+            }
+            a {
+                margin: 0;
             }
         }
         .productCardImageContainer {

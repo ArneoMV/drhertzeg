@@ -1,0 +1,117 @@
+
+@use '../../../styles/base/_variable' as *;
+@use '../../../styles/abstract/_color' as *;
+@use '../../../styles/abstract/_typo' as *;
+@use '../../../styles/layout/_breakpoint' as *;
+@use '../../../styles/layout/_layout' as *;
+@use '../../../styles/base/_mixin' as *;
+
+
+.product-promotion-card {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    @include flexColumn;
+    gap: $size-24;
+    border-radius: $size-16;
+    padding: $size-24;
+    box-sizing: border-box;
+
+    &:nth-child(1) { 
+        outline: 1px solid $primary-100;
+        &:hover {
+            outline: 1px solid $primary-300;
+            transition: outline 0.3s;
+        }
+    }
+    &:nth-child(2) { 
+        outline: 1px solid $blue-100;
+        &:hover {
+            outline: 1px solid $blue-300;
+            transition: outline 0.3s;
+        }
+    }
+    &:nth-child(3) { 
+        outline: 1px solid $orange-100;
+        &:hover {
+            outline: 1px solid $orange-300;
+            transition: outline 0.3s;
+        }
+    }
+    .promotion-content {
+        @include flexColumn;
+        justify-content: space-between;
+        .promotion-content-title {
+            @include flexColumn;
+            gap: $size-8;
+        }
+        a {
+            text-decoration: none;
+        }
+    }
+    .promotion-image {
+        width: 80px;
+        display: grid;
+        img {
+            place-self: center;
+            height: auto;
+            width: 80px;
+            object-fit: cover;
+        }
+    }
+    &:hover {
+        box-shadow: $base-shadow-4;
+        cursor: pointer;
+        .promotion-image {
+            transition: scale 0.2s;
+            scale: 1.06;
+        }
+    }
+
+
+
+    @media (min-width: map-get($breakpoints, "xxs")) {
+        @include flexColumn;
+    }
+    @media (min-width: map-get($breakpoints, "xs")) {
+
+    }
+    @media (min-width: map-get($breakpoints, "sm")) {
+
+    }
+    @media (min-width: map-get($breakpoints, "md")) {
+
+    }
+    @media (min-width: map-get($breakpoints, "lg")) {
+
+    }
+    @media (min-width: map-get($breakpoints, "xl")) {
+
+    }
+    @media (min-width: map-get($breakpoints, "xxl")) {
+        width: 100%;
+        height: 250px;
+        box-sizing: border-box;
+        overflow: hidden;
+        @include flexRow;
+        gap: $size-24;
+        border-radius: $size-16;
+        padding: $size-24;
+        box-sizing: border-box;
+
+        .promotion-content {
+            @include flexColumn;
+            justify-content: space-between;
+            width: 80%;
+            .promotion-content-title {
+                @include flexColumn;
+                gap: $size-8;
+            }
+        }
+        .promotion-image {
+            width: 20%;
+        }
+   
+    }
+}
