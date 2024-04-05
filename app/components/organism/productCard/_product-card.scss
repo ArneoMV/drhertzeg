@@ -20,15 +20,21 @@ a.product-card-link {
     }
     .product-card-image {
         width: auto;
-        height: auto;
+        height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         padding: $size-48 0;
         img {
             width: auto;
-            height: 160px;
+            height: 200px;
             object-fit: cover;
+        }
+        img.imageHorizontal {
+            height: 150px;
+        }
+        img.imageVertical {
+            height: 250px;
         }
     }
     .product-card-content {
@@ -47,7 +53,7 @@ a.product-card-link {
                 text-align: center;
             }
             h5 {
-                color: $primary-600;
+                color: $neutral-800;
                 font-weight: bold;
                 font-size: 32px;
             }
@@ -76,30 +82,88 @@ a.product-card-link {
             }
         }
         h5 {
-            color: $primary-500;
+            color: $neutral-800;
+            transition: scale 0.2s;
+                scale: 1.06;
         }
     }
 
 
     @media (min-width: map-get($breakpoints, "xxs")) {
         border-radius:$radius-sm;
+        .product-card-image {
+            img.imageHorizontal {
+                height: 150px;
+            }
+            img.imageVertical {
+                height: 250px;
+            }
+        }
     }
     @media (min-width: map-get($breakpoints, "xs")) {
         border-radius:$radius-sm;
+        .product-card-image {
+            img.imageHorizontal {
+                height: 150px;
+            }
+            img.imageVertical {
+                height: 250px;
+            }
+        }
     }
     @media (min-width: map-get($breakpoints, "sm")) {
         border-radius:$radius-sm;
+        .product-card-image {
+            img.imageHorizontal {
+                height: 180px;
+            }
+            img.imageVertical {
+                height: 250px;
+            }
+        }
     }
     @media (min-width: map-get($breakpoints, "md")) {
         border-radius:$radius-sm;
+        .product-card-image {
+            img.imageHorizontal {
+                height: 180px;
+            }
+            img.imageVertical {
+                height: 280px;
+            }
+        }
     }
     @media (min-width: map-get($breakpoints, "lg")) {
         border-radius:$radius-md;
+        .product-card-image {
+            img.imageHorizontal {
+                height: 200px;
+            }
+            img.imageVertical {
+                height: 280px;
+            }
+        }
     }
     @media (min-width: map-get($breakpoints, "xl")) {
         border-radius:$radius-md;
+        .product-card-image {
+            img.imageHorizontal {
+                height: 200px;
+            }
+            img.imageVertical {
+                height: 320px;
+            }
+        }
     }
     @media (min-width: map-get($breakpoints, "xxl")) {
         border-radius:$radius-md;
+        .product-card-image {
+            img.imageHorizontal {
+                height: 220px;
+            }
+            img.imageVertical {
+                height: 350px;
+            }
+        }
     }
 }

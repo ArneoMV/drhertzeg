@@ -1,0 +1,128 @@
+@use '../../styles/base/_variable' as *;
+@use '../../styles/abstract/_color' as *;
+@use '../../styles/abstract/_typo' as *;
+@use '../../styles/layout/_breakpoint' as *;
+@use '../../styles/layout/_layout' as *;
+@use '../../styles/base/_mixin' as *;
+
+main {
+    @include flexColumn;
+    @include layout-container;
+}
+
+.product-page {
+
+    
+    .product-banner {
+        @include flexColumn;
+        background-color: $red-100;
+        padding: $size-64;
+        box-sizing: border-box;
+        border-radius: $size-32;
+        overflow: hidden;
+        .productImage {
+            width: 100%;
+            box-sizing: border-box;
+            @include flexColumn;
+            align-items: center;
+            justify-content: center;
+            img {
+                width: 250px;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+
+        .product-details {
+            @include flexColumn;
+            gap: $gap-md;
+            width: 100%;
+            box-sizing: border-box;
+            h3, p.price {
+                color: $red-900;
+                font-weight: bold;
+            }
+            p.price { font-size: 38px; }
+            p { color: $neutral-800; }
+
+            .row-chips {
+                @include flexRow;
+                gap: $size-12;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                .chip { background-color: $red-200; }
+            }
+
+            .product-details-list {
+                @include flexColumn;
+                gap: $gap-md;
+                .flex {
+                    p {
+                        &:nth-child(1) {
+                            font-weight: 800;
+                        }
+                        &:nth-child(2) {
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    .otherProductContainer {
+        padding-bottom: $padding-xxl; 
+        box-sizing: border-box;
+        margin: 0 $margin-lg;
+        @include flexColumn;
+        align-items: center;
+        gap: $gap-md;
+        .row {
+            @include flexRow;
+            gap: $gap-md;
+            justify-content: space-between;
+            width: 100%;
+        }
+    }
+
+
+    @media (min-width: map-get($breakpoints, "xs")) {
+        .product-banner {
+            @include flexColumn;
+            padding: $size-48;
+            border-radius: $size-32;
+            .productImage {
+
+            }
+
+            .product-details {
+
+            }
+        }   
+    }
+    @media (min-width: map-get($breakpoints, "sm")) {
+
+    }
+    @media (min-width: map-get($breakpoints, "md")) {
+        .product-banner {
+            @include flexRow;
+            padding: $size-64;
+            .productImage {
+
+            }
+
+            .product-details {
+
+            }
+        } 
+    }
+    @media (min-width: map-get($breakpoints, "lg")) {
+
+    }
+    @media (min-width: map-get($breakpoints, "xl")) {
+
+    }
+    @media (min-width: map-get($breakpoints, "xxl")) {
+    }
+}

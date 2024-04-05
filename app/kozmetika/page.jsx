@@ -77,93 +77,103 @@ export default function Caj() {
 
             <div className="product-cards-container">
               <ProductCard
-                productDetailsTitle="Kapi slatkog pelina"
+                productDetailsTitle="Calming gel"
                 productDetailsPrice="4 €"
-                productDetailsImageURL="/images/product/kozmetika-product-1.png"
+                productDetailsImageURL="/images/product/kozmetika_calming_gel.png"
                 productDetailsImageAlt="Kapi slatkog pelina"
                 productDetailsURL="/kozmetika/kozmetikaProduct"
                 productChips1="Protuupalno"
                 productChips2="Opušta"
+                imageClass="imageVertical"
               />
               <ProductCard
-                productDetailsTitle="Gel za smirenje"
+                productDetailsTitle="Care & massage oil"
                 productDetailsPrice="3.8 €"
-                productDetailsImageURL="/images/product/kozmetika-product-5.png"
+                productDetailsImageURL="/images/product/kozmetika_care_and_massage_oil.png"
                 productDetailsImageAlt="Gel za smirenje"
                 productDetailsURL="/kozmetika/kozmetikaProduct"
                 productChips1="Protuupalno"
                 productChips2="Opušta"
+                imageClass="imageVertical"
               />
               <ProductCard
-                productDetailsTitle="Jačanje kose"
+                productDetailsTitle="Hair boost"
                 productDetailsPrice="3.5 €"
-                productDetailsImageURL="/images/product/kozmetika-product-4.png"
+                productDetailsImageURL="/images/product/kozmetika_hair_boost.png"
                 productDetailsImageAlt="Jačanje kos"
                 productDetailsURL="/kozmetika/kozmetikaProduct"
                 productChips1="Protuupalno"
                 productChips2="Opušta"
+                imageClass="imageVertical"
               />
               <ProductCard
-                productDetailsTitle="Smiljolat"
+                productDetailsTitle="Hydrating day cream"
                 productDetailsPrice="4.2 €"
-                productDetailsImageURL="/images/product/kozmetika-product-5.png"
+                productDetailsImageURL="/images/product/kozmetika_hydrating_day_cream.png"
                 productDetailsImageAlt="Smiljolat"
                 productDetailsURL="/kozmetika/kozmetikaProduct"
                 productChips1="Protuupalno"
                 productChips2="Opušta"
+                imageClass="imageHorizontal"
               />
               <ProductCard
-                productDetailsTitle="Ulje za njegu i masažu"
+                productDetailsTitle="Kapi od slatkog pelina"
                 productDetailsPrice="3.5 €"
-                productDetailsImageURL="/images/product/kozmetika-product-3.png"
+                productDetailsImageURL="/images/product/kozmetika_kapi_slatki_pelin.png"
                 productDetailsImageAlt="Ulje za njegu i masažu"
                 productDetailsURL="/kozmetika/kozmetikaProduct"
                 productChips1="Protuupalno"
                 productChips2="Opušta"
+                imageClass="imageVertical"
               />
               <ProductCard
-                productDetailsTitle="Serum od smilja"
+                productDetailsTitle="Lavandarat"
                 productDetailsPrice="5 €"
-                productDetailsImageURL="/images/product/kozmetika-product-3.png"
+                productDetailsImageURL="/images/product/kozmetika_lavandarat.png"
                 productDetailsImageAlt="Serum od smilja"
                 productDetailsURL="/kozmetika/kozmetikaProduct"
                 productChips1="Protuupalno"
                 productChips2="Opušta"
+                imageClass="imageVertical"
               />
               <ProductCard
-                productDetailsTitle="Noćna vitaminska krema"
+                productDetailsTitle="Serum od smilja"
                 productDetailsPrice="4 €"
-                productDetailsImageURL="/images/product/kozmetika-product-1.png"
+                productDetailsImageURL="/images/product/kozmetika_serum_od_smilja.png"
                 productDetailsImageAlt="Noćna vitaminska krema"
                 productDetailsURL="/kozmetika/kozmetikaProduct"
                 productChips1="Protuupalno"
                 productChips2="Opušta"
+                imageClass="imageVertical"
               />
               <ProductCard
-                productDetailsTitle="Hidratantna dnevna krema"
+                productDetailsTitle="Smiljolat"
                 productDetailsPrice="2.7 €"
-                productDetailsImageURL="/images/product/kozmetika-product-4.png"
+                productDetailsImageURL="/images/product/kozmetika_smiljolat.png"
                 productDetailsImageAlt="Hidratantna dnevna krema"
                 productDetailsURL="/kozmetika/kozmetikaProduct"
                 productChips1="Protuupalno"
                 productChips2="Opušta"
+                imageClass="imageVertical"
               />
               <ProductCard
-                productDetailsTitle="Lavandorat"
+                productDetailsTitle="Vitamin night cream"
                 productDetailsPrice="3.5 €"
-                productDetailsImageURL="/images/product/kozmetika-product-5.png"
+                productDetailsImageURL="/images/product/kozmetika_vitamin_night_creeam.png"
                 productDetailsImageAlt="Lavandorat"
                 productDetailsURL="/kozmetika/kozmetikaProduct"
                 productChips1="Protuupalno"
                 productChips2="Opušta"
+                imageClass="imageHorizontal"
               />
             </div>
           </section>
 
           <CosmeticsBanner />
         </div>
-        <FollowSocial />
-        
+        <FollowSocial 
+          sectionStyle="#F7CDC9"
+        />
       </main>
     )
 }

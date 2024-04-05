@@ -11,6 +11,10 @@
 .row {
     @include flexRow;
 }
+body {
+    background-color: $red-100 !important;
+}
+ 
 
 
 .products-page {
@@ -20,7 +24,6 @@
         width: auto;
         height: auto;
         gap: $size-24;
-        background-color: $red-100;
 
         .product-promotion {
             @include flexColumn;

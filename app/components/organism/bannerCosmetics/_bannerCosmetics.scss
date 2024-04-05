@@ -37,6 +37,13 @@ $background-rectangle: url('../../../assets/image/background-rectangle.png');
         h1 {
             font-size: 28px;
         }
+        button {
+            background-color: $red-300;
+            color: $neutral-100;
+            &:hover {
+                background-color: $red-400;
+            }
+        }
     }
     .hero-image {
         width: 100%;

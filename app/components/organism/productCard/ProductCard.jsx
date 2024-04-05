@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Chip from '../../atoms/chip/Chip'
 
-export default function ProductCard({ productDetailsTitle, productDetailsPrice, productDetailsImageURL, productDetailsImageAlt, productDetailsURL, productChips1, productChips2 }) {
+export default function ProductCard({ productDetailsTitle, productDetailsPrice, productDetailsImageURL, productDetailsImageAlt, productDetailsURL, productChips1, productChips2, imageClass }) {
   return (
     <Link href={productDetailsURL} className='product-card-link'>
       <div className="product-card-image">
@@ -14,6 +14,7 @@ export default function ProductCard({ productDetailsTitle, productDetailsPrice, 
           quality={100}
           width={100}
           height={100}
+          className={imageClass}
         />
       </div>
 

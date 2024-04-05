@@ -8,7 +8,7 @@ import Social1 from '../../../assets/image/Social1.png'
 import Social2 from '../../../assets/image/Social2.png'
 import Social3 from '../../../assets/image/Social3.png'
 import Social4 from '../../../assets/image/Social4.png'
-import Social5 from '../../../assets/image/Social5.png'
+import Social5 from '../../../assets/image/Social4.png'
 
 
 function ScrollSocial() {

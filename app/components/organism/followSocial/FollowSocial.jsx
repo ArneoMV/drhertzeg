@@ -14,9 +14,13 @@ import Social3 from '../../../assets/image/social/Image3.png'
 import Social4 from '../../../assets/image/social/Image4.png'
 
 
-export default function FollowSocial() {
+export default function FollowSocial({backgroundColor}) {
+const sectionStyle = {
+    backgroundColor: backgroundColor
+    };
+
   return (
-    <section className="follow-social">
+    <section className="follow-social" style={sectionStyle}>
         <div className="followSocialContainer">
             <div className="followSocialTitle">
                 <h4>Pratite nas na društvenim mrezama</h4>
