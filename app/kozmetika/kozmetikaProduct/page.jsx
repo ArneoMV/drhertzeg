@@ -5,6 +5,8 @@ import './_style.scss';
 import OtherProductCard from '../../components/organism/otherProductCard/OtherProductCard'
 import ProductSlika from "../../assets/image/product/product-promotion-card-red.png"
 import Chip from '@/app/components/atoms/chip/Chip';
+import UserImage from '../../assets/image/user_1.png'
+import ProductPromotioCard from '@/app/components/organism/productPromotioCard/productPromotioCard';
 
 export default function KozmetikaProduct() {
   return (
@@ -41,51 +43,142 @@ export default function KozmetikaProduct() {
             />
           </div>
           <p>Dr Hertzeg kozmetika je ekološki proizvod koji obiluje antioksidansima, bez dodanih umjetnih boja, aroma i konzervansa. Ovaj čaj ima iznimno djelotvoran učinak na dijabetes, pomažući u reguliranju razine šećera u krvi. Dr Hertzeg čaj od smokva lista je bogat antioksidansima i vlaknima, te je također izvor vitamina A, B1 i B2 te brojnih minerala. Sprječavanja pretilosti te regulira razine inzulina, kolesterola i triglicerida.</p>
-          <div className="product-details-list">
-            {/* Sastojci */}
-            <div className="flex">
-              <p>Sastojci:</p>
-              <p>Ficus carica folium</p>
+          
+        </div>
+      </section>
+
+      <div className="product-details-container flex">
+        <div className="product-details-list">
+          {/* Sastojci */}
+          <div className="flex">
+            <p>Sastojci:</p>
+            <p>Ficus carica folium</p>
+          </div>
+          {/* Kolicina */}
+          <div className="flex">
+            <p>Kolicina:</p>
+            <p>50g</p>
+          </div>
+          {/* Nacin uporabe */}
+          <div className="flex">
+            <p>Nacin uporabe:</p>
+            <p>2 g čaja (1 čajna žličica) preliti s 2 dl kipuće vode i ostaviti poklopljeno 10 – 15 minuta. Procijediti i zasladiti po želji. Piti tri puta dnevno poslije obroka.</p>
+          </div>
+          {/* Pomaze kod */}
+          <div className="row">
+            <p>Pomaze kod:</p>
+            <p>Sprječavanja pretilost te regulira razine inzulina, kolesterola i triglicerida. Izvor vitamina A, B1 i B2 te brojnih minerala.</p>
+          </div>
+
+        </div>
+        <div className="product-details-list">
+          {/* Ekoloska proizvodnja */}
+          <div className="flex">
+            <p>Ekoloska proizvodnja:</p>
+            <p>Organic</p>
+          </div>
+          {/* Alergije */}
+          <div className="flex">
+            <p>Alergije:</p>
+            <p>Ne sadrži alergene sastojke koje je potrebno naznačiti</p>
+          </div>
+          {/* Upute */}
+          <div className="flex">
+            <p>Upute za pohranu</p>
+            <p>Čuvati na suhom i tamnom mjestu pri temperaturi do 25 °C</p>
+          </div>
+          {/* Sastojci */}
+          <div className="flex">
+            <p>Zemlja podrijetla</p>
+            <p>Bosna i Hercegovina</p>
+          </div>
+        </div>
+      </div>
+      
+      <div className="reviews">
+        <h4>Customer reviews</h4>
+        <div className="flex">
+          <div className="row">
+            <div className="review-user">
+              <div className="review-user-image">
+                <Image 
+                  src={UserImage}
+                  alt='ProductSlika'
+                  quality={100}
+                  width={100}
+                  height={100}
+                />
+              </div>
+              <div className="review-message">
+                <p>Chocolate candy tiramisu sesame snaps cake lollipop. Donut macaroon oat cake jelly-o gummies jelly topping wafer.</p>
+              </div>
             </div>
-            {/* Kolicina */}
-            <div className="flex">
-              <p>Kolicina:</p>
-              <p>50g</p>
+
+            <div className="review-user">
+              <div className="review-user-image">
+                <Image 
+                  src={UserImage}
+                  alt='ProductSlika'
+                  quality={100}
+                  width={100}
+                  height={100}
+                />
+              </div>
+             
+              <div className="review-message">
+                <p>Chocolate candy tiramisu sesame snaps cake lollipop. Donut macaroon oat cake jelly-o gummies jelly topping wafer.</p>
+              </div>
             </div>
-            {/* Nacin uporabe */}
-            <div className="flex">
-              <p>Nacin uporabe:</p>
-              <p>2 g čaja (1 čajna žličica) preliti s 2 dl kipuće vode i ostaviti poklopljeno 10 – 15 minuta. Procijediti i zasladiti po želji. Piti tri puta dnevno poslije obroka.</p>
+          </div>
+
+          <div className="row">
+            <div className="review-user">
+              <div className="review-user-image">
+                <Image 
+                  src={UserImage}
+                  alt='ProductSlika'
+                  quality={100}
+                  width={100}
+                  height={100}
+                />
+              </div>
+              <div className="review-message">
+                <p>Chocolate candy tiramisu sesame snaps cake lollipop. Donut macaroon oat cake jelly-o gummies jelly topping wafer.</p>
+              </div>
             </div>
-            {/* Pomaze kod */}
-            <div className="row">
-              <p>Pomaze kod:</p>
-              <p>Sprječavanja pretilost te regulira razine inzulina, kolesterola i triglicerida. Izvor vitamina A, B1 i B2 te brojnih minerala.</p>
-            </div>
-            {/* Ekoloska proizvodnja */}
-            <div className="flex">
-              <p>Ekoloska proizvodnja:</p>
-              <p>Organic</p>
-            </div>
-            {/* Alergije */}
-            <div className="flex">
-              <p>Alergije:</p>
-              <p>Ne sadrži alergene sastojke koje je potrebno naznačiti</p>
-            </div>
-            {/* Upute */}
-            <div className="flex">
-              <p>Upute za pohranu</p>
-              <p>Čuvati na suhom i tamnom mjestu pri temperaturi do 25 °C</p>
-            </div>
-            {/* Sastojci */}
-            <div className="flex">
-              <p>Zemlja podrijetla</p>
-              <p>Bosna i Hercegovina</p>
+            <div className="review-user">
+              <div className="review-user-image">
+                <Image 
+                  src={UserImage}
+                  alt='ProductSlika'
+                  quality={100}
+                  width={100}
+                  height={100}
+                />
+              </div>
+              <div className="review-message">
+                <p>Chocolate candy tiramisu sesame snaps cake lollipop. Donut macaroon oat cake jelly-o gummies jelly topping wafer.</p>
+              </div>
             </div>
           </div>
         </div>
+      </div>
+
+      <section>
+        <h4>Ostali proizvodi</h4>
+        <div className="row">
+          <ProductPromotioCard
+            title="Njega kože"
+            description="Marzipan caramels brownie jelly beans bear claw jelly-o shortbread macaroon candy canes."
+            buttonURL="/kozmetika/kozmetikaProduct"
+            imageSRC="/images/kozmetikaProduct/product-promotion-card-red.png"
+            imageALT="Njega kože"
+            backgroundColor=""
+          />
+        </div>
       </section>
-      
+
+  
       {/* <div className="otherProductContainer">
         <h5>Ostali proizvodi</h5>
         <div className="row">

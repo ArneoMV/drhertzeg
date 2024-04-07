@@ -9,10 +9,18 @@ main {
     @include flexColumn;
     @include layout-container;
 }
+.row {
+    @include flexRow;
+}
+.column {
+    @include flexColumn;
+}
+
 
 .product-page {
+    @include flexColumn;
+    gap: $size-48;
 
-    
     .product-banner {
         @include flexColumn;
         background-color: $red-100;
@@ -68,6 +76,79 @@ main {
                 }
             }
 
+        }
+    }
+
+    .product-details-container {
+        @include flexRow;
+        gap: $size-12;
+        .product-details-list {
+            width: 100%;
+            @include flexColumn;
+            gap: $size-12;
+        }
+    }
+
+    .reviews {
+        @include flexColumn;
+        gap: $size-48;
+
+        h4 {
+            text-align: center;
+        }
+        .flex {
+            @include flexColumn;
+            gap: $size-64;
+            .row {
+                @include flexRow;
+                gap: $size-98;
+                &:nth-child(1) {
+                    padding: 0 $size-24;
+                }
+                &:nth-child(2) {
+                    padding: 0 $size-48;
+                }
+                .review-user {
+                    @include flexRow;
+                    gap: $size-24;
+                    align-items: center;
+                    .review-user-image {
+                        height: 90px;
+                        display: grid;
+                        img {
+                            width: 60px;
+                            height: 60px;
+                        }
+                    }
+                    
+                    .review-message {
+                        background-color: $neutral-100;
+                        padding: $size-12;
+                        border-radius: 0 $size-12 $size-12 $size-12;
+                        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);;
+                        box-sizing: border-box;
+	                    position: relative;
+                        &:before {
+                            box-sizing: border-box;
+                            content: '';
+                            position: absolute;
+                            width: 0;
+                            height: 0;
+                            top: 0;
+                            left: -20px;
+                           // border-top: 10px solid transparent;
+                            border-bottom: 20px solid transparent;
+                            border-left: 5px solid transparent;
+                            border-right: 20px solid $neutral-100;
+                            border-radius: 4px;
+                            -webkit-filter: drop-shadow(0 6px 15px rgba(0, 0, 0, 0.1));
+                            filter        : drop-shadow(0 6px 15px rgba(0, 0, 0, 0.1));
+                            -ms-filter    : "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=2, Color='#444')";
+                            filter        : "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=2, Color='#444')";
+                        }
+                    }
+                }
+            }
         }
     }
 
