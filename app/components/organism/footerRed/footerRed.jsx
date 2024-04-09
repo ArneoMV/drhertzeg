@@ -11,11 +11,11 @@ import Organic from '../../../assets/image/Organic.svg'
 import Natural from '../../../assets/image/Natural.svg'
 
 
-import './_footer.scss'
+import './_footerRed.scss'
 
-export default function Footer() {
+export default function FooterRed() {
   return (
-    <footer>
+    <footer className='footerRed'>
       <div className="footer-container">
 
         <div className="footerTop">

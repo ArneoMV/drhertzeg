@@ -11,7 +11,7 @@ import Chip from '../../components/atoms/chip/Chip'
 
 export default function demoArticle() {
   return (
-    <main className="demoArticlePage">
+    <main className="article-page">
 
       {/* Title */}
       <section className="blog-title col-10-sm col-10-md col-10-lg">

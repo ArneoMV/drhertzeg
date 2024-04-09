@@ -5,13 +5,17 @@
 @use '../styles/layout/_layout' as *;
 @use '../styles/base/_mixin' as *;
 
-.blogPage {
+.blog-page {
     width: auto;
     height: auto;
     display: flex;
     flex-direction: column;
-    gap: $gap-xl;
-    .heroContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    gap: $size-98;
+    .hero-container {
         position: relative; 
         display: grid;
         // gap: $gap-md;
@@ -73,15 +77,22 @@
             }
         }
     }
+    
+    main.blog-page-container {
+        @include layout-container;
+        position: relative; 
+        display: grid;
+        gap: $gap-md;
+        grid-template-columns: 1fr;
+    }
 
-    .other-product-container {
+    .blog-article-container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         justify-content: space-between;
         gap: $size-24;
         box-sizing: border-box;
         width: 100%;
-        padding: 0 $margin-sm;
         a {
             // width: auto;
             text-decoration: none;
@@ -92,9 +103,7 @@
     }
 
     @media (min-width: map-get($breakpoints, "xxs")) {
-        // background-color: pink;
-        gap: $gap-xl;
-        .heroContainer {
+        .hero-container {
             // gap: $gap-md;
             .heroAsset {
                 padding-bottom: 0;
@@ -118,14 +127,13 @@
             }
         }
 
-        .other-product-container { 
-            padding: 0 $margin-sm;
+        .blog-article-container { 
+
         }
     }
     @media (min-width: map-get($breakpoints, "xs")) {
-        // background-color: goldenrod;
-        gap: $gap-xl;
-        .heroContainer {
+
+        .hero-container {
             gap: $gap-lg;
             .heroAsset {
                 padding-bottom: 0;
@@ -148,13 +156,13 @@
                 }
             }
         }
-        .other-product-container { 
-            padding: 0 $margin-md;
+        .blog-article-container { 
+
         }
     }
     @media (min-width: map-get($breakpoints, "sm")) {
         // background-color: red;
-        .heroContainer {
+        .hero-container {
             .heroAsset {
                 padding-bottom: 0;
                 .heroAsset_inner {
@@ -184,13 +192,13 @@
             }
         }
 
-        .other-product-container { 
-            padding: 0 $size-98;
+        .blog-article-container { 
+
         }
     }
     @media (min-width: map-get($breakpoints, "md")) {
         // background-color: purple;
-        .heroContainer {
+        .hero-container {
             .heroAsset {
                 padding-bottom: 3rem;
             }
@@ -213,15 +221,14 @@
             }
         }
 
-        .other-product-container { 
-            padding: 0 $size-98;
+        .blog-article-container { 
             grid-template-columns: repeat(2, 1fr);
 
         }
     }
     @media (min-width: map-get($breakpoints, "lg")) {
         // background-color: blue;
-        .heroContainer {
+        .hero-container {
             .heroAsset {
                 padding-bottom: 3rem;
                 .heroAsset_inner {
@@ -250,13 +257,13 @@
                 }
             }
         }
-        .other-product-container { 
-            padding: 0 $size-128;
+        .blog-article-container { 
+
         }
     }
     @media (min-width: map-get($breakpoints, "xl")) {
         // background-color: brown;
-        .heroContainer {
+        .hero-container {
             .heroAsset {
                 padding-bottom: 3rem;
                 .heroAsset_inner {
@@ -284,15 +291,14 @@
                 }
             }
         }
-        .other-product-container { 
-            padding: 0 $size-128;
+        .blog-article-container { 
             grid-template-columns: repeat(3, 1fr);
         }
 
     }
     @media (min-width: map-get($breakpoints, "xxl")) {
         // background-color: $neutral-700;
-        .heroContainer {
+        .hero-container {
             .heroAsset {
                 padding-bottom: 3rem;
                 .heroAsset_inner {
@@ -314,16 +320,15 @@
                         grid-area: span 1 / span 6;
                         padding: $padding-lg;
                         background-color: $neutral-100;
-                        box-shadow: $base-shadow-3;
+                        box-shadow: $shadow-lg;
                         border-radius: $radius-md;
     
                     }
                 }
             }
         }
-        .other-product-container { 
-            padding: 0 $size-192;
-
+        .blog-article-container { 
+            grid-template-columns: repeat(3, 1fr);
         }
     }
 }

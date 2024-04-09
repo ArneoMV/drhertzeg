@@ -13,7 +13,7 @@ import BannerAddPelin from '../components/organism/bannerAddPelin/BannerAddPelin
 import Loading from "../loading";
 import "./_style.scss";
 
-import FollowSocial from "../components/organism/followSocial/FollowSocial";
+import FollowSocial from "../components/organism/followSocialRed/followSocialRed";
 
 export default function Caj() {
     return (

@@ -9,20 +9,20 @@ import PlantIcon from '../assets/icon/plant-icon.svg'
 import ProductPromotioCard from '../components/organism/productPromotioCard/productPromotioCard';
 import ProductCard from '../components/organism/ProductCard/ProductCard'
 import CosmeticsBanner from '../components/organism/cosmeticsBanner/cosmeticsBanner'
+
 import Button from '../components/atoms/button/button';
 import Loading from "../loading";
 import "./_style.scss";
 import "../styles/_index.scss";
 
 
-import FollowSocial from "../components/organism/followSocial/FollowSocial";
+import FollowSocialRed from "../components/organism/followSocialRed/followSocialRed";
+import FooterRed from '../components/organism/footerRed/footerRed';
 
-export default function Caj() {
+export default function Kozmetika() {
     return (
-      <main className="products-page">
-        <div className="products-page-container">
-
-
+      <div className='products-page'>
+        <main className='products-page-container'>
           {/* Promotion section */}
           <section className="product-promotion">
             <BannerCosmetics />
@@ -170,10 +170,9 @@ export default function Caj() {
           </section>
 
           <CosmeticsBanner />
-        </div>
-        <FollowSocial 
-          sectionStyle="#F7CDC9"
-        />
       </main>
-    )
+      <FollowSocialRed />
+      <FooterRed />
+    </div>
+  )
 }

@@ -7,6 +7,9 @@ const Icon = {
   checkFill: require('../assets/icon/check-circle-fill.svg').default,
   calendar: require('../assets/icon/calendar-range.svg').default,
   personCircle: require('../assets/icon/person-circle.svg').default,
+  arrowLeft: require('../assets/icon/chevron-compact-left.svg').default,
+  arrowRight: require('../assets/icon/chevron-compact-right.svg').default,
+  arrowLeftLong: require('../assets/icon/arrow-left.svg').default,
 
 };
 

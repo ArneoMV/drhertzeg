@@ -1,0 +1,68 @@
+@use '../../../styles/layout/_breakpoint' as *;
+@use '../../../styles/base/_variable' as *;
+@use '../../../styles/abstract/_color' as *;
+@use '../../../styles/base/_mixin' as *;
+
+
+.carousel {
+  width: 100%;
+  height: 100%;
+  @include flexColumn;
+  gap: $size-48;
+  justify-content: start;
+  padding-top: $size-48;
+  box-sizing: border-box;
+  
+  .carousel-container {
+    @include flexRow;
+    gap: $size-48;
+    align-items: center;
+    justify-content: center;
+    .carousel-image {
+      width: 350px;
+      display: grid;
+      img {
+        width: auto;
+        height: 300px;
+        object-fit: cover;
+        place-self: center;
+      }
+    }
+    .arrow {
+      cursor: pointer;
+      background-color: $neutral-100;
+      border-radius: 999px;
+      height: $size-48;
+      width: $size-48;
+      display: grid;
+      img {
+        width: 38px;
+        height: auto;
+        place-self: center;
+      }
+    }
+
+  }
+  .dots-container {
+    display: flex;
+    justify-content: center;
+    .dot {
+      margin: 0 3px;
+      cursor: pointer;
+      font-size: 20px;
+    }
+    .dot-default {
+      height: 18px;
+      width: 18px;
+      border-radius: 999px;
+      background-color: $neutral-100;
+    }
+    .dot-active {
+      height: 18px;
+      width: 66px;
+      border-radius: 999px;
+      background-color: $red-400;
+    }
+  }
+
+}  

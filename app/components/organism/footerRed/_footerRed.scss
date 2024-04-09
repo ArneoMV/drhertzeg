@@ -1,0 +1,14 @@
+@use '../../../styles/pages/_footer' as *;
+
+@use '../../../styles/abstract/_color' as *;
+@use '../../../styles/base/_variable' as *;
+@use '../../../styles/base/_mixin' as *;
+
+footer, .footerRed { 
+    @include footer;
+    background-color: $red-300;
+    &::before {
+        background-image: url(../../../assets/image/vawe/vawe-top-red-300.svg);
+
+    }
+}

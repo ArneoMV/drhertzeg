@@ -58,7 +58,7 @@ a.product-card-link {
                 font-size: 32px;
             }
             p {
-                font-size: 26px;
+                font-size: 18px;
                 color: $primary-900;
             }
         }
@@ -71,7 +71,7 @@ a.product-card-link {
     }
 
     &:hover {
-        outline: 1px solid $primary-300;
+        outline: 1px solid $red-300;
         transition: outline 0.2s;
         box-sizing: border-box;
         box-shadow: $base-shadow-4;
@@ -81,11 +81,18 @@ a.product-card-link {
                 scale: 1.06;
             }
         }
-        h5 {
-            color: $neutral-800;
-            transition: scale 0.2s;
-                scale: 1.06;
+        h5, p {
+            color: $red-400;
         }
+        h5 {
+            scale: 1.09;
+            transition: scale, color 0.24s;
+        }
+        p {
+            scale: 1.1;
+            transition: scale 0.24s;
+        }
+
     }
 
 

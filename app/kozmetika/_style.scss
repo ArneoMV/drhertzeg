@@ -18,12 +18,13 @@ body {
 
 
 .products-page {
+    @include flexColumn;
     .products-page-container {
         @include layout-container;
         @include flexColumn;
         width: auto;
         height: auto;
-        gap: $size-24;
+        gap: $size-128;
 
         .product-promotion {
             @include flexColumn;
@@ -130,7 +131,6 @@ body {
         
 
         @media (min-width: map-get($breakpoints, "xxs")) {
-            gap: $size-64;
             .product-promotion {
                 .promotion-title {
                     h4{
@@ -198,7 +198,6 @@ body {
 
         }
         @media (min-width: map-get($breakpoints, "xxl")) {
-            gap: $size-128;
         }
     }
 }

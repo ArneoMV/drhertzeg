@@ -5,6 +5,8 @@ const IconImage = {
   telephone: require('./images/telephone.svg').default,
   check: require('./images/check-2.svg').default,
   checkFill: require('./images/check-circle-fill.svg').default,
+  arrowLeft: require('../../../assets/icon/chevron-compact-left.svg').default,
+  arrowRight: require('../../../assets/icon/chevron-compact-right.svg').default,
 
 };
 

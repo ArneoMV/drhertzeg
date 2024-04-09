@@ -1,224 +1,333 @@
+"use client"
 import React from 'react'
+import { useState } from "react";
+import { useRouter } from 'next/navigation'
 import { notFound } from "next/navigation"
 import Image from 'next/image'
 import './_style.scss';
-import OtherProductCard from '../../components/organism/otherProductCard/OtherProductCard'
 import ProductSlika from "../../assets/image/product/product-promotion-card-red.png"
 import Chip from '@/app/components/atoms/chip/Chip';
 import UserImage from '../../assets/image/user_1.png'
 import ProductPromotioCard from '@/app/components/organism/productPromotioCard/productPromotioCard';
+import Carousel from '../../components/organism/carousel/carousel'
+import CosmeticsBanner from '../../components/organism/cosmeticsBanner/cosmeticsBanner'
+import FooterRed from '../../components/organism/footerRed/footerRed'
+
+
+
+import { Icon } from '../../utilities/images'
+import ProductGreen from '../../assets/image/product/product-promotion-card-green.png'
+import ProductBlue from '../../assets/image/product/product-promotion-card-blue.png'
+import ProductOrange from '../../assets/image/product/product-promotion-card-orange.png'
 
 export default function KozmetikaProduct() {
+  const router = useRouter()
+  // Toggle 
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleCollapse = () => {
+    setIsOpen(!isOpen);
+  };
+
+  // Images
+  const slides = [
+    { url: '/images/product/kozmetika_calming_gel.png', title: 'Product 1' },
+    { url: '/images/product/kozmetika_care_and_massage_oil.png', title: 'Product 2' },
+    { url: '/images/product/kozmetika_hydrating_day_cream.png', title: 'Product 3' },
+  ];
+
+
+
+  // Promotion carousel
+let box;
+
+const btnpressprev = () => {
+    let width = box.clientWidth;
+    box.scrollLeft = box.scrollLeft - width;
+    console.log(width);
+};
+
+const btnpressnext = () => {
+    let width = box.clientWidth;
+    box.scrollLeft = box.scrollLeft + width;
+    console.log(width);
+};
+
+
   return (
-    <main className='product-page'>
-      <section className="product-banner">
-
-        <div className="productImage">
-          <Image 
-            src={ProductSlika}
-            alt='ProductSlika'
-            quality={100}
-            width={100}
-            height={100}
-          />
-        </div>
-        <div className="product-details">
-          <h3>Kozmetika Product</h3>
-          <p className='price'>3.5 €</p>
-          <div className="row-chips">
-            <Chip 
-              text="Protuupalno djelovabnje"
-              colorBg="#FDAC9F"
-              colorText="#330B07"
+    <div className='product-page'>
+      <main className='product-page-contianer'>
+          {/* Back button */}
+          <button className='back-button' type="button" onClick={() => router.back()}>
+            <Image 
+              src={Icon.arrowLeftLong}
+              alt='ProductSlika'
+              quality={100}
+              width={24}
+              height={24}
             />
-            <Chip 
-              text="Umirujući učinak"
-              colorBg="#FDAC9F"
-              colorText="#330B07"
-            />
-            <Chip 
-              text="Smanjenju pigmentacije"
-              colorBg="#FDAC9F"
-              colorText="#330B07"
-            />
-          </div>
-          <p>Dr Hertzeg kozmetika je ekološki proizvod koji obiluje antioksidansima, bez dodanih umjetnih boja, aroma i konzervansa. Ovaj čaj ima iznimno djelotvoran učinak na dijabetes, pomažući u reguliranju razine šećera u krvi. Dr Hertzeg čaj od smokva lista je bogat antioksidansima i vlaknima, te je također izvor vitamina A, B1 i B2 te brojnih minerala. Sprječavanja pretilosti te regulira razine inzulina, kolesterola i triglicerida.</p>
-          
-        </div>
-      </section>
+            <p>Back</p>
+          </button>
+          {/* Product */}
+          <section className="product-banner">
 
-      <div className="product-details-container flex">
-        <div className="product-details-list">
-          {/* Sastojci */}
-          <div className="flex">
-            <p>Sastojci:</p>
-            <p>Ficus carica folium</p>
-          </div>
-          {/* Kolicina */}
-          <div className="flex">
-            <p>Kolicina:</p>
-            <p>50g</p>
-          </div>
-          {/* Nacin uporabe */}
-          <div className="flex">
-            <p>Nacin uporabe:</p>
-            <p>2 g čaja (1 čajna žličica) preliti s 2 dl kipuće vode i ostaviti poklopljeno 10 – 15 minuta. Procijediti i zasladiti po želji. Piti tri puta dnevno poslije obroka.</p>
-          </div>
-          {/* Pomaze kod */}
-          <div className="row">
-            <p>Pomaze kod:</p>
-            <p>Sprječavanja pretilost te regulira razine inzulina, kolesterola i triglicerida. Izvor vitamina A, B1 i B2 te brojnih minerala.</p>
+            <div className="productImage">
+              <Carousel 
+              slides={slides}
+              />
+            </div>
+            <div className="product-details">
+              <h3>Kozmetika Product</h3>
+              <p className='price'>3.5 €</p>
+              <div className="row-chips">
+                <Chip 
+                  text="Protuupalno djelovabnje"
+                  colorBg="#FDAC9F"
+                  colorText="#330B07"
+                />
+                <Chip 
+                  text="Umirujući učinak"
+                  colorBg="#FDAC9F"
+                  colorText="#330B07"
+                />
+                <Chip 
+                  text="Smanjenju pigmentacije"
+                  colorBg="#FDAC9F"
+                  colorText="#330B07"
+                />
+              </div>
+              <p>Dr Hertzeg kozmetika je ekološki proizvod koji obiluje antioksidansima, bez dodanih umjetnih boja, aroma i konzervansa. Ovaj čaj ima iznimno djelotvoran učinak na dijabetes, pomažući u reguliranju razine šećera u krvi. Dr Hertzeg čaj od smokva lista je bogat antioksidansima i vlaknima, te je također izvor vitamina A, B1 i B2 te brojnih minerala. Sprječavanja pretilosti te regulira razine inzulina, kolesterola i triglicerida.</p>
+              {/* Sastojci */}
+              <div className="flex">
+                <p>Sastojci:</p>
+                <p>Ficus carica folium</p>
+              </div>
+              {/* Kolicina */}
+              <div className="flex">
+                <p>Kolicina:</p>
+                <p>50g</p>
+              </div>
+              
+              {/* DROPDOWN */}
+              <div className='product-info-dropdown'>
+                <div className={`kolaps ${isOpen ? "active_Collapse" : ""}`} onClick={toggleCollapse}>
+                  <h5>Informacije o proizvodu</h5>
+                </div>
+                <div
+                  className="kolapsSadrzaj"
+                  style={{
+                    maxHeight: isOpen ? "1000px" : 0,
+                    overflow: "hidden",
+                    transition: "max-height 0.3s ease-in-out",
+                  }}
+                >
+                  <article className="kolapsInner">
+                    {/* Ekoloska proizvodnja */}
+                    <div className="flex">
+                      <p>Ekoloska proizvodnja:</p>
+                      <p>Organic</p>
+                    </div>
+                    {/* Nacin uporabe */}
+                    <div className="flex">
+                      <p>Nacin uporabe:</p>
+                      <p>2 g čaja (1 čajna žličica) preliti s 2 dl kipuće vode i ostaviti poklopljeno 10 – 15 minuta. Procijediti i zasladiti po želji. Piti tri puta dnevno poslije obroka.</p>
+                    </div> 
+                    {/* Pomaze kod */}
+                    <div className="row">
+                      <p>Pomaze kod:</p>
+                      <p>Sprječavanja pretilost te regulira razine inzulina, kolesterola i triglicerida. Izvor vitamina A, B1 i B2 te brojnih minerala.</p>
+                    </div>
+                    {/* Alergije */}
+                    <div className="flex">
+                      <p>Alergije:</p>
+                      <p>Ne sadrži alergene sastojke koje je potrebno naznačiti</p>
+                    </div>
+                    {/* Upute */}
+                    <div className="flex">
+                      <p>Upute za pohranu</p>
+                      <p>Čuvati na suhom i tamnom mjestu pri temperaturi do 25 °C</p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Reviews */}
+          <div className="reviews">
+            <h4>Customer reviews</h4>
+            <div className="flex">
+              <div className="row">
+                <div className="review-user">
+                  <div className="review-user-image">
+                    <Image 
+                      src={UserImage}
+                      alt='ProductSlika'
+                      quality={100}
+                      width={100}
+                      height={100}
+                    />
+                  </div>
+                  <div className="review-message">
+                    <p>Chocolate candy tiramisu sesame snaps cake lollipop. Donut macaroon oat cake jelly-o gummies jelly topping wafer.</p>
+                  </div>
+                </div>
+
+                <div className="review-user">
+                  <div className="review-user-image">
+                    <Image 
+                      src={UserImage}
+                      alt='ProductSlika'
+                      quality={100}
+                      width={100}
+                      height={100}
+                    />
+                  </div>
+                
+                  <div className="review-message">
+                    <p>Chocolate candy tiramisu sesame snaps cake lollipop. Donut macaroon oat cake jelly-o gummies jelly topping wafer.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="row">
+                <div className="review-user">
+                  <div className="review-user-image">
+                    <Image 
+                      src={UserImage}
+                      alt='ProductSlika'
+                      quality={100}
+                      width={100}
+                      height={100}
+                    />
+                  </div>
+                  <div className="review-message">
+                    <p>Chocolate candy tiramisu sesame snaps cake lollipop. Donut macaroon oat cake jelly-o gummies jelly topping wafer.</p>
+                  </div>
+                </div>
+                <div className="review-user">
+                  <div className="review-user-image">
+                    <Image 
+                      src={UserImage}
+                      alt='ProductSlika'
+                      quality={100}
+                      width={100}
+                      height={100}
+                    />
+                  </div>
+                  <div className="review-message">
+                    <p>Chocolate candy tiramisu sesame snaps cake lollipop. Donut macaroon oat cake jelly-o gummies jelly topping wafer.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
-        </div>
-        <div className="product-details-list">
-          {/* Ekoloska proizvodnja */}
-          <div className="flex">
-            <p>Ekoloska proizvodnja:</p>
-            <p>Organic</p>
-          </div>
-          {/* Alergije */}
-          <div className="flex">
-            <p>Alergije:</p>
-            <p>Ne sadrži alergene sastojke koje je potrebno naznačiti</p>
-          </div>
-          {/* Upute */}
-          <div className="flex">
-            <p>Upute za pohranu</p>
-            <p>Čuvati na suhom i tamnom mjestu pri temperaturi do 25 °C</p>
-          </div>
-          {/* Sastojci */}
-          <div className="flex">
-            <p>Zemlja podrijetla</p>
-            <p>Bosna i Hercegovina</p>
-          </div>
-        </div>
-      </div>
-      
-      <div className="reviews">
-        <h4>Customer reviews</h4>
-        <div className="flex">
-          <div className="row">
-            <div className="review-user">
-              <div className="review-user-image">
-                <Image 
-                  src={UserImage}
-                  alt='ProductSlika'
+
+          {/* Ostali proizvodi */}
+          <section className='product-promotion'>
+            <h4>Ostali proizvodi</h4>
+
+            <button className="pre-btn" onClick={() => btnpressprev()}>
+              <Image 
+                  src={Icon.arrowLeft}
+                  alt='arrowLeft'
                   quality={100}
                   width={100}
                   height={100}
-                />
-              </div>
-              <div className="review-message">
-                <p>Chocolate candy tiramisu sesame snaps cake lollipop. Donut macaroon oat cake jelly-o gummies jelly topping wafer.</p>
-              </div>
+              />
+            </button>
+            <button className="next-btn" onClick={() => btnpressnext()}>
+              <Image 
+                src={Icon.arrowRight}
+                alt='arrowRight'
+                quality={100}
+                width={100}
+                height={100}
+              />
+            </button>
+            
+            <div className="product-promotion-container" ref={(ref) => box = ref}>
+              <ProductPromotioCard
+                title="Njega kože"
+                description="Marzipan caramels brownie jelly beans bear claw jelly-o shortbread macaroon candy canes."
+                buttonURL="/kozmetika/kozmetikaProduct"
+                imageSRC={ProductGreen}
+                imageALT="Njega kože"
+                backgroundColor="#D8F3DC"
+                productNumber="1"
+              />
+              <ProductPromotioCard
+                title="Njega kože"
+                description="Marzipan caramels brownie jelly beans bear claw jelly-o shortbread macaroon candy canes."
+                buttonURL="/kozmetika/kozmetikaProduct"
+                imageSRC={ProductBlue}
+                imageALT="Njega kože"
+                backgroundColor="#DFF4F6"
+                productNumber="2"
+              />
+              <ProductPromotioCard
+                title="Njega kože"
+                description="Marzipan caramels brownie jelly beans bear claw jelly-o shortbread macaroon candy canes."
+                buttonURL="/kozmetika/kozmetikaProduct"
+                imageSRC={ProductOrange}
+                imageALT="Njega kože"
+                backgroundColor="#FAEADB"
+                productNumber="3"
+              />
+              <ProductPromotioCard
+                title="Njega kože"
+                description="Marzipan caramels brownie jelly beans bear claw jelly-o shortbread macaroon candy canes."
+                buttonURL="/kozmetika/kozmetikaProduct"
+                imageSRC={ProductGreen}
+                imageALT="Njega kože"
+                backgroundColor="#D8F3DC"
+                productNumber="4"
+              />
+              <ProductPromotioCard
+                title="Njega kože"
+                description="Marzipan caramels brownie jelly beans bear claw jelly-o shortbread macaroon candy canes."
+                buttonURL="/kozmetika/kozmetikaProduct"
+                imageSRC={ProductBlue}
+                imageALT="Njega kože"
+                backgroundColor="#DFF4F6"
+                productNumber="5"
+              />
+              <ProductPromotioCard
+                title="Njega kože"
+                description="Marzipan caramels brownie jelly beans bear claw jelly-o shortbread macaroon candy canes."
+                buttonURL="/kozmetika/kozmetikaProduct"
+                imageSRC={ProductOrange}
+                imageALT="Njega kože"
+                backgroundColor="#FAEADB"
+                productNumber="6"
+              />
+              <ProductPromotioCard
+                title="Njega kože"
+                description="Marzipan caramels brownie jelly beans bear claw jelly-o shortbread macaroon candy canes."
+                buttonURL="/kozmetika/kozmetikaProduct"
+                imageSRC={ProductGreen}
+                imageALT="Njega kože"
+                backgroundColor="#D8F3DC"
+                productNumber="7"
+              />
+              <ProductPromotioCard
+                title="Njega kože"
+                description="Marzipan caramels brownie jelly beans bear claw jelly-o shortbread macaroon candy canes."
+                buttonURL="/kozmetika/kozmetikaProduct"
+                imageSRC={ProductBlue}
+                imageALT="Njega kože"
+                backgroundColor="#DFF4F6"
+                productNumber="8"
+              />
+
             </div>
 
-            <div className="review-user">
-              <div className="review-user-image">
-                <Image 
-                  src={UserImage}
-                  alt='ProductSlika'
-                  quality={100}
-                  width={100}
-                  height={100}
-                />
-              </div>
-             
-              <div className="review-message">
-                <p>Chocolate candy tiramisu sesame snaps cake lollipop. Donut macaroon oat cake jelly-o gummies jelly topping wafer.</p>
-              </div>
-            </div>
-          </div>
 
-          <div className="row">
-            <div className="review-user">
-              <div className="review-user-image">
-                <Image 
-                  src={UserImage}
-                  alt='ProductSlika'
-                  quality={100}
-                  width={100}
-                  height={100}
-                />
-              </div>
-              <div className="review-message">
-                <p>Chocolate candy tiramisu sesame snaps cake lollipop. Donut macaroon oat cake jelly-o gummies jelly topping wafer.</p>
-              </div>
-            </div>
-            <div className="review-user">
-              <div className="review-user-image">
-                <Image 
-                  src={UserImage}
-                  alt='ProductSlika'
-                  quality={100}
-                  width={100}
-                  height={100}
-                />
-              </div>
-              <div className="review-message">
-                <p>Chocolate candy tiramisu sesame snaps cake lollipop. Donut macaroon oat cake jelly-o gummies jelly topping wafer.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+          </section>
 
-      <section>
-        <h4>Ostali proizvodi</h4>
-        <div className="row">
-          <ProductPromotioCard
-            title="Njega kože"
-            description="Marzipan caramels brownie jelly beans bear claw jelly-o shortbread macaroon candy canes."
-            buttonURL="/kozmetika/kozmetikaProduct"
-            imageSRC="/images/kozmetikaProduct/product-promotion-card-red.png"
-            imageALT="Njega kože"
-            backgroundColor=""
-          />
-        </div>
-      </section>
-
-  
-      {/* <div className="otherProductContainer">
-        <h5>Ostali proizvodi</h5>
-        <div className="row">
-          <OtherProductCard
-            productDetailsTitle="Smokvin List"
-            productDetailsKolicina="50g"
-            productDetailsImageURL="/images/cajBiljka/cajBiljka_1.png"
-            productDetailsImageAlt="Smokvin List"
-            productDetailsURL="/cajevi/smokvinList"
-          />
-          <OtherProductCard
-            productDetailsTitle="Slatki pelin"
-            productDetailsKolicina="50g"
-            productDetailsImageURL="/images/cajBiljka/cajBiljka_2.png"
-            productDetailsImageAlt="Slatki pelin"
-            productDetailsURL="/cajevi/slatkiPelin"
-          />
-          <OtherProductCard
-            productDetailsTitle="Energija jutra"
-            productDetailsKolicina="50g"
-            productDetailsImageURL="/images/cajBiljka/cajBiljka_3.png"
-            productDetailsImageAlt="Energija jutra"
-            productDetailsURL="/cajevi/energijaJutra"
-          />
-          <OtherProductCard
-            productDetailsTitle="Detox čaj"
-            productDetailsKolicina="50g"
-            productDetailsImageURL="/images/cajBiljka/cajBiljka_4.png"
-            productDetailsImageAlt="Detox čaj"
-            productDetailsURL="/cajevi/detox"
-          />
-          <OtherProductCard
-            productDetailsTitle="Imuno čaj"
-            productDetailsKolicina="50g"
-            productDetailsImageURL="/images/cajBiljka/cajBiljka_5.png"
-            productDetailsImageAlt="Imuno čaj"
-            productDetailsURL="/cajevi/imuno"
-          />
-        </div>
-      </div> */}
-    </main>
+          <CosmeticsBanner />
+      </main>
+      <FooterRed/>
+    </div>
   )
 }

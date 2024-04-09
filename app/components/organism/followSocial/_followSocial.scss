@@ -4,11 +4,16 @@
 @use '../../../styles/abstract/_color' as *;
 @use '../../../styles/base/_mixin' as *;
 
-
+.primary {
+    background-color: $primary-200;
+    &::after {
+        content: "";
+        background-image: url(../../../assets/image/vawe/vawe-top-green-200.svg);
+    } 
+}
 
 .follow-social {
     @include flexRow;
-    background-color: $primary-100;
     position: relative;
     @include flexRow;
     justify-content: space-around;
@@ -20,7 +25,7 @@
         left: 0;
         width: 100%;
         height: 26px;
-        background-image: url(../../../assets/image/vawe-top-follow.svg);
+
         background-size: cover; 
         z-index: 1; 
     }
@@ -29,7 +34,7 @@
         width: 100%;
         justify-content: center;
     }
-    .followSocialTitle {
+    .title-social {
         @include flexColumn;
         gap: $gap-md;
         align-items: center;
@@ -40,16 +45,21 @@
         .row {
             @include flexRow;
             gap: $gap-md;
+            img {
+                cursor: pointer;
+            }
         }
     }
-    .socialImages {
+    .images-container {
         display: flex;
         flex-direction: row;
         gap: $gap-md;
+        cursor: pointer;
         img {
             height: 240px;
             width: auto;
             object-fit: cover;
+
         }
     }
 

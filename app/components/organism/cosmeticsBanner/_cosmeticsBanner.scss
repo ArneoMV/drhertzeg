@@ -8,7 +8,6 @@ section.productAdCard {
     height: auto;
     box-shadow: $base-shadow-3;
     border-radius: $radius-md;
-    margin-bottom: $margin-sm;
     background-color: $neutral-100;
     width: 100%;
     .productCardDetailsContainer {
@@ -34,10 +33,13 @@ section.productAdCard {
             .table {
                 @include flexColumn;
                 gap: $gap-md;
-                .list {
+                ul {
                     @include flexColumn;
                     gap: $gap-xs;
-                    .column:nth-child(1) {
+                    li {
+                        list-style: none;
+                    }
+                    li:nth-child(1) {
                         width: auto;
                         h6 {
                             font-weight: 900;
@@ -45,7 +47,7 @@ section.productAdCard {
                         }
                         
                     }
-                    .column:nth-child(2) {
+                    li:nth-child(2) {
                         width: auto;
                         p {
                             font-weight: 400;
@@ -86,7 +88,6 @@ section.productAdCard {
     }
 
     @media (min-width: map-get($breakpoints, "xxs")) {
-        margin-bottom: $margin-sm;
         .productCardDetailsContainer {
             .table {
                 @include flexColumn;
@@ -99,7 +100,6 @@ section.productAdCard {
         }
     }
     @media (min-width: map-get($breakpoints, "xs")) {
-        margin-bottom: $margin-sm;
         .productCardImageContainer {
             img.productCardImageAbsolute {
                 display: none;
@@ -115,7 +115,6 @@ section.productAdCard {
         
     }
     @media (min-width: map-get($breakpoints, "md")) {
-        margin-bottom: $margin-md;
         @include flexRow;
         height: 420px;
         .productCardDetailsContainer {
@@ -158,7 +157,6 @@ section.productAdCard {
         }
     }
     @media (min-width: map-get($breakpoints, "lg")) {
-        margin-bottom: $margin-md;
         @include flexRow;
         height: 420px;
         .productCardDetailsContainer {
@@ -195,7 +193,6 @@ section.productAdCard {
         }
     }
     @media (min-width: map-get($breakpoints, "xl")) {
-        margin-bottom: $margin-md;
         @include flexRow;
         height: 420px;
         .productCardDetailsContainer {
@@ -232,7 +229,6 @@ section.productAdCard {
         }
     }
     @media (min-width: map-get($breakpoints, "xxl")) {
-        margin-bottom: $margin-md;
         @include flexRow;
         height: 420px;
         .productCardDetailsContainer {

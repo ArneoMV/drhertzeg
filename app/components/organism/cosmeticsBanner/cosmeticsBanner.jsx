@@ -17,22 +17,14 @@ export default function cosmeticsBanner() {
                 <p>Marzipan caramels brownie jelly beans bear claw jelly-o shortbread macaroon candy canes. Macaroon donut biscuit brownie cake chocolate. Toffee wafer cookie cupcake cotton candy jelly-o tiramisu sweet pastry.</p>
                 
                 <div className="table">
-                    <div className="list">
-                        <div className="column">
-                            <h6>Povijesno podrijetlo</h6>
-                        </div>
-                        <div className="column">
-                            <p>Kina</p>
-                        </div>
-                    </div>
-                    <div className="list">
-                        <div className="column">
-                            <h6>Koristan kod</h6>
-                        </div>
-                        <div className="column">
-                        <p>Ljekoviti sastojci, kulinarstvo, malarija, magična biljka</p>
-                        </div>
-                    </div>
+                    <ul>
+                        <li><h6>Povijesno podrijetlo</h6></li>
+                        <li><p>Kina</p></li>
+                    </ul>
+                    <ul>
+                        <li><h6>Koristan kod</h6></li>
+                        <li> <p>Ljekoviti sastojci, kulinarstvo, malarija, magična biljka</p></li>
+                    </ul>
                 </div>
 
             </div>
