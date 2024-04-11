@@ -43,7 +43,7 @@
 .checkbox-container {
     label.checkbox {
         @include checkbox-base();
-        background-color: $primary-100;
+        background-color: $neutral-100;
         position: relative;
         cursor: pointer;
       

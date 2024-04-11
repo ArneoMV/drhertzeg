@@ -11,7 +11,7 @@
     main.contact-page-container {
         @include layout-container;
         position: relative; 
-        @include flexRow;
+        @include flexColumn;
         align-items: center;
         gap: $size-128;
         .second-nav-container {
@@ -71,7 +71,7 @@
     .page-title {
         width: fit-content;
         border-radius: $size-16;
-        background-color: $primary-100;
+        background-color: $primary-300;
         padding: $size-16 $size-32;
         h1 {
             color: $primary-900;
@@ -90,6 +90,9 @@
     }
     @media (min-width: map-get($breakpoints, "sm")) {
         // background-color: red;
+        main.contact-page-container {
+            @include flexRow;
+        }
     }
     @media (min-width: map-get($breakpoints, "md")) {
         // background-color: purple;
@@ -126,5 +129,6 @@
     }
     @media (min-width: map-get($breakpoints, "xxl")) {
         // background-color: $neutral-700;
+        
     }
 }
