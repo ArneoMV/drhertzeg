@@ -73,7 +73,7 @@ export default function demoArticle() {
 
           <div className="blog-text-section">
             <h5>Smokvin list</h5>
-            <div className="row">
+            <div className="flex">
               <div className="blog-text-container col-10-sm col-6-md col-6-lg">
                 <p>Otkrijte svoje preferencije okusa: Kada se upuštate u svijet čajeva, prvi korak je istražiti svoje preferencije okusa. Ako volite voćne arome, možda će vam se svidjeti voćni čajevi poput bobica ili citrusa. Ako preferirate nešto osvježavajuće i blago gorčinu, zeleni čaj može biti odličan izbor. </p>
               </div>
@@ -86,7 +86,7 @@ export default function demoArticle() {
 
           <div className="blog-text-section">
             <h5>Imuno čaj</h5>
-            <div className="row">
+            <div className="flex">
               <div className="blog-text-container col-10-sm col-6-md col-6-lg">
                 <p>Otkrijte svoje preferencije okusa: Kada se upuštate u svijet čajeva, prvi korak je istražiti svoje preferencije okusa. Ako volite voćne arome, možda će vam se svidjeti voćni čajevi poput bobica ili citrusa. Ako preferirate nešto osvježavajuće i blago gorčinu, zeleni čaj može biti odličan izbor. </p>
               </div>
@@ -113,7 +113,7 @@ export default function demoArticle() {
               <h5>Recept za čaj iz vrta</h5>
               <p>SASTOJCI</p>
             </div>
-            <div className="row">
+            <div className="flex">
               <div className="blog-text-container col-10-sm col-6-md col-6-lg">
                 <p>Otkrijte svoje preferencije okusa: Kada se upuštate u svijet čajeva, prvi korak je istražiti svoje preferencije okusa. Ako volite voćne arome, možda će vam se svidjeti voćni čajevi poput bobica ili citrusa. Ako preferirate nešto osvježavajuće i blago gorčinu, zeleni čaj može biti odličan izbor. </p>
               </div>
