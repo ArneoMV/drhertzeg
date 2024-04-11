@@ -1,8 +1,10 @@
+@use '../../styles/abstract/_color' as *;
+@use '../../styles/base/_variable' as *;
+@use '../../styles/base/_mixin' as *;
 @use '../../styles/layout/_breakpoint' as *;
 @use '../../styles/layout/_layout' as *;
-@use '../../styles/base/_variable' as *;
-@use '../../styles/abstract/_color' as *;
-@use '../../styles/base/_mixin' as *;
+
+
 
 .row {
     @include flexRow;
@@ -13,11 +15,11 @@
 
 
 .article-page {
-    @include layout-container;
-    @include flexColumn;
-    align-items: center;
-    gap: $size-98;
-    margin-bottom: $size-192;
+    @include main-page-layout;
+    
+    main.article-page-container {
+        @include main-page-container;
+    }
 
     section {
         @include flexColumn;

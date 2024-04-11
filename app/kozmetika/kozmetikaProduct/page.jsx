@@ -11,7 +11,7 @@ import UserImage from '../../assets/image/user_1.png'
 import ProductPromotioCard from '@/app/components/organism/productPromotioCard/productPromotioCard';
 import Carousel from '../../components/organism/carousel/carousel'
 import CosmeticsBanner from '../../components/organism/cosmeticsBanner/cosmeticsBanner'
-import FooterRed from '../../components/organism/footerRed/footerRed'
+import Footer from '../../components/organism/footer/footer'
 
 
 
@@ -54,22 +54,24 @@ const btnpressnext = () => {
 
 
   return (
-    <div className='product-page'>
+    <div className='product-page kozmetika-individual'>
       <main className='product-page-contianer'>
-          {/* Back button */}
-          <button className='back-button' type="button" onClick={() => router.back()}>
-            <Image 
-              src={Icon.arrowLeftLong}
-              alt='ProductSlika'
-              quality={100}
-              width={24}
-              height={24}
-            />
-            <p>Back</p>
-          </button>
+        <div>
+          {/* Second nav */}
+          <div className="second-nav-container">
+            <button className='back-button' type="button" onClick={() => router.back()}>
+              <Image 
+                src={Icon.arrowLeftLong}
+                alt='ProductSlika'
+                quality={100}
+                width={24}
+                height={24}
+              />
+              <p>Back</p>
+            </button>
+          </div>
           {/* Product */}
           <section className="product-banner">
-
             <div className="productImage">
               <Carousel 
               slides={slides}
@@ -151,6 +153,7 @@ const btnpressnext = () => {
               </div>
             </div>
           </section>
+        </div>
 
           {/* Reviews */}
           <div className="reviews">
@@ -327,7 +330,9 @@ const btnpressnext = () => {
 
           <CosmeticsBanner />
       </main>
-      <FooterRed/>
+      <Footer 
+          color="red-300"
+        />
     </div>
   )
 }

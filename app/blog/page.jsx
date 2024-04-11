@@ -7,13 +7,12 @@ import Icon from "../components/atoms/icon/Icon";
 import HeroImage from '../assets/image/CoverKozmetika.png'
 import CardBlog from '../components/organism/cardBlog/cardBlog'
 import CosmeticsBanner from '../components/organism/cosmeticsBanner/cosmeticsBanner'
-import FooterGreen from '../components/organism/footerGreen/footerGreen';
-
 // import TeaList from "./TeaList";
 import Loading from "../loading";
 import "./_style.scss";
 
 import FollowSocial from "../components/organism/followSocial/followSocial";
+import Footer from '../components/organism/footer/footer';
 
 export default function Blog() {
     return (
@@ -95,10 +94,12 @@ export default function Blog() {
         </main>
 
         <div>
-        <FollowSocial 
-          color="primary"
-        />
-        <FooterGreen />
+          <FollowSocial 
+            color="primary-200"
+          />
+          <Footer 
+            color="primary-800"
+          />
         </div>
       </div>
     )

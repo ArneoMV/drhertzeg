@@ -5,67 +5,67 @@
 @use '../styles/layout/_layout' as *;
 @use '../styles/base/_mixin' as *;
 
-.contact {
-    @include layout-container;
-    @include flexColumn;
-    justify-content: center;
-    height: 80vh;
-    .layout-main {
-        @include flexColumn;
-        gap: $size-48;
-        .layout-main-container {
+
+.contact-page {
+    @include main-page-layout;
+    main.contact-page-container {
+        @include layout-container;
+        position: relative; 
+        @include flexRow;
+        align-items: center;
+        gap: $size-128;
+        .second-nav-container {
+            @include flexRow;
+            width: 100%;
+        }
+        .contact-container {
             @include flexColumn;
             gap: $size-24;
-            justify-content: space-between;
-            .contact-container {
+            .flex {
                 @include flexColumn;
+                align-items: flex-start;
+                justify-content: center;
                 gap: $size-24;
-                .flex {
-                    @include flexColumn;
-                    align-items: flex-start;
-                    justify-content: center;
+                width: 100%;
+                .contact-icon {
+                    @include flexRow;
+                    align-items: center;
                     gap: $size-24;
-                    width: 100%;
-                    .contact-icon {
-                        @include flexRow;
+                    .icon {
+                        background-color: $neutral-200;
+                        border-radius: $radius-lg;
+                        width: $size-48;
+                        height: $size-48;
+                        @include flexColumn;
                         align-items: center;
-                        gap: $size-24;
-                        .icon {
-                            background-color: $neutral-200;
-                            border-radius: $radius-lg;
-                            width: $size-48;
-                            height: $size-48;
-                            @include flexColumn;
-                            align-items: center;
-                            justify-content: center;
-                            img {
-                                width: $size-24;
-                                height: $size-24;
-                            }
+                        justify-content: center;
+                        img {
+                            width: $size-24;
+                            height: $size-24;
                         }
                     }
                 }
             }
-            form {
+        }
+        form {
+            @include flexColumn;
+            gap: $size-24;
+            align-items: center;
+            .column {
                 @include flexColumn;
                 gap: $size-24;
-                align-items: center;
-                .column {
-                    @include flexColumn;
-                    gap: $size-24;
+                width: 100%;
+                .input, .textbox {
                     width: 100%;
-                    .input, .textbox {
-                        width: 100%;
-                        label {
-                            color: $neutral-800;
-                        }
+                    label {
+                        color: $neutral-800;
                     }
                 }
-                .button {
-                    color: $neutral-100;
-                }
-                
             }
+            .button {
+                color: $neutral-100;
+            }
+            
         }
     }
     .page-title {
@@ -93,30 +93,29 @@
     }
     @media (min-width: map-get($breakpoints, "md")) {
         // background-color: purple;
-        .layout-main {
+        .contact-page-container {
             .layout-main-container {
                 @include flexRow;
-                .contact-container {
-                    gap: $size-24;
-                    .flex {
-                        @include flexRow;
-                        gap: $size-48;
-                        justify-content: center;
-                        .contact-icon {
-                            @include flexColumn;
-                            .icon {
-                                width: $size-64;
-                                height: $size-64;
-                                img {
-                                    width: $size-32;
-                                    height: $size-32;
-                                }
-                            } 
-                        }
+
+                gap: $size-24;
+                .flex {
+                    @include flexRow;
+                    gap: $size-48;
+                    justify-content: center;
+                    .contact-icon {
+                        @include flexColumn;
+                        .icon {
+                            width: $size-64;
+                            height: $size-64;
+                            img {
+                                width: $size-32;
+                                height: $size-32;
+                            }
+                        } 
                     }
                 }
-
             }
+
         }
     }
     @media (min-width: map-get($breakpoints, "lg")) {

@@ -17,12 +17,6 @@ html, body {
     padding: 0px;
     overflow-x: hidden; 
 }
-body {
-    background-color: $neutral-300;
-}
-
-
-
 
 img, iframe, object, embed, video {
 	width: auto;
@@ -57,3 +51,65 @@ a {
 .link {
     font-weight: 500;
 }
+
+
+.homepage {
+    background-color: $primary-100;
+}
+
+.kozmetika {
+    background-color: $red-100;
+}
+.kozmetika-individual {
+    background-color: $red-100;
+}
+
+.caj {
+    background-color: $blue-100;
+}
+
+.caj-individual {
+    background-color: $blue-100;
+}
+
+.contact-page {
+    background-color: $primary-100;
+}
+
+.blog-page {
+    background-color: $neutral-100;
+}
+.article-page {
+    background-color: $neutral-100;
+}
+
+
+// body.homepage {
+//     background-color: $primary-100;
+// }
+
+// body.kozmetika {
+//     background-color: $red-100;
+// }
+// body.kozmetika-individual {
+//     background-color: $red-100;
+// }
+
+// body.caj {
+//     background-color: $blue-100;
+// }
+
+// body.caj-individual {
+//     background-color: $blue-100;
+// }
+
+// body.contact-page {
+//     background-color: $primary-100;
+// }
+
+// body.blog-page {
+//     background-color: $neutral-100;
+// }
+// body.article-page {
+//     background-color: $neutral-100;
+// }

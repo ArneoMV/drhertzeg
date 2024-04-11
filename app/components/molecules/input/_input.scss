@@ -3,6 +3,20 @@
 @use '../../../styles/abstract/_color' as *;
 @use '../../../styles/base/_mixin' as *;
 
+
+
+$placeholder: ('::-webkit-input-placeholder', ':-moz-placeholder', '::-moz-placeholder', ':-ms-input-placeholder', '::input-placeholder', '::placeholder');
+@each $selector in $placeholder {
+  #{$selector} {
+    font-size: 1.2em;
+    color: $neutral-800;
+    padding: 5px;
+    font-family: 'Work Sans', sans-serif;
+  }
+}
+
+
+
 /* INPUT */
 @mixin inputErrorStyles {
     background-color: $red-100;

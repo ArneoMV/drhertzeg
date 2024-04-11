@@ -11,11 +11,42 @@ import Organic from '../../../assets/image/Organic.svg'
 import Natural from '../../../assets/image/Natural.svg'
 
 
-import './_footerRed.scss'
+import './_footer.scss'
 
-export default function FooterRed() {
+const Footer = ({ color }) => {
+
+  let className = '';
+
+  // Provjerite primljenu boju i postavite odgovarajuću klasu
+  switch (color) {
+    case 'primary-200':
+      className = 'primary-200';
+      break;
+      case 'primary-800':
+        className = 'primary-800';
+        break;
+    case 'red-200':
+      className = 'red-200';
+      break;
+    case 'red-300':
+      className = 'red-300';
+      break;
+    case 'green':
+      className = 'green';
+      break;
+    case 'blue-200':
+      className = 'blue-800';
+      break;
+    case 'blue-800':
+        className = 'blue-800';
+        break;
+    default:
+      className = '';
+  }
+
+
   return (
-    <footer className='footerRed'>
+    <footer className={`footer ${className}`}>
       <div className="footer-container">
 
         <div className="footerTop">
@@ -111,3 +142,4 @@ export default function FooterRed() {
     </footer>
   )
 }
+export default Footer;

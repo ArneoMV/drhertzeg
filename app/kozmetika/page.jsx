@@ -16,12 +16,12 @@ import "./_style.scss";
 import "../styles/_index.scss";
 
 
-import FollowSocialRed from "../components/organism/followSocialRed/followSocialRed";
-import FooterRed from '../components/organism/footerRed/footerRed';
+import FollowSocial from "../components/organism/followSocial/followSocial";
+import Footer from '../components/organism/footer/footer';
 
 export default function Kozmetika() {
     return (
-      <div className='products-page'>
+      <div className='products-page kozmetika'>
         <main className='products-page-container'>
           {/* Promotion section */}
           <section className="product-promotion">
@@ -53,7 +53,7 @@ export default function Kozmetika() {
 
           {/* Products container*/}
           <section className="product-cards">
-            <div className="product-cards-title col-12-sm col-6-md col-6-lg">
+            <div className="product-cards-title">
               <div className="column">
                 <h3>Upoznaj proizvode</h3>
                 <p>Marzipan caramels brownie jelly beans bear claw jelly-o shortbread macaroon candy canes.</p>
@@ -171,8 +171,14 @@ export default function Kozmetika() {
 
           <CosmeticsBanner />
       </main>
-      <FollowSocialRed />
-      <FooterRed />
+      <div>
+        <FollowSocial 
+          color="red"
+        />
+        <Footer 
+          color="red-300"
+        />
+      </div>
     </div>
   )
 }

@@ -11,20 +11,12 @@
 .row {
     @include flexRow;
 }
-body {
-    background-color: $red-100 !important;
-}
  
 
-
 .products-page {
-    @include flexColumn;
-    .products-page-container {
-        @include layout-container;
-        @include flexColumn;
-        width: auto;
-        height: auto;
-        gap: $size-128;
+    @include main-page-layout;
+    main.products-page-container {
+        @include main-page-container;
 
         .product-promotion {
             @include flexColumn;
@@ -62,6 +54,7 @@ body {
         .product-cards {
             @include flexColumn;
             gap: $size-48;
+            width: 100%;
             .product-cards-title {
                 width: 100%;
                 @include flexRow;
@@ -192,10 +185,8 @@ body {
             }
         }
         @media (min-width: map-get($breakpoints, "lg")) {
-
         }
         @media (min-width: map-get($breakpoints, "xl")) {
-
         }
         @media (min-width: map-get($breakpoints, "xxl")) {
         }

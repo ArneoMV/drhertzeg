@@ -6,15 +6,13 @@
 @use '../styles/base/_mixin' as *;
 
 .blog-page {
+    // @include main-page-layout;
     width: auto;
     height: auto;
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    gap: $size-98;
+    gap: $gap-xl;
+    
     .hero-container {
         position: relative; 
         display: grid;

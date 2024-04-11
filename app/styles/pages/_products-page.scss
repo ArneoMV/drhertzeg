@@ -1,9 +1,9 @@
-@use '../styles/base/_variable' as *;
-@use '../styles/abstract/_color' as *;
-@use '../styles/abstract/_typo' as *;
-@use '../styles/layout/_breakpoint' as *;
-@use '../styles/layout/_layout' as *;
-@use '../styles/base/_mixin' as *;
+@use '../base/_variable' as *;
+@use '../abstract/_color' as *;
+@use '../abstract/_typo' as *;
+@use '../layout/_breakpoint' as *;
+@use '../layout/_layout' as *;
+@use '../base/_mixin' as *;
 
 .column {
     @include flexColumn;
@@ -26,7 +26,7 @@
                 gap: $size-12;
                 margin: 0 auto;
                 h4, p {
-                    font-size: 48px; //
+                    font-size: 48px;
                     text-align: center;
                     color: $red-900;
                     line-height: 115%;
@@ -184,10 +184,13 @@
             }
         }
         @media (min-width: map-get($breakpoints, "lg")) {
+
         }
         @media (min-width: map-get($breakpoints, "xl")) {
+
         }
         @media (min-width: map-get($breakpoints, "xxl")) {
         }
     }
 }
+

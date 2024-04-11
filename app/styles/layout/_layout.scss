@@ -1,10 +1,8 @@
-
+@use '../abstract/_color' as *;
 @use '../base/variable' as *;
 @use '../base/mixin' as *;
 @use './breakpoint' as *;
-@use '../base/_variable' as *;
-@use '../base/_mixin' as *;
-@use '../abstract/_color' as *;
+
 
 
 @mixin layout-container {
@@ -39,5 +37,31 @@
 // }
 
 
+// Page layout
+@mixin main-page-layout {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    gap: $size-98;
+    padding-top: $size-128;
+    box-sizing: border-box
+}
+
+@mixin main-page-container {
+    @include layout-container;
+    position: relative; 
+    @include flexColumn;
+    align-items: center;
+    gap: $size-128;
+    .second-nav-container {
+        @include flexRow;
+        width: 100%;
+    }
+}
 
 

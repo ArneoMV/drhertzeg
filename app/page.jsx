@@ -4,12 +4,13 @@ import { Metadata } from 'next'
 // import Tabs from "./components/molecules/tab/Tabs";
 import Chip from "./components/atoms/chip/Chip";
 import Button from "./components/atoms/button/Button";
-import FooterGreen from "./components/organism/footerGreen/footerGreen";
+import Footer from "./components/organism/footer/footer";
 
 import Image from 'next/image'
 import Link from 'next/link'
 import './styles/_index.scss';
 import './styles/pages/_homepage.scss';
+import './styles/base/_base.scss';
 import LinkedinIcon from './assets/icon/socialLogo/Linkedin-icon.svg'
 import FacebookIcon from './assets/icon/socialLogo/Facebook-icon.svg'
 import TikTokIcon from './assets/icon/socialLogo/TikTok-icon.svg'
@@ -118,7 +119,9 @@ export default function Page() {
 
         </section>
       </main>
-      <FooterGreen />
+      <Footer 
+          color="primary-800"
+      />
     </>
   )
 }

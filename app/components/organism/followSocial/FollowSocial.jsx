@@ -15,18 +15,24 @@ const FollowSocial = ({ color }) => {
 
   // Provjerite primljenu boju i postavite odgovarajuću klasu
   switch (color) {
-    case 'primary':
-      className = 'primary';
+    case 'primary-200':
+      className = 'primary-200';
+      break;
+    case 'primary-800':
+      className = 'primary-800';
       break;
     case 'red':
-      className = 'red';
+      className = 'red-200';
       break;
     case 'green':
       className = 'green';
       break;
-    case 'blue':
-      className = 'blue';
+    case 'blue-200':
+      className = 'blue-200';
       break;
+      case 'blue-800':
+        className = 'blue-800';
+        break;
     default:
       className = '';
   }
