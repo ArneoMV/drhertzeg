@@ -4,9 +4,27 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Chip from '../../atoms/chip/Chip'
 
-export default function ProductCard({ productDetailsTitle, productDetailsPrice, productDetailsImageURL, productDetailsImageAlt, productDetailsURL, productChips1, productChips2, imageClass }) {
+export default function ProductCard({ productDetailsTitle, productDetailsPrice, productDetailsImageURL, productDetailsImageAlt, productDetailsURL, productChips1, productChips2, imageClass, hoverOutline }) {
+  
+  let className = '';
+
+  // Provjerite primljenu boju i postavite odgovarajuću klasu
+  switch (hoverOutline) {
+    case 'primary-300':
+      className = 'hover-primary-300';
+      break;
+    case 'red-300':
+      className = 'hover-red-300';
+      break;
+    case 'blue-300':
+      className = 'hover-blue-300';
+      break;
+    default:
+      className = '';
+  }
+  
   return (
-    <Link href={productDetailsURL} className='product-card-link'>
+    <Link href={productDetailsURL} className={`product-card-link ${className}`}>
       <div className="product-card-image">
         <Image 
           src={productDetailsImageURL}

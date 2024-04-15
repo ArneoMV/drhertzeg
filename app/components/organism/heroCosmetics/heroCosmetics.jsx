@@ -1,14 +1,14 @@
 "use client"
 
 import React from 'react'
-import './_bannerCosmetics.scss'
+import './_heroCosmetics.scss'
 import Image from 'next/image'
 import Link from 'next/link'
 import Button from '../../atoms/button/button';
 import useWindowResize from "../../../utilities/useWindowResize";
 import BannerImage from '../../../assets/image/hero-image-cosmetics.png'
 
-export default function BannerCosmetics() {
+export default function HeroCosmetics() {
   // resize 
   const { screenWidth, screenHeight } = useWindowResize();
   const xxs = '0'; //PINK

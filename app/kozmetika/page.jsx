@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Chip from "../components/atoms/chip/Chip";
 import Icon from "../components/atoms/icon/Icon";
 
-import BannerCosmetics from '../components/organism/bannerCosmetics/bannerCosmetics';
+import BannerCosmetics from '../components/organism/heroCosmetics/heroCosmetics';
 import PlantIcon from '../assets/icon/plant-icon.svg'
 
 import ProductPromotioCard from '../components/organism/productPromotioCard/productPromotioCard';
@@ -85,6 +85,7 @@ export default function Kozmetika() {
                 productChips1="Protuupalno"
                 productChips2="Opušta"
                 imageClass="imageVertical"
+                hoverOutline="red-300"
               />
               <ProductCard
                 productDetailsTitle="Care & massage oil"
@@ -95,6 +96,7 @@ export default function Kozmetika() {
                 productChips1="Protuupalno"
                 productChips2="Opušta"
                 imageClass="imageVertical"
+                hoverOutline="red-300"
               />
               <ProductCard
                 productDetailsTitle="Hair boost"
@@ -105,6 +107,7 @@ export default function Kozmetika() {
                 productChips1="Protuupalno"
                 productChips2="Opušta"
                 imageClass="imageVertical"
+                hoverOutline="red-300"
               />
               <ProductCard
                 productDetailsTitle="Hydrating day cream"
@@ -115,6 +118,7 @@ export default function Kozmetika() {
                 productChips1="Protuupalno"
                 productChips2="Opušta"
                 imageClass="imageHorizontal"
+                hoverOutline="red-300"
               />
               <ProductCard
                 productDetailsTitle="Kapi od slatkog pelina"
@@ -125,6 +129,7 @@ export default function Kozmetika() {
                 productChips1="Protuupalno"
                 productChips2="Opušta"
                 imageClass="imageVertical"
+                hoverOutline="red-300"
               />
               <ProductCard
                 productDetailsTitle="Lavandarat"
@@ -135,6 +140,7 @@ export default function Kozmetika() {
                 productChips1="Protuupalno"
                 productChips2="Opušta"
                 imageClass="imageVertical"
+                hoverOutline="red-300"
               />
               <ProductCard
                 productDetailsTitle="Serum od smilja"
@@ -145,6 +151,7 @@ export default function Kozmetika() {
                 productChips1="Protuupalno"
                 productChips2="Opušta"
                 imageClass="imageVertical"
+                hoverOutline="red-300"
               />
               <ProductCard
                 productDetailsTitle="Smiljolat"
@@ -155,6 +162,7 @@ export default function Kozmetika() {
                 productChips1="Protuupalno"
                 productChips2="Opušta"
                 imageClass="imageVertical"
+                hoverOutline="red-300"
               />
               <ProductCard
                 productDetailsTitle="Vitamin night cream"
@@ -165,6 +173,7 @@ export default function Kozmetika() {
                 productChips1="Protuupalno"
                 productChips2="Opušta"
                 imageClass="imageHorizontal"
+                hoverOutline="red-300"
               />
             </div>
           </section>

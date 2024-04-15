@@ -6,6 +6,52 @@
 @use '../../styles/base/_mixin' as *;
 
 
+@mixin user-review-bubble {
+    @include flexRow;
+    gap: $size-24;
+    align-items: flex-start;
+    .review-user-image {
+        height: 80px;
+        width: 60px;
+        display: grid;
+        img {
+            width: 60px;
+            height: 60px;
+            max-width: fit-content;
+            object-fit: cover;
+        }
+    }
+    
+    .review-message {
+        background-color: $neutral-100;
+        padding: $size-12;
+        margin-top: $size-12;
+        // border-radius: 0 $size-12 $size-12 $size-12;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);;
+        box-sizing: border-box;
+        position: relative;
+        &:before {
+            box-sizing: border-box;
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            // top: 0;
+            // left: -13px;
+            // // border-top: 10px solid transparent;
+            // border-bottom: 46px solid transparent;
+            // border-left: 1px solid transparent;
+            // border-right: 20px solid $neutral-100;
+            // border-radius: 12px;
+            -webkit-filter: drop-shadow(0 6px 15px rgba(0, 0, 0, 0.1));
+            filter        : drop-shadow(0 6px 15px rgba(0, 0, 0, 0.1));
+            -ms-filter    : "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=2, Color='#444')";
+            filter        : "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=2, Color='#444')";
+        }
+    }
+}
+
+
 main {
     @include flexColumn;
     @include layout-container;
@@ -40,6 +86,9 @@ main {
     @include main-page-layout;
     main.product-page-contianer {
         @include main-page-container;
+        .container-top {
+            width: 100%
+        }
     }
 
     .product-banner {
@@ -109,11 +158,11 @@ main {
         h4 {
             text-align: center;
         }
-        .flex {
+        .column {
             @include flexColumn;
             gap: $size-64;
-            .row {
-                @include flexRow;
+            .flex {
+                @include flexColumn;
                 gap: $size-98;
                 &:nth-child(1) {
                     padding: 0 0 ;
@@ -121,47 +170,37 @@ main {
                 &:nth-child(2) {
                     padding: 0 $size-48;
                 }
-                .review-user {
-                    @include flexRow;
-                    gap: $size-24;
-                    align-items: center;
-                    .review-user-image {
-                        height: 80px;
-                        width: 60px;
-                        display: grid;
-                        img {
-                            width: 60px;
-                            height: 60px;
-                            max-width: fit-content;
-                            object-fit: cover;
-                        }
-                    }
+                .review-user-left {
+                    @include user-review-bubble;
                     
                     .review-message {
-                        background-color: $neutral-100;
-                        padding: $size-12;
-                        margin-top: $size-12;
                         border-radius: 0 $size-12 $size-12 $size-12;
-                        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);;
-                        box-sizing: border-box;
-	                    position: relative;
-                        &:before {
-                            box-sizing: border-box;
-                            content: '';
-                            position: absolute;
-                            width: 0;
-                            height: 0;
+                        &::before {
+                            border-radius: 3px;
                             top: 0;
                             left: -13px;
-                           // border-top: 10px solid transparent;
-                            border-bottom: 46px solid transparent;
-                            border-left: 1px solid transparent;
-                            border-right: 20px solid $neutral-100;
-                            border-radius: 12px;
-                            -webkit-filter: drop-shadow(0 6px 15px rgba(0, 0, 0, 0.1));
-                            filter        : drop-shadow(0 6px 15px rgba(0, 0, 0, 0.1));
-                            -ms-filter    : "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=2, Color='#444')";
-                            filter        : "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=2, Color='#444')";
+                            width: 0;
+                            height: 0;
+                            border-style: solid;
+                            border-width: 0 20px 20px 0;
+                            border-color: transparent $neutral-100 transparent transparent;
+                        }
+
+                    }
+                }
+                .review-user-right {
+                    @include user-review-bubble;
+                    .review-message {
+                        border-radius: $size-12 0 $size-12 $size-12;
+                        &::before {
+                            border-radius: 3px;
+                            top: 0;
+                            right: -13px;
+                            width: 0;
+                            height: 0;
+                            border-style: solid;
+                            border-width: 20px 20px 0 0;
+                            border-color: $neutral-100 transparent transparent transparent;
                         }
                     }
                 }
@@ -212,7 +251,7 @@ main {
             padding: $size-24 $size-24;
             box-sizing: border-box;
             .product-promotion-card {
-                flex: 0 0 30%
+                flex: 0 0 90%
             }
         }
         .image-container {
@@ -232,13 +271,6 @@ main {
         .product-banner {
             @include flexColumn;
             border-radius: $size-32;
-            .productImage {
-
-            }
-
-            .product-details {
-
-            }
         }   
     }
     @media (min-width: map-get($breakpoints, "sm")) {
@@ -247,14 +279,21 @@ main {
     @media (min-width: map-get($breakpoints, "md")) {
         .product-banner {
             @include flexRow;
-            .productImage {
-
+        }
+        .reviews {
+            .column {
+                .flex {
+                    @include flexRow;
+                }
             }
-
-            .product-details {
-
+        }
+        .product-promotion {
+            .product-promotion-container {
+                .product-promotion-card {
+                    flex: 0 0 30%
+                }
             }
-        } 
+        }
     }
     @media (min-width: map-get($breakpoints, "lg")) {
 

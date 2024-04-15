@@ -56,7 +56,7 @@ const btnpressnext = () => {
   return (
     <div className='product-page kozmetika-individual'>
       <main className='product-page-contianer'>
-        <div>
+        <div className='container-top'>
           {/* Second nav */}
           <div className="second-nav-container">
             <button className='back-button' type="button" onClick={() => router.back()}>
@@ -158,9 +158,9 @@ const btnpressnext = () => {
           {/* Reviews */}
           <div className="reviews">
             <h4>Customer reviews</h4>
-            <div className="flex">
-              <div className="row">
-                <div className="review-user">
+            <div className="column">
+              <div className="flex">
+                <div className="review-user-left">
                   <div className="review-user-image">
                     <Image 
                       src={UserImage}
@@ -175,7 +175,10 @@ const btnpressnext = () => {
                   </div>
                 </div>
 
-                <div className="review-user">
+                <div className="review-user-right">
+                  <div className="review-message">
+                    <p>Chocolate candy tiramisu sesame snaps cake lollipop. Donut macaroon oat cake jelly-o gummies jelly topping wafer.</p>
+                  </div>
                   <div className="review-user-image">
                     <Image 
                       src={UserImage}
@@ -184,16 +187,12 @@ const btnpressnext = () => {
                       width={100}
                       height={100}
                     />
-                  </div>
-                
-                  <div className="review-message">
-                    <p>Chocolate candy tiramisu sesame snaps cake lollipop. Donut macaroon oat cake jelly-o gummies jelly topping wafer.</p>
                   </div>
                 </div>
               </div>
 
-              <div className="row">
-                <div className="review-user">
+              <div className="flex">
+                <div className="review-user-left">
                   <div className="review-user-image">
                     <Image 
                       src={UserImage}
@@ -207,7 +206,10 @@ const btnpressnext = () => {
                     <p>Chocolate candy tiramisu sesame snaps cake lollipop. Donut macaroon oat cake jelly-o gummies jelly topping wafer.</p>
                   </div>
                 </div>
-                <div className="review-user">
+                <div className="review-user-right">
+                  <div className="review-message">
+                    <p>Chocolate candy tiramisu sesame snaps cake lollipop. Donut macaroon oat cake jelly-o gummies jelly topping wafer.</p>
+                  </div>
                   <div className="review-user-image">
                     <Image 
                       src={UserImage}
@@ -216,9 +218,6 @@ const btnpressnext = () => {
                       width={100}
                       height={100}
                     />
-                  </div>
-                  <div className="review-message">
-                    <p>Chocolate candy tiramisu sesame snaps cake lollipop. Donut macaroon oat cake jelly-o gummies jelly topping wafer.</p>
                   </div>
                 </div>
               </div>

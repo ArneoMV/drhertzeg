@@ -4,6 +4,22 @@
 @use '../../../styles/base/_mixin' as *;
 
 
+.hover-primary-300 {
+        &:hover {
+            outline: 1px solid $primary-300;
+        } 
+}
+.hover-blue-300 {
+    &:hover {
+        outline: 1px solid $blue-300;
+    } 
+}
+.hover-red-300 {
+    &:hover {
+        outline: 1px solid $red-300;
+    } 
+}
+
 
 a.product-card-link {
     background-color: $neutral-100;
@@ -71,7 +87,7 @@ a.product-card-link {
     }
 
     &:hover {
-        outline: 1px solid $red-300;
+        // outline: 1px solid $red-300;
         transition: outline 0.2s;
         box-sizing: border-box;
         box-shadow: $base-shadow-4;

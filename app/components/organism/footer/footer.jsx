@@ -22,7 +22,7 @@ const Footer = ({ color }) => {
     case 'primary-200':
       className = 'primary-200';
       break;
-      case 'primary-800':
+    case 'primary-800':
         className = 'primary-800';
         break;
     case 'red-200':
@@ -30,9 +30,6 @@ const Footer = ({ color }) => {
       break;
     case 'red-300':
       className = 'red-300';
-      break;
-    case 'green':
-      className = 'green';
       break;
     case 'blue-200':
       className = 'blue-800';
