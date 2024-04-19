@@ -8,12 +8,14 @@ import PlantIcon from '../assets/icon/plant-icon.svg'
 
 import ProductPromotioCard from '../components/organism/productPromotioCard/productPromotioCard';
 import ProductCard from '../components/organism/ProductCard/ProductCard'
-import CosmeticsBanner from '../components/organism/cosmeticsBanner/cosmeticsBanner'
+import BannerCaj from '../components/organism/bannerCaj/bannerCaj'
 
 import Button from '../components/atoms/button/button';
 import Loading from "../loading";
-import "../styles/pages/_products-page.scss";
-import "../styles/_index.scss";
+
+import "./_style.scss";
+// import "../styles/pages/_products-page.scss";
+// import "../styles/_index.scss";
 
 
 import FollowSocial from "../components/organism/followSocial/followSocial";
@@ -77,108 +79,65 @@ export default function Cajevi() {
 
             <div className="product-cards-container">
               <ProductCard
-                productDetailsTitle="Calming gel"
+                productDetailsTitle="Smokvin list"
                 productDetailsPrice="4 €"
-                productDetailsImageURL="/images/product/kozmetika_calming_gel.png"
+                productDetailsImageURL="/images/caj/Caj_Smokva.png"
                 productDetailsImageAlt="Kapi slatkog pelina"
-                productDetailsURL="/kozmetika/kozmetikaProduct"
+                productDetailsURL="/cajevi/cajProduct"
                 productChips1="Protuupalno"
                 productChips2="Opušta"
                 imageClass="imageVertical"
                 hoverOutline="blue-300"
               />
               <ProductCard
-                productDetailsTitle="Care & massage oil"
+                productDetailsTitle="Slatki pelin"
                 productDetailsPrice="3.8 €"
-                productDetailsImageURL="/images/product/kozmetika_care_and_massage_oil.png"
+                productDetailsImageURL="/images/caj/Caj_Slatki_Pelin.png"
                 productDetailsImageAlt="Gel za smirenje"
-                productDetailsURL="/kozmetika/kozmetikaProduct"
+                productDetailsURL="/cajevi/cajProduct"
                 productChips1="Protuupalno"
                 productChips2="Opušta"
                 imageClass="imageVertical"
                 hoverOutline="primary-300"
               />
               <ProductCard
-                productDetailsTitle="Hair boost"
+                productDetailsTitle="Energija jutra"
                 productDetailsPrice="3.5 €"
-                productDetailsImageURL="/images/product/kozmetika_hair_boost.png"
+                productDetailsImageURL="/images/caj/Caj_Energija.png"
                 productDetailsImageAlt="Jačanje kos"
-                productDetailsURL="/kozmetika/kozmetikaProduct"
+                productDetailsURL="/cajevi/cajProduct"
                 productChips1="Protuupalno"
                 productChips2="Opušta"
                 imageClass="imageVertical"
                 hoverOutline="blue-300"
               />
               <ProductCard
-                productDetailsTitle="Hydrating day cream"
+                productDetailsTitle="Detox čaj"
                 productDetailsPrice="4.2 €"
-                productDetailsImageURL="/images/product/kozmetika_hydrating_day_cream.png"
+                productDetailsImageURL="/images/caj/Caj_Detox.png"
                 productDetailsImageAlt="Smiljolat"
-                productDetailsURL="/kozmetika/kozmetikaProduct"
+                productDetailsURL="/cajevi/cajProduct"
                 productChips1="Protuupalno"
                 productChips2="Opušta"
                 imageClass="imageHorizontal"
                 hoverOutline="blue-300"
               />
               <ProductCard
-                productDetailsTitle="Kapi od slatkog pelina"
+                productDetailsTitle="Imuno čaj"
                 productDetailsPrice="3.5 €"
-                productDetailsImageURL="/images/product/kozmetika_kapi_slatki_pelin.png"
-                productDetailsImageAlt="Ulje za njegu i masažu"
-                productDetailsURL="/kozmetika/kozmetikaProduct"
+                productDetailsImageURL="/images/caj/Caj_Imuno.png"
+                productDetailsImageAlt="Imuno čaj"
+                productDetailsURL="/cajevi/cajProduct"
                 productChips1="Protuupalno"
                 productChips2="Opušta"
                 imageClass="imageVertical"
                 hoverOutline="blue-300"
               />
-              <ProductCard
-                productDetailsTitle="Lavandarat"
-                productDetailsPrice="5 €"
-                productDetailsImageURL="/images/product/kozmetika_lavandarat.png"
-                productDetailsImageAlt="Serum od smilja"
-                productDetailsURL="/kozmetika/kozmetikaProduct"
-                productChips1="Protuupalno"
-                productChips2="Opušta"
-                imageClass="imageVertical"
-                hoverOutline="blue-300"
-              />
-              <ProductCard
-                productDetailsTitle="Serum od smilja"
-                productDetailsPrice="4 €"
-                productDetailsImageURL="/images/product/kozmetika_serum_od_smilja.png"
-                productDetailsImageAlt="Noćna vitaminska krema"
-                productDetailsURL="/kozmetika/kozmetikaProduct"
-                productChips1="Protuupalno"
-                productChips2="Opušta"
-                imageClass="imageVertical"
-                hoverOutline="blue-300"
-              />
-              <ProductCard
-                productDetailsTitle="Smiljolat"
-                productDetailsPrice="2.7 €"
-                productDetailsImageURL="/images/product/kozmetika_smiljolat.png"
-                productDetailsImageAlt="Hidratantna dnevna krema"
-                productDetailsURL="/kozmetika/kozmetikaProduct"
-                productChips1="Protuupalno"
-                productChips2="Opušta"
-                imageClass="imageVertical"
-                hoverOutline="blue-300"
-              />
-              <ProductCard
-                productDetailsTitle="Vitamin night cream"
-                productDetailsPrice="3.5 €"
-                productDetailsImageURL="/images/product/kozmetika_vitamin_night_creeam.png"
-                productDetailsImageAlt="Lavandorat"
-                productDetailsURL="/kozmetika/kozmetikaProduct"
-                productChips1="Protuupalno"
-                productChips2="Opušta"
-                imageClass="imageHorizontal"
-                hoverOutline="blue-300"
-              />
+              
             </div>
           </section>
 
-          <CosmeticsBanner />
+          <BannerCaj />
       </main>
       <div>
         <FollowSocial 

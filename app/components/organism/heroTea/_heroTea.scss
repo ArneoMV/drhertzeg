@@ -37,7 +37,7 @@ $background-rectangle: url('../../../assets/image/rectangle-blue.svg');
         h1 {
             font-size: 28px;
         }
-        button {
+        .button, .primary{
             background-color: $blue-300;
             color: $neutral-100;
             &:hover {

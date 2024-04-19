@@ -9,9 +9,8 @@ import TikTok from '../../../assets/icon/socialLogo/TikTok-fill.svg'
 import BABIO101 from '../../../assets/image/BA-BIO-101.svg'
 import Organic from '../../../assets/image/Organic.svg'
 import Natural from '../../../assets/image/Natural.svg'
-
-
 import './_footer.scss'
+
 
 const Footer = ({ color }) => {
 
@@ -21,22 +20,22 @@ const Footer = ({ color }) => {
   switch (color) {
     case 'primary-200':
       className = 'primary-200';
-      break;
+    break;
     case 'primary-800':
-        className = 'primary-800';
-        break;
+      className = 'primary-800';
+    break;
     case 'red-200':
       className = 'red-200';
-      break;
+    break;
     case 'red-300':
       className = 'red-300';
-      break;
+    break;
     case 'blue-200':
       className = 'blue-800';
-      break;
+    break;
     case 'blue-800':
         className = 'blue-800';
-        break;
+    break;
     default:
       className = '';
   }
@@ -58,22 +57,28 @@ const Footer = ({ color }) => {
           </div>
 
           <div className='topNav'>
-            <nav className="row">
-              <div className="column">
+            <nav>
+              <div className="nav-column">
                 <h4>Brendovi</h4>
-                <Link href="/cajevi">Cajevi</Link>
-                <Link href="/kozmetika">Kozmetika</Link>
+                <div className='column'>
+                  <Link href="/cajevi">Cajevi</Link>
+                  <Link href="/kozmetika">Kozmetika</Link>
+                </div>
               </div>
-              <div className="column">
+              <div className="nav-column">
                 <h4>Info</h4>
-                <Link href="/kontakt">Kontakt</Link>
-                <Link href="/blog">Blog</Link>
-                <Link href="/faq">Cesta Pitanja</Link>
+                <div className='column'>
+                  <Link href="/kontakt">Kontakt</Link>
+                  <Link href="/blog">Blog</Link>
+                  <Link href="/faq">Cesta Pitanja</Link>
+                </div>
               </div>
-              <div className="column">
+              <div className="nav-column">
                 <h4>Ostalo</h4>
-                <Link href="/certifikati">Certifikati</Link>
-                <Link href="/uvijeti">Uvijeti kupovine</Link>
+                <div className='column'>
+                  <Link href="/certifikati">Certifikati</Link>
+                  <Link href="/uvjetiKupovine">Uvijeti kupovine</Link>
+                </div>
               </div>
             </nav>
 

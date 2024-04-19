@@ -47,47 +47,24 @@ export default function Blog() {
         <main className="blog-page-container">
           <section className="blog-article-container">
             <CardBlog
-              productTitle="Vodič za Odabir Okusa i Arome"
-              productDescription="Pronađite Svoj Savršeni Čaj"
+              productTitle="Od antičke Europe do suvremenih istraživanja"
               productDetailsImageURL="/images/blog/BlogCardImage_1.png"
               productDetailsImageAlt="Smokvin List"
-              productDetailsURL="/blog/demoArticle"
+              productDetailsURL="/blog/blog-1"
             />
             <CardBlog
-              productTitle="Isprobajte Naše Najnovije Čajeve"
-              productDescription="Noviteti i Specijalne Ponude"
+              productTitle="Hidrolati: prirodna čarolija za savršenu kožu"
               productDetailsImageURL="/images/blog/BlogCardImage_2.png"
               productDetailsImageAlt="Smokvin List"
-              productDetailsURL="/blog/demoArticle"
+              productDetailsURL="/blog/blog-2"
             />
             <CardBlog
-              productTitle="Zdravlje u Šalici"
-              productDescription="Kako Čaj Može Unaprijediti Vašu Dobrobit"
+              productTitle="Organski trendovi koji očaravaju Svijet"
               productDetailsImageURL="/images/blog/BlogCardImage_3.png"
               productDetailsImageAlt="Smokvin List"
-              productDetailsURL="/blog/demoArticle"
+              productDetailsURL="/blog/blog-3"
             />
-            <CardBlog
-              productTitle="Recepti za Čajne Koktele"
-              productDescription="Uživajte u Raznolikosti Okusa"
-              productDetailsImageURL="/images/blog/BlogCardImage_4.png"
-              productDetailsImageAlt="Smokvin List"
-              productDetailsURL="/blog/demoArticle"
-            />
-            <CardBlog
-              productTitle="Prirodni Čajevi za Detoksikaciju"
-              productDescription="Očistite Tijelo i Osvježite Dušu"
-              productDetailsImageURL="/images/blog/BlogCardImage_5.png"
-              productDetailsImageAlt="Smokvin List"
-              productDetailsURL="/blog/demoArticle"
-            />
-            <CardBlog
-              productTitle="Čajevaonica"
-              productDescription="Uživajte u Raznolikosti Okusa"
-              productDetailsImageURL="/images/blog/BlogCardImage_6.png"
-              productDetailsImageAlt="Smokvin List"
-              productDetailsURL="/blog/demoArticle"
-            />
+
           </section>
 
           <CosmeticsBanner />

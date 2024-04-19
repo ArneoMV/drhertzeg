@@ -19,7 +19,7 @@ export default function demoArticle() {
         {/* Title */}
         <section className="blog-title col-10-sm col-10-md col-10-lg">
           <span className='blog-text-container'>
-            <h3 className='title-gooey'>Pronađite Svoj Savršeni Čaj <br /> Vodič za Odabir Okusa i Arome</h3>
+            <h3 className='title-gooey'>Od antičke Europe do<br /> suvremenih istraživanja</h3>
           </span>
           {/* Filter: https://css-tricks.com/gooey-effect/ */}
           <svg className="gooey-svg" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">

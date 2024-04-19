@@ -6,7 +6,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Button from '../../atoms/button/button';
 import useWindowResize from "../../../utilities/useWindowResize";
-import BannerImage from '../../../assets/image/hero-image-cosmetics.png'
+import BannerImage from '../../../assets/image/hero-image-caj.png'
 
 export default function HeroTea() {
   // resize 
@@ -27,7 +27,7 @@ export default function HeroTea() {
         <div className='hero-banner'>
             <div className="hero-content-title">
                 <div className='title-text'>
-                <h1>Ljepota iz prirode <br /> ima novi izgled</h1>
+                <h1>Okus iz prirode <br /> ima novi izgled</h1>
                 <p>Marzipan caramels brownie jelly beans bear claw jelly-o shortbread macaroon candy canes.</p>
                 </div>
                 <Link href="/kozmetika/kozmetikaProduct">
@@ -65,7 +65,7 @@ export default function HeroTea() {
         <div className='hero-banner'>
             <div className="hero-content-title">
                 <div className='title-text'>
-                <h1>Ljepota iz prirode <br /> ima novi izgled</h1>
+                <h1>Okus iz prirode <br /> ima novi izgled</h1>
                 <p>Marzipan caramels brownie jelly beans bear claw jelly-o shortbread macaroon candy canes.</p>
                 </div>
                 <Link href="/kozmetika/kozmetikaProduct">
@@ -88,7 +88,7 @@ export default function HeroTea() {
         <div className='hero-banner'>
             <div className="hero-content-title">
                 <div className='title-text'>
-                <h1>Ljepota iz prirode <br /> ima novi izgled</h1>
+                <h1>Okus iz prirode <br /> ima novi izgled</h1>
                 <p>Marzipan caramels brownie jelly beans bear claw jelly-o shortbread macaroon candy canes.</p>
                 </div>
                 <Link href="/kozmetika/kozmetikaProduct">

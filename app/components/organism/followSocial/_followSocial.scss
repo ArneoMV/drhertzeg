@@ -4,32 +4,57 @@
 @use '../../../styles/abstract/_color' as *;
 @use '../../../styles/base/_mixin' as *;
 
-.primary {
+@mixin background-vawe {
+    content: "";
+    position: absolute; 
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: 26px;
+    background-size: cover; 
+    z-index: 1;
+}
+
+.primary-200 {
     background-color: $primary-200;
     &::after {
-        content: "";
-        background-image: url(../../../assets/image/vawe/vawe-top-green-200.svg);
+        @include background-vawe;
+        background-image: url(/images/vawe/vawe-top-green-200.svg);
     } 
 }
-.red {
+.primary-800 {
+    background-color: $primary-800;
+    &::after {
+        @include background-vawe;
+        background-image: url(/images/vawe/vawe-top-green-800.svg);
+    } 
+}
+.red-200 {
     background-color: $red-200;
     &::after {
-        content: "";
-        background-image: url(../../../assets/image/vawe/vawe-top-red-200.svg);
+        @include background-vawe;
+        background-image: url(/images/vawe/vawe-top-red-200.svg);
+    } 
+}
+.red-300 {
+    background-color: $red-300;
+    &::after {
+        @include background-vawe;
+        background-image: url(/images/vawe/vawe-top-red-300.svg);
     } 
 }
 .blue-200 {
     background-color: $blue-200;
     &::after {
-        content: "";
-        background-image: url(../../../assets/image/vawe/vawe-top-blue-200.svg);
+        @include background-vawe;
+        background-image: url(/images/vawe/vawe-top-blue-200.svg);
     } 
 }
 .blue-800 {
     background-color: $blue-800;
     &::after {
-        content: "";
-        background-image: url(../../../assets/image/vawe/vawe-top-blue-800.svg);
+        @include background-vawe;
+        background-image: url(/images/vawe/vawe-top-blue-800.svg);
     } 
 }
 
@@ -39,17 +64,7 @@
     @include flexRow;
     justify-content: space-around;
     align-items: center;
-    &::after {
-        content: "";
-        position: absolute; 
-        top: -20px;
-        left: 0;
-        width: 100%;
-        height: 26px;
 
-        background-size: cover; 
-        z-index: 1; 
-    }
     .followSocialContainer {
         display: flex;
         width: 100%;

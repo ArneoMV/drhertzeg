@@ -3,7 +3,7 @@
 @use "../base/variable.scss" as *;
 @use './color.scss' as *;
 
-
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 @font-face {
   font-family: 'Champagne & Limousines';
@@ -201,7 +201,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 500;
+  font-weight: bold;
   word-spacing: 0px;
 }
 

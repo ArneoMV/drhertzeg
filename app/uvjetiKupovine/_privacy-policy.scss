@@ -1,0 +1,98 @@
+@use '../styles/base/_variable' as *;
+@use '../styles/abstract/_color' as *;
+@use '../styles/abstract/_typo' as *;
+@use '../styles/layout/_breakpoint' as *;
+@use '../styles/layout/_layout' as *;
+@use '../styles/base/_mixin' as *;
+
+.faq-title {
+    width: 100%;
+    @include flexColumn;
+    .faq-text-container {
+        @include flexColumn;
+        gap: $size-12;
+        p {
+            width: 360px;
+        }
+    }
+    .gooey-svg {
+        visibility: hidden;
+        position: absolute;
+    }
+    .title-gooey {
+        width: fit-content;
+        display: inline;
+        box-decoration-break: clone;
+        background: $primary-600;
+        padding: 0.5rem 1rem;
+        filter: url('#title-gooey');
+        color: $neutral-100;
+        line-height: 125%;
+        span {
+            font-size: 21px;
+        }
+    }
+    .title-gooey:focus {
+        outline: 0;
+    }
+
+
+    .row {
+        gap: $size-24;
+        .info {
+            @include flexRow;
+            gap: $size-8;
+            align-items: center;
+
+            background-color: $neutral-100;
+            padding: $size-12 $size-16;
+            border-radius: $size-16;
+            box-shadow: $base-shadow-1;
+            p { 
+                color: $neutral-800;
+                font-weight: 600;
+            }
+            img {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+}
+  
+// Product Page
+.privacy-policy-page {
+    @include main-page-layout;
+    
+    main.privacy-policy-page-contianer {
+        @include main-page-container;
+        gap: $size-64;
+
+        .privacy-description {
+            @include flexColumn;
+            gap: $size-12;
+        }
+        .column {
+            @include flexColumn;
+            gap: $size-48;
+            .privacy {
+                @include flexColumn;
+                gap: $size-12;
+            }
+        }
+     
+    }
+
+    @media (min-width: map-get($breakpoints, "xs")) { 
+    }
+    @media (min-width: map-get($breakpoints, "sm")) {
+    }
+    @media (min-width: map-get($breakpoints, "md")) {
+    }
+    @media (min-width: map-get($breakpoints, "lg")) {
+    }
+    @media (min-width: map-get($breakpoints, "xl")) {
+    }
+    @media (min-width: map-get($breakpoints, "xxl")) {
+    }
+}

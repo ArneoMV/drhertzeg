@@ -25,7 +25,7 @@ a .button {
 
 .button.primary {
   @include Button();
-  background-color: $primary-500;
+  // background-color: $primary-500;
   display: flex;
   align-items: center;
   gap: $gap-sm;
@@ -33,7 +33,7 @@ a .button {
   &:hover {
     box-sizing: border-box;
     box-shadow: $shadow-sm;
-    background-color: $primary-600;
+    // background-color: $primary-600;
     box-shadow: $shadow-lg;
   }
   &:focus {
@@ -119,13 +119,4 @@ a .button {
   background-color: transparent;
   border: none;
   cursor: pointer;
-}
-
-// Button page
-.button-page {
-  .example-section {
-    .padding {
-      
-    }
-  }
 }

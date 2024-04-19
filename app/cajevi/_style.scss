@@ -17,6 +17,7 @@
     main.products-page-container {
         @include main-page-container;
 
+        h1, h2, h3, h4, h5 p { color: $blue-800; }
         .product-promotion {
             @include flexColumn;
             justify-content: center;
@@ -28,7 +29,6 @@
                 h4, p {
                     font-size: 48px; //
                     text-align: center;
-                    color: $red-900;
                     line-height: 115%;
                 }
                 p {
@@ -40,9 +40,6 @@
                 gap: $size-24;
                 .column {
                     gap: $size-12;
-                    h5, p {
-                        color: $red-900;
-                    }
                     h5 {
                         font-weight: 700;
                     }
@@ -61,7 +58,6 @@
                 justify-content: space-around;
                 margin: 0 auto;
                 padding: 0 $size-64;
-                color: $red-900;
                 h3,p  {
                     text-align: left;
                 }
@@ -99,7 +95,7 @@
                             li {
                                 font-size: 16px;
                                 font-weight: 500;
-                                color: $red-900;
+                                color: $blue-800;
                             }
                         } 
                     }
@@ -120,7 +116,13 @@
                 }
             }
         }
-        
+        .button, .primary{
+            background-color: $blue-300;
+            color: $neutral-100;
+            &:hover {
+                background-color: $blue-400;
+            }
+        }
 
         @media (min-width: map-get($breakpoints, "xxs")) {
             .product-promotion {

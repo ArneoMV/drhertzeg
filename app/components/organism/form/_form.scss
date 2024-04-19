@@ -27,8 +27,23 @@ $placeholder: ('::-webkit-input-placeholder', ':-moz-placeholder', '::-moz-place
 @mixin base-input {
     border-radius: $size-12;
     background-color: $neutral-100;
-    border: 1px solid $neutral-800;
-    width: 100%
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Work Sans' sans-serif;
+    font-size: 1.2em;
+    border: none;
+    outline: none; 
+    &:hover {
+        border: none;
+        outline: none;
+    }
+    &:focus-visible {
+        border: none;
+        outline: none;
+    }
+    &::placeholder {
+        font-family: 'Work Sans' sans-serif;
+    } 
 }
 
 .text-neutral-800 { color: $neutral-800 }
@@ -54,27 +69,16 @@ $placeholder: ('::-webkit-input-placeholder', ':-moz-placeholder', '::-moz-place
             font-size: 16px;
             font-family: 'Work Sans', sans-serif;
         }
+        
         input {
             @include base-input;
             height: 42px;
             padding: 0 $size-12;
-            box-sizing: border-box;
-            font-family: 'Work Sans' sans-serif;
-            font-size: 1.2em;
-            ::placeholder {
-                font-family: 'Work Sans' sans-serif;
-            }
         }
         textarea {
             @include base-input;
             height: $size-98;
             padding: $size-12 $size-12;
-            box-sizing: border-box;
-            font-family: 'Work Sans' sans-serif;
-            font-size: 1.2em;
-            ::placeholder {
-                font-family: 'Work Sans' sans-serif;
-            }
         }
     }
     .terms-container {

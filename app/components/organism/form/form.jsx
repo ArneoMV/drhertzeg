@@ -73,17 +73,18 @@ export default function FormContainer({className}) {
       <h4>Za više informacija pošaljite poruku</h4>
 
       <div className="content-container">
+
         {/* Name input field */}
         <div className="input-field">
           <label
             htmlFor="user_name"
             className={`text-neutral-800 ${
-              formik.touched.user_name && formik.errors.user_name
+              formik.submitCount > 0 && formik.touched.user_name && formik.errors.user_name
                 ? "text-red-400"
                 : ""
             } `}
           >
-            {formik.touched.user_name && formik.errors.user_name
+            {formik.submitCount > 0 && formik.touched.user_name && formik.errors.user_name
               ? formik.errors.user_name
               : "Ime i prezime"}
           </label>
@@ -100,18 +101,18 @@ export default function FormContainer({className}) {
 
         {/* Email input field */}
         <div className="input-field">
-          <label
-            htmlFor="user_email"
-            className={`text-neutral-800 ${
-              formik.touched.user_email && formik.errors.user_email
-                ? "text-red-400"
-                : ""
-            }`}
-          >
-            {formik.touched.user_email && formik.errors.user_email
-              ? formik.errors.user_email
-              : "Email"}
-          </label>
+        <label
+          htmlFor="user_email"
+          className={`text-neutral-800 ${
+            formik.submitCount > 0 && formik.touched.user_email && formik.errors.user_email
+              ? "text-red-400"
+              : ""
+          }`}
+        >
+          {formik.submitCount > 0 && formik.touched.user_email && formik.errors.user_email
+            ? formik.errors.user_email
+            : "Email"}
+        </label>
 
 
           <input
@@ -126,15 +127,15 @@ export default function FormContainer({className}) {
 
         {/* Textbox */}
         <div className="input-field">
-          <label
+        <label
             htmlFor="message"
             className={`text-neutral-800 ${
-              formik.touched.message && formik.errors.message
+              formik.submitCount > 0 && formik.touched.message && formik.errors.message
                 ? "text-red-400"
                 : ""
             }`}
           >
-            {formik.touched.message && formik.errors.message
+            {formik.submitCount > 0 && formik.touched.message && formik.errors.message
               ? formik.errors.message
               : "Vaša poruka"}
           </label>
