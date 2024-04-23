@@ -87,19 +87,19 @@ const Footer = ({ color }) => {
                 />
                 <Image 
                   src={Instagram}
-                  alt='facebook'
+                  alt='Instagram'
                   width={32}
                   quality={100}
                 />
                 <Image 
                   src={TikTok}
-                  alt='facebook'
+                  alt='TikTok'
                   width={32}
                   quality={100}
                 />
                 <Image 
                   src={Linkedin}
-                  alt='facebook'
+                  alt='Linkedin'
                   width={32}
                   quality={100}
                 />
@@ -114,19 +114,19 @@ const Footer = ({ color }) => {
           <div className="row">
             <Image 
                 src={Natural}
-                alt='facebook'
+                alt='Natural'
                 width={70}
                 quality={100}
             />
             <Image 
                 src={Organic}
-                alt='facebook'
+                alt='Organic'
                 width={70}
                 quality={100}
             />
             <Image 
                 src={BABIO101}
-                alt='facebook'
+                alt='BABIO101'
                 width={70}
                 quality={100}
             />

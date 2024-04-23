@@ -4,7 +4,7 @@ import React from 'react'
 import './_heroTea.scss'
 import Image from 'next/image'
 import Link from 'next/link'
-import Button from '../../atoms/button/button';
+import Button from '../../atoms/button/Button';
 import useWindowResize from "../../../utilities/useWindowResize";
 import BannerImage from '../../../assets/image/hero-image-caj.png'
 
