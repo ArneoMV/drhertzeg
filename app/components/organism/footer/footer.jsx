@@ -1,17 +1,16 @@
-import Link from 'next/link'
-import Image from 'next/image'
-import Logo from '../../../assets/logos/logo-white.svg'
-import Facebook from '/images/icon/socialLogo/Facebook-fill.svg';
-import Instagram from '/images/icon/socialLogo/Instagram-fill.svg';
-import Linkedin from '/images/icon/socialLogo/Linkedin-fill.svg';
-import TikTok from '/images/icon/socialLogo/TikTok-fill.svg';
+import Link from 'next/link';
+import Image from 'next/image';
+import Logo from '../../../assets/logos/logo-white.svg';
+import Facebook from '../../../../public/images/icon/socialLogo/Facebook-fill.svg';
+import Instagram from '../../../../public/images/icon/socialLogo/Instagram-fill.svg';
+import Linkedin from '../../../../public/images/icon/socialLogo/Linkedin-fill.svg';
+import TikTok from '../../../../public/images/icon/socialLogo/TikTok-fill.svg';
 
 
-
-import BABIO101 from '../../../assets/image/BA-BIO-101.svg'
-import Organic from '../../../assets/image/Organic.svg'
-import Natural from '../../../assets/image/Natural.svg'
-import './_footer.scss'
+import BABIO101 from '../../../assets/image/BA-BIO-101.svg';
+import Organic from '../../../assets/image/Organic.svg';
+import Natural from '../../../assets/image/Natural.svg';
+import './_footer.scss';
 
 
 const Footer = ({ color }) => {

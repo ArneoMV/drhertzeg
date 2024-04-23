@@ -6,12 +6,17 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "analyze": "cross-env ANALYZE=true next build",
+    "analyze:server": "cross-env BUNDLE_ANALYZE=server next build",
+    "analyze:browser": "cross-env BUNDLE_ANALYZE=browser next build"
   },
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
+    "@next/bundle-analyzer": "^14.2.2",
     "axios": "^1.6.8",
     "classnames": "^2.5.1",
+    "cross-env": "^7.0.3",
     "formik": "^2.4.5",
     "next": "14.1.0",
     "react": "^18",
