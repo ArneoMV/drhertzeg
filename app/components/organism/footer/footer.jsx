@@ -1,16 +1,10 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import Logo from '../../../assets/logos/logo-white.svg'
-// import Facebook from '../../../assets/icon/socialLogo/Facebook-fill.svg'
-// import Instagram from '../../../assets/icon/socialLogo/Instagram-fill.svg'
-// import Linkedin from '../../../assets/icon/socialLogo/Linkedin-fill.svg'
-// import TikTok from '../../../assets/icon/socialLogo/TikTok-fill.svg'
-
-
-import Facebook from '../../../../public/images/icon/socialLogo/Facebook-fill.svg'
-import Instagram from '../../../../public/images/icon/socialLogo/Instagram-fill.svg'
-import Linkedin from '../../../../public/images/icon/socialLogo/Linkedin-fill.svg'
-import TikTok from '../../../../public/images/icon/socialLogo/TikTok-fill.svg'
+import Facebook from '../../../assets/icon/socialLogo/Facebook-fill.svg'
+import Instagram from '../../../assets/icon/socialLogo/Instagram-fill.svg'
+import Linkedin from '../../../assets/icon/socialLogo/Linkedin-fill.svg'
+import TikTok from '../../../assets/icon/socialLogo/TikTok-fill.svg'
 
 
 import BABIO101 from '../../../assets/image/BA-BIO-101.svg'

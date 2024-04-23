@@ -4,9 +4,9 @@ import { useRouter } from 'next/navigation'
 import { notFound } from "next/navigation"
 import Image from 'next/image'
 import ProductSlika from "../../assets/image/product/product-promotion-card-red.png"
-import Chip from '@/app/components/atoms/chip/Chip';
+import Chip from '../../components/atoms/chip/Chip';
 
-import ProductPromotioCard from '@/app/components/organism/productPromotioCard/productPromotioCard';
+import ProductPromotioCard from '../../components/organism/productPromotioCard/productPromotioCard';
 import Carousel from '../../components/organism/carousel/carousel'
 import CosmeticsBanner from '../../components/organism/bannerCosmetics/bannerCosmetics'
 

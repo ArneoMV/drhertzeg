@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import './_productPromotioCard.scss'
-import Button from '../../../components/atoms/button/button';
+import Button from '../../../components/atoms/button/Button';
 import Link from 'next/link';
 import Image from 'next/image'
 
