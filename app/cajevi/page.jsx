@@ -4,7 +4,6 @@ import Chip from "../components/atoms/chip/Chip";
 import Icon from "../components/atoms/icon/Icon";
 import Loading from "../loading";
 
-import Button from '../components/atoms/button/button';
 import HeroTea from '../components/organism/heroTea/heroTea';
 import ProductPromotioCard from '../components/organism/productPromotioCard/productPromotioCard';
 import ProductCard from '../components/organism/ProductCard/ProductCard'

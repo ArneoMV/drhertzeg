@@ -9,7 +9,6 @@ import { Icon } from "../utilities/images.js";
 // import { sendEmail } from "../utilities/sendEmail.jsx";
 
 import Input from '../components/molecules/input/input';
-import Button from '../components/atoms/button/button';
 import TextBox from '../components/molecules/textbox/textbox';
 import FormContainer from '../components/organism/form/form'
 import Footer from "../components/organism/footer/footer";

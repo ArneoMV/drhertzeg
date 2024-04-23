@@ -1,5 +1,3 @@
-import Icon from "../components/atoms/icon/Icon";
-import Button from '../components/atoms/button/button';
 import Loading from "../loading";
 
 import "./_privacy-policy.scss";

@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import Chip from "../components/atoms/chip/Chip";
-import Icon from "../components/atoms/icon/Icon";
+
 
 import BannerCosmetics from '../components/organism/heroCosmetics/heroCosmetics';
 import PlantIcon from '../assets/icon/plant-icon.svg'
@@ -9,8 +9,6 @@ import PlantIcon from '../assets/icon/plant-icon.svg'
 import ProductPromotioCard from '../components/organism/productPromotioCard/productPromotioCard';
 import ProductCard from '../components/organism/ProductCard/ProductCard'
 import CosmeticsBanner from '../components/organism/bannerCosmetics/bannerCosmetics'
-
-import Button from '../components/atoms/button/button';
 import Loading from "../loading";
 import "./_style.scss";
 import "../styles/_index.scss";
