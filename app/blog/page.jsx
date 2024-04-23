@@ -2,7 +2,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import Chip from "../components/atoms/chip/Chip";
-import Icon from "../components/atoms/icon/Icon";
 
 import HeroImage from '../assets/image/CoverKozmetika.png'
 import CardBlog from '../components/organism/cardBlog/cardBlog'

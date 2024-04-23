@@ -1,13 +1,14 @@
 import React from 'react';
 import Image from 'next/image';
-import Facebook from '../../../assets/icon/socialLogo/Facebook-fill.svg';
-import Instagram from '../../../assets/icon/socialLogo/Instagram-fill.svg';
-import Linkedin from '../../../assets/icon/socialLogo/Linkedin-fill.svg';
-import TikTok from '../../../assets/icon/socialLogo/TikTok-fill.svg';
-import Social1 from '../../../assets/image/social/Image1.png';
-import Social2 from '../../../assets/image/social/Image2.png';
-import Social3 from '../../../assets/image/social/Image3.png';
-import Social4 from '../../../assets/image/social/Image4.png';
+
+import Facebook from '../../../../public/images/icon/socialLogo/Facebook-fill.svg';
+import Instagram from '../../../../public/images/icon/socialLogo/Instagram-fill.svg';
+import Linkedin from '../../../../public/images/icon/socialLogo/Linkedin-fill.svg';
+import TikTok from '../../../../public/images/icon/socialLogo/TikTok-fill.svg'
+import Social1 from '../../../../public/images/image/social/Image1.png';
+import Social2 from '../../../../public/images/image/social/Image2.png';
+import Social3 from '../../../../public/images/image/social/Image3.png';
+import Social4 from '../../../../public/images/image/social/Image4.png';
 import './_followSocial.scss'; // Importajte SCSS datoteku za stilove
 
 const FollowSocial = ({ color }) => {

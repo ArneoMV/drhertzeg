@@ -4,9 +4,9 @@ import { Icon } from '../../utilities/images'
 
 import "./_style.scss";
 import "../../styles/_index.scss";
-import Slika1 from '../../assets/image/blog/BlogSlika_1.jpg'
-import Slika2 from '../../assets/image/blog/BlogSlika_2.jpg'
-import Slika3 from '../../assets/image/blog/BlogSlika_3.jpg'
+import Slika1 from '../../../public/images/image/blog/BlogSlika_1.jpg'
+import Slika2 from '../../../public/images/image/blog/BlogSlika_2.jpg'
+import Slika3 from '../../../public/images/image/blog/BlogSlika_3.jpg'
 import Chip from '../../components/atoms/chip/Chip'
 import FollowSocial from "../../components/organism/followSocial/followSocial";
 import Footer from '../../components/organism/footer/footer';
