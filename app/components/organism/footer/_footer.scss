@@ -98,10 +98,15 @@ footer {
             }
             nav {
                 @include flexRow;
-                gap: $size-64;
+                gap: $size-24;
+                justify-content: space-around;
                 .nav-column {
                     @include flexColumn;
-                    gap: $size-24;
+                    gap: $size-12;
+                    width: auto;
+                    h4 {
+                         
+                    }
                     a {
                         font-size: 18px;
                         font-weight: 400;
@@ -173,49 +178,10 @@ footer {
         } 
     }
     @media (min-width: map-get($breakpoints, "xs")) {
-        padding: $size-64  $margin-md;
-        .footer-container {
-            .footerTop {
-                flex-direction: column;
-                gap: $gap-xl;
-                .logo {
-                    flex-direction: column;
-                    align-items: flex-start;
-                }
-                .topNav {
-                    flex-direction: column;
-                    justify-content: space-between;
-                    gap: $gap-xl;
-                }
-            }
 
-            .footerBottom {
-                width: 100%;
-                flex-direction: column;
-                gap: $gap-lg;
-            }
-        }
     }
     @media (min-width: map-get($breakpoints, "sm")) {
         padding: $size-64  $margin-md;
-        .footer-container {
-            .footerTop {
-                flex-direction: column;
-                gap: $gap-lg;
-                .logo {
-                    flex-direction: column;
-                    align-items: flex-start;
-                }
-                .topNav {
-                    flex-direction: row;
-                    justify-content: space-between;
-                }
-            }
-            .footerBottom {
-                width: 100%;
-                flex-direction: row;
-            }
-        }
     }
     @media (min-width: map-get($breakpoints, "md")) {
         padding: $size-64  $margin-md;
@@ -223,6 +189,9 @@ footer {
             .footerTop {
                 flex-direction: column;
                 gap: $gap-lg;
+                nav {
+                    gap: $size-64;
+                }
                 .logo {
                     flex-direction: row;
                     align-items: flex-start;

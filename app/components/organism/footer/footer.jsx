@@ -71,12 +71,6 @@ const Footer = ({ color }) => {
                   <Link href="/kontakt">Kontakt</Link>
                   <Link href="/blog">Blog</Link>
                   <Link href="/faq">Cesta Pitanja</Link>
-                </div>
-              </div>
-              <div className="nav-column">
-                <h4>Ostalo</h4>
-                <div className='column'>
-                  <Link href="/certifikati">Certifikati</Link>
                   <Link href="/uvjetiKupovine">Uvijeti kupovine</Link>
                 </div>
               </div>
