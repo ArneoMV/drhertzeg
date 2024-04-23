@@ -33,7 +33,8 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${workSans.variable}`}>
        <Head>
           <title>Dr Hertzeg </title>
-          <meta name="viewport" content="initial-scale=1.0, width=device-width" />          
+          <meta name="viewport" content="initial-scale=1.0, width=device-width" /> 
+          <link rel="shortcut icon" href="static/favicon/favicon.ico" />      
         </Head>
       <body>
         <Header />

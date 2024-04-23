@@ -19,7 +19,7 @@ export default function demoArticle() {
         {/* Title */}
         <section className="blog-title col-10-sm col-10-md col-10-lg">
           <span className='blog-text-container'>
-            <h3 className='title-gooey'>Hidrolati:<br /> prirodna čarolija za savršenu kožu</h3>
+            <h3 className='title-gooey'>Hidrolati:<br /> Prirodna Čarolija za Savršenu Kožu</h3>
           </span>
           {/* Filter: https://css-tricks.com/gooey-effect/ */}
           <svg className="gooey-svg" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
@@ -56,7 +56,9 @@ export default function demoArticle() {
 
         {/* Quote */}
         <section className='blog-quote col-8-sm col-8-md col-8-lg'>
-          <p><q>Čaj je mnogo više od običnog napitka; to je iskustvo koje nas vodi kroz bogatstvo okusa, mirisa i koristi za zdravlje. S toliko različitih vrsta čajeva dostupnih, odaberite pravi može biti prava avantura. Bez obzira jeste li ljubitelj voćnih nota, preferirate li umirujuće biljne čajeve ili tražite nešto snažno i osvježavajuće, ovdje je vodič koji će vam pomoći da pronađete svoj savršeni čaj.</q></p>
+          <p><q>Hidrolati su postali dragocjeni saveznici u svijetu ljepote, nudeći prirodan i učinkovit način njege kože.
+                Ovi čarobni eliksiri, nusproizvodi destilacije biljaka za dobivanje eteričnih ulja, često nazivani i
+                cvjetnim vodicama, imaju široku primjenu, posebno u njezi lica. </q></p>
         </section>
 
         {/* Content */}
@@ -68,93 +70,90 @@ export default function demoArticle() {
               quality={100}
 
             />
-            <span className='blog-text-container'><p>Slatki pelin čaj</p></span>
           </figure>
 
-          <div className="blog-text-section">
-            <h5>Smokvin list</h5>
-            <div className="flex">
-              <div className="blog-text-container col-10-sm col-6-md col-6-lg">
-                <p>Otkrijte svoje preferencije okusa: Kada se upuštate u svijet čajeva, prvi korak je istražiti svoje preferencije okusa. Ako volite voćne arome, možda će vam se svidjeti voćni čajevi poput bobica ili citrusa. Ako preferirate nešto osvježavajuće i blago gorčinu, zeleni čaj može biti odličan izbor. </p>
+
+          <div className="content-flex">
+            <div className="content-column col-10-sm col-6-md col-12-lg">
+              <div className="blog-text-section">
+                <h5>Univerzalna Nježnost za Sve Tipove Kože:</h5>
+                <div className="blog-text-container">
+                  <p>Hidrolati su blagi i umirujući, idealni čak i za najosjetljiviju kožu. Obogaćeni hranjivim tvarima i antioksidansima, pružaju hidrataciju i štite kožu od slobodnih radikala. </p>
+                </div>
               </div>
-              <div className="blog-tag-container col-10-sm col-4-md col-4-lg">
-                <Chip text="Dišni putevi" />
-                <Chip text="Osvježavajuće" />
+              <div className="blog-text-section">
+                <h5>Višestruka Primjena:</h5>
+                  <div className="blog-text-container">
+                    <p>Hidrolati se mogu koristiti na različite načine, uključujući toniziranje kože, hidrataciju, smirivanje upala i iritacija te kao dodatna njega nakon čišćenja kože.</p>
+                  </div>
               </div>
+              <div className="blog-text-section">
+                <h5>Prava Odabira za Vašu Kožu:</h5>
+                  <div className="blog-text-container">
+                    <p>Važno je odabrati hidrolat koji odgovara vašim potrebama i tipu kože. Evo nekoliko preporuka:</p>
+                  </div>
+              </div>
+            </div>
+            <div className="blog-tag-container col-10-sm col-4-md col-4-lg">
+              <div className="column"></div>
+                <Chip text="Povijest čaja" colorBg="#D8F3DC" colorText="#1B4332" />
+                <Chip text="Medicinske svrhe" colorBg="#D8F3DC" colorText="#1B4332" />
+                <Chip text="Eliksir mladosti" colorBg="#D8F3DC" colorText="#1B4332" />
             </div>
           </div>
-
-          <div className="blog-text-section">
-            <h5>Imuno čaj</h5>
-            <div className="flex">
-              <div className="blog-text-container col-10-sm col-6-md col-6-lg">
-                <p>Otkrijte svoje preferencije okusa: Kada se upuštate u svijet čajeva, prvi korak je istražiti svoje preferencije okusa. Ako volite voćne arome, možda će vam se svidjeti voćni čajevi poput bobica ili citrusa. Ako preferirate nešto osvježavajuće i blago gorčinu, zeleni čaj može biti odličan izbor. </p>
-              </div>
-              <div className="blog-tag-container col-10-sm col-4-md col-4-lg">
-                <Chip text="Dišni putevi" />
-                <Chip text="Osvježavajuće" />
-              </div>
-            </div>
+          <div className="row">
           </div>
+          <div className="content-flex">
+            <div className="content-column col-10-sm col-6-md col-12-lg">
+              <div className="blog-text-section">
+                  <h5>Immortality Hidrolat od Smilja Dr. Hertzeg za Zrelu Kožu:</h5>
+                    <div className="blog-text-container">
+                      <p>Ovaj hidrolat je savršen za zrelu kožu. Djeluje kao eliksir mladosti, pomažući u zacjeljivanju oštećene
+                        kože, smanjenju bora i podočnjaka te pružajući protuupalno djelovanje. Također je koristan nakon
+                        brijanja ili depilacije te umiruje kožu nakon izlaganja suncu. Smilje, poznato i kao immortelle ili
+                        nevenak, ima snažna ljekovita svojstva koja potiču obnavljanje kože i daju joj mladenački sjaj.
+                        Hidrolat od smilja Dr. Hertzeg jamči vrhunsku kvalitetu i njegu koja će vašu kožu održati mladolikom i
+                        blistavom.</p>
+                    </div>
+                </div>
+                <figure className='card-thumbnail'>
+                    <Image
+                      src={Slika3}
+                      alt='slika'
+                      quality={100}
 
+                    />
+                  <span className='blog-text-container'><p>Immortality Hidrolat</p></span>
+                </figure>
+                <div className="blog-text-section">
+                  <h5>Hidrolat Lavanda Dr. Hertzeg za Osjetljivu Kožu:</h5>
+                    <div className="blog-text-container">
+                      <p>Lavanda je blagotvorna za osjetljivu kožu, pružajući regenerativno i pročišćavajuće djelovanje.
+                          Idealna je za njegu osjetljive kože te pomaže kod upalnih stanja kože, uboda insekata te opekotina od
+                          sunca ili depilacije. Hidrolat lavande Dr. Hertzeg predstavlja vrhunsku njegu koja osigurava umirujući
+                          učinak i uravnoteženost za vašu kožu. Sastavljen od pažljivo odabranih sastojaka, ovaj hidrolat
+                          osigurava njegu koja će osvježiti i obnoviti vašu kožu, pružajući joj osjećaj ugode i svježine.</p>
+                    </div>
+                </div>
+                <figure className='card-thumbnail'>
+                    <Image
+                      src={Slika3}
+                      alt='slika'
+                      quality={100}
 
-
-          <figure className='card-thumbnail'>
-            <Image
-              src={Slika2}
-              alt='slika'
-              quality={100}
-            />
-            <span className='blog-text-container'><p>Aroma vanilije</p></span>
-          </figure>
-
-          <div className="blog-text-section">
-            <div className="row">
-              <h5>Recept za čaj iz vrta</h5>
-              <p>SASTOJCI</p>
+                    />
+                  <span className='blog-text-container'><p>Hidrolat Lavanda</p></span>
+                </figure>
             </div>
-            <div className="flex">
-              <div className="blog-text-container col-10-sm col-6-md col-6-lg">
-                <p>Otkrijte svoje preferencije okusa: Kada se upuštate u svijet čajeva, prvi korak je istražiti svoje preferencije okusa. Ako volite voćne arome, možda će vam se svidjeti voćni čajevi poput bobica ili citrusa. Ako preferirate nešto osvježavajuće i blago gorčinu, zeleni čaj može biti odličan izbor. </p>
-              </div>
-              <div className="blog-tag-container col-10-sm col-4-md col-4-lg">
-                <Chip text="Dišni putevi" />
-                <Chip text="Osvježavajuće" />
-              </div>
+            {/* col-10-sm col-4-md col-4-lg */}
+            <div className="blog-tag-container col-10-sm col-4-md col-4-lg">
+                <Chip text="Medicinske svrhe" colorBg="#D8F3DC" colorText="#1B4332" />
+                <Chip text="Eliksir mladosti" colorBg="#D8F3DC" colorText="#1B4332" />
             </div>
-          </div>
-
-          <figure className='card-thumbnail'>
-            <Image
-              src={Slika3}
-              alt='slika'
-              quality={100}
-
-            />
-            <span className='blog-text-container'><p>Dodatak limuna</p></span>
-          </figure>
-
-          <div className="blog-text-section col-10-sm col-6-md col-6-lg">
-            <h5>Pronađite savršen čaj</h5>
-              <div className="blog-text-container col-10-sm col-6-md col-6-lg">
-                <p>Eksperimentirajte s različitim sortama: Put do pronalaženja savršenog čaja često uključuje eksperimentiranje s različitim sortama. Nemojte se ograničavati na jedan tip čaja; isprobajte različite arome, mješavine i metode pripreme kako biste otkrili što vam najbolje odgovara.
-                  <br />Posjetite lokalnu čajevnicu ili trgovinu specijaliziranu za čajeve kako biste dobili savjete i preporuke od stručnjaka. Uživajte u procesu istraživanja i otkrijte čaroliju svijeta čajeva dok tražite svoj savršeni napitak.</p>
-              </div>
           </div>
         </section>
 
-        {/* Tags */}
-        <section className='blog-tag col-10-sm col-10-md col-10-lg'>
-          <Chip text="TAGOVI" colorBg="#FFD297" colorText="#242424" />
-          <div className='row'>
-            <Chip text="Okusi" />
-            <Chip text="Arome" />
-            <Chip text="Zdravlje" />
-            <Chip text="Biljni čajevi" />
-            <Chip text="Vočni čajevi" />
-            <Chip text="Vanilija" />
-          </div>
-        </section>
+        
       </main>
 
       <div>

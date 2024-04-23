@@ -8,7 +8,7 @@ import PlantIcon from '../assets/icon/plant-icon.svg'
 
 import ProductPromotioCard from '../components/organism/productPromotioCard/productPromotioCard';
 import ProductCard from '../components/organism/ProductCard/ProductCard'
-import CosmeticsBanner from '../components/organism/cosmeticsBanner/cosmeticsBanner'
+import CosmeticsBanner from '../components/organism/bannerCosmetics/bannerCosmetics'
 
 import Button from '../components/atoms/button/button';
 import Loading from "../loading";

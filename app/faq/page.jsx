@@ -69,28 +69,28 @@ export default function Faq() {
             </svg>
           </div>
 
-            <div className="row">
-              <ul className="col-7-lg">
-                {questions.map((q) => (
-                  <li key={q.id}>
-                    <div className="question" onClick={() => toggleQuestion(q.id)}>
-                      <h5>{q.question}</h5>
-                    </div>
+          <div className="content-container">
+            <ul className="col-7-lg">
+              {questions.map((q) => (
+                <li key={q.id}>
+                  <div className="question" onClick={() => toggleQuestion(q.id)}>
+                    <h5>{q.question}</h5>
+                  </div>
 
-                    {openQuestion === q.id && <li className="answer"><span></span><p>{q.answer}</p></li>}
-                  </li>
-                ))}
+                  {openQuestion === q.id && <li className="answer"><span></span><p>{q.answer}</p></li>}
+                </li>
+              ))}
+            </ul>
+
+            <div className="column related">
+              <h5>Povezani blogovi</h5>
+              <ul>
+                <li className="link">Otkrite čarobnu prošlost slatkog pelina</li>
+                <li className="link">Hidrolati: Prirodna čarolija za savršenu kožu</li>
+                <li className="link">Organski trendovi koji očaravaju svijet</li>
               </ul>
-
-              <div className="column related">
-                <h5>Povezani blogovi</h5>
-                <ul>
-                  <li className="link">Otkrite čarobnu prošlost slatkog pelina</li>
-                  <li className="link">Hidrolati: Prirodna čarolija za savršenu kožu</li>
-                  <li className="link">Organski trendovi koji očaravaju svijet</li>
-                </ul>
-              </div>
             </div>
+          </div>
         </main>
 
       <div>

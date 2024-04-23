@@ -10,23 +10,28 @@ section.productAdCard {
     border-radius: $radius-md;
     background-color: $neutral-100;
     width: 100%;
-    .productCardDetailsContainer {
+    .product-card-details-container {
         @include flexColumn;
         justify-content: space-evenly;
-        gap: $gap-lg;
+        align-items: flex-start;
+        gap: $size-12;
         width: auto;
         padding: $padding-lg;
         overflow: hidden;
         border-radius: $radius-md;
         a {
             text-decoration: none;
-            margin: 0 auto
+
+            button {
+                border: 0px;
+                background-color: $primary-100;
+            }
         }
         .productCardDetails {
             @include flexColumn;
             gap: $gap-md;
             h4 {
-                color: $primary-700;
+                color: $neutral-800;
                 font-weight: bold;
                 max-width: 80%
             }
@@ -41,9 +46,10 @@ section.productAdCard {
                     }
                     li:nth-child(1) {
                         width: auto;
-                        h6 {
-                            font-weight: 900;
-                            color: $primary-900;
+                        p {
+                            font-family: 'Work Sans', sans-serif;
+                            font-weight: 700;
+                            color: $blue-800;
                         }
                         
                     }

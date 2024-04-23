@@ -58,14 +58,13 @@ a .button {
   @include Button();
   background-color: transparent;
   color: $neutral-800;
-  border: 1px solid $neutral-800;
+  border: 0px;
 
   &:hover {
     background-color: transparent;
-    box-shadow: $base-shadow-4;
+    box-shadow: $base-shadow-3;
     color: $neutral-800;
-    border: 2px solid $neutral-800;
-    text-decoration: underline;
+    text-decoration: none;
   }
   &:focus {
     background-color: $neutral-100;

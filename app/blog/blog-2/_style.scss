@@ -86,67 +86,29 @@
     }
 
     .blog-content {
-        /* Styles for:
-        ** - Using IMG tag inside a container
-        ------------------------------------------ */
-        /* The image container */
-        figure.card-thumbnail {
-            position: relative;
-            overflow: hidden;  
-            display: flex;
-            justify-content: center; /* horizontal center */
-            align-items: center; /* vertical center */
-            @include flexColumn;
-            width: 100%; /* Thumbnail dimensions. */
-            height: 100%; /*** Change the height to make the image smaller ***/
-            margin: 0;
-            border-radius: $size-32;
-            img {
-                height: 400px;
-                width: 100%;
-                object-fit: cover;
-            }
-            /* Styles the title inside the img container */
-            span.blog-text-container {
-                position: absolute; 
-                left: 0; 
-                bottom: 0;
-                margin: $size-24;
-                background-color: $neutral-100;
-                padding: $size-4 $size-12;
-                border-radius: $size-12;
-                h3 {
-                    color: $neutral-100;
-                }
-                p {
-                    font-size: 15px;
-                    color: $neutral-800;
-                    font-weight: 600;
-                    line-height: 160%;
-                }
-            }
-                
-        }
-        
 
+        
         // Article card section
         .blog-text-section {
             @include flexColumn;
-            gap: $size-12;
+            gap: $size-8;
             width: 100%;
-            .flex {
+        }
+        .content-flex {
+            @include flexRow;
+
+            .content-column {
                 @include flexColumn;
-                justify-content: space-between;
                 gap: $size-24;
-                .blog-text-container {
-                    
-                }
-                .blog-tag-container {
-                    @include flexRow;
-                    justify-content: flex-start;
-                    gap: $size-8;
-                    width: 100%;
-                }
+            }
+            .blog-tag-container {
+                @include flexRow;
+                justify-content: flex-end;
+                gap: $size-8;
+                width: 100%;
+            }
+            .card-thumbnail {
+                height: 250px;
             }
         }
     }
@@ -195,4 +157,43 @@
         
     }
 
+}
+
+/* The image container */
+.card-thumbnail {
+    position: relative;
+    overflow: hidden;  
+    display: flex;
+    justify-content: center; /* horizontal center */
+    align-items: center; /* vertical center */
+    @include flexColumn;
+    width: 100%; /* Thumbnail dimensions. */
+    height: auto; /*** Change the height to make the image smaller ***/
+    margin: 0;
+    border-radius: $size-32;
+    img {
+        height: 400px;
+        width: 100%;
+        object-fit: cover;
+    }
+    /* Styles the title inside the img container */
+    span.blog-text-container {
+        position: absolute; 
+        left: 0; 
+        bottom: 0;
+        margin: $size-24;
+        background-color: $neutral-100;
+        padding: $size-4 $size-12;
+        border-radius: $size-12;
+        h3 {
+            color: $neutral-100;
+        }
+        p {
+            font-size: 15px;
+            color: $neutral-800;
+            font-weight: 600;
+            line-height: 160%;
+        }
+    }
+        
 }

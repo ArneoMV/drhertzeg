@@ -56,7 +56,9 @@ export default function demoArticle() {
 
         {/* Quote */}
         <section className='blog-quote col-8-sm col-8-md col-8-lg'>
-          <p><q>Čaj je mnogo više od običnog napitka; to je iskustvo koje nas vodi kroz bogatstvo okusa, mirisa i koristi za zdravlje. S toliko različitih vrsta čajeva dostupnih, odaberite pravi može biti prava avantura. Bez obzira jeste li ljubitelj voćnih nota, preferirate li umirujuće biljne čajeve ili tražite nešto snažno i osvježavajuće, ovdje je vodič koji će vam pomoći da pronađete svoj savršeni čaj.</q></p>
+          <p><q>Slatki pelin, biljka s bogatom poviješću i fascinantnim svojstvima, ostavlja nas u divljenju nad svojim
+                  raznovrsnim utjecajem kroz povijest Europe. Od antičkih civilizacija do suvremenih istraživanja, slatki
+                  pelin predstavlja neiscrpnu temu za istraživanje i divljenje. </q></p>
         </section>
 
         {/* Content */}
@@ -66,95 +68,96 @@ export default function demoArticle() {
               src={Slika1}
               alt='slika'
               quality={100}
-
             />
-            <span className='blog-text-container'><p>Slatki pelin čaj</p></span>
           </figure>
 
-          <div className="blog-text-section">
-            <h5>Smokvin list</h5>
-            <div className="flex">
-              <div className="blog-text-container col-10-sm col-6-md col-6-lg">
-                <p>Otkrijte svoje preferencije okusa: Kada se upuštate u svijet čajeva, prvi korak je istražiti svoje preferencije okusa. Ako volite voćne arome, možda će vam se svidjeti voćni čajevi poput bobica ili citrusa. Ako preferirate nešto osvježavajuće i blago gorčinu, zeleni čaj može biti odličan izbor. </p>
+          <div className="content-flex">
+            <div className="content-column col-10-sm col-10-md col-12-lg">
+              <div className="blog-text-section">
+                <h5>Antički korijeni:</h5>
+                <div className="blog-text-container">
+                  <p>U antičkoj Europi, slatki pelin nije bio samo biljka; bio je simbol vjere, ljekovitosti i mističnosti. Grci su
+                    ga povezivali s božanstvima poput Artemide i Apolona te su ga koristili u medicinske i religijske svrhe.
+                    Rimljani su također cijenili slatki pelin zbog njegovih ljekovitih svojstava, smatrajući ga esencijalnim
+                    dijelom svoje farmakopeje. </p>
+                </div>
               </div>
-              <div className="blog-tag-container col-10-sm col-4-md col-4-lg">
-                <Chip text="Dišni putevi" />
-                <Chip text="Osvježavajuće" />
+              <div className="blog-text-section">
+                <h5>Srednjovjekovna magija:</h5>
+                  <div className="blog-text-container">
+                    <p>Srednji vijek donio je još veću fascinaciju slatkim pelinom. Alkemičari su ga smatrali ključnim
+                      sastojkom za izradu eliksira vječne mladosti i drugih magičnih napitaka. Ljekarnici su ga koristili za
+                      liječenje raznih bolesti i smetnji, od probavnih problema do groznice.</p>
+                  </div>
               </div>
+            </div>
+            <div className="blog-tag-container col-4-md col-4-lg">
+              <div className="column"></div>
+                <Chip text="Povijest čaja" colorBg="#D8F3DC" colorText="#1B4332" />
+                <Chip text="Medicinske svrhe" colorBg="#D8F3DC" colorText="#1B4332" />
+                <Chip text="Eliksir mladosti" colorBg="#D8F3DC" colorText="#1B4332" />
             </div>
           </div>
 
-          <div className="blog-text-section">
-            <h5>Imuno čaj</h5>
-            <div className="flex">
-              <div className="blog-text-container col-10-sm col-6-md col-6-lg">
-                <p>Otkrijte svoje preferencije okusa: Kada se upuštate u svijet čajeva, prvi korak je istražiti svoje preferencije okusa. Ako volite voćne arome, možda će vam se svidjeti voćni čajevi poput bobica ili citrusa. Ako preferirate nešto osvježavajuće i blago gorčinu, zeleni čaj može biti odličan izbor. </p>
-              </div>
-              <div className="blog-tag-container col-10-sm col-4-md col-4-lg">
-                <Chip text="Dišni putevi" />
-                <Chip text="Osvježavajuće" />
-              </div>
+          <div className="content-flex">
+            <div className="content-column col-10-sm col-10-md col-12-lg">
+              <div className="blog-text-section">
+                  <h5>Ljekovita biljka:</h5>
+                    <div className="blog-text-container">
+                      <p>U tradicionalnoj europskoj medicini, slatki pelin je imao široku primjenu. Smatralo se da ima
+                      blagotvorno djelovanje na probavu, smanjuje groznicu te pomaže u borbi protiv parazita i infekcija.
+                      Unatoč njegovim ljekovitim svojstvima, važno je napomenuti da slatki pelin može biti i toksičan u
+                      većim količinama.</p>
+                    </div>
+                </div>
+                <div className="blog-text-section">
+                  <h5>Suvremena istraživanja:</h5>
+                    <div className="blog-text-container">
+                      <p>Danas, slatki pelin nije izgubio svoju privlačnost. Naprotiv, postao je predmetom intenzivnih
+                        istraživanja zbog svojih potencijalnih ljekovitih svojstava, posebno u borbi protiv malarije.
+                        Znanstvenici su fascinirani njegovim spojevima i nastoje otkriti nove načine kako ih iskoristiti u medicini.</p>
+                    </div>
+                </div>
+                <div className="blog-text-section">
+                  <div className="blog-text-container">
+                    <p>Slatki pelin nije obična biljka; on je isprepletan s poviješću, mitovima i suvremenim istraživanjima.
+                      Njegova čarobna prošlost ostaje inspiracija za daljnje istraživanje i divljenje, dok nas suvremene
+                      spoznaje podsjećaju na njegov nevjerojatan potencijal u medicini.</p>
+                  </div>
+                </div>
+
+                <figure className='card-thumbnail'>
+                    <Image
+                      src={Slika3}
+                      alt='slika'
+                      quality={100}
+
+                    />
+                  <span className='blog-text-container'><p>Dodatak limuna</p></span>
+                </figure>
+                
+                {/* Tags */}
+              <section className='blog-tag'>
+                {/* <Chip text="TAGOVI" colorBg="#FFD297" colorText="#242424" /> */}
+                <div className='row'>
+                  <Chip text="Slatki pelin" colorBg="#B7E4C7" colorText="#1B4332" />
+                  <Chip text="Antička Europa" colorBg="#B7E4C7" colorText="#1B4332" />
+                  <Chip text="Ljekovito bilje" colorBg="#B7E4C7" colorText="#1B4332" />
+                  <Chip text="Tradicionalna medicina" colorBg="#B7E4C7" colorText="#1B4332" />
+                  <Chip text="Suvremena istraživanja" colorBg="#B7E4C7" colorText="#1B4332" />
+
+                </div>
+              </section>
             </div>
-          </div>
-
-
-
-          <figure className='card-thumbnail'>
-            <Image
-              src={Slika2}
-              alt='slika'
-              quality={100}
-            />
-            <span className='blog-text-container'><p>Aroma vanilije</p></span>
-          </figure>
-
-          <div className="blog-text-section">
-            <div className="row">
-              <h5>Recept za čaj iz vrta</h5>
-              <p>SASTOJCI</p>
+            {/* col-10-sm col-4-md col-4-lg */}
+            <div className="blog-tag-container col-4-md col-4-lg">
+                <Chip text="Medicinske svrhe" colorBg="#D8F3DC" colorText="#1B4332" />
+                <Chip text="Eliksir mladosti" colorBg="#D8F3DC" colorText="#1B4332" />
             </div>
-            <div className="flex">
-              <div className="blog-text-container col-10-sm col-6-md col-6-lg">
-                <p>Otkrijte svoje preferencije okusa: Kada se upuštate u svijet čajeva, prvi korak je istražiti svoje preferencije okusa. Ako volite voćne arome, možda će vam se svidjeti voćni čajevi poput bobica ili citrusa. Ako preferirate nešto osvježavajuće i blago gorčinu, zeleni čaj može biti odličan izbor. </p>
-              </div>
-              <div className="blog-tag-container col-10-sm col-4-md col-4-lg">
-                <Chip text="Dišni putevi" />
-                <Chip text="Osvježavajuće" />
-              </div>
-            </div>
-          </div>
-
-          <figure className='card-thumbnail'>
-            <Image
-              src={Slika3}
-              alt='slika'
-              quality={100}
-
-            />
-            <span className='blog-text-container'><p>Dodatak limuna</p></span>
-          </figure>
-
-          <div className="blog-text-section col-10-sm col-6-md col-6-lg">
-            <h5>Pronađite savršen čaj</h5>
-              <div className="blog-text-container col-10-sm col-6-md col-6-lg">
-                <p>Eksperimentirajte s različitim sortama: Put do pronalaženja savršenog čaja često uključuje eksperimentiranje s različitim sortama. Nemojte se ograničavati na jedan tip čaja; isprobajte različite arome, mješavine i metode pripreme kako biste otkrili što vam najbolje odgovara.
-                  <br />Posjetite lokalnu čajevnicu ili trgovinu specijaliziranu za čajeve kako biste dobili savjete i preporuke od stručnjaka. Uživajte u procesu istraživanja i otkrijte čaroliju svijeta čajeva dok tražite svoj savršeni napitak.</p>
-              </div>
           </div>
         </section>
 
-        {/* Tags */}
-        <section className='blog-tag col-10-sm col-10-md col-10-lg'>
-          <Chip text="TAGOVI" colorBg="#FFD297" colorText="#242424" />
-          <div className='row'>
-            <Chip text="Okusi" />
-            <Chip text="Arome" />
-            <Chip text="Zdravlje" />
-            <Chip text="Biljni čajevi" />
-            <Chip text="Vočni čajevi" />
-            <Chip text="Vanilija" />
-          </div>
-        </section>
+        
       </main>
 
       <div>

@@ -66,8 +66,11 @@
     
     main.faq-page-contianer {
         @include main-page-container;
+        @include flexColumn;
         gap: $size-64;
-        .row {
+        .content-container {
+            @include flexColumn;
+            gap: $size-64;
             width: 100%;
             justify-content: space-between;
         }
@@ -135,6 +138,13 @@
     @media (min-width: map-get($breakpoints, "sm")) {
     }
     @media (min-width: map-get($breakpoints, "md")) {
+        main.faq-page-contianer {
+            .content-container {
+                @include flexRow;
+                gap: $size-64;
+            }
+        }
+        
     }
     @media (min-width: map-get($breakpoints, "lg")) {
     }

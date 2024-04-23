@@ -19,7 +19,7 @@ export default function demoArticle() {
         {/* Title */}
         <section className="blog-title col-10-sm col-10-md col-10-lg">
           <span className='blog-text-container'>
-            <h3 className='title-gooey'>Organski trendovi <br />  koji očaravaju Svijet</h3>
+            <h3 className='title-gooey'>Prirodna Kozmetika i organski čajevi:<br /> trendovi koji očaravaju svijet</h3>
           </span>
           {/* Filter: https://css-tricks.com/gooey-effect/ */}
           <svg className="gooey-svg" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
@@ -56,7 +56,9 @@ export default function demoArticle() {
 
         {/* Quote */}
         <section className='blog-quote col-8-sm col-8-md col-8-lg'>
-          <p><q>Čaj je mnogo više od običnog napitka; to je iskustvo koje nas vodi kroz bogatstvo okusa, mirisa i koristi za zdravlje. S toliko različitih vrsta čajeva dostupnih, odaberite pravi može biti prava avantura. Bez obzira jeste li ljubitelj voćnih nota, preferirate li umirujuće biljne čajeve ili tražite nešto snažno i osvježavajuće, ovdje je vodič koji će vam pomoći da pronađete svoj savršeni čaj.</q></p>
+          <p><q>Dobrodošli nazad na naš blog! Danas ćemo istražiti jedan od najuzbudljivijih trendova koji
+                preplavljuje svijet ljepote i wellnessa: prelazak na prirodnu kozmetiku i organske čajeve. Ovaj trend
+                nije samo estetski - on označava pomak u načinu na koji razmišljamo o ljepoti i brizi o sebi. </q></p>
         </section>
 
         {/* Content */}
@@ -68,93 +70,84 @@ export default function demoArticle() {
               quality={100}
 
             />
-            <span className='blog-text-container'><p>Slatki pelin čaj</p></span>
           </figure>
 
-          <div className="blog-text-section">
-            <h5>Smokvin list</h5>
-            <div className="flex">
-              <div className="blog-text-container col-10-sm col-6-md col-6-lg">
-                <p>Otkrijte svoje preferencije okusa: Kada se upuštate u svijet čajeva, prvi korak je istražiti svoje preferencije okusa. Ako volite voćne arome, možda će vam se svidjeti voćni čajevi poput bobica ili citrusa. Ako preferirate nešto osvježavajuće i blago gorčinu, zeleni čaj može biti odličan izbor. </p>
+
+          <div className="content-flex">
+            <div className="content-column col-10-sm col-6-md col-12-lg">
+              <div className="blog-text-section">
+                <h5>Sve veća potražnja za Prirodnom Kozmetikom</h5>
+                <div className="blog-text-container">
+                  <p>Istraživanja provedena tijekom posljednjih pet godina pokazuju izniman porast korištenja prirodne
+                    kozmetike - gotovo za 30%! Ljudi sve više cijene sastojke koji nanose na svoju kožu i kosu te biraju
+                    proizvode bez štetnih kemikalija poput parabena, sulfata i sintetičkih boja. </p>
+                </div>
               </div>
-              <div className="blog-tag-container col-10-sm col-4-md col-4-lg">
-                <Chip text="Dišni putevi" />
-                <Chip text="Osvježavajuće" />
+              <div className="blog-text-section">
+                <h5>Organski Čajevi</h5>
+                  <div className="blog-text-container">
+                    <p>A što je s organskim čajevima? Njihova potražnja porasla je za impresivnih 50%. Ova eksplozija
+                      interesa za organskim čajevima odražava sve veću svijest potrošača o važnosti zdravih navika, a ne
+                      samo o okusu. Ljudi su sve više svjesni utjecaja pesticida i herbicida na njihovo zdravlje, pa stoga
+                      traže čajeve koji su uzgojeni na održiv način.</p>
+                  </div>
               </div>
+            </div>
+            <div className="blog-tag-container col-10-sm col-4-md col-4-lg">
+              <div className="column"></div>
+                <Chip text="Povijest čaja" colorBg="#D8F3DC" colorText="#1B4332" />
+                <Chip text="Medicinske svrhe" colorBg="#D8F3DC" colorText="#1B4332" />
+                <Chip text="Eliksir mladosti" colorBg="#D8F3DC" colorText="#1B4332" />
             </div>
           </div>
 
-          <div className="blog-text-section">
-            <h5>Imuno čaj</h5>
-            <div className="flex">
-              <div className="blog-text-container col-10-sm col-6-md col-6-lg">
-                <p>Otkrijte svoje preferencije okusa: Kada se upuštate u svijet čajeva, prvi korak je istražiti svoje preferencije okusa. Ako volite voćne arome, možda će vam se svidjeti voćni čajevi poput bobica ili citrusa. Ako preferirate nešto osvježavajuće i blago gorčinu, zeleni čaj može biti odličan izbor. </p>
-              </div>
-              <div className="blog-tag-container col-10-sm col-4-md col-4-lg">
-                <Chip text="Dišni putevi" />
-                <Chip text="Osvježavajuće" />
-              </div>
+          <div className="content-flex">
+            <div className="content-column col-10-sm col-6-md col-7-lg">
+                <div className="blog-text-section">
+                  <h5>Utjecaj Društvenih Medija</h5>
+                    <div className="blog-text-container">
+                      <p>Naravno, ne možemo zanemariti ulogu influencera i društvenih medija u popularizaciji ovih trendova.
+                        Mnogi influenceri i brendovi koriste društvene medije kako bi promovirali prirodne proizvode i
+                        organske čajeve, čime pridonose njihovoj širokoj rasprostranjenosti i popularnosti.</p>
+                    </div>
+                </div>
+                <div className="blog-text-section">
+                    <div className="blog-text-container">
+                      <p>Sve u svemu, trend prelaska na prirodnu kozmetiku i konzumaciju organskih čajeva nije samo
+                        prolazna moda. To je pomak prema zdravijem i svjesnijem načinu života koji cijeni ljepotu, dobrobit i
+                        očuvanje okoliša. Budite dio ovog trenda i istražite čari prirodne ljepote i zdravog života!</p>
+                      <p>Nadamo se da vam se svidio ovaj blog post! Slobodno podijelite svoje misli i iskustva u komentarima
+                      ispod. Hvala što ste bili s nama, a vidimo se uskoro sa još više uzbudljivih tema!</p>
+                    </div>
+                </div>
+                {/* Tags */}
+              <section className='blog-tag'>
+                {/* <Chip text="TAGOVI" colorBg="#FFD297" colorText="#242424" /> */}
+                <div className='row'>
+                  <Chip text="Slatki pelin" colorBg="#B7E4C7" colorText="#1B4332" />
+                  <Chip text="Antička Europa" colorBg="#B7E4C7" colorText="#1B4332" />
+                  <Chip text="Ljekovito bilje" colorBg="#B7E4C7" colorText="#1B4332" />
+                  <Chip text="Tradicionalna medicina" colorBg="#B7E4C7" colorText="#1B4332" />
+                  <Chip text="Suvremena istraživanja" colorBg="#B7E4C7" colorText="#1B4332" />
+
+                </div>
+              </section>
             </div>
-          </div>
+            <div className="left-image-container col-10-sm col-4-md col-3-lg">
+              <figure className='card-thumbnail'>
+                  <Image
+                    src={Slika3}
+                    alt='slika'
+                    quality={100}
 
-
-
-          <figure className='card-thumbnail'>
-            <Image
-              src={Slika2}
-              alt='slika'
-              quality={100}
-            />
-            <span className='blog-text-container'><p>Aroma vanilije</p></span>
-          </figure>
-
-          <div className="blog-text-section">
-            <div className="row">
-              <h5>Recept za čaj iz vrta</h5>
-              <p>SASTOJCI</p>
+                  />
+                <span className='blog-text-container'><p>Dodatak limuna</p></span>
+              </figure>
             </div>
-            <div className="flex">
-              <div className="blog-text-container col-10-sm col-6-md col-6-lg">
-                <p>Otkrijte svoje preferencije okusa: Kada se upuštate u svijet čajeva, prvi korak je istražiti svoje preferencije okusa. Ako volite voćne arome, možda će vam se svidjeti voćni čajevi poput bobica ili citrusa. Ako preferirate nešto osvježavajuće i blago gorčinu, zeleni čaj može biti odličan izbor. </p>
-              </div>
-              <div className="blog-tag-container col-10-sm col-4-md col-4-lg">
-                <Chip text="Dišni putevi" />
-                <Chip text="Osvježavajuće" />
-              </div>
-            </div>
-          </div>
-
-          <figure className='card-thumbnail'>
-            <Image
-              src={Slika3}
-              alt='slika'
-              quality={100}
-
-            />
-            <span className='blog-text-container'><p>Dodatak limuna</p></span>
-          </figure>
-
-          <div className="blog-text-section col-10-sm col-6-md col-6-lg">
-            <h5>Pronađite savršen čaj</h5>
-              <div className="blog-text-container col-10-sm col-6-md col-6-lg">
-                <p>Eksperimentirajte s različitim sortama: Put do pronalaženja savršenog čaja često uključuje eksperimentiranje s različitim sortama. Nemojte se ograničavati na jedan tip čaja; isprobajte različite arome, mješavine i metode pripreme kako biste otkrili što vam najbolje odgovara.
-                  <br />Posjetite lokalnu čajevnicu ili trgovinu specijaliziranu za čajeve kako biste dobili savjete i preporuke od stručnjaka. Uživajte u procesu istraživanja i otkrijte čaroliju svijeta čajeva dok tražite svoj savršeni napitak.</p>
-              </div>
           </div>
         </section>
 
-        {/* Tags */}
-        <section className='blog-tag col-10-sm col-10-md col-10-lg'>
-          <Chip text="TAGOVI" colorBg="#FFD297" colorText="#242424" />
-          <div className='row'>
-            <Chip text="Okusi" />
-            <Chip text="Arome" />
-            <Chip text="Zdravlje" />
-            <Chip text="Biljni čajevi" />
-            <Chip text="Vočni čajevi" />
-            <Chip text="Vanilija" />
-          </div>
-        </section>
+        
       </main>
 
       <div>

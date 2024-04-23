@@ -6,7 +6,7 @@ import Icon from "../components/atoms/icon/Icon";
 
 import HeroImage from '../assets/image/CoverKozmetika.png'
 import CardBlog from '../components/organism/cardBlog/cardBlog'
-import CosmeticsBanner from '../components/organism/cosmeticsBanner/cosmeticsBanner'
+import BannerCosmetics from '../components/organism/bannerCosmetics/bannerCosmetics'
 // import TeaList from "./TeaList";
 import Loading from "../loading";
 import "./_style.scss";
@@ -67,7 +67,7 @@ export default function Blog() {
 
           </section>
 
-          <CosmeticsBanner />
+          <BannerCosmetics />
         </main>
 
         <div>

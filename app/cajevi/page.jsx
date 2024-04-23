@@ -2,24 +2,26 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Chip from "../components/atoms/chip/Chip";
 import Icon from "../components/atoms/icon/Icon";
+import Loading from "../loading";
 
+import Button from '../components/atoms/button/button';
 import HeroTea from '../components/organism/heroTea/heroTea';
-import PlantIcon from '../assets/icon/plant-icon.svg'
-
 import ProductPromotioCard from '../components/organism/productPromotioCard/productPromotioCard';
 import ProductCard from '../components/organism/ProductCard/ProductCard'
 import BannerCaj from '../components/organism/bannerCaj/bannerCaj'
-
-import Button from '../components/atoms/button/button';
-import Loading from "../loading";
-
-import "./_style.scss";
-// import "../styles/pages/_products-page.scss";
-// import "../styles/_index.scss";
-
-
 import FollowSocial from "../components/organism/followSocial/followSocial";
 import Footer from '../components/organism/footer/footer';
+
+import "./_style.scss";
+import PlantIcon from '../assets/icon/plant-icon.svg'
+
+
+import { Metadata } from 'next'
+export const metadata = { 
+  title: 'Cajevi',
+  description: 'Asortiman čajeva',
+}
+
 
 export default function Cajevi() {
     return (

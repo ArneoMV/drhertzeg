@@ -1,0 +1,26 @@
+@use '../../../styles/layout/_breakpoint' as *;
+@use '../../../styles/base/_variable' as *;
+@use '../../../styles/abstract/_color' as *;
+@use '../../../styles/base/_mixin' as *;
+
+
+.button-icon {
+    cursor: pointer;
+    background-color: $neutral-300;
+    border-radius: 999px;
+    height: $size-32;
+    width: $size-32;
+    display: grid;
+    outline: none;
+    border: 0px;
+    img {
+      width: 24px;
+      height: auto;
+      place-self: center;
+    }
+    &:hover {
+      box-shadow: $base-shadow-3;
+      background-color: $red-200;
+    }
+    
+  }

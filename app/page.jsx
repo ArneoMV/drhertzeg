@@ -20,7 +20,7 @@ import heroImage from './assets/image/heroImage.png'
 
 
 export const metadata = { 
-  title: 'Homepage title',
+  title: 'Dr Hertzeg',
   description: 'Homepage description',
 }
 

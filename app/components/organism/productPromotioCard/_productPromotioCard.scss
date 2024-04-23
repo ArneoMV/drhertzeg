@@ -6,7 +6,7 @@
 @use '../../../styles/layout/_layout' as *;
 @use '../../../styles/base/_mixin' as *;
 
-
+  
 .product-promotion-card {
     width: auto;
     height: auto;
@@ -17,57 +17,68 @@
     border-radius: $size-16;
     padding: $size-24;
     box-sizing: border-box;
+    transition: background-color 0.3s;
 
-    &:nth-child(1) { 
-        outline: 1px solid $primary-100;
+    &.green {
+        background-color:  $primary-100;
+      
         &:hover {
-            outline: 1px solid $primary-300;
-            transition: outline 0.3s;
+          background-color:  $primary-200;
         }
     }
-    &:nth-child(2) { 
-        outline: 1px solid $blue-100;
+    &.red {
+        background-color:  $red-100;
+    
         &:hover {
-            outline: 1px solid $blue-300;
-            transition: outline 0.3s;
+            background-color:  $red-200;
         }
     }
-    &:nth-child(3) { 
-        outline: 1px solid $orange-100;
+    &.blue {
+        background-color: $blue-100;
+        
         &:hover {
-            outline: 1px solid $orange-300;
-            transition: outline 0.3s;
+            background-color: $blue-200;
         }
     }
+    &.orange {
+        background-color: $orange-100;
+        
+        &:hover {
+            background-color: $orange-200;
+        }
+    }
+    &:hover {
+        cursor: pointer;
+    }
+
+
     .promotion-content {
         @include flexColumn;
         justify-content: space-between;
         .promotion-content-title {
             @include flexColumn;
             gap: $size-8;
+            p {
+                font-size: 14px;
+                line-height: 130%;
+            }
         }
         a {
             text-decoration: none;
         }
     }
-    .promotion-image {
-        width: 80px;
+    .image-container {
+        width: auto;
         display: grid;
         img {
             place-self: center;
             height: auto;
-            width: 80px;
+            width: 180px;
             object-fit: cover;
         }
     }
-    &:hover {
-        box-shadow: $base-shadow-4;
-        cursor: pointer;
-        .promotion-image {
-            transition: scale 0.2s;
-            scale: 1.06;
-        }
-    }
+
+    
 
 
 

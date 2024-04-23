@@ -10,7 +10,7 @@ import Chip from '@/app/components/atoms/chip/Chip';
 import UserImage from '../../assets/image/user_1.png'
 import ProductPromotioCard from '@/app/components/organism/productPromotioCard/productPromotioCard';
 import Carousel from '../../components/organism/carousel/carousel'
-import CosmeticsBanner from '../../components/organism/cosmeticsBanner/cosmeticsBanner'
+import CosmeticsBanner from '../../components/organism/bannerCosmetics/bannerCosmetics'
 import Footer from '../../components/organism/footer/footer'
 
 
