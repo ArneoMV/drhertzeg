@@ -9,12 +9,6 @@ const Icon = ({ name, className, color, size }) => {
     return null;
   }
 
-
-  // const iconStyle = {
-  //   width: '24px', // Default size
-  //   height: '24px'
-  // };
-
   const svgStyle = {
     fill: color, // Set the color using the 'color' prop
   };
