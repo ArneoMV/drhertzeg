@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Image from 'next/image'
-import { IconImage } from '../../atoms/icon/Images.js'
 import { Icon } from '../../../utilities/images.js'
 import './_input.scss';
 
