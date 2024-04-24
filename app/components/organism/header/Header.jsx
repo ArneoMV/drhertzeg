@@ -1,9 +1,9 @@
-import MobileNav from "./MobileNav";
-import Navbar from "./navbar/Navbar";
-import Link from 'next/link'
-import Image from 'next/image'
-import './_header.scss'
-import Logo from '../../../assets/Logo.svg'
+import MobileNav from './MobileNav';
+import Navbar from './navbar/Navbar';
+import Link from 'next/link';
+import Image from 'next/image';
+import './_header.scss';
+import Logo from '../../../assets/Logo.svg';
 
 const Header = () => {
   return (

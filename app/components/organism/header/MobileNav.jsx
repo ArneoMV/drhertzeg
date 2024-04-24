@@ -1,7 +1,7 @@
-"use client"
-import React, { useEffect, useRef, useState } from "react";
-import { menuItemsData } from "./menuItemsData";
-import MobileMenuItems from "./navbar/MobileMenuItems";
+'use client'
+import React, { useEffect, useRef, useState } from 'react';
+import { menuItemsData } from './menuItemsData';
+import MobileMenuItems from './navbar/MobileMenuItems';
 
 const MobileNav = () => {
   const depthLevel = 0;

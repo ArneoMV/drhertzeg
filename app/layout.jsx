@@ -1,7 +1,7 @@
-import Head from 'next/head'
-import './styles/_index.scss'
-import './globals.css'
-
+import Head from 'next/head';
+import './styles/_index.scss';
+import './globals.css';
+import Header from './components/organism/header/Header.jsx'
 import './styles/abstract/_typo.scss';
 import { Work_Sans } from "next/font/google";
 
@@ -21,10 +21,6 @@ export const metadata = {
   }
 };
 
-
-// components
-import Header from './components/organism/header/header'
-// import Footer from './components/organism/footer/footer'
 
 
 export default function RootLayout({ children }) {

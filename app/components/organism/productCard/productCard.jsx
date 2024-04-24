@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 import './_product-card.scss';
-import Image from 'next/image'
-import Link from 'next/link'
-import Chip from '../../atoms/chip/Chip'
+import Image from 'next/image';
+import Link from 'next/link';
+import Chip from '../../atoms/chip/Chip';
 
 export default function ProductCard({ productDetailsTitle, productDetailsPrice, productDetailsImageURL, productDetailsImageAlt, productDetailsURL, productChips1, productChips2, imageClass, hoverOutline }) {
   

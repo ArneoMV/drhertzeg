@@ -4,10 +4,10 @@ import Chip from "../components/atoms/chip/Chip";
 import Icon from "../components/atoms/icon/Icon";
 import Loading from "../loading";
 
-import HeroTea from '../components/organism/heroTea/heroTea';
-import ProductPromotioCard from '../components/organism/productPromotioCard/productPromotioCard';
-import ProductCard from '../components/organism/ProductCard/ProductCard'
-import BannerCaj from '../components/organism/bannerCaj/bannerCaj'
+import HeroTea from '../components/organism/heroTea/heroTea.jsx';
+import ProductPromotioCard from '../components/organism/productPromotioCard/productPromotioCard.jsx';
+import ProductCard from '../components/organism/productCard/productCard.jsx'
+import BannerCaj from '../components/organism/bannerCaj/bannerCaj.jsx'
 import FollowSocial from '../components/organism/followSocial/followSocial';
 import Footer from '../components/organism/footer/footer';
 

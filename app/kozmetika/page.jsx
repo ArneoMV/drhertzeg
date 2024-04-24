@@ -3,9 +3,9 @@ import Link from 'next/link'
 import Chip from '../components/atoms/chip/Chip';
 import BannerCosmetics from '../components/organism/heroCosmetics/heroCosmetics';
 import PlantIcon from '../assets/icon/plant-icon.svg';
-import ProductPromotioCard from '../components/organism/productPromotioCard/productPromotioCard';
-import ProductCard from '../components/organism/ProductCard/ProductCard'
-import CosmeticsBanner from '../components/organism/bannerCosmetics/bannerCosmetics'
+import ProductPromotioCard from '../components/organism/productPromotioCard/productPromotioCard.jsx';
+import ProductCard from '../components/organism/productCard/productCard.jsx'
+import CosmeticsBanner from '../components/organism/bannerCosmetics/bannerCosmetics.jsx'
 import Loading from '../loading';
 import './_style.scss';
 import '../styles/_index.scss';
