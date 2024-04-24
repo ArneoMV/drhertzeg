@@ -13,9 +13,6 @@ import withBundleAnalyzer from '@next/bundle-analyzer';
 
 const nextConfig = {
   // vaša konfiguracija
-};
-module.exports = {
-  //...
   resolve: {
     extensions: ['.js', '.jsx']
   }

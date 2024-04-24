@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import Loading from "../loading";
 
 import "./_faq.scss";
-import '../components/organism/footer/_footer.scss'
 // import "../styles/pages/_products-page.scss";
 import "../styles/_index.scss";
 import "../styles/layout/_breakpoint.scss";
