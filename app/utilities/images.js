@@ -10,7 +10,15 @@ const Icon = {
   arrowLeft: require('../assets/icon/chevron-compact-left.svg').default,
   arrowRight: require('../assets/icon/chevron-compact-right.svg').default,
   arrowLeftLong: require('../assets/icon/arrow-left.svg').default,
-
 };
 
-export { Icon };
+const HomepageImages = {
+  heroImage: require('../assets/image/heroImage.png').default,
+};
+const Homepage = {
+  heroImage: require('../../public/images/image/heroImage.png').default,
+  Image2: require('../../public/images/image/image2.png').default,
+};
+
+
+export { Icon, HomepageImages, Homepage };

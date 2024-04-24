@@ -11,12 +11,12 @@ import Link from 'next/link'
 import './styles/_index.scss';
 import './styles/pages/_homepage.scss';
 import './styles/base/_base.scss';
-import LinkedinIcon from './assets/icon/socialLogo/Linkedin-icon.svg'
-import FacebookIcon from './assets/icon/socialLogo/Facebook-icon.svg'
-import TikTokIcon from './assets/icon/socialLogo/TikTok-icon.svg'
+import LinkedinIcon from '../public/images/icon/socialLogo/Linkedin-icon.svg'
+import FacebookIcon from '../public/images/icon/socialLogo/Facebook-icon.svg'
+import TikTokIcon from '../public/images/icon/socialLogo/TikTok-icon.svg'
 
-import Image2 from './assets/image/image2.png'
-import heroImage from './assets/image/heroImage.png'
+import { HomepageImages } from '../app/utilities/images.js'
+import { Homepage } from '../app/utilities/images.js'
 
 
 export const metadata = { 
@@ -36,7 +36,7 @@ export default function Page() {
           <h1>Neki nas naslov</h1>
           <div className="heroImage">
             <Image 
-              src={heroImage}
+              src={Homepage.heroImage}
               alt='image'
               quality={100}
             />
@@ -78,7 +78,7 @@ export default function Page() {
               </Link>
             </div>
             <Image 
-              src={Image2}
+              src={Homepage.Image2}
               alt='image'
               quality={100}
             />
