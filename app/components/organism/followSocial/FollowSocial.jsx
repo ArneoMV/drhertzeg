@@ -4,12 +4,12 @@ import Image from 'next/image';
 import Facebook from '../../../../public/images/icon/socialLogo/Facebook-fill.svg';
 import Instagram from '../../../../public/images/icon/socialLogo/Instagram-fill.svg';
 import Linkedin from '../../../../public/images/icon/socialLogo/Linkedin-fill.svg';
-import TikTok from '../../../../public/images/icon/socialLogo/TikTok-fill.svg'
+import TikTok from '../../../../public/images/icon/socialLogo/TikTok-fill.svg';
 import Social1 from '../../../../public/images/image/social/Image1.png';
 import Social2 from '../../../../public/images/image/social/Image2.png';
 import Social3 from '../../../../public/images/image/social/Image3.png';
 import Social4 from '../../../../public/images/image/social/Image4.png';
-import './_followSocial.scss'; // Importajte SCSS datoteku za stilove
+import './_followSocial.scss';
 
 const FollowSocial = ({ color }) => {
   let className = '';
@@ -46,25 +46,25 @@ const FollowSocial = ({ color }) => {
           <div className="row">
             <Image
               src={Facebook}
-              alt="facebook"
+              alt="Facebook logo"
               width={32}
               quality={100}
             />
             <Image
               src={Instagram}
-              alt="instagram"
+              alt="Instagram logo"
               width={32}
               quality={100}
             />
             <Image
               src={TikTok}
-              alt="tiktok"
+              alt="TikTok logo"
               width={32}
               quality={100}
             />
             <Image
               src={Linkedin}
-              alt="linkedin"
+              alt="Linkedin logo"
               width={32}
               quality={100}
             />

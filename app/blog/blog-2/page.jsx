@@ -8,7 +8,7 @@ import Slika1 from '../../../public/images/image/blog/BlogSlika_1.jpg'
 import Slika2 from '../../../public/images/image/blog/BlogSlika_2.jpg'
 import Slika3 from '../../../public/images/image/blog/BlogSlika_3.jpg'
 import Chip from '../../components/atoms/chip/Chip'
-import FollowSocial from "../../components/organism/followSocial/followSocial.jsx";
+import FollowSocial from '../../components/organism/followSocial/followSocial.jsx';
 import Footer from '../../components/organism/footer/footer';
 
 export default function demoArticle() {

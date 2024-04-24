@@ -1,7 +1,7 @@
 // import { Suspense } from "react";
 import Image from 'next/image'
 import Link from 'next/link'
-import Chip from "../components/atoms/chip/Chip";
+import Chip from '../components/atoms/chip/Chip';
 
 import HeroImage from '../assets/image/CoverKozmetika.png'
 import CardBlog from '../components/organism/cardBlog/cardBlog'
@@ -10,7 +10,7 @@ import BannerCosmetics from '../components/organism/bannerCosmetics/bannerCosmet
 import Loading from "../loading";
 import "./_style.scss";
 
-import FollowSocial from "../components/organism/followSocial/followSocial";
+import FollowSocial from '../components/organism/followSocial/followSocial';
 import Footer from '../components/organism/footer/footer';
 
 export default function Blog() {

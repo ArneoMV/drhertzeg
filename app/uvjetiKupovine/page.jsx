@@ -1,12 +1,12 @@
-import Loading from "../loading";
+import Loading from '../loading';
 
-import "./_privacy-policy.scss";
-import '../components/organism/footer/_footer.scss'
-import "../styles/_index.scss";
-import "../styles/layout/_breakpoint.scss";
-import "../styles/layout/_grid.scss";
+import './_privacy-policy.scss';
+import '../components/organism/footer/_footer.scss';
+import '../styles/_index.scss';
+import '../styles/layout/_breakpoint.scss';
+import '../styles/layout/_grid.scss';
 
-import FollowSocial from "../components/organism/followSocial/followSocial";
+import FollowSocial from '../components/organism/followSocial/followSocial';
 import Footer from '../components/organism/footer/footer';
 
 

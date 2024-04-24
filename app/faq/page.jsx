@@ -1,12 +1,12 @@
 "use client"
-import React, { useState } from "react";
-import Loading from "../loading";
+import React, { useState } from 'react';
+import Loading from '../loading';
 
-import "./_faq.scss";
+import './_faq.scss';
 // import "../styles/pages/_products-page.scss";
-import "../styles/_index.scss";
-import "../styles/layout/_breakpoint.scss";
-import "../styles/layout/_grid.scss";
+import '../styles/_index.scss';
+import '../styles/layout/_breakpoint.scss';
+import '../styles/layout/_grid.scss';
 
 import Footer from '../components/organism/footer/footer';
 

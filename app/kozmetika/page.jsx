@@ -1,17 +1,14 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import Chip from "../components/atoms/chip/Chip";
-
-
+import Chip from '../components/atoms/chip/Chip';
 import BannerCosmetics from '../components/organism/heroCosmetics/heroCosmetics';
-import PlantIcon from '../assets/icon/plant-icon.svg'
-
+import PlantIcon from '../assets/icon/plant-icon.svg';
 import ProductPromotioCard from '../components/organism/productPromotioCard/productPromotioCard';
 import ProductCard from '../components/organism/ProductCard/ProductCard'
 import CosmeticsBanner from '../components/organism/bannerCosmetics/bannerCosmetics'
-import Loading from "../loading";
-import "./_style.scss";
-import "../styles/_index.scss";
+import Loading from '../loading';
+import './_style.scss';
+import '../styles/_index.scss';
 
 
 import FollowSocial from "../components/organism/followSocial/followSocial";

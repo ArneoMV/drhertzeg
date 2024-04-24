@@ -8,7 +8,7 @@ import HeroTea from '../components/organism/heroTea/heroTea';
 import ProductPromotioCard from '../components/organism/productPromotioCard/productPromotioCard';
 import ProductCard from '../components/organism/ProductCard/ProductCard'
 import BannerCaj from '../components/organism/bannerCaj/bannerCaj'
-import FollowSocial from "../components/organism/followSocial/followSocial";
+import FollowSocial from '../components/organism/followSocial/followSocial';
 import Footer from '../components/organism/footer/footer';
 
 import "./_style.scss";

@@ -1,22 +1,14 @@
 "use client"
 import { useRef } from 'react';
-import Loading from "../loading";
-// import { Metadata } from "next";
-import Image from 'next/image'
-import "./_style.scss";
-// import "../styles/layout/_layout.scss";
-import { Icon } from "../utilities/images.js";
-// import { sendEmail } from "../utilities/sendEmail.jsx";
+import Loading from '../loading';
+import Image from 'next/image';
+import './_style.scss';
+import { Icon } from '../utilities/images.js';
 
 import Input from '../components/molecules/input/input';
 import TextBox from '../components/molecules/textbox/textbox';
 import FormContainer from '../components/organism/form/form'
-import Footer from "../components/organism/footer/footer";
-// import { ContactUs } from '../components/organism/contactUs/contactUs';
-
-// export const metadata = {
-//   title: "Contact",
-// };
+import Footer from '../components/organism/footer/footer';
 
 
 export default function Contact() {
