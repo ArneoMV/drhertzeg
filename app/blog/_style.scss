@@ -76,7 +76,6 @@
             }
         }
     }
-    
     main.blog-page-container {
         @include layout-container;
         position: relative; 
@@ -84,7 +83,6 @@
         gap: $gap-md;
         grid-template-columns: 1fr;
     }
-
     .blog-article-container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);

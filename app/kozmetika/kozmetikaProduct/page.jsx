@@ -8,7 +8,7 @@ import Chip from '../../components/atoms/chip/Chip';
 
 import ProductPromotioCard from '../../components/organism/productPromotioCard/productPromotioCard';;
 import Carousel from '../../components/organism/carousel/carousel';
-import CosmeticsBanner from '../../components/organism/bannerCosmetics/bannerCosmetics';
+import AdBanner from '../../components/organism/adBanner/adBanner';
 
 // React Slick
 import Slider from "react-slick"
@@ -358,7 +358,7 @@ export default function CajProduct() {
         </Slider>
       </div>
 
-      <CosmeticsBanner />
+      <AdBanner />
     </main>
   )
 }
