@@ -1,7 +1,12 @@
-@use '../layout/_breakpoint' as *;
 @use '../base/_variable' as *;
+@use '../layout/_breakpoint' as *;
+@use '../layout/layout' as *;
 @use '../abstract/_color' as *;
 @use '../base/_mixin' as *;
+
+.container {
+    @include layout-container;
+}
 
 .homepage {
     @include flexColumn;
@@ -12,379 +17,50 @@
     }
 
     .hero {
-        display: flex;
-        flex-direction: column;
-        padding: $margin-md 0;
-        gap: $gap-lg;
+        background-color: $primary-100;
+        height: 73vh;
+        width: 100%;
+        display: grid;
+        .column {
+            place-self: center;
+        }
+    }
+    .tabs-container {
+        @include flexColumn;
+        gap: $size-24;
         align-items: center;
-        .heroImage {
-            display: flex;
-            flex-direction: column;
-            gap: $gap-sm;
-            img {
-                max-width: 100%;
-                object-fit: cover;
-            }
-            .slide {
-                gap: 10px;
-                .timelineSlide {
-                    height: 7px;
-                    width: 100%;
-                    background-color: $neutral-400;
-                    border-radius: 999px;
-                }
-            }
-        }
-    }
-
-    .postBackground {
-        position: relative; 
-        background-color: $primary-300;
-        color: white;
-        gap: $gap-xl;
-        overflow: visible;
-        @include vaweUp;
-        @include vaweDown;
-    }
-
-    .visionHomepage { 
-        padding: $margin-xmd $margin-sm;
-        .vision {
-            display: flex;
-            gap: $gap-lg;
-            flex-direction: column;
-            align-items: center;
-            margin: 0 auto;
-            text-align: center;
-            color: $primary-900;
-        }
-    }
-    .products {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        h3 {
-            text-align: center;
-        }
-    }
-
-    .blogHomepage {
-        align-items: center;
-        justify-content: space-around;
-        .blogHomepageContainer {
-            display: flex;
-            padding: $margin-xmd $margin-sm;
-            flex-direction: column;
-            align-items: center;
-            gap: $gap-lg;
-            .blogHomepageContent {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                text-align: left;
-                gap: $gap-lg;
-                .blogHomeText {
-                    @include flexColumn;
-                    gap: $gap-sm;
-                    align-items: center;
-                    p {
-                        max-width: 450px;
-                        min-width: 340px;
-                        text-align: center;
-                    }
-                }
-                p, h3 {
-                    color: $neutral-900;
-                }
-            }
-            img {
-                width: 100%;
-                object-fit: cover;
-                min-width: 0;
-            }
-        }
         a {
             text-decoration: none;
         }
     }
 
-    .follow {
-        @include flexColumn;
-        align-items: center;
-        gap: $gap-xl;
-        padding: $padding-xxl 0;
-        .followTitle {
-            @include flexColumn;
-            gap: $gap-md;
-            align-items: center;
-        }
-
-    }
-    section {
-        &:nth-child(1) { margin: 0 $margin-sm; }
-        &:nth-child(3) { margin: $margin-xmd $margin-sm; }
-        &:nth-child(5) { margin: 0 $margin-sm; }
-    }
-    section {
-        &:nth-child(2) { margin: 0 0 }
-        &:nth-child(4) { margin: 0 0 }
-    }
+    
 
     @media (min-width: map-get($breakpoints, "xxs")) {
-        // background-color: pink;
-        section {
-            &:nth-child(1) { margin: 0 $margin-sm; }
-            &:nth-child(3) { margin: $margin-xmd $margin-sm; }
-            &:nth-child(5) { margin: 0 $margin-sm; }
-        }
-        .hero {
-            flex-direction: column;
-            padding: $margin-md 0;
-            gap: $gap-lg;
-        }
-        .visionHomepage { padding: $margin-xmd $margin-sm; }
-        .products {
-            flex-direction: column;
-        }
-        .blogHomepage {
-            .blogHomepageContainer { 
-                padding: $margin-xmd $margin-sm;
-                flex-direction: column;
-                align-items: center;
-                gap: $gap-lg;
-                .blogHomepageContent {
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    text-align: left;
-                    gap: $gap-lg;
-                    .blogHomeText {
-                        align-items: center;
-                        p {
-                            text-align: center;
-                        }
-                    }
-                }
-            }
-        }
         
     }
 
     @media (min-width: map-get($breakpoints, "xs")) {
-        // background-color: goldenrod;
-        section {
-            &:nth-child(1) { margin: 0 $margin-sm; }
-            &:nth-child(3) { margin: $margin-xmd $margin-sm; }
-            &:nth-child(5) { margin: 0 $margin-sm; }
-        }
-        .hero {
-            flex-direction: column;
-        }
-        .visionHomepage { padding: $margin-xmd $margin-md; }
-        .products {
-            flex-direction: column;
-        }
-        .visionHomepage { padding: $margin-lg $margin-md; }
-        .blogHomepage {
-            .blogHomepageContainer { 
-                padding: $margin-xmd $margin-md;
-                flex-direction: column;
-                align-items: center;
-                gap: $gap-lg;
-                .blogHomepageContent {
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    text-align: left;
-                    gap: $gap-lg;
-                    .blogHomeText {
-                        align-items: center;
-                        p {
-                            text-align: center;
-                        }
-                    }
-                }
-            }
-        }
+
     }
 
     @media (min-width: map-get($breakpoints, "sm")) {
-        // background-color: red;
-        section {
-            &:nth-child(1) { margin: $margin-xmd $margin-sm; }
-            &:nth-child(3) { margin: $margin-xmd $margin-sm; }
-            &:nth-child(5) { margin: 0 0 $margin-md $margin-md; }
-        }
-        .hero {
-            flex-direction: column;
-        }
-        .visionHomepage { padding: $margin-xmd $margin-lg; }
-        .products {
-            flex-direction: column;
-        }
-        .visionHomepage { padding: $margin-lg $margin-lg; }
-        .blogHomepage {
-            .blogHomepageContainer {
-                padding: $margin-xmd $margin-md;
-                flex-direction: column;
-                align-items: center;
-                gap: $gap-lg;
-                .blogHomepageContent {
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    text-align: left;
-                    gap: $gap-lg;
-                    .blogHomeText {
-                        align-items: center;
-                        p {
-                            text-align: center;
-                        }
-                    }
-                }
-            }
-        }
+
     }
 
     @media (min-width: map-get($breakpoints, "md")) {
-        // background-color: purple;
-        section {
-            &:nth-child(1) { margin: $margin-xmd $margin-md; }
-            &:nth-child(3) { margin: $margin-xmd $margin-md; }
-            &:nth-child(5) { margin: 0 0 $margin-md $margin-md; }
-        }
-        .hero {
-            flex-direction: row;
-        }
-        .products {
-            flex-direction: column;
-        }
-        .visionHomepage { padding: $margin-xmd $margin-lg; }
-        .blogHomepage {
-            .blogHomepageContainer { 
-                padding: $margin-xmd $margin-md;
-                flex-direction: column;
-                align-items: center;
-                gap: $gap-lg;
-                .blogHomepageContent {
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    text-align: left;
-                    gap: $gap-lg;
-                    .blogHomeText {
-                        align-items: center;
-                        p {
-                            text-align: center;
-                        }
-                    }
-                }
-            }
-        }
+
     }
 
     @media (min-width: map-get($breakpoints, "lg")) {
-        // background-color: blue;
-        section {
-            &:nth-child(1) { margin: $margin-xmd $margin-md; }
-            &:nth-child(3) { margin: $margin-xmd $margin-md; }
-            &:nth-child(5) { margin: 0 0 $margin-md $margin-md; }
-        }
-        .hero {
-            flex-direction: row;
-        }
-        .products {
-            flex-direction: column;
-        }
-        .visionHomepage { padding: $margin-lg $margin-lg; }
-        .blogHomepage {
-            .blogHomepageContainer { 
-                padding: $margin-lg $margin-lg;
-                flex-direction: row;
-                gap: $gap-xxl;
-                .blogHomepageContent {
-                    flex-direction: column;
-                    align-items: flex-start;
-                    justify-content: center;
-                    text-align: left;
-                    gap: $gap-lg;
-                    .blogHomeText {
-                        align-items: center;
-                        p {
-                            text-align: left;
-                        }
-                    }
-                }
-            }
-        }
+
     }
 
     @media (min-width: map-get($breakpoints, "xl")) {
-        // background-color: brown;
-        section {
-            &:nth-child(1) { margin: $margin-xmd $margin-lg; }
-            &:nth-child(3) { margin: $margin-xmd $margin-md; }
-            &:nth-child(5) { margin: 0 $margin-md; }
-        }
-        .hero {
-            flex-direction: row;
-            margin: 0 $margin-lg;
-        }
-        .visionHomepage { padding: $margin-lg $margin-lg; }
-        .blogHomepage {
-            .blogHomepageContainer { 
-                padding:  $margin-lg $margin-lg;
-                flex-direction: row;
-                gap: $gap-xxl;
-                .blogHomepageContent {
-                    flex-direction: column;
-                    align-items: flex-start;
-                    justify-content: center;
-                    text-align: left;
-                    gap: $gap-lg;
-                }
-            }
-        }
        
     }
 
     @media (min-width: map-get($breakpoints, "xxl")) {
-        // background-color: $neutral-600;
-        section {
-            &:nth-child(1) { margin: $margin-xmd $margin-lg; }
-            &:nth-child(3) { margin: $margin-xmd $margin-md; }
-            &:nth-child(5) { margin: 0 0 0 0; }
-        }
-        .hero {
-            flex-direction: row;
-        }
-        .products {
-            flex-direction: column;
-        }
-        .visionHomepage { padding: $margin-md $margin-lg; }
-        .blogHomepage {
-            .blogHomepageContainer { 
-                padding: $margin-lg $margin-xxl;
-                flex-direction: row;
-                justify-content: center;
-                gap: $gap-xxl;
-                .blogHomepageContent {
-                    flex-direction: column;
-                    align-items: flex-start;
-                    justify-content: center;
-                    text-align: left;
-                    gap: $gap-lg;
-                }
-                img {
-                    max-width: 900px;
-                }
-            }
-        }
-        .follow {
-            .items {
-                padding-left: $padding-lg;
-            }
-        }
+
     }
 }

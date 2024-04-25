@@ -9,7 +9,6 @@ import Slika2 from '../../../public/images/image/blog/BlogSlika_2.jpg'
 import Slika3 from '../../../public/images/image/blog/BlogSlika_3.jpg'
 import Chip from '../../components/atoms/chip/Chip'
 import FollowSocial from '../../components/organism/followSocial/followSocial.jsx';
-import Footer from '../../components/organism/footer/footer';
 
 export default function demoArticle() {
   return (
@@ -18,19 +17,10 @@ export default function demoArticle() {
 
         {/* Title */}
         <section className="blog-title col-10-sm col-10-md col-10-lg">
-          <span className='blog-text-container'>
+          <span>
             <h3 className='title-gooey'>Hidrolati:<br /> Prirodna Čarolija za Savršenu Kožu</h3>
           </span>
-          {/* Filter: https://css-tricks.com/gooey-effect/ */}
-          <svg className="gooey-svg" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
-            <defs>
-              <filter id="title-gooey">
-                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />    
-                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="title-gooey" />
-                <feComposite in="SourceGraphic" in2="title-gooey" operator="atop"/>
-              </filter>
-            </defs>
-          </svg>
+
 
           <div className="row">
             <div className="info">
@@ -159,9 +149,6 @@ export default function demoArticle() {
       <div>
         <FollowSocial 
           color="primary-200"
-        />
-        <Footer 
-            color="primary-800"
         />
       </div>
     </div>

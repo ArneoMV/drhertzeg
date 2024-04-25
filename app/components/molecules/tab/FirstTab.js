@@ -1,39 +1,49 @@
 import React from "react";
-import './_firstTab.scss';
-import ProductCard from '../../organism/productCard/productCard'
-import CajDetox from '../../../assets/image/product/Proizvod_Detox.png'
-import CajEnergija from '../../../assets/image/product/Proizvod_Energija.png'
-import CajImuno from '../../../assets/image/product/Proizvod_Imuno.png'
-import CajPelin from '../../../assets/image/product/Proizvod_Slatki_Pelin.png'
-import CajSmokva from '../../../assets/image/product/Proizvod_Smokva.png'
+import './_tab.scss';
+import ProductCard from '../../organism/productCard/productCard';
+
+import KapiSlatkogPelina from '../../../../public/images/product/kozmetika/KapiSlatkogPelina.png';
+import Smiloljat from '../../../../public/images/product/kozmetika/Smiloljat.png';
+import HydratingDayCream from '../../../../public/images/product/kozmetika/HydratingDayCream.png';
+import CalmingGel from '../../../../public/images/product/kozmetika/CalmingGel.png';
+import Lavandolat from '../../../../public/images/product/kozmetika/Lavandolat.png';
 
 const FirstTab = () => {
   return (
-    <div className="firstTab">
-        <ProductCard
-          imageUrl={CajSmokva}
-          title="Smokvin list"
-          link="/"
-          alt="Smokvin list"
-        />
-        <ProductCard
-          imageUrl={CajPelin}
-          title="Slatki pelin"
-          link="/"
-          alt="Slatki pelin"
-        />
-        <ProductCard
-          imageUrl={CajEnergija}
-          title="Energija jutra"
-          link="/"
-          alt="Energija jutra"
-        />
-        <ProductCard
-          imageUrl={CajDetox}
-          title="Detox"
-          link="/"
-          alt="Detox"
-        />
+    <div className="tab-container">
+      <ProductCard
+        productDetailsTitle="Kapi Slatkog Pelina"
+        productDetailsPrice="4 €"
+        productDetailsImageURL= {KapiSlatkogPelina}
+        productDetailsImageAlt="Kapi Slatkog Pelina"
+        productURL="/kozmetika/kozmetikaProduct"
+        productChips1="Protupalno"
+        productChips2="Opušta"
+        imageClass="image-small"
+        hoverOutline="primary"
+      />
+      <ProductCard
+        productDetailsTitle="Smiloljat"
+        productDetailsPrice="4 €"
+        productDetailsImageURL= {Smiloljat}
+        productDetailsImageAlt="Smiloljat"
+        productURL="/cajevi/cajProduct"
+        productChips1="Protupalno"
+        productChips2="Opušta"
+        imageClass="image-small"
+        hoverOutline="primary"
+      />
+      <ProductCard
+        productDetailsTitle="Hydrating Day Cream"
+        productDetailsPrice="4 €"
+        productDetailsImageURL= {HydratingDayCream}
+        productDetailsImageAlt="HydratingDayCream"
+        productURL="/cajevi/cajProduct"
+        productChips1="Protupalno"
+        productChips2="Opušta"
+        imageClass="image-small"
+        hoverOutline="primary"
+      />
     </div>
   );
 };

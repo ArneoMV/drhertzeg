@@ -4,15 +4,13 @@
 @use '../../../styles/base/_mixin' as *;
 
 
-.button-icon {
+  .button-icon {
     cursor: pointer;
-    background-color: $neutral-300;
+    background-color: $primary-50;
     border-radius: 999px;
     height: $size-32;
     width: $size-32;
     display: grid;
-    outline: none;
-    border: 0px;
     img {
       width: 24px;
       height: auto;
@@ -21,6 +19,12 @@
     &:hover {
       box-shadow: $base-shadow-3;
       background-color: $primary-200;
+      transform: scale(1.2);
+      transition: transform 300ms, box-shadow 300ms;
+      img {
+        transform: scale(1.1);
+        transition: transform 330ms;
+      }
     }
     
   }

@@ -17,9 +17,6 @@ export default function RootLayout({ children }) {
   return (
     <div className='product-page'>
         {children}
-        <Footer 
-          color="primary-800"
-        />
     </div>
   )
 }

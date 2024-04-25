@@ -7,16 +7,11 @@ import '../styles/layout/_breakpoint.scss';
 import '../styles/layout/_grid.scss';
 
 import FollowSocial from '../components/organism/followSocial/followSocial';
-import Footer from '../components/organism/footer/footer';
-
-
 
 export default function PrivacyPolicy() {
 
   return (
       <div className='privacy-policy-page'>
-
-
         <main className="privacy-policy-page-contianer">
           <div className="faq-title col-7-lg">
             <div  className='faq-text-container'>
@@ -25,18 +20,6 @@ export default function PrivacyPolicy() {
               </span>
               <p>Ažurirano: 19. travnja 2024.</p>
             </div>
-            
-            
-            {/* Filter: https://css-tricks.com/gooey-effect/ */}
-            <svg className="gooey-svg" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
-              <defs>
-                <filter id="title-gooey">
-                  <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />    
-                  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="title-gooey" />
-                  <feComposite in="SourceGraphic" in2="title-gooey" operator="atop"/>
-                </filter>
-              </defs>
-            </svg>
           </div>
 
             <div className="column col-7-lg">
@@ -101,12 +84,6 @@ export default function PrivacyPolicy() {
                 </div>
             </div>
         </main>
-
-      <div>
-        <Footer 
-          color="primary-800"
-        />
-      </div>
     </div>
   )
 }

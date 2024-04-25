@@ -8,8 +8,6 @@ import '../styles/_index.scss';
 import '../styles/layout/_breakpoint.scss';
 import '../styles/layout/_grid.scss';
 
-import Footer from '../components/organism/footer/footer';
-
 
 
 export default function Faq() {
@@ -73,12 +71,6 @@ export default function Faq() {
             </div>
           </div>
         </main>
-
-      <div>
-        <Footer 
-          color="primary-800"
-        />
-      </div>
     </div>
   )
 }

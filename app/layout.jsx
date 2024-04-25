@@ -2,6 +2,7 @@ import Head from 'next/head';
 import './styles/_index.scss';
 import './globals.css';
 import Header from './components/organism/header/Header.jsx'
+import Footer from "./components/organism/footer/footer.jsx";
 import './styles/abstract/_typo.scss';
 import { Work_Sans } from "next/font/google";
 
@@ -35,6 +36,9 @@ export default function RootLayout({ children }) {
       <body>
         <Header />
         {children}
+        <Footer 
+          color="primary-800"
+        />
         {/* Filter: https://css-tricks.com/gooey-effect/ */}
         <svg className="gooey-svg" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
             <defs>

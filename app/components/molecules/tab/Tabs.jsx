@@ -23,13 +23,13 @@ const Tabs = () => {
           className={`tabButton ${activeTab === "tab1" ? "active" : ""}`}
           onClick={handleTab1}
         >
-          Čaj
+          Kozmetika
         </div>
         <div
           className={`tabButton ${activeTab === "tab2" ? "active" : ""}`}
           onClick={handleTab2}
         >
-          Kozmetika
+          Čaj
         </div>
       </div>
       <div className="outlet">

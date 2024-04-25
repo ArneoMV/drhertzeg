@@ -8,8 +8,6 @@ import { Icon } from '../utilities/images.js';
 import Input from '../components/molecules/input/input';
 import TextBox from '../components/molecules/textbox/textbox';
 import FormContainer from '../components/organism/form/form'
-import Footer from '../components/organism/footer/footer';
-
 
 export default function Contact() {
 
@@ -68,9 +66,6 @@ export default function Contact() {
           <FormContainer className="col-10-sm col-8-md col-5-lg"/>
         
         </main>
-        <Footer 
-            color="primary-800"
-          />
       </div>
     )
   }

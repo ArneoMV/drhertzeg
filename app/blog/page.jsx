@@ -11,7 +11,6 @@ import Loading from "../loading";
 import "./_style.scss";
 
 import FollowSocial from '../components/organism/followSocial/followSocial';
-import Footer from '../components/organism/footer/footer';
 
 export default function Blog() {
     return (
@@ -62,20 +61,10 @@ export default function Blog() {
               productDetailsImageAlt="Smokvin List"
               productDetailsURL="/blog/blog-3"
             />
-
           </section>
 
           <AdBanner />
         </main>
-
-        <div>
-          <FollowSocial 
-            color="primary-200"
-          />
-          <Footer 
-            color="primary-800"
-          />
-        </div>
       </div>
     )
 }

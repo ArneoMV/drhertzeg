@@ -206,14 +206,9 @@ export default function Kozmetika() {
 
           <AdBanner />
       </main>
-      <div>
         <FollowSocial 
           color="primary-200"
         />
-        <Footer 
-            color="primary-800"
-          />
-      </div>
     </div>
   )
 }

@@ -8,7 +8,6 @@ import ProductPromotioCard from '../components/organism/productPromotioCard/prod
 import ProductCard from '../components/organism/productCard/productCard.jsx'
 import AdBanner from '../components/organism/adBanner/adBanner.jsx'
 import FollowSocial from '../components/organism/followSocial/followSocial';
-import Footer from '../components/organism/footer/footer';
 
 import "./_style.scss";
 import PlantIcon from '../assets/icon/plant-icon.svg'
@@ -161,9 +160,6 @@ export default function Cajevi() {
         <FollowSocial 
           color="primary-200"
         />
-        <Footer 
-            color="primary-800"
-          />
       </div>
     </div>
   )
