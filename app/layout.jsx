@@ -35,7 +35,25 @@ export default function RootLayout({ children }) {
       <body>
         <Header />
         {children}
-
+        {/* Filter: https://css-tricks.com/gooey-effect/ */}
+        <svg className="gooey-svg" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+              <filter id="title-gooey">
+                  <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />    
+                  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="title-gooey" />
+                  <feComposite in="SourceGraphic" in2="title-gooey" operator="atop"/>
+              </filter>
+            </defs>
+        </svg>
+        <svg className="gooey-svg" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+              <filter id="gooey-background">
+                  <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />    
+                  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="title-gooey" />
+                  <feComposite in="SourceGraphic" in2="gooey-background" operator="atop"/>
+              </filter>
+            </defs>
+        </svg>
       </body>
     </html>
   )

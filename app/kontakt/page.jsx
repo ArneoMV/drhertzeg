@@ -21,19 +21,9 @@ export default function Contact() {
             
           {/* Title */}
           <section className="main-title col-10-sm col-10-md col-10-lg">
-            <span className='blog-text-container'>
+            <span>
               <h3 className='title-gooey'>Kontakt</h3>
             </span>
-            {/* Filter: https://css-tricks.com/gooey-effect/ */}
-            <svg className="gooey-svg" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
-              <defs>
-                <filter id="title-gooey">
-                  <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />    
-                  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="title-gooey" />
-                  <feComposite in="SourceGraphic" in2="title-gooey" operator="atop"/>
-                </filter>
-              </defs>
-            </svg>
             <p>Shortbread dragée wafer cupcake ice cream cookie pie. Apple pie gummies pudding wafer pastry liquorice. Wafer tootsie roll cupcake ice cream liquorice. Tiramisu cupcake marshmallow halvah pastry sugar plum ice cream. </p>
           </section>
             

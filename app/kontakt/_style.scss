@@ -8,23 +8,6 @@
 .main-title {
     @include flexColumn;
     gap: $size-24;
-    .gooey-svg {
-        visibility: hidden;
-        position: absolute;
-    }
-    .title-gooey {
-        line-height: 100%;
-        display: inline;
-        box-decoration-break: clone;
-        background: $primary-600;
-        padding: 0.5rem 1rem;
-        filter: url('#title-gooey');
-        color: $neutral-100;
-        line-height: 125%;
-    }
-    .title-gooey:focus {
-        outline: 0;
-    }
     .row {
         gap: $size-24;
         .info {

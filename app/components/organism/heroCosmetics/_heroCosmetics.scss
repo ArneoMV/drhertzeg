@@ -5,7 +5,7 @@
 @use '../../../styles/layout/_layout' as *;
 @use '../../../styles/base/_mixin' as *;
 
-$background-rectangle: url('../../../assets/image/rectangle-red.svg');
+$background-rectangle: url('../../../assets/image/rectangle-green.svg');
 
 .hero-banner {
     width: 100%;
@@ -37,13 +37,6 @@ $background-rectangle: url('../../../assets/image/rectangle-red.svg');
         }
         h1 {
             font-size: 28px;
-        }
-        .button, .primary{
-            background-color: $red-300;
-            color: $neutral-100;
-            &:hover {
-                background-color: $red-400;
-            }
         }
     }
     .hero-image {

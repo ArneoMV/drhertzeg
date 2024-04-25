@@ -24,11 +24,11 @@ export default function HeroCosmetics() {
     <>
       {/* Extra Extra Small - pink */}
       {screenWidth > xxs &&  screenWidth <= sm ? (
-        <div className='hero-banner'>
+        <div className='hero-banner gooey-background '>
             <div className="hero-content-title">
                 <div className='title-text'>
-                <h1>Ljepota iz prirode <br /> ima novi izgled</h1>
-                <p>Marzipan caramels brownie jelly beans bear claw jelly-o shortbread macaroon candy canes.</p>
+                    <h1>Prirodna kozmetika <br /> ima novu formulu.</h1>
+                    <p>Marzipan caramels brownie jelly beans bear claw jelly-o shortbread macaroon candy canes.</p>
                 </div>
                 <Link href="/kozmetika/kozmetikaProduct">
                     <Button type="primary">Pročitaj više</Button>
@@ -39,11 +39,11 @@ export default function HeroCosmetics() {
 
       {/* Medium Purple*/}
       {screenWidth > sm &&  screenWidth <= md ? (
-        <div className='hero-banner'>
+        <div className='hero-banner gooey-background '>
             <div className="hero-content-title">
                 <div className='title-text'>
-                <h1>Ljepota iz prirode <br /> ima novi izgled</h1>
-                <p>Marzipan caramels brownie jelly beans bear claw jelly-o shortbread macaroon candy canes.</p>
+                    <h1>Prirodna kozmetika <br /> ima novu formulu.</h1>
+                    <p>Marzipan caramels brownie jelly beans bear claw jelly-o shortbread macaroon candy canes.</p>
                 </div>
                 <Link href="/kozmetika/kozmetikaProduct">
                     <Button type="primary">Pročitaj više</Button>
@@ -62,11 +62,11 @@ export default function HeroCosmetics() {
 
       {/* Izmedu XXL i md  */}
       {screenWidth > md &&  screenWidth <= xxl ? (
-        <div className='hero-banner'>
+        <div className='hero-banner gooey-background '>
             <div className="hero-content-title">
                 <div className='title-text'>
-                <h1>Ljepota iz prirode <br /> ima novi izgled</h1>
-                <p>Marzipan caramels brownie jelly beans bear claw jelly-o shortbread macaroon candy canes.</p>
+                    <h1>Prirodna kozmetika <br /> ima novu formulu.</h1>
+                    <p>Marzipan caramels brownie jelly beans bear claw jelly-o shortbread macaroon candy canes.</p>
                 </div>
                 <Link href="/kozmetika/kozmetikaProduct">
                     <Button type="primary">Pročitaj više</Button>
@@ -85,11 +85,11 @@ export default function HeroCosmetics() {
 
       {/* Extra Extra Large - black */}
       {screenWidth > xxl ? (
-        <div className='hero-banner'>
+        <div className='hero-banner gooey-background '>
             <div className="hero-content-title">
                 <div className='title-text'>
-                <h1>Ljepota iz prirode <br /> ima novi izgled</h1>
-                <p>Marzipan caramels brownie jelly beans bear claw jelly-o shortbread macaroon candy canes.</p>
+                    <h1>Prirodna kozmetika <br /> ima novu formulu.</h1>
+                    <p>Marzipan caramels brownie jelly beans bear claw jelly-o shortbread macaroon candy canes.</p>
                 </div>
                 <Link href="/kozmetika/kozmetikaProduct">
                     <Button type="primary">Pročitaj više</Button>

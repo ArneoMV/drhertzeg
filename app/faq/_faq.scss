@@ -4,6 +4,7 @@
 @use '../styles/layout/_breakpoint' as *;
 @use '../styles/layout/_layout' as *;
 @use '../styles/base/_mixin' as *;
+@use '../styles/abstract/_gooey' as *;
 
 .faq-title {
     width: 100%;
@@ -15,28 +16,6 @@
             width: 360px;
         }
     }
-    .gooey-svg {
-        visibility: hidden;
-        position: absolute;
-    }
-    .title-gooey {
-        width: fit-content;
-        display: inline;
-        box-decoration-break: clone;
-        background: $primary-600;
-        padding: 0.5rem 1rem;
-        filter: url('#title-gooey');
-        color: $neutral-100;
-        line-height: 125%;
-        span {
-            font-size: 21px;
-        }
-    }
-    .title-gooey:focus {
-        outline: 0;
-    }
-
-
     .row {
         gap: $size-24;
         .info {
@@ -142,6 +121,9 @@
             .content-container {
                 @include flexRow;
                 gap: $size-64;
+                ul {
+                    gap: $size-32;
+                }
             }
         }
         

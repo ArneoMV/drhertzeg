@@ -5,8 +5,8 @@ import Chip from '../components/atoms/chip/Chip';
 
 import HeroImage from '../assets/image/CoverKozmetika.png'
 import CardBlog from '../components/organism/cardBlog/cardBlog'
-import BannerCosmetics from '../components/organism/bannerCosmetics/bannerCosmetics'
-// import TeaList from "./TeaList";
+import AdBanner from '../components/organism/adBanner/adBanner'
+
 import Loading from "../loading";
 import "./_style.scss";
 
@@ -33,12 +33,11 @@ export default function Blog() {
             <div className="heroContentInner">
               <div className="heroContent_heading">
                 <div className="titleWithChip">
-                  <Chip text="blog" />
-                  <h3>Naš blog</h3>
+                  <Chip text="Blog" colorBg="#D8F3DC" colorText="#1B4332" />
+                  <h3>Novosti i zanimljivosti</h3>
                 </div>
                 <p>Tips and tutorials on how to build better tea experience </p>
-              </div>
-                
+              </div>  
             </div>
           </div>
         </div>
@@ -66,7 +65,7 @@ export default function Blog() {
 
           </section>
 
-          <BannerCosmetics />
+          <AdBanner />
         </main>
 
         <div>

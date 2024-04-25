@@ -11,13 +11,13 @@
 .row {
     @include flexRow;
 }
- 
 
 .products-page {
     @include main-page-layout;
     main.products-page-container {
         @include main-page-container;
 
+        h1, h2, h3, h4, h5 p { color: $blue-800; }
         .product-promotion {
             @include flexColumn;
             justify-content: center;
@@ -26,10 +26,9 @@
                 @include flexColumn;
                 gap: $size-12;
                 margin: 0 auto;
-                h4, p {
-                    font-size: 48px; //
+                h4 {
+                    font-size: 48px;
                     text-align: center;
-                    color: $red-900;
                     line-height: 115%;
                 }
                 p {
@@ -39,10 +38,16 @@
             .flex {
                 @include flexColumn;
                 gap: $size-24;
-                .column {
+                .info-card {
+                    @include flexColumn;
                     gap: $size-12;
+                    background-color: $neutral-100;
+                    box-shadow: $base-shadow-3;
+                    padding: $size-24;
+                    border-radius: $size-16;
+                    box-sizing: border-box;
                     h5, p {
-                        color: $red-900;
+                        text-align: center;
                     }
                     h5 {
                         font-weight: 700;
@@ -53,16 +58,13 @@
 
         .product-cards {
             @include flexColumn;
-            gap: $size-48;
+            gap: $size-24;
             width: 100%;
             .product-cards-title {
                 width: 100%;
                 @include flexRow;
-                justify-content: center;
-                justify-content: space-around;
-                margin: 0 auto;
-                padding: 0 $size-64;
-                color: $red-900;
+                justify-content: space-between;
+                align-items: center;
                 h3,p  {
                     text-align: left;
                 }
@@ -100,7 +102,7 @@
                             li {
                                 font-size: 16px;
                                 font-weight: 500;
-                                color: $red-900;
+                                color: $blue-800;
                             }
                         } 
                     }
@@ -121,7 +123,6 @@
                 }
             }
         }
-        
 
         @media (min-width: map-get($breakpoints, "xxs")) {
             .product-promotion {
@@ -192,4 +193,3 @@
         }
     }
 }
-

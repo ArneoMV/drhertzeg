@@ -5,9 +5,9 @@
 
 
 .hover-primary-300 {
-        &:hover {
-            outline: 1px solid $primary-300;
-        } 
+    // &:hover {
+    //     outline: 1px solid $primary-300;
+    // } 
 }
 .hover-blue-300 {
     &:hover {
@@ -21,18 +21,15 @@
 }
 
 
-a.product-card-link {
-    background-color: $neutral-100;
-    outline: 1px solid $neutral-100;
+
+a.product-card {
     border-radius: $size-16;
     width: 100%;
     box-sizing: border-box;
     overflow: hidden;
-
     @include flexColumn;
     a {
         text-decoration: none;
-        box-sizing: border-box;
     }
     .product-card-image {
         width: auto;
@@ -41,16 +38,19 @@ a.product-card-link {
         justify-content: center;
         align-items: center;
         padding: $size-48 0;
+        box-sizing: border-box;
+        background-color: $primary-100;
+        border-radius: 16px;
+        border: 1px solid transparent;
         img {
             width: auto;
-            height: 200px;
             object-fit: cover;
         }
-        img.imageHorizontal {
-            height: 150px;
+        img.image-default {
+            height: 230px;
         }
-        img.imageVertical {
-            height: 250px;
+        img.image-small {
+            height: 152px;
         }
     }
     .product-card-content {
@@ -70,12 +70,15 @@ a.product-card-link {
             }
             h5 {
                 color: $neutral-800;
+                font-family: 'Young Serif' serif;
                 font-weight: bold;
-                font-size: 32px;
+                font-size: 38px;
+                line-height: 115%;
             }
             p {
-                font-size: 18px;
-                color: $primary-900;
+                font-size: 24px;
+                color: $neutral-800;
+                font-weight: 700;
             }
         }
         .product-card-content-chips {
@@ -87,106 +90,60 @@ a.product-card-link {
     }
 
     &:hover {
-        // outline: 1px solid $red-300;
-        transition: outline 0.2s;
-        box-sizing: border-box;
-        box-shadow: $base-shadow-4;
         .product-card-image  {
-            img {
-                transition: scale 0.2s;
-                scale: 1.06;
+            border: 1px solid $primary-300;
+            box-sizing:content-box;
+        }
+        .product-card-content {
+            h5 {
+                color: $primary-700;
             }
-        }
-        h5, p {
-            color: $red-400;
-        }
-        h5 {
-            scale: 1.09;
-            transition: scale, color 0.24s;
-        }
-        p {
-            scale: 1.1;
-            transition: scale 0.24s;
+            p {
+                color: $primary-800;
+            }
+            .product-card-content-chips {
+                .chip {
+                    background-color: $primary-500;
+                }
+            }
         }
 
     }
 
 
     @media (min-width: map-get($breakpoints, "xxs")) {
-        border-radius:$radius-sm;
         .product-card-image {
-            img.imageHorizontal {
-                height: 150px;
-            }
-            img.imageVertical {
-                height: 250px;
-            }
+
         }
     }
     @media (min-width: map-get($breakpoints, "xs")) {
-        border-radius:$radius-sm;
         .product-card-image {
-            img.imageHorizontal {
-                height: 150px;
-            }
-            img.imageVertical {
-                height: 250px;
-            }
+
         }
     }
     @media (min-width: map-get($breakpoints, "sm")) {
-        border-radius:$radius-sm;
         .product-card-image {
-            img.imageHorizontal {
-                height: 180px;
-            }
-            img.imageVertical {
-                height: 250px;
-            }
+
         }
     }
     @media (min-width: map-get($breakpoints, "md")) {
-        border-radius:$radius-sm;
         .product-card-image {
-            img.imageHorizontal {
-                height: 180px;
-            }
-            img.imageVertical {
-                height: 280px;
-            }
+
         }
     }
     @media (min-width: map-get($breakpoints, "lg")) {
-        border-radius:$radius-md;
         .product-card-image {
-            img.imageHorizontal {
-                height: 200px;
-            }
-            img.imageVertical {
-                height: 280px;
-            }
+
         }
     }
     @media (min-width: map-get($breakpoints, "xl")) {
-        border-radius:$radius-md;
         .product-card-image {
-            img.imageHorizontal {
-                height: 200px;
-            }
-            img.imageVertical {
-                height: 320px;
-            }
+
         }
     }
     @media (min-width: map-get($breakpoints, "xxl")) {
-        border-radius:$radius-md;
         .product-card-image {
-            img.imageHorizontal {
-                height: 220px;
-            }
-            img.imageVertical {
-                height: 350px;
-            }
+
         }
     }
 }

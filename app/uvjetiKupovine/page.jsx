@@ -19,10 +19,13 @@ export default function PrivacyPolicy() {
 
         <main className="privacy-policy-page-contianer">
           <div className="faq-title col-7-lg">
-            <span className='faq-text-container'>
-              <h4 className='title-gooey'>Pravila privatnosti</h4>
+            <div  className='faq-text-container'>
+              <span>
+                <h4 className='title-gooey'>Pravila privatnosti</h4>
+              </span>
               <p>Ažurirano: 19. travnja 2024.</p>
-            </span>
+            </div>
+            
             
             {/* Filter: https://css-tricks.com/gooey-effect/ */}
             <svg className="gooey-svg" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">

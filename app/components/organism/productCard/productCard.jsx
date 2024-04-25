@@ -4,13 +4,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Chip from '../../atoms/chip/Chip';
 
-export default function ProductCard({ productDetailsTitle, productDetailsPrice, productDetailsImageURL, productDetailsImageAlt, productDetailsURL, productChips1, productChips2, imageClass, hoverOutline }) {
+export default function ProductCard({ productDetailsTitle, productDetailsPrice, productDetailsImageURL, productDetailsImageAlt, productURL, productChips1, productChips2, imageClass, hoverOutline }) {
   
   let className = '';
 
   // Provjerite primljenu boju i postavite odgovarajuću klasu
   switch (hoverOutline) {
-    case 'primary-300':
+    case 'primary':
       className = 'hover-primary-300';
       break;
     case 'red-300':
@@ -24,7 +24,7 @@ export default function ProductCard({ productDetailsTitle, productDetailsPrice, 
   }
   
   return (
-    <Link href={productDetailsURL} className={`product-card-link ${className}`}>
+    <Link href={productURL} className={`product-card ${className}`}>
       <div className="product-card-image">
         <Image 
           src={productDetailsImageURL}

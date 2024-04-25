@@ -1,5 +1,5 @@
 import React from 'react'
-import "./_bannerCosmetics.scss";
+import "./_adBanner.scss";
 
 import Image from 'next/image'
 import Link from 'next/link'
@@ -8,9 +8,9 @@ import Button from "../../atoms/button/Button";
 import SlikaCover from '../../../assets/image/caj-blog.jpg'
 
 
-export default function bannerCaj() {
+export default function AdBanner() {
   return (
-    <section className="productAdCard">
+    <section className="ad-banner gooey-background ">
         <div className="product-card-details-container">
             <div className="productCardDetails">
                 <h4>Ljekovite kreme od Dr Hertzega</h4>
@@ -29,7 +29,7 @@ export default function bannerCaj() {
 
             </div>
             <Link href="/blog">
-                <Button type="secondary">Saznaj Više</Button>
+                <Button type="primary">Saznaj Više</Button>
             </Link>
         </div>
         <div className="productCardImageContainer">

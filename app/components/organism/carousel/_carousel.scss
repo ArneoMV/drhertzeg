@@ -30,7 +30,7 @@
     }
     .arrow {
       cursor: pointer;
-      background-color: $neutral-100;
+      background-color: $primary-50;
       border-radius: 999px;
       height: $size-32;
       width: $size-32;
@@ -42,7 +42,7 @@
       }
       &:hover {
         box-shadow: $base-shadow-3;
-        background-color: $red-200;
+        background-color: $primary-200;
         transform: scale(1.2);
         transition: transform 300ms, box-shadow 300ms;
         img {
@@ -65,13 +65,13 @@
       height: 12px;
       width: 12px;
       border-radius: 999px;
-      background-color: $neutral-100;
+      background-color: $neutral-400;
     }
     .dot-active {
       height: 12px;
       width: 24px;
       border-radius: 999px;
-      background-color: $red-400;
+      background-color: $primary-500;
     }
   }
 

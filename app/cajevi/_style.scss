@@ -26,8 +26,8 @@
                 @include flexColumn;
                 gap: $size-12;
                 margin: 0 auto;
-                h4, p {
-                    font-size: 48px; //
+                h4 {
+                    font-size: 48px;
                     text-align: center;
                     line-height: 115%;
                 }
@@ -38,8 +38,17 @@
             .flex {
                 @include flexColumn;
                 gap: $size-24;
-                .column {
+                .info-card {
+                    @include flexColumn;
                     gap: $size-12;
+                    background-color: $neutral-100;
+                    box-shadow: $base-shadow-3;
+                    padding: $size-24;
+                    border-radius: $size-16;
+                    box-sizing: border-box;
+                    h5, p {
+                        text-align: center;
+                    }
                     h5 {
                         font-weight: 700;
                     }
@@ -49,15 +58,13 @@
 
         .product-cards {
             @include flexColumn;
-            gap: $size-48;
+            gap: $size-24;
             width: 100%;
             .product-cards-title {
                 width: 100%;
                 @include flexRow;
-                justify-content: center;
-                justify-content: space-around;
-                margin: 0 auto;
-                padding: 0 $size-64;
+                justify-content: space-between;
+                align-items: center;
                 h3,p  {
                     text-align: left;
                 }
@@ -114,13 +121,6 @@
                 .otherProductCard {
                     max-width: 420px;
                 }
-            }
-        }
-        .button, .primary{
-            background-color: $blue-300;
-            color: $neutral-100;
-            &:hover {
-                background-color: $blue-400;
             }
         }
 

@@ -22,10 +22,14 @@
 a .button {
   text-decoration: none;
 }
+.button {
+  @include Button();
+  filter: url('#title-gooey');
+}
 
 .button.primary {
-  @include Button();
-  // background-color: $primary-500;
+  background-color: $primary-600;
+  color: $neutral-100;
   display: flex;
   align-items: center;
   gap: $gap-sm;
@@ -33,7 +37,7 @@ a .button {
   &:hover {
     box-sizing: border-box;
     box-shadow: $shadow-sm;
-    // background-color: $primary-600;
+    background-color: $primary-400;
     box-shadow: $shadow-lg;
   }
   &:focus {
@@ -115,3 +119,20 @@ a .button {
   }
 }
 
+.gooey-svg {
+  visibility: hidden;
+  position: absolute;
+}
+.title-gooey {
+  line-height: 100%;
+  display: inline;
+  box-decoration-break: clone;
+  background: $primary-600;
+  padding: 0.5rem 1rem;
+  filter: url('#title-gooey');
+  color: $neutral-100;
+  line-height: 125%;
+}
+.title-gooey:focus {
+  outline: 0;
+}

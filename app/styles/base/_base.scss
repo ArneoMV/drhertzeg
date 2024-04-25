@@ -52,64 +52,16 @@ a {
     font-weight: 500;
 }
 
-
-.homepage {
-    background-color: $primary-100;
-}
-
-.kozmetika {
-    background-color: $red-100;
-}
-.kozmetika-individual {
-    background-color: $neutral-100;
-}
-
-.caj {
-    background-color: $blue-100;
-}
-
-.caj-individual {
-    background-color: $blue-100;
-}
-
-.contact-page {
-    background-color: $primary-100;
-}
-
-.blog-page {
-    background-color: $neutral-100;
-}
-.article-page {
-    background-color: $neutral-100;
-}
-
-
-// body.homepage {
-//     background-color: $primary-100;
+// .homepage,
+// .products-page,
+// .product-page-contianer,
+// .kozmetika-individual,
+// .body.caj-individual,
+// .body.blog-page,
+// .article-page,
+// .contact-page {
+//     background-color: $primary-50;
 // }
-
-// body.kozmetika {
-//     background-color: $red-100;
-// }
-// body.kozmetika-individual {
-//     background-color: $red-100;
-// }
-
-// body.caj {
-//     background-color: $blue-100;
-// }
-
-// body.caj-individual {
-//     background-color: $blue-100;
-// }
-
-// body.contact-page {
-//     background-color: $primary-100;
-// }
-
-// body.blog-page {
-//     background-color: $neutral-100;
-// }
-// body.article-page {
-//     background-color: $neutral-100;
-// }
+body {
+    background-color: $primary-50; 
+}

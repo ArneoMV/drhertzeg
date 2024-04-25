@@ -3,7 +3,7 @@
 @use '../../../styles/abstract/_color' as *;
 @use '../../../styles/base/_mixin' as *;
 
-section.productAdCard {
+section.ad-banner {
     @include flexColumn;
     height: auto;
     box-shadow: $base-shadow-3;
@@ -21,10 +21,6 @@ section.productAdCard {
         border-radius: $radius-md;
         a {
             text-decoration: none;
-
-            button {
-                border: 0px
-            }
         }
         .productCardDetails {
             @include flexColumn;

@@ -1,27 +1,9 @@
 @use '../../../styles/layout/_breakpoint' as *;
 @use '../../../styles/base/_variable' as *;
 @use '../../../styles/abstract/_color' as *;
+@use '../../../styles/abstract/_gooey' as *;
 @use '../../../styles/base/_mixin' as *;
 
-
-.gooey-svg {
-    visibility: hidden;
-    position: absolute;
-  }
-
-  .goo {
-    font-size: 1rem;
-    line-height: 1.35;
-    display: inline;
-    box-decoration-break: clone;
-    background: $neutral-100;
-    padding: 0.5rem 1rem;
-    filter: url('#goo');
-}
-
-.goo:focus {
-    outline: 0;
-}
 
 
 a.blog-card-link-container {
@@ -65,9 +47,9 @@ a.blog-card-link-container {
             left: 0; 
             bottom: 0;
             margin: $size-24;
+            
             p {
                 font-size: 21px;
-                color: $neutral-800;
                 line-height: 160%;
             }
         }

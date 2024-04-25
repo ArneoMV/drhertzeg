@@ -16,16 +16,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-// MAIN CODE
-
-// <div className='language'>
-//         <Image 
-//           src={HR}
-//           alt='Hrvatski'
-//           quality={100}
-//           width={30}
-//           // placeholder='blur'
-//         />
-//         <p>HR</p>
-//       </div>

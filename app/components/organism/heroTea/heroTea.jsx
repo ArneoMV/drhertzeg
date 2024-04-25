@@ -24,7 +24,7 @@ export default function HeroTea() {
     <>
       {/* Extra Extra Small - pink */}
       {screenWidth > xxs &&  screenWidth <= sm ? (
-        <div className='hero-banner'>
+        <div className='hero-banner gooey-background '>
             <div className="hero-content-title">
                 <div className='title-text'>
                 <h1>Okus iz prirode <br /> ima novi izgled</h1>
@@ -39,7 +39,7 @@ export default function HeroTea() {
 
       {/* Medium Purple*/}
       {screenWidth > sm &&  screenWidth <= md ? (
-        <div className='hero-banner'>
+        <div className='hero-banner gooey-background '>
             <div className="hero-content-title">
                 <div className='title-text'>
                 <h1>Ljepota iz prirode <br /> ima novi izgled</h1>
@@ -62,7 +62,7 @@ export default function HeroTea() {
 
       {/* Izmedu XXL i md  */}
       {screenWidth > md &&  screenWidth <= xxl ? (
-        <div className='hero-banner'>
+        <div className='hero-banner gooey-background '>
             <div className="hero-content-title">
                 <div className='title-text'>
                 <h1>Okus iz prirode <br /> ima novi izgled</h1>
@@ -85,7 +85,7 @@ export default function HeroTea() {
 
       {/* Extra Extra Large - black */}
       {screenWidth > xxl ? (
-        <div className='hero-banner'>
+        <div className='hero-banner gooey-background '>
             <div className="hero-content-title">
                 <div className='title-text'>
                 <h1>Okus iz prirode <br /> ima novi izgled</h1>

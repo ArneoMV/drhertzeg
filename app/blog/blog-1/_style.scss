@@ -3,6 +3,7 @@
 @use '../../styles/base/_mixin' as *;
 @use '../../styles/layout/_breakpoint' as *;
 @use '../../styles/layout/_layout' as *;
+@use '../../styles/abstract/_gooey' as *;
 
 
 
@@ -19,30 +20,11 @@
     
     main.article-page-container {
         @include main-page-container;
-        section {
-            @include flexColumn;
-            gap: $size-48;
-        }
     }
 
     .blog-title {
-        .gooey-svg {
-            visibility: hidden;
-            position: absolute;
-        }
-        .title-gooey {
-            line-height: 100%;
-            display: inline;
-            box-decoration-break: clone;
-            background: $primary-600;
-            padding: 0.5rem 1rem;
-            filter: url('#title-gooey');
-            color: $neutral-100;
-            line-height: 125%;
-        }
-        .title-gooey:focus {
-            outline: 0;
-        }
+        @include flexColumn;
+        gap: $size-24;
         .row {
             gap: $size-24;
             .info {
@@ -78,39 +60,46 @@
           }
         p {
             font-style: italic;
+            font-weight: 700;
             text-align: center;
             font-size: 21px;
             line-height: 130%;
+            color: $primary-800;
+            font-size: 32px;
         }
     }
 
     .blog-content {
-        // Article card section
+        @include flexColumn;
+        gap: $size-48;
+        align-items: center;
         .blog-text-section {
             @include flexColumn;
             gap: $size-8;
             width: 100%;
+            h5 {
+                color: $neutral-800;
+                font-weight: bold;
+            }
+            p {
+                font-size: 18px;
+                color: $neutral-700;
+                font-weight: 500;
+                line-height: 130%;
+            }
         }
-        .content-flex {
+        .content-column {
             @include flexColumn;
-
-            .content-column {
-                @include flexColumn;
-                gap: $size-48;
-            }
-            .blog-tag-container {
-                display: none;
-            }
-            .card-thumbnail {
-                height: 250px;
-            }
+            gap: $size-48;
         }
     }
 
     .blog-tag {
         @include flexColumn;
+        flex-wrap: wrap;
         gap: $size-12;
-        .row {
+        .column {
+            @include flexRow;
             flex-wrap: wrap;
             gap: $size-12;
         }
@@ -126,27 +115,19 @@
         .blog-content {
             @include flexColumn;
             gap: $size-48;
-            .content-flex {
-                @include flexRow;
-                gap: $size-24;
-            }
         }
     }
     @media (min-width: map-get($breakpoints, "md")) {
-        .blog-content {
 
-        }
     }
     @media (min-width: map-get($breakpoints, "lg")) {
         .blog-content {
-            .content-flex {
-                .blog-tag-container {
-                    @include flexRow;
-                    justify-content: flex-end;
-                    gap: $size-8;
-                    width: 100%;
-                }
-            } 
+            .blog-tag-container {
+                @include flexRow;
+                justify-content: flex-end;
+                gap: $size-8;
+                width: 100%;
+            }
         }
     }
     @media (min-width: map-get($breakpoints, "xl")) {
@@ -155,6 +136,14 @@
     @media (min-width: map-get($breakpoints, "xxl")) {
         
     }
+
+}
+
+.hero-image {
+    height: 360px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: $size-16;
 
 }
 
@@ -170,11 +159,11 @@
     width: 100%; /* Thumbnail dimensions. */
     height: auto; /*** Change the height to make the image smaller ***/
     margin: 0;
-    border-radius: $size-32;
+    border-radius: $size-16;
     img {
-        height: 400px;
         width: 100%;
         object-fit: cover;
+        height: 300px;
     }
     /* Styles the title inside the img container */
     span.blog-text-container {
