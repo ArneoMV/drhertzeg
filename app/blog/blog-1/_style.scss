@@ -5,16 +5,12 @@
 @use '../../styles/layout/_layout' as *;
 @use '../../styles/abstract/_gooey' as *;
 
-
-
 .row {
     @include flexRow;
 }
 .column {
     @include flexColumn;
 }
-
-
 .article-page {
     @include main-page-layout;
     main.article-page-container {
@@ -24,7 +20,6 @@
         padding-bottom: $size-128;
         box-sizing: border-box;
     }
-
     .blog-title {
         @include flexColumn;
         gap: $size-24;
@@ -51,7 +46,6 @@
             }
         }
     }
-
     .blog-quote {
         q {
             quotes: "“" "”" "‘" "’";
