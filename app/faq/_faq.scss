@@ -8,7 +8,7 @@
 
 .faq-title {
     width: 100%;
-    @include flexColumn;
+
     .faq-text-container {
         @include flexColumn;
         gap: $size-12;
@@ -42,11 +42,13 @@
 // Product Page
 .faq-page {
     @include main-page-layout;
-    
-    main.faq-page-contianer {
+    padding-bottom: $size-128;
+    box-sizing: border-box;
+    .faq-page-contianer {
         @include main-page-container;
         @include flexColumn;
         gap: $size-64;
+        
         .content-container {
             @include flexColumn;
             gap: $size-64;

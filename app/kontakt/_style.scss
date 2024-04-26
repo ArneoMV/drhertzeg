@@ -34,6 +34,8 @@
 .contact-page {
     background-color: $primary-100;
     @include main-page-layout;
+    padding-bottom: $size-128;
+    box-sizing: border-box;
     main.contact-page-container {
         @include layout-container;
         position: relative; 

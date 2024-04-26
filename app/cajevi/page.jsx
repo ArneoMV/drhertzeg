@@ -156,11 +156,9 @@ export default function Cajevi() {
 
           <AdBanner />
       </main>
-      <div>
         <FollowSocial 
           color="primary-200"
         />
-      </div>
     </div>
   )
 }

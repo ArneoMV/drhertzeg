@@ -30,8 +30,6 @@ export default function ProductCard({ productDetailsTitle, productDetailsPrice, 
           src={productDetailsImageURL}
           alt={productDetailsImageAlt}
           quality={100}
-          width={100}
-          height={100}
           className={imageClass}
         />
       </div>

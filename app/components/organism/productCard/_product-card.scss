@@ -3,23 +3,6 @@
 @use '../../../styles/abstract/_color' as *;
 @use '../../../styles/base/_mixin' as *;
 
-
-.hover-primary-300 {
-    // &:hover {
-    //     outline: 1px solid $primary-300;
-    // } 
-}
-.hover-blue-300 {
-    &:hover {
-        outline: 1px solid $blue-300;
-    } 
-}
-.hover-red-300 {
-    &:hover {
-        outline: 1px solid $red-300;
-    } 
-}
-
 a .productCard  {
     max-width: 350px;
     text-decoration: none;
@@ -37,12 +20,13 @@ a.product-card {
     // }
     .product-card-image {
         width: auto;
-        height: auto;
+        height: 300px;
         display: flex;
         justify-content: center;
         align-items: center;
         padding: $size-48 0;
-        box-sizing: border-box;
+        // box-sizing: border-box;
+        box-sizing: content-box;
         background-color: $primary-100;
         border-radius: 16px;
         border: 1px solid transparent;
@@ -52,9 +36,6 @@ a.product-card {
         }
         img.image-default {
             height: 230px;
-        }
-        img.image-small {
-            height: 152px;
         }
     }
     .product-card-content {
@@ -95,7 +76,6 @@ a.product-card {
     &:hover {
         .product-card-image  {
             border: 1px solid $primary-300;
-            box-sizing:content-box;
         }
         .product-card-content {
             h5 {

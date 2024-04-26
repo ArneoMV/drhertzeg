@@ -44,7 +44,8 @@
 // Product Page
 .privacy-policy-page {
     @include main-page-layout;
-    
+    padding-bottom: $size-128;
+    box-sizing: border-box;
     main.privacy-policy-page-contianer {
         @include main-page-container;
         gap: $size-64;

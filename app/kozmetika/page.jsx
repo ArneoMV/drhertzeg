@@ -186,7 +186,7 @@ export default function Kozmetika() {
                 productURL="/cajevi/cajProduct"
                 productChips1="Protuupalno"
                 productChips2="Opušta"
-                imageClass="image-small"
+                imageClass="image-default"
                 hoverOutline="primary"
               />
                <ProductCard
@@ -197,7 +197,7 @@ export default function Kozmetika() {
                 productURL="/cajevi/cajProduct"
                 productChips1="Protuupalno"
                 productChips2="Opušta"
-                imageClass="image-small"
+                imageClass="image-default"
                 hoverOutline="primary"
               />
               
