@@ -76,6 +76,7 @@
     box-sizing: border-box;
     @include flexColumn;
     gap: $size-98;
+    padding-bottom: $size-128;
     main.product-page-contianer {
         @include layout-container;
         @include flexColumn;
@@ -207,38 +208,7 @@
                 }
             }
         }
-    }
-    .slider-container { 
-        margin: 0 auto;
-        // padding: 40px;
-        width: 100%;
-        box-sizing: border-box;
-        .slick-slider {
-            display: grid;
-            grid-template-columns: 24px 1fr 24px;
-            align-items: center;
-            gap: 24px;
-        }
-        .slick-slide { 
-            margin-right: 20px;
-            box-sizing: border-box;
-            height: inherit !important;
-        }
-        .slick-track {
-            display: flex !important;
-        }
-        .slick-prev, .slick-next {
-            position: static;
-            top: auto;
-            transform: none;
-        }
-        .slick-prev:before, .slick-next:before {
-            content: '';
-        }
-        
-    }
-    
-
+    }  
 
     @media (min-width: map-get($breakpoints, "xs")) {
         .product-banner {
@@ -278,4 +248,34 @@
     @media (min-width: map-get($breakpoints, "xxl")) {
 
     }
+}
+
+.slider-container { 
+    margin: 0 auto;
+    // padding: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    .slick-slider {
+        display: grid;
+        grid-template-columns: 24px 1fr 24px;
+        align-items: center;
+        gap: 24px;
+    }
+    .slick-slide { 
+        margin-right: 20px;
+        box-sizing: border-box;
+        height: inherit !important;
+    }
+    .slick-track {
+        display: flex !important;
+    }
+    .slick-prev, .slick-next {
+        position: static;
+        top: auto;
+        transform: none;
+    }
+    .slick-prev:before, .slick-next:before {
+        content: '';
+    }
+    
 }

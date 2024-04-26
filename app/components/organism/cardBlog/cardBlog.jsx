@@ -5,7 +5,7 @@ import "./_style.scss";
 
 export default function OtherProductCard({ productTitle, productDetailsImageURL, productDetailsImageAlt, productDetailsURL }) {
   return (
-    <Link href={productDetailsURL} className='blog-card-link-container gooey-background'>
+    <Link href={productDetailsURL} className='blog-card-link-container'>
       <figure className='card__thumbnail'>
         <Image
           src={productDetailsImageURL}

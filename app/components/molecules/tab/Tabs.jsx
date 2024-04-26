@@ -17,7 +17,6 @@ const Tabs = () => {
   };
   return (
     <div className="tabs">
-      <h3>Ponuda proizvoda</h3>
       <div className="row">
         <div
           className={`tabButton ${activeTab === "tab1" ? "active" : ""}`}

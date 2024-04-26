@@ -1,24 +1,23 @@
-import { Metadata } from 'next'
-
-
-import Image from 'next/image'
-import Link from 'next/link'
+import Image from 'next/image';
+import Link from 'next/link';
 import './styles/_index.scss';
 import './styles/pages/_homepage.scss';
 import './styles/base/_base.scss';
 
-import Tabs from "./components/molecules/tab/Tabs";
-import Button from "./components/atoms/button/Button";
-import ButtonIcon from "./components/atoms/buttonIcon/buttonIcon";
+
+import Tabs from "./components/molecules/tab/Tabs.jsx";
+import Button from "./components/atoms/button/Button.jsx";
+
 import { Icon } from "./utilities/images.js";
-import CardBlog from './components/organism/cardBlog/cardBlog'
-import HeroArticleBanner from './components/organism/heroArticleBanner/heroArticleBanner'
+import ButtonIcon from "./components/atoms/buttonIcon/buttonIcon.jsx";
+import SliderArticle from "./components/organism/sliderArticles/sliderArticles.jsx"
+import HeroArticleBanner from './components/organism/heroArticleBanner/heroArticleBanner.jsx';
 
 
-import { HomepageImages } from '../app/utilities/images.js'
-import { Homepage } from '../app/utilities/images.js'
+import { HomepageImages } from './utilities/images.js'
+import { Homepage } from './utilities/images.js'
 
-
+import { Metadata } from 'next'
 export const metadata = { 
   title: 'Dr Hertzeg',
   description: 'Homepage description',
@@ -26,13 +25,10 @@ export const metadata = {
 
 
 
-
 // Homepage
 export default function Page() {
 
-  
   return (
-    <>
       <main className='homepage'>
 
         {/* Hero */}
@@ -56,7 +52,7 @@ export default function Page() {
         <HeroArticleBanner />
 
         {/* Novosti i zanimljivosti */}
-        <section>
+        {/* <section className='blog-section container'>
           <div className="blog-section-header">
             <h3>Novosti i zanimljivosti</h3>
             <div className="row">
@@ -72,7 +68,7 @@ export default function Page() {
               />
             </div>
           </div>
-          <div className="row">
+          <div className="cards-container">
             <CardBlog
               productTitle="Od antičke Europe do suvremenih istraživanja"
               productDetailsImageURL="/images/blog/BlogCardImage_1.png"
@@ -92,9 +88,14 @@ export default function Page() {
               productDetailsURL="/blog/blog-3"
             />
           </div>
-        </section>
+        </section> */}
+
+
+        {/* Promotion Image slider */}
+        <div className="container">
+          <SliderArticle />              
+        </div>
         
       </main>
-    </>
   )
 }

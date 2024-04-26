@@ -10,14 +10,14 @@ a.blog-card-link-container {
     position: relative;
     overflow: hidden;
     background-color: $neutral-100;
-    box-shadow: $base-shadow-3;
-    border-radius: $radius-sm;
     width: 100%;
     height: 360px;
     box-sizing: border-box;
     outline: 1px solid $neutral-100;
     @include flexRow;
-
+    filter: url('#title-gooey');
+    box-decoration-break: clone;
+    border-radius: $size-16;
     /* Cards titles styling */
     .card__title {
         align-self: flex-end; padding: 0.5rem;
@@ -72,7 +72,6 @@ a.blog-card-link-container {
     }
 
     @media (min-width: map-get($breakpoints, "xxs")) {
-        border-radius:$radius-sm;
         height: auto;
         figure.card__thumbnail {
             height: 260px;
@@ -80,38 +79,32 @@ a.blog-card-link-container {
 
     }
     @media (min-width: map-get($breakpoints, "xs")) {
-        border-radius:$radius-sm;
         figure.card__thumbnail {
             height: 260px;
         }
     }
     @media (min-width: map-get($breakpoints, "sm")) {
-        border-radius:$radius-sm;
         figure.card__thumbnail {
             height: 260px;
         }
 
     }
     @media (min-width: map-get($breakpoints, "md")) {
-        border-radius:$radius-sm;
         figure.card__thumbnail {
             height: 300px;
         }
     }
     @media (min-width: map-get($breakpoints, "lg")) {
-        border-radius:$radius-md;
         figure.card__thumbnail {
             height: 340px;
         }
     }
     @media (min-width: map-get($breakpoints, "xl")) {
-        border-radius:$radius-md;
         figure.card__thumbnail {
             height: 380px;
         }
     }
     @media (min-width: map-get($breakpoints, "xxl")) {
-        border-radius:$radius-md;
         figure.card__thumbnail {
             height: 420px;
         }

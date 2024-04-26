@@ -6,24 +6,24 @@ import Image from 'next/image';
 import ProductSlika from '../../assets/image/product/product-promotion-card-red.png';
 import Chip from '../../components/atoms/chip/Chip';
 
-import ProductPromotioCard from '../../components/organism/productPromotioCard/productPromotioCard';;
+import ProductPromotioCard from '../../components/organism/productPromotioCard/productPromotioCard';
 import Carousel from '../../components/organism/carousel/carousel';
 import AdBanner from '../../components/organism/adBanner/adBanner';
 
 // React Slick
-import Slider from "react-slick"
+import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 
-import { Icon } from '../../utilities/images'
-import ProductGreen from '../../assets/image/product/product-promotion-card-green.png'
-import ProductBlue from '../../assets/image/product/product-promotion-card-blue.png'
-import ProductOrange from '../../assets/image/product/product-promotion-card-orange.png'
-import UserImage1 from '../../assets/image/person-review/user_review_01.png'
-import UserImage2 from '../../assets/image/person-review/user_review_02.png'
-import UserImage3 from '../../assets/image/person-review/user_review_03.png'
-import UserImage4 from '../../assets/image/person-review/user_review_04.png'
+import { Icon } from '../../utilities/images';
+import ProductGreen from '../../assets/image/product/product-promotion-card-green.png';
+import ProductBlue from '../../assets/image/product/product-promotion-card-blue.png';
+import ProductOrange from '../../assets/image/product/product-promotion-card-orange.png';
+import UserImage1 from '../../assets/image/person-review/user_review_01.png';
+import UserImage2 from '../../assets/image/person-review/user_review_02.png';
+import UserImage3 from '../../assets/image/person-review/user_review_03.png';
+import UserImage4 from '../../assets/image/person-review/user_review_04.png';
 
 
 import ButtonIcon from '../../components/atoms/buttonIcon/buttonIcon';
@@ -82,7 +82,6 @@ export default function CajProduct() {
 
 
   // * Slick Slider Promotion Images * \\
-
   const handleNext = () => {
     // Dohvatite referencu na slider pomoću react-slick
     const slider = document.querySelector(".slick-slider");
@@ -92,7 +91,6 @@ export default function CajProduct() {
       slider.slickNext();
     }
   };
-  
   const handlePrev = () => {
     // Dohvatite referencu na slider pomoću react-slick
     const slider = document.querySelector(".slick-slider");

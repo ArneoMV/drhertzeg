@@ -1,16 +1,19 @@
 
 @use '../../../styles/layout/_breakpoint' as *;
+@use '../../../styles/layout/layout' as *;
 @use '../../../styles/base/_variable' as *;
 @use '../../../styles/abstract/_color' as *;
 @use '../../../styles/base/_mixin' as *;
 
-section.heroArticleBanner{
+section.hero-article-banner {
     @include flexColumn;
     width: 100%;
     height: auto;
     box-shadow: $base-shadow-3;
     background-color: $primary-100;
     position: relative;
+    padding: $size-48 0;
+    box-sizing: border-box;
     &::before {
         content: "";
         position: absolute; 
@@ -33,14 +36,19 @@ section.heroArticleBanner{
         z-index: 1; 
         background-image: url(../../../../public//images/vawe/vawe-bottom-green-100.svg);
     }
-    
-    .product-card-details-container {
+    .hero-article-banner-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: $size-48;
+        @include layout-container;
+    }
+    .content-container {
         @include flexColumn;
         justify-content: space-evenly;
         align-items: flex-start;
         gap: $size-12;
         width: auto;
-        padding: $padding-lg;
         overflow: hidden;
         border-radius: $radius-md;
         a {
@@ -50,7 +58,6 @@ section.heroArticleBanner{
             @include flexColumn;
             gap: $gap-md;
             h4 {
-                color: $neutral-800;
                 font-weight: bold;
                 max-width: 80%
             }
@@ -84,33 +91,22 @@ section.heroArticleBanner{
         }
     }
 
-    .productCardImageContainer {
+    .image-container {
         width: auto;
+        height: auto;
         // overflow: hidden;
         position: relative;
-        .productCardImage {
-                width: 100%;
-                height: 262px;
-                overflow: hidden;
-                border-radius: $radius-md;
-                padding: $size-48;
-            img {
-                object-fit: cover;
-                width: 100%;
-                height: 100%;
-                object-position: right bottom;
-                border-radius: 98px;
-                // filter: url('#title-gooey');
-            }
-        }
-        img.productCardImageAbsolute {
-            display: none;
-            height: 320px;
-            width: auto;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            transform: translate(100%, 50%);
+        width: 100%;
+        overflow: hidden;
+        border-radius: $radius-md;
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            object-position: right bottom;
+            border-radius: 999px;
+            filter: url('#title-gooey');
+            max-height: 400px;
         }
     }
 
@@ -120,29 +116,20 @@ section.heroArticleBanner{
                 @include flexColumn;
             }
         }
-        .productCardImageContainer {
-            img.productCardImageAbsolute {
-                display: none;
-            }
-        }
     }
     @media (min-width: map-get($breakpoints, "xs")) {
-        .productCardImageContainer {
-            img.productCardImageAbsolute {
-                display: none;
-            }
-        }
+
     }
     @media (min-width: map-get($breakpoints, "sm")) {
-        .productCardImageContainer {
-            img.productCardImageAbsolute {
-                display: none;
-            }
-        }
         
     }
     @media (min-width: map-get($breakpoints, "md")) {
         @include flexRow;
+        .hero-article-banner-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr; 
+        }
         .productCardDetailsContainer {
             border-radius: $radius-md 0 0 $radius-md;
             .productCardDetails {
@@ -165,20 +152,11 @@ section.heroArticleBanner{
         .productCardImageContainer {
             width: 100%;
             // overflow: hidden;
-            .productCardImage {
-                    width: 100%;
-                    height: 100%;
-                    border-radius: 0 $radius-md $radius-md 0;
-                    img {
-                        object-position: center;
-                    }
-            }
-            img.productCardImageAbsolute  {
-                display: block;
-                position: absolute;
-                bottom: 0;
-                right: 0;
-                transform: translate(-50%, 40%);
+            width: 100%;
+            height: 100%;
+            border-radius: 0 $radius-md $radius-md 0;
+            img {
+                object-position: center;
             }
         }
     }
@@ -203,18 +181,9 @@ section.heroArticleBanner{
         .productCardImageContainer {
             width: 100%;
             // overflow: hidden;
-            .productCardImage {
-                    width: 100%;
-                    height: 100%;
-                    border-radius: 0 $radius-md $radius-md 0;
-            }
-            img.productCardImageAbsolute  {
-                display: block;
-                position: absolute;
-                bottom: 0;
-                right: 0;
-                transform: translate(-50%, 40%);
-            }
+            width: 100%;
+            height: 100%;
+            border-radius: 0 $radius-md $radius-md 0;
         }
     }
     @media (min-width: map-get($breakpoints, "xl")) {
@@ -238,18 +207,9 @@ section.heroArticleBanner{
         .productCardImageContainer {
             width: 100%;
             // overflow: hidden;
-            .productCardImage {
-                    width: 100%;
-                    height: 100%;
-                    border-radius: 0 $radius-md $radius-md 0;
-            }
-            img.productCardImageAbsolute  {
-                display: block;
-                position: absolute;
-                bottom: 0;
-                right: 0;
-                transform: translate(-50%, 40%);
-            }
+            width: 100%;
+            height: 100%;
+            border-radius: 0 $radius-md $radius-md 0;
         }
     }
     @media (min-width: map-get($breakpoints, "xxl")) {
@@ -273,18 +233,9 @@ section.heroArticleBanner{
         .productCardImageContainer {
             width: 100%;
             // overflow: hidden;
-            .productCardImage {
-                    width: 100%;
-                    height: 100%;
-                    border-radius: 0 $radius-md $radius-md 0;
-            }
-            img.productCardImageAbsolute  {
-                display: block;
-                position: absolute;
-                bottom: 0;
-                right: 0;
-                transform: translate(-50%, 40%);
-            }
+            width: 100%;
+            height: 100%;
+            border-radius: 0 $radius-md $radius-md 0;
         }
     } 
 

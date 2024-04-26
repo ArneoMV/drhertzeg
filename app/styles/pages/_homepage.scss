@@ -11,7 +11,7 @@
 .homepage {
     @include flexColumn;
     gap: $gap-xl;
-
+    padding-bottom: $size-128;
     img {
         border-radius: $radius-sm; 
     }
@@ -33,6 +33,23 @@
             text-decoration: none;
         }
     }
+    .blog-section {
+        @include flexColumn;
+        gap: $size-24;
+        .blog-section-header {
+            @include flexRow;
+            align-items: center;
+            justify-content: space-between;
+            .row {
+                @include flexRow;
+                gap: $size-12;
+            }
+        }
+        .cards-container {
+            @include flexColumn;
+            gap: $size-24;
+        }
+    }
 
     
 
@@ -49,7 +66,21 @@
     }
 
     @media (min-width: map-get($breakpoints, "md")) {
-
+        .blog-section {
+            .blog-section-header {
+                @include flexRow;
+                align-items: center;
+                justify-content: space-between;
+                .row {
+                    @include flexRow;
+                    gap: $size-12;
+                }
+            }
+            .cards-container {
+                @include flexRow;
+                gap: $size-24;
+            }
+        }
     }
 
     @media (min-width: map-get($breakpoints, "lg")) {
