@@ -65,8 +65,7 @@
 
 footer {
     position: relative;
-    // margin-top: $margin-xxl; 
-    // background-color: $red-200;
+    padding: $size-64 $margin-sm;
     color: $neutral-100;
     overflow: visible;
 
@@ -85,21 +84,26 @@ footer {
         gap: $gap-xl; 
 
         .logo {
-            display: flex;
-            gap: $gap-md;
+            @include flexColumn;
+            gap: $size-12;
+            h2 {
+                text-align: center;
+            }
         }
         .footerTop {
-            display: flex;
+            @include flexColumn;
+            gap: $size-48;
             justify-content: space-between;
             align-content: flex-start;
     
             .topNav {
-                display: flex;
+                @include flexColumn;
+                gap: $size-64;
             }
             nav {
                 @include flexRow;
+                justify-content: center;
                 gap: $size-24;
-                justify-content: space-around;
                 .nav-column {
                     @include flexColumn;
                     gap: $size-12;
@@ -116,7 +120,7 @@ footer {
                     }
                     .column {
                         @include flexColumn;
-                        gap: $size-8;
+                        gap: $size-12;
                     }
                 }
             } 
@@ -139,11 +143,15 @@ footer {
             background-color: $neutral-100;
         }
         .footerBottom {
-            display: flex;
+            @include flexColumn;
+            gap: $size-24;
             align-items: center;
             justify-content: space-between;
             .row {
                 gap: $gap-md; 
+            }
+            p {
+                text-align: center;
             }
         }
     }
@@ -156,19 +164,23 @@ footer {
             .footerTop {
                 width: 100%;
                 flex-direction: column;
-                gap: $gap-lg;
+                gap: $size-64;
                 .logo {
                     flex-direction: column;
                     align-items: flex-start;
                     align-items: center;
                 }
                 .topNav {
-                    flex-direction: column;
-                    gap: $gap-xl;
+                    gap: $size-64;
                     nav.row {
                         justify-content: space-between;
                     }
                 }
+                nav {
+                    @include flexRow;
+                    justify-content: center;
+                    gap: $size-64;
+                } 
             }
             .footerBottom {
                 width: 100%;
@@ -187,18 +199,21 @@ footer {
         padding: $size-64  $margin-md;
         .footer-container {
             .footerTop {
-                flex-direction: column;
+                flex-direction: row;
                 gap: $gap-lg;
                 nav {
                     gap: $size-64;
                 }
                 .logo {
-                    flex-direction: row;
+                    flex-direction: column;
                     align-items: flex-start;
+                    h2 {
+                        text-align: left;
+                    }
                 }
                 .topNav {
-                    flex-direction: row;
-                    gap: $gap-xl;
+                    flex-direction: column;
+                    gap: $size-64;
                 }
             }
             .footerBottom {
@@ -209,19 +224,18 @@ footer {
     }
     @media (min-width: map-get($breakpoints, "lg")) {
         padding: $size-64  $margin-md;
-        flex-wrap: wrap;
         .footer-container {
             .footerTop {
                 flex-direction: row;
                 justify-content: space-between;
-                gap: $gap-lg;
+                gap: $size-48;
                 .logo {
                     flex-direction: column;
                     align-items: flex-start;
                 }
                 .topNav {
                     flex-direction: column;
-                    gap: $gap-xl;
+                    gap: $size-64;
                 }
             }
             .footerBottom {
