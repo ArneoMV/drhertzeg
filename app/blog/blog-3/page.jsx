@@ -18,9 +18,8 @@ export default function demoArticle() {
         {/* Title */}
         <section className="blog-title col-10-sm col-10-md col-10-lg">
           <span>
-            <h3 className='title-gooey'>Prirodna Kozmetika i organski čajevi:<br /> trendovi koji očaravaju svijet</h3>
+            <h3 className='title-gooey'>Od antičke Europe do<br /> suvremenih istraživanja</h3>
           </span>
-
           <div className="row">
             <div className="info">
               <Image
@@ -45,105 +44,84 @@ export default function demoArticle() {
 
         {/* Quote */}
         <section className='blog-quote col-8-sm col-8-md col-8-lg'>
-          <p><q>Dobrodošli nazad na naš blog! Danas ćemo istražiti jedan od najuzbudljivijih trendova koji
-                preplavljuje svijet ljepote i wellnessa: prelazak na prirodnu kozmetiku i organske čajeve. Ovaj trend
-                nije samo estetski - on označava pomak u načinu na koji razmišljamo o ljepoti i brizi o sebi. </q></p>
+          <p><q>Slatki pelin, biljka s bogatom poviješću i fascinantnim svojstvima, ostavlja nas u divljenju nad svojim
+                  raznovrsnim utjecajem kroz povijest Europe. Od antičkih civilizacija do suvremenih istraživanja, slatki
+                  pelin predstavlja neiscrpnu temu za istraživanje i divljenje. </q></p>
         </section>
 
         {/* Content */}
         <section className='blog-content col-10-sm col-10-md col-10-lg'>
-          <figure className='card-thumbnail'>
-            <Image
-              src={Slika1}
-              alt='slika'
-              quality={100}
+          <Image
+            src={Slika1}
+            alt='slika'
+            quality={100}
+            className='hero-image'
+          />
 
-            />
-          </figure>
+          <div className="content-column col-10-sm col-10-md col-7-lg">
+            <div className="blog-text-section">
+              <h5>Antički korijeni:</h5>
+              <p>U antičkoj Europi, slatki pelin nije bio samo biljka; bio je simbol vjere, ljekovitosti i mističnosti. Grci su
+                ga povezivali s božanstvima poput Artemide i Apolona te su ga koristili u medicinske i religijske svrhe.
+                Rimljani su također cijenili slatki pelin zbog njegovih ljekovitih svojstava, smatrajući ga esencijalnim
+                dijelom svoje farmakopeje. </p>
+            </div>
+            <div className="blog-text-section">
+              <h5>Srednjovjekovna magija:</h5>
+              <p>Srednji vijek donio je još veću fascinaciju slatkim pelinom. Alkemičari su ga smatrali ključnim
+                sastojkom za izradu eliksira vječne mladosti i drugih magičnih napitaka. Ljekarnici su ga koristili za
+                liječenje raznih bolesti i smetnji, od probavnih problema do groznice.</p>
+            </div>
+            <div className="blog-text-section">
+              <h5>Ljekovita biljka:</h5>
+              <p>U tradicionalnoj europskoj medicini, slatki pelin je imao široku primjenu. Smatralo se da ima
+              blagotvorno djelovanje na probavu, smanjuje groznicu te pomaže u borbi protiv parazita i infekcija.
+              Unatoč njegovim ljekovitim svojstvima, važno je napomenuti da slatki pelin može biti i toksičan u
+              većim količinama.</p>
+            </div>
+            <div className="blog-text-section">
+              <h5>Suvremena istraživanja:</h5>
+              <p>Danas, slatki pelin nije izgubio svoju privlačnost. Naprotiv, postao je predmetom intenzivnih
+                istraživanja zbog svojih potencijalnih ljekovitih svojstava, posebno u borbi protiv malarije.
+                Znanstvenici su fascinirani njegovim spojevima i nastoje otkriti nove načine kako ih iskoristiti u medicini.</p>
+            </div>
+            <div className="blog-text-section">
+              <p>Slatki pelin nije obična biljka; on je isprepletan s poviješću, mitovima i suvremenim istraživanjima.
+                Njegova čarobna prošlost ostaje inspiracija za daljnje istraživanje i divljenje, dok nas suvremene
+                spoznaje podsjećaju na njegov nevjerojatan potencijal u medicini.</p>
+            </div>
 
+            <figure className='card-thumbnail'>
+                <Image
+                  src={Slika3}
+                  alt='slika'
+                  quality={100}
 
-          <div className="content-flex">
-            <div className="content-column col-10-sm col-6-md col-12-lg">
-              <div className="blog-text-section">
-                <h5>Sve veća potražnja za Prirodnom Kozmetikom</h5>
-                <div className="blog-text-container">
-                  <p>Istraživanja provedena tijekom posljednjih pet godina pokazuju izniman porast korištenja prirodne
-                    kozmetike - gotovo za 30%! Ljudi sve više cijene sastojke koji nanose na svoju kožu i kosu te biraju
-                    proizvode bez štetnih kemikalija poput parabena, sulfata i sintetičkih boja. </p>
-                </div>
+                />
+              <span className='blog-text-container'><p>Dodatak limuna</p></span>
+            </figure>
+              
+            {/* Tags */}
+            <section className='blog-tag'>
+              <Chip text="Tagovi" colorBg="#F2CBA6" colorText="#1B4332" />
+              <div className="column">
+                <Chip text="Slatki pelin" colorBg="#B7E4C7" colorText="#1B4332" />
+                <Chip text="Antička Europa" colorBg="#B7E4C7" colorText="#1B4332" />
+                <Chip text="Ljekovito bilje" colorBg="#B7E4C7" colorText="#1B4332" />
+                <Chip text="Tradicionalna medicina" colorBg="#B7E4C7" colorText="#1B4332" />
+                <Chip text="Suvremena istraživanja" colorBg="#B7E4C7" colorText="#1B4332" />
               </div>
-              <div className="blog-text-section">
-                <h5>Organski Čajevi</h5>
-                  <div className="blog-text-container">
-                    <p>A što je s organskim čajevima? Njihova potražnja porasla je za impresivnih 50%. Ova eksplozija
-                      interesa za organskim čajevima odražava sve veću svijest potrošača o važnosti zdravih navika, a ne
-                      samo o okusu. Ljudi su sve više svjesni utjecaja pesticida i herbicida na njihovo zdravlje, pa stoga
-                      traže čajeve koji su uzgojeni na održiv način.</p>
-                  </div>
-              </div>
-            </div>
-            <div className="blog-tag-container col-10-sm col-4-md col-4-lg">
-              <div className="column"></div>
-                <Chip text="Povijest čaja" colorBg="#D8F3DC" colorText="#1B4332" />
-                <Chip text="Medicinske svrhe" colorBg="#D8F3DC" colorText="#1B4332" />
-                <Chip text="Eliksir mladosti" colorBg="#D8F3DC" colorText="#1B4332" />
-            </div>
-          </div>
+            </section>
 
-          <div className="content-flex">
-            <div className="content-column col-10-sm col-6-md col-7-lg">
-                <div className="blog-text-section">
-                  <h5>Utjecaj Društvenih Medija</h5>
-                    <div className="blog-text-container">
-                      <p>Naravno, ne možemo zanemariti ulogu influencera i društvenih medija u popularizaciji ovih trendova.
-                        Mnogi influenceri i brendovi koriste društvene medije kako bi promovirali prirodne proizvode i
-                        organske čajeve, čime pridonose njihovoj širokoj rasprostranjenosti i popularnosti.</p>
-                    </div>
-                </div>
-                <div className="blog-text-section">
-                    <div className="blog-text-container">
-                      <p>Sve u svemu, trend prelaska na prirodnu kozmetiku i konzumaciju organskih čajeva nije samo
-                        prolazna moda. To je pomak prema zdravijem i svjesnijem načinu života koji cijeni ljepotu, dobrobit i
-                        očuvanje okoliša. Budite dio ovog trenda i istražite čari prirodne ljepote i zdravog života!</p>
-                      <p>Nadamo se da vam se svidio ovaj blog post! Slobodno podijelite svoje misli i iskustva u komentarima
-                      ispod. Hvala što ste bili s nama, a vidimo se uskoro sa još više uzbudljivih tema!</p>
-                    </div>
-                </div>
-                {/* Tags */}
-              <section className='blog-tag'>
-                {/* <Chip text="TAGOVI" colorBg="#FFD297" colorText="#242424" /> */}
-                <div className='row'>
-                  <Chip text="Slatki pelin" colorBg="#B7E4C7" colorText="#1B4332" />
-                  <Chip text="Antička Europa" colorBg="#B7E4C7" colorText="#1B4332" />
-                  <Chip text="Ljekovito bilje" colorBg="#B7E4C7" colorText="#1B4332" />
-                  <Chip text="Tradicionalna medicina" colorBg="#B7E4C7" colorText="#1B4332" />
-                  <Chip text="Suvremena istraživanja" colorBg="#B7E4C7" colorText="#1B4332" />
-
-                </div>
-              </section>
-            </div>
-            <div className="left-image-container col-10-sm col-4-md col-3-lg">
-              <figure className='card-thumbnail'>
-                  <Image
-                    src={Slika3}
-                    alt='slika'
-                    quality={100}
-
-                  />
-                <span className='blog-text-container'><p>Dodatak limuna</p></span>
-              </figure>
-            </div>
           </div>
         </section>
 
         
       </main>
 
-      <div>
-        <FollowSocial 
-          color="primary-200"
-        />
-      </div>
+      <FollowSocial 
+        color="primary-200"
+      />
     </div>
 
   )

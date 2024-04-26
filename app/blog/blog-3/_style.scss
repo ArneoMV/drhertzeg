@@ -3,8 +3,7 @@
 @use '../../styles/base/_mixin' as *;
 @use '../../styles/layout/_breakpoint' as *;
 @use '../../styles/layout/_layout' as *;
-
-
+@use '../../styles/abstract/_gooey' as *;
 
 .row {
     @include flexRow;
@@ -12,38 +11,17 @@
 .column {
     @include flexColumn;
 }
-
-
 .article-page {
     @include main-page-layout;
-    
-    main.article-page-container {
+    .article-page-container {
         @include main-page-container;
-    }
-
-    section {
         @include flexColumn;
-        gap: $size-48;
+        padding-bottom: $size-128;
+        box-sizing: border-box;
     }
-
     .blog-title {
-        .gooey-svg {
-            visibility: hidden;
-            position: absolute;
-        }
-        .title-gooey {
-            line-height: 100%;
-            display: inline;
-            box-decoration-break: clone;
-            background: $primary-600;
-            padding: 0.5rem 1rem;
-            filter: url('#title-gooey');
-            color: $neutral-100;
-            line-height: 125%;
-        }
-        .title-gooey:focus {
-            outline: 0;
-        }
+        @include flexColumn;
+        gap: $size-24;
         .row {
             gap: $size-24;
             .info {
@@ -58,6 +36,7 @@
                 p { 
                     color: $neutral-800;
                     font-weight: 600;
+                    font-size: 15px;
                 }
                 img {
                     width: 24px;
@@ -66,7 +45,6 @@
             }
         }
     }
-
     .blog-quote {
         q {
             quotes: "“" "”" "‘" "’";
@@ -79,83 +57,45 @@
           }
         p {
             font-style: italic;
+            font-weight: 600;
             text-align: center;
-            font-size: 21px;
+            font-size: 18px;
             line-height: 130%;
+            color: $primary-800;
         }
     }
 
     .blog-content {
-        /* The image container */
-        .card-thumbnail {
-            position: relative;
-            overflow: hidden;  
-            display: flex;
-            justify-content: center; /* horizontal center */
-            align-items: center; /* vertical center */
-            @include flexColumn;
-            width: 100%; /* Thumbnail dimensions. */
-            height: auto; /*** Change the height to make the image smaller ***/
-            margin: 0;
-            border-radius: $size-32;
-            img {
-                height: 400px;
-                width: 100%;
-                object-fit: cover;
-            }
-            /* Styles the title inside the img container */
-            span.blog-text-container {
-                position: absolute; 
-                left: 0; 
-                bottom: 0;
-                margin: $size-24;
-                background-color: $neutral-100;
-                padding: $size-4 $size-12;
-                border-radius: $size-12;
-                h3 {
-                    color: $neutral-100;
-                }
-                p {
-                    font-size: 15px;
-                    color: $neutral-800;
-                    font-weight: 600;
-                    line-height: 160%;
-                }
-            }
-                
-        }
-        
-        // Article card section
+        @include flexColumn;
+        gap: $size-48;
+        align-items: center;
         .blog-text-section {
             @include flexColumn;
             gap: $size-8;
             width: 100%;
+            h5 {
+                color: $neutral-800;
+                font-weight: bold;
+            }
+            p {
+                font-size: 18px;
+                color: $neutral-700;
+                font-weight: 500;
+                line-height: 130%;
+            }
         }
-        .content-flex {
-            @include flexRow;
+        .content-column {
+            @include flexColumn;
             gap: $size-48;
-            justify-content: space-between;
-
-            .content-column {
-                @include flexColumn;
-                gap: $size-24;
-            }
-            .blog-tag-container {
-                @include flexRow;
-                justify-content: flex-end;
-                gap: $size-8;
-                width: 100%;
-            }
-            .card-thumbnail {
-                height: 250px;
-            }
         }
     }
 
     .blog-tag {
         @include flexColumn;
+        flex-wrap: wrap;
         gap: $size-12;
-        .row {
+        .column {
+            @include flexRow;
             flex-wrap: wrap;
             gap: $size-12;
         }
@@ -169,25 +109,33 @@
     }
     @media (min-width: map-get($breakpoints, "sm")) {
         .blog-content {
-            .blog-text-section {
-                .flex {
-                    @include flexRow;
-                    gap: $size-24;
-                    .blog-text-container {
-                        width: 100%;
-                    }
-                    .blog-tag-container {
-                        justify-content: flex-end;
-                    }
-                }
+            @include flexColumn;
+            gap: $size-48;
+        }
+        .blog-title {
+            p { 
+                color: $neutral-800;
+                font-weight: 600;
+                font-size: 21px;
             }
         }
     }
     @media (min-width: map-get($breakpoints, "md")) {
-        
+        .blog-content {
+            .blog-tag-container {
+                @include flexRow;
+                justify-content: flex-end;
+                gap: $size-8;
+                width: 100%;
+            }
+        }
+        .blog-quote {
+            p {
+                font-size: 24px;
+            }
+        }
     }
     @media (min-width: map-get($breakpoints, "lg")) {
-        
     }
     @media (min-width: map-get($breakpoints, "xl")) {
         
@@ -196,4 +144,52 @@
         
     }
 
+}
+
+.hero-image {
+    height: 360px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: $size-16;
+
+}
+
+
+/* The image container */
+.card-thumbnail {
+    position: relative;
+    overflow: hidden;  
+    display: flex;
+    justify-content: center; /* horizontal center */
+    align-items: center; /* vertical center */
+    @include flexColumn;
+    width: 100%; /* Thumbnail dimensions. */
+    height: auto; /*** Change the height to make the image smaller ***/
+    margin: 0;
+    border-radius: $size-16;
+    img {
+        width: 100%;
+        object-fit: cover;
+        height: 300px;
+    }
+    /* Styles the title inside the img container */
+    span.blog-text-container {
+        position: absolute; 
+        left: 0; 
+        bottom: 0;
+        margin: $size-24;
+        background-color: $neutral-100;
+        padding: $size-4 $size-12;
+        border-radius: $size-12;
+        h3 {
+            color: $neutral-100;
+        }
+        p {
+            font-size: 15px;
+            color: $neutral-800;
+            font-weight: 600;
+            line-height: 160%;
+        }
+    }
+        
 }

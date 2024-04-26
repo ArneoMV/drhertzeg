@@ -119,11 +119,9 @@ export default function demoArticle() {
         
       </main>
 
-      <div>
-        <FollowSocial 
-          color="primary-200"
-        />
-      </div>
+      <FollowSocial 
+        color="primary-200"
+      />
     </div>
 
   )

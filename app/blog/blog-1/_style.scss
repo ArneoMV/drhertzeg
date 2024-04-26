@@ -13,10 +13,9 @@
 }
 .article-page {
     @include main-page-layout;
-    main.article-page-container {
+    .article-page-container {
         @include main-page-container;
         @include flexColumn;
-        gap: $size-64;
         padding-bottom: $size-128;
         box-sizing: border-box;
     }
@@ -58,7 +57,7 @@
           }
         p {
             font-style: italic;
-            font-weight: 700;
+            font-weight: 600;
             text-align: center;
             font-size: 18px;
             line-height: 130%;
@@ -117,14 +116,11 @@
             p { 
                 color: $neutral-800;
                 font-weight: 600;
-                font-size: 18px;
+                font-size: 21px;
             }
         }
     }
     @media (min-width: map-get($breakpoints, "md")) {
-
-    }
-    @media (min-width: map-get($breakpoints, "lg")) {
         .blog-content {
             .blog-tag-container {
                 @include flexRow;
@@ -133,6 +129,13 @@
                 width: 100%;
             }
         }
+        .blog-quote {
+            p {
+                font-size: 24px;
+            }
+        }
+    }
+    @media (min-width: map-get($breakpoints, "lg")) {
     }
     @media (min-width: map-get($breakpoints, "xl")) {
         
