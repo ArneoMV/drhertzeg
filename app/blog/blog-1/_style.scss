@@ -17,9 +17,12 @@
 
 .article-page {
     @include main-page-layout;
-    
     main.article-page-container {
         @include main-page-container;
+        @include flexColumn;
+        gap: $size-64;
+        padding-bottom: $size-128;
+        box-sizing: border-box;
     }
 
     .blog-title {
@@ -39,6 +42,7 @@
                 p { 
                     color: $neutral-800;
                     font-weight: 600;
+                    font-size: 15px;
                 }
                 img {
                     width: 24px;
@@ -62,10 +66,9 @@
             font-style: italic;
             font-weight: 700;
             text-align: center;
-            font-size: 21px;
+            font-size: 18px;
             line-height: 130%;
             color: $primary-800;
-            font-size: 32px;
         }
     }
 
@@ -115,6 +118,13 @@
         .blog-content {
             @include flexColumn;
             gap: $size-48;
+        }
+        .blog-title {
+            p { 
+                color: $neutral-800;
+                font-weight: 600;
+                font-size: 18px;
+            }
         }
     }
     @media (min-width: map-get($breakpoints, "md")) {
