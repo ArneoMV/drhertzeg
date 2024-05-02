@@ -13,12 +13,41 @@
     box-sizing: border-box;
     overflow: hidden;
     @include flexColumn;
-    gap: $size-24;
     border-radius: $size-16;
     padding: $size-24;
     box-sizing: border-box;
     transition: background-color 0.3s;
+    a {
+        text-decoration: none;
+        @include flexColumn;
+        justify-content: space-between;
+        gap: $size-24;
+        .promotion-content {
+            @include flexColumn;
+            justify-content: space-between;
+            gap: $size-12;
+            h4, p {
+                color: $neutral-800;
+            }
+            p {
+                font-size: 14px;
+                line-height: 130%;
+                height: 100px;
+            }
+        }
+        .image-container {
+            width: auto;
+            display: grid;
+            img {
+                place-self: center;
+                height: auto;
+                width: 180px;
+                object-fit: cover;
+            }
+        }
 
+
+    }
     &.green {
         background-color:  $primary-100;
       
@@ -52,31 +81,7 @@
     }
 
 
-    .promotion-content {
-        @include flexColumn;
-        justify-content: space-between;
-        .promotion-content-title {
-            @include flexColumn;
-            gap: $size-8;
-            p {
-                font-size: 14px;
-                line-height: 130%;
-            }
-        }
-        a {
-            text-decoration: none;
-        }
-    }
-    .image-container {
-        width: auto;
-        display: grid;
-        img {
-            place-self: center;
-            height: auto;
-            width: 180px;
-            object-fit: cover;
-        }
-    }
+    
 
     
 
@@ -92,7 +97,29 @@
 
     }
     @media (min-width: map-get($breakpoints, "md")) {
-
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        overflow: hidden;
+        @include flexRow;
+        gap: $size-24;
+        border-radius: $size-16;
+        padding: $size-24;
+        box-sizing: border-box;
+        a {
+            .promotion-content {
+                @include flexColumn;
+                justify-content: space-between;
+                width: 80%;
+                .promotion-content-title {
+                    @include flexColumn;
+                    gap: $size-8;
+                }
+            }
+            .promotion-image {
+                width: 20%;
+            }
+        }
     }
     @media (min-width: map-get($breakpoints, "lg")) {
 
@@ -102,7 +129,7 @@
     }
     @media (min-width: map-get($breakpoints, "xxl")) {
         width: 100%;
-        height: 250px;
+        height: auto;
         box-sizing: border-box;
         overflow: hidden;
         @include flexRow;
@@ -110,18 +137,19 @@
         border-radius: $size-16;
         padding: $size-24;
         box-sizing: border-box;
-
-        .promotion-content {
-            @include flexColumn;
-            justify-content: space-between;
-            width: 80%;
-            .promotion-content-title {
+        a {
+            .promotion-content {
                 @include flexColumn;
-                gap: $size-8;
+                justify-content: space-between;
+                width: 80%;
+                .promotion-content-title {
+                    @include flexColumn;
+                    gap: $size-8;
+                }
             }
-        }
-        .promotion-image {
-            width: 20%;
+            .promotion-image {
+                width: 20%;
+            }
         }
    
     }

@@ -1,6 +1,6 @@
 import React from "react";
 import './_tab.scss';
-import ProductCard from '../../organism/productCard/productCard';
+import ProductCard from '../productCard/productCard';
 
 import KapiSlatkogPelina from '../../../../public/images/product/kozmetika/KapiSlatkogPelina.png';
 import Smiloljat from '../../../../public/images/product/kozmetika/Smiloljat.png';
@@ -19,7 +19,7 @@ const FirstTab = () => {
         productURL="/kozmetika/kozmetikaProduct"
         productChips1="Protupalno"
         productChips2="Opušta"
-        imageClass="image-small"
+        imageClass="image-default"
         hoverOutline="primary"
       />
       <ProductCard
@@ -30,7 +30,7 @@ const FirstTab = () => {
         productURL="/cajevi/cajProduct"
         productChips1="Protupalno"
         productChips2="Opušta"
-        imageClass="image-small"
+        imageClass="image-default"
         hoverOutline="primary"
       />
       <ProductCard
@@ -41,7 +41,7 @@ const FirstTab = () => {
         productURL="/cajevi/cajProduct"
         productChips1="Protupalno"
         productChips2="Opušta"
-        imageClass="image-small"
+        imageClass="image-default"
         hoverOutline="primary"
       />
     </div>

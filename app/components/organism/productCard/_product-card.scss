@@ -24,7 +24,7 @@ a.product-card {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: $size-48 0;
+        // padding: $size-48 0;
         // box-sizing: border-box;
         box-sizing: content-box;
         background-color: $primary-100;
@@ -40,7 +40,7 @@ a.product-card {
     }
     .product-card-content {
         width: auto;
-        height: 100%;
+        height: auto;
         @include flexColumn;
         gap: $size-24;
         justify-content: space-between;
@@ -58,6 +58,7 @@ a.product-card {
                 font-weight: bold;
                 font-size: 38px;
                 line-height: 115%;
+                height: 90px;
             }
             p {
                 font-size: 24px;

@@ -5,8 +5,6 @@
 @use '../../../styles/layout/_layout' as *;
 @use '../../../styles/base/_mixin' as *;
 
-$background-rectangle: url('../../../assets/image/rectangle-green.svg');
-
 .hero-banner {
     width: 100%;
     height: 360px;
@@ -18,7 +16,8 @@ $background-rectangle: url('../../../assets/image/rectangle-green.svg');
     box-sizing: border-box;
     padding: $size-16;
 
-    background-image: $background-rectangle;
+    content: "";
+    background-image: url(/images/image/rectangle-green.svg);
     background-repeat: no-repeat;
     background-size: auto 100%;
     background-position: top left;

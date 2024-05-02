@@ -1,0 +1,151 @@
+@use '../../../styles/layout/_breakpoint' as *;
+@use '../../../styles/base/_variable' as *;
+@use '../../../styles/abstract/_color' as *;
+@use '../../../styles/base/_mixin' as *;
+
+@mixin user-review-bubble {
+    @include flexColumn;
+    gap: $size-12;
+    align-items: flex-start;
+    .review-user-image {
+        height: auto;
+        width: auto;
+        display: grid;
+        img {
+            width: 60px;
+            height: 60px;
+            max-width: fit-content;
+            object-fit: cover;
+            border-radius: 999px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+    }
+    
+    .review-message {
+        background-color: $neutral-100;
+        padding: $size-12;
+        // border-radius: 0 $size-12 $size-12 $size-12;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+        position: relative;
+    }
+    @media (min-width: map-get($breakpoints, "xs")) {
+        @include flexRow;
+        gap: $size-24;
+        .review-message {
+            margin-top: $size-12;
+            &:before {
+                box-sizing: border-box;
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 0;
+                -webkit-filter: drop-shadow(0 6px 15px rgba(0, 0, 0, 0.1));
+                filter        : drop-shadow(0 6px 15px rgba(0, 0, 0, 0.1));
+                -ms-filter    : "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=2, Color='#444')";
+                filter        : "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=2, Color='#444')";
+            }
+        }
+    }
+    @media (min-width: map-get($breakpoints, "sm")) {
+    }
+    @media (min-width: map-get($breakpoints, "md")) {
+    }
+    @media (min-width: map-get($breakpoints, "lg")) {
+    }
+    @media (min-width: map-get($breakpoints, "xl")) {
+    }
+    @media (min-width: map-get($breakpoints, "xxl")) {
+    }
+}
+
+
+.review-user-left {
+    @include user-review-bubble;
+    
+    .review-message {
+        border-radius: 0 $size-12 $size-12 $size-12;
+        &::before {
+            border-radius: 3px;
+            top: 0;
+            left: -13px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 20px 20px 0;
+            border-color: transparent $neutral-100 transparent transparent;
+        }
+
+    }
+}
+.review-user-right {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "image"
+        "message";
+    gap: 12px;
+    align-items: flex-start;
+    .review-user-image {
+        height: auto;
+        width: auto;
+        display: grid;
+        grid-area: image;
+        justify-self: end;
+        img {
+            width: 60px;
+            height: 60px;
+            max-width: fit-content;
+            object-fit: cover;
+            border-radius: 999px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+    }
+    
+    .review-message {
+        background-color: $neutral-100;
+        padding: $size-12;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+        position: relative;
+        grid-area: message;
+    }
+    @media (min-width: map-get($breakpoints, "xs")) {
+        @include flexRow;
+        gap: $size-24;
+        .review-message {
+            border-radius: $size-12 0 $size-12 $size-12;
+            margin-top: $size-12;
+            &:before {
+                border-radius: 3px;
+                top: 0;
+                right: -13px;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 20px 20px 0 0;
+                border-color: $neutral-100 transparent transparent transparent;
+
+
+                box-sizing: border-box;
+                content: '';
+                position: absolute;
+                -webkit-filter: drop-shadow(0 6px 15px rgba(0, 0, 0, 0.1));
+                filter        : drop-shadow(0 6px 15px rgba(0, 0, 0, 0.1));
+                -ms-filter    : "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=2, Color='#444')";
+                filter        : "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=2, Color='#444')";
+            }
+        }
+    }
+    @media (min-width: map-get($breakpoints, "sm")) {
+    }
+    @media (min-width: map-get($breakpoints, "md")) {
+    }
+    @media (min-width: map-get($breakpoints, "lg")) {
+    }
+    @media (min-width: map-get($breakpoints, "xl")) {
+    }
+    @media (min-width: map-get($breakpoints, "xxl")) {
+    }
+}

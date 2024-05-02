@@ -41,6 +41,7 @@
 
 .tab-container {
   @include flexRow;
+  flex-direction: column;
   gap: $size-24;
   flex-wrap: nowrap;
   justify-content: center;
@@ -49,24 +50,24 @@
       text-decoration: none;
   }
   @media (min-width: map-get($breakpoints, "xxs")) {
-      flex-direction: column;
-    }
-    @media (min-width: map-get($breakpoints, "xs")) {
-      flex-direction: row;
-    }
-    @media (min-width: map-get($breakpoints, "sm")) {
-      flex-direction: row;
-    }
-    @media (min-width: map-get($breakpoints, "md")) {
-      flex-direction: row;
-    }
-    @media (min-width: map-get($breakpoints, "lg")) {
-      flex-direction: row;
-    }
-    @media (min-width: map-get($breakpoints, "xl")) {
-      flex-direction: row;    
-    }
-    @media (min-width: map-get($breakpoints, "xxl")) {
-      flex-direction: row;
-    }
+    flex-direction: column;
+  }
+  @media (min-width: map-get($breakpoints, "xs")) {
+    flex-direction: row;
+  }
+  @media (min-width: map-get($breakpoints, "sm")) {
+    flex-direction: row;
+  }
+  @media (min-width: map-get($breakpoints, "md")) {
+    flex-direction: row;
+  }
+  @media (min-width: map-get($breakpoints, "lg")) {
+    flex-direction: row;
+  }
+  @media (min-width: map-get($breakpoints, "xl")) {
+    flex-direction: row;    
+  }
+  @media (min-width: map-get($breakpoints, "xxl")) {
+    flex-direction: row;
+  }
 }

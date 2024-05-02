@@ -7,8 +7,8 @@
 
 
 @mixin user-review-bubble {
-    @include flexRow;
-    gap: $size-24;
+    @include flexColumn;
+    gap: 0px;
     align-items: flex-start;
     .review-user-image {
         height: 80px;
@@ -32,18 +32,41 @@
         box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
         box-sizing: border-box;
         position: relative;
-        &:before {
-            box-sizing: border-box;
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 0;
-            -webkit-filter: drop-shadow(0 6px 15px rgba(0, 0, 0, 0.1));
-            filter        : drop-shadow(0 6px 15px rgba(0, 0, 0, 0.1));
-            -ms-filter    : "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=2, Color='#444')";
-            filter        : "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=2, Color='#444')";
+    }
+    @media (min-width: map-get($breakpoints, "xs")) {
+        @include flexRow;
+        gap: $size-24;
+        .review-message {
+            &:before {
+                box-sizing: border-box;
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 0;
+                -webkit-filter: drop-shadow(0 6px 15px rgba(0, 0, 0, 0.1));
+                filter        : drop-shadow(0 6px 15px rgba(0, 0, 0, 0.1));
+                -ms-filter    : "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=2, Color='#444')";
+                filter        : "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=2, Color='#444')";
+            }
         }
     }
+    @media (min-width: map-get($breakpoints, "sm")) {
+    }
+    @media (min-width: map-get($breakpoints, "md")) {
+    }
+    @media (min-width: map-get($breakpoints, "lg")) {
+    }
+    @media (min-width: map-get($breakpoints, "xl")) {
+    }
+    @media (min-width: map-get($breakpoints, "xxl")) {
+    }
+}
+
+
+
+
+.container {
+    @include layout-container;
 }
 
 .row {
@@ -52,6 +75,7 @@
 .column {
     @include flexColumn;
 }
+
 
 .back-button {
     width: fit-content;
@@ -77,6 +101,7 @@
     @include flexColumn;
     gap: $size-98;
     padding-bottom: $size-128;
+
     main.product-page-contianer {
         @include layout-container;
         @include flexColumn;
@@ -162,50 +187,17 @@
         }
         .column {
             @include flexColumn;
-            gap: $size-64;
+            gap: $size-24;
             .flex {
                 @include flexColumn;
-                gap: $size-98;
+                gap: $size-24;
                 &:nth-child(1) {
-                    padding: 0 0 ;
+                    padding: 0 0;
                 }
                 &:nth-child(2) {
-                    padding: 0 $size-48;
+                    padding: 0 0;
                 }
-                .review-user-left {
-                    @include user-review-bubble;
-                    
-                    .review-message {
-                        border-radius: 0 $size-12 $size-12 $size-12;
-                        &::before {
-                            border-radius: 3px;
-                            top: 0;
-                            left: -13px;
-                            width: 0;
-                            height: 0;
-                            border-style: solid;
-                            border-width: 0 20px 20px 0;
-                            border-color: transparent $neutral-100 transparent transparent;
-                        }
-
-                    }
-                }
-                .review-user-right {
-                    @include user-review-bubble;
-                    .review-message {
-                        border-radius: $size-12 0 $size-12 $size-12;
-                        &::before {
-                            border-radius: 3px;
-                            top: 0;
-                            right: -13px;
-                            width: 0;
-                            height: 0;
-                            border-style: solid;
-                            border-width: 20px 20px 0 0;
-                            border-color: $neutral-100 transparent transparent transparent;
-                        }
-                    }
-                }
+                
             }
         }
     }  
@@ -229,8 +221,16 @@
         
         .reviews {
             .column {
+                gap: $size-48;
                 .flex {
                     @include flexRow;
+                    gap: $size-48;
+                    &:nth-child(1) {
+                        padding: 0 0;
+                    }
+                    &:nth-child(2) {
+                        padding: 0 $size-24;
+                    }
                 }
             }
         }
@@ -240,6 +240,19 @@
             @include flexRow;
             padding: $size-64;
         }
+        .reviews {
+            .column {
+                .flex {
+                    @include flexRow;
+                    &:nth-child(1) {
+                        padding: 0 0;
+                    }
+                    &:nth-child(2) {
+                        padding: 0 $size-48;
+                    }
+                }
+            }
+        }
        
     }
     
@@ -248,34 +261,4 @@
     @media (min-width: map-get($breakpoints, "xxl")) {
 
     }
-}
-
-.slider-container { 
-    margin: 0 auto;
-    // padding: 40px;
-    width: 100%;
-    box-sizing: border-box;
-    .slick-slider {
-        display: grid;
-        grid-template-columns: 24px 1fr 24px;
-        align-items: center;
-        gap: 24px;
-    }
-    .slick-slide { 
-        margin-right: 20px;
-        box-sizing: border-box;
-        height: inherit !important;
-    }
-    .slick-track {
-        display: flex !important;
-    }
-    .slick-prev, .slick-next {
-        position: static;
-        top: auto;
-        transform: none;
-    }
-    .slick-prev:before, .slick-next:before {
-        content: '';
-    }
-    
 }

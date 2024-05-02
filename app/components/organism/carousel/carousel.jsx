@@ -39,13 +39,13 @@ const Carousel = ({ slides }) => {
             </div>
             
             <div className="carousel-image">
-                <Image 
-                    src={slides[currentIndex].url}
-                    alt='ProductSlika'
-                    quality={100}
-                    width={100}
-                    height={100}
-                />
+              <Image 
+                  src={slides[currentIndex].src}
+                  alt='ProductSlika'
+                  quality={100}
+                  width={100}
+                  height={100}
+              />
             </div>
             <div className="arrow">
                 <Image 

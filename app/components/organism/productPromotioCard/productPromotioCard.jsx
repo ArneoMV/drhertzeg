@@ -27,26 +27,24 @@ export default function ProductPromotionCard({ title, description, buttonURL, im
     }
   
     return (
-      <div className={className} productNumber={productNumber}>
-        <div className="promotion-content">
-          <div className="promotion-content-title">
-            <h4>{title}</h4>
-            <p>{description}</p>
-          </div>
+      
+        <div className={className} productNumber={productNumber}>
           <Link href={buttonURL}>
-            <Button type="link">Saznaj više</Button>
+            <div className="promotion-content">
+              <h4>{title}</h4>
+              <p>{description}</p>
+            </div>
+            <div className="image-container">
+              <Image
+                src={imageSRC}
+                alt={imageALT}
+                quality={100}
+                width={150}
+                height={150}
+              />
+            </div>
           </Link>
         </div>
-        <div className="image-container">
-          <Image
-            src={imageSRC}
-            alt={imageALT}
-            quality={100}
-            width={150}
-            height={150}
-          />
-        </div>
-      </div>
     );
   }
   

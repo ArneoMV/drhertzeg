@@ -5,7 +5,7 @@ import './styles/pages/_homepage.scss';
 import './styles/base/_base.scss';
 
 
-import Tabs from "./components/molecules/tab/Tabs.jsx";
+import Tabs from "./components/organism/tab/Tabs.jsx";
 import Button from "./components/atoms/button/Button.jsx";
 
 import { Icon } from "./utilities/images.js";
