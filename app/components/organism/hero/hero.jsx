@@ -16,7 +16,7 @@ import UserImage4 from '../../../../public/images/user/user_review_04.png';
 import heroProduct1 from '../../../assets/image/product/heroProduct1.png';
 import heroProduct2 from '../../../assets/image/product/heroProduct2.png';
 import heroProduct3 from '../../../assets/image/product/heroProduct3.png';
-import heroProductImage1 from '../../../assets/image/product/heroProductImage1.png';
+import heroProductImage1 from '../../../../public/images/product/heroProductImage1.png';
 import ilustracija_1 from '../../../assets/image/ilustracije/biljka_1.svg';
 import ilustracija_2 from '../../../assets/image/ilustracije/biljka_2.svg';
 import ilustracija_3 from '../../../assets/image/ilustracije/biljka_3.svg';
