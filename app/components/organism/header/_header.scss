@@ -12,11 +12,10 @@ header {
     z-index: 9999;
     top: 0;
     width: 100%;
-    height: 8vh;
+    height: $size-98;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: $primary-50;
     box-shadow: $base-shadow-4;
   }
   .logo {

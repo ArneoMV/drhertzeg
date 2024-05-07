@@ -45,7 +45,7 @@ export default function SliderProductsCaj() {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
     arrows: false,
@@ -53,7 +53,7 @@ export default function SliderProductsCaj() {
       {
         breakpoint: 1280,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
         }

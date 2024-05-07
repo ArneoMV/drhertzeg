@@ -107,6 +107,9 @@
         padding: $size-24;
         box-sizing: border-box;
         a {
+            @include flexRow;
+            justify-content: space-between;
+            gap: $size-24;
             .promotion-content {
                 @include flexColumn;
                 justify-content: space-between;

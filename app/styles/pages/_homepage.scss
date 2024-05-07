@@ -12,19 +12,12 @@
     @include flexColumn;
     gap: $gap-xl;
     padding-bottom: $size-128;
+    padding-top: $size-98;
     img {
         border-radius: $radius-sm; 
     }
 
-    .hero {
-        background-color: $primary-100;
-        height: 73vh;
-        width: 100%;
-        display: grid;
-        .column {
-            place-self: center;
-        }
-    }
+
     .tabs-container {
         @include flexColumn;
         gap: $size-24;

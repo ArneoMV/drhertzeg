@@ -10,6 +10,7 @@ const Icon = {
   arrowLeft: require('../assets/icon/chevron-compact-left.svg').default,
   arrowRight: require('../assets/icon/chevron-compact-right.svg').default,
   arrowLeftLong: require('../assets/icon/arrow-left.svg').default,
+  star: require('../assets/icon/star.svg').default,
 };
 
 const HomepageImages = {

@@ -7,7 +7,7 @@ const IconImage = {
   checkFill: require('./images/check-circle-fill.svg').default,
   arrowLeft: require('../../../assets/icon/chevron-compact-left.svg').default,
   arrowRight: require('../../../assets/icon/chevron-compact-right.svg').default,
-
+  star: require('../../../assets/icon/star.svg').default,
 };
 
 export { IconImage };
