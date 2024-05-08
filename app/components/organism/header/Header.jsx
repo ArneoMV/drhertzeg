@@ -41,6 +41,7 @@ const Header = () => {
       </div>
       <div className={`nav-mobile ${isNavOpen ? 'is-active' : ''}`}>
         <div className="nav-links">
+        <a href="/">Početna</a>
           <a href="/cajevi">Čajevi</a>
           <a href="/kozmetika">Kozmetika</a>
           <a href="/blog">Blog</a>

@@ -7,8 +7,12 @@
 
 header {
   background-color: $neutral-100;
+  box-shadow: $base-shadow-4;
+  @include flexRow;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
   .navBar {
-    background-color: $neutral-100;
     position: fixed;
     z-index: 9999;
     top: 0;
@@ -17,7 +21,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: $base-shadow-4;
+    background-color: $neutral-100;
   }
   .logo {
     @include flexRow;
@@ -29,9 +33,9 @@ header {
     text-decoration: none;
     font-size: 24px;
     color: $neutral-800;
+    padding-left: 24px;
   }
   nav {
-
     .nav-links {
       @include flexRow;
       gap: $size-24;
@@ -57,10 +61,6 @@ header {
     }
   }
 
-
-
-
-
   @media (min-width: map-get($breakpoints, "xs")) {
   }
   @media (min-width: map-get($breakpoints, "sm")) {
@@ -69,6 +69,9 @@ header {
     .navBar {
       @include layout-container;
       box-sizing: border-box;
+    }
+    .logo {
+      padding-left: 0;
     }
     
   }
@@ -99,7 +102,7 @@ header {
     top: 0;
     display: grid;
     width: 100%;
-    grid-template-rows: repeat(4, 50px);
+    grid-template-rows: repeat(5, 50px);
     justify-items: center;
     align-items: center;
     padding-top: 100px;
@@ -132,7 +135,7 @@ header {
   cursor: pointer;
   position: fixed;
   right: 0;
-  top: 0;
+  top: 16px;
   z-index: 999999;
   padding: 2vh;
   @media only screen and (max-width: 950px) {
