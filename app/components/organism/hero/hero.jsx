@@ -290,9 +290,7 @@ export default function Hero() {
                                 </div>
                             </div>
                         </div>
-                        {/* <Link href="/kozmetika">
-                            <Button type="primary">Ostali proizvodi</Button>
-                        </Link> */}
+
                     </div>
 
                     {/* Image */}
