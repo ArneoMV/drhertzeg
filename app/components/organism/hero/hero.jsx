@@ -197,9 +197,9 @@ export default function Hero() {
                                 </div>
                             </div>
                         </div>
-                        <Link href="/kozmetika">
+                        {/* <Link href="/kozmetika">
                             <Button type="primary">Ostali proizvodi</Button>
-                        </Link>
+                        </Link> */}
                     </div>
 
                     {/* Image */}
@@ -290,9 +290,9 @@ export default function Hero() {
                                 </div>
                             </div>
                         </div>
-                        <Link href="/kozmetika">
+                        {/* <Link href="/kozmetika">
                             <Button type="primary">Ostali proizvodi</Button>
-                        </Link>
+                        </Link> */}
                     </div>
 
                     {/* Image */}
