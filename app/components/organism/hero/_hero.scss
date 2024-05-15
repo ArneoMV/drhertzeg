@@ -107,7 +107,7 @@
                             color: $neutral-800;
                             text-align: center;
                             p {
-                                font-size: 18px;
+                                font-size: 15px;
                                 font-weight: 600; 
                             }
                             &:nth-child(2) {
@@ -162,7 +162,7 @@
                     .popular-product {
                         @include flexRow;
                         img {
-                            height: 80px;
+                            height: 60px;
                             width: auto;
                         }
                         .promotion-content {
@@ -262,7 +262,7 @@
                     .popular-product {
                         @include flexRow;
                         img {
-                            height: 80px;
+                            height: 60px;
                             width: auto;
                         }
                         .promotion-content {
@@ -271,6 +271,9 @@
                             width: auto;
                             a {
                                 text-align: left;
+                            }
+                            p {
+
                             }
                             
                         }
