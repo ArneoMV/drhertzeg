@@ -62,7 +62,7 @@
 
 .review-user-left {
     @include user-review-bubble;
-    
+    flex: 1;
     .review-message {
         border-radius: 0 $size-12 $size-12 $size-12;
         &::before {
@@ -114,6 +114,8 @@
     @media (min-width: map-get($breakpoints, "xs")) {
         @include flexRow;
         gap: $size-24;
+        flex: 1;
+        justify-content: end;
         .review-message {
             border-radius: $size-12 0 $size-12 $size-12;
             margin-top: $size-12;

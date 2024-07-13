@@ -1,0 +1,263 @@
+@use '../../styles/base/_variable' as *;
+@use '../../styles/abstract/_color' as *;
+@use '../../styles/abstract/_typo' as *;
+@use '../../styles/layout/_breakpoint' as *;
+@use '../../styles/layout/_layout' as *;
+@use '../../styles/base/_mixin' as *;
+
+
+@mixin user-review-bubble {
+    @include flexColumn;
+    gap: 0px;
+    align-items: flex-start;
+    .review-user-image {
+        height: 80px;
+        width: 60px;
+        display: grid;
+        img {
+            width: 60px;
+            height: 60px;
+            max-width: fit-content;
+            object-fit: cover;
+            border-radius: 999px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+    }
+    
+    .review-message {
+        background-color: $neutral-100;
+        padding: $size-12;
+        margin-top: $size-12;
+        // border-radius: 0 $size-12 $size-12 $size-12;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+        position: relative;
+    }
+    @media (min-width: map-get($breakpoints, "xs")) {
+        @include flexRow;
+        gap: $size-24;
+        .review-message {
+            &:before {
+                box-sizing: border-box;
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 0;
+                -webkit-filter: drop-shadow(0 6px 15px rgba(0, 0, 0, 0.1));
+                filter        : drop-shadow(0 6px 15px rgba(0, 0, 0, 0.1));
+                -ms-filter    : "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=2, Color='#444')";
+                filter        : "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=2, Color='#444')";
+            }
+        }
+    }
+    @media (min-width: map-get($breakpoints, "sm")) {
+    }
+    @media (min-width: map-get($breakpoints, "md")) {
+    }
+    @media (min-width: map-get($breakpoints, "lg")) {
+    }
+    @media (min-width: map-get($breakpoints, "xl")) {
+    }
+    @media (min-width: map-get($breakpoints, "xxl")) {
+    }
+}
+
+
+
+
+.container {
+    @include layout-container;
+}
+
+.row {
+    @include flexRow;
+}
+.column {
+    @include flexColumn;
+}
+
+
+.back-button {
+    width: fit-content;
+    height: $size-32;
+    padding: 0 $size-16;
+    cursor: pointer;
+    @include flexRow;
+    gap: $size-12;
+    align-items: center;
+    border-radius: 99px;
+    background-color: $neutral-200;
+    border: 0;
+    img {}
+    p {
+        color: $primary-300;
+    }
+}
+
+// Product Page
+.product-page {
+    padding-top: 100px;
+    box-sizing: border-box;
+    @include flexColumn;
+    gap: $size-98;
+    padding-bottom: $size-128;
+
+    main.product-page-contianer {
+        @include layout-container;
+        @include flexColumn;
+        gap: $size-128;
+        section.product-section {
+            @include flexColumn;
+            gap: $size-48;
+        }
+    }
+
+    .product-banner {
+        background-color: $neutral-100;
+        @include flexColumn;
+        gap: $size-64;
+        padding: $size-24;
+        box-sizing: border-box;
+        border-radius: $size-32;
+        overflow: hidden;
+        .productImage {
+            width: 100%;
+            box-sizing: border-box;
+            @include flexColumn;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .product-details {
+            @include flexColumn;
+            gap: $gap-md;
+            width: 100%;
+            box-sizing: border-box;
+            h3, p.price {
+                color: $primary-900;
+                font-weight: bold;
+            }
+            p.price { font-size: 38px; }
+            p { color: $neutral-800; }
+
+            .row-chips {
+                @include flexRow;
+                gap: $size-12;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                .chip { background-color: $primary-200; }
+            }
+
+            .product-details-list {
+                @include flexColumn;
+                gap: $gap-md;
+
+            }
+
+        }
+    }
+
+    .product-extra-details {
+        @include flexColumn;
+        justify-content: center;
+        gap: $size-24;
+        .column {
+            @include flexColumn;
+            gap: $size-24;
+            .collapse-item {
+                @include flexColumn;
+                gap: 0;
+                p {
+                    &:nth-child(1) {
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .reviews {
+        @include flexColumn;
+        gap: $size-48;
+
+        h4 {
+            text-align: center;
+        }
+        .column {
+            @include flexColumn;
+            gap: $size-24;
+            .flex {
+                @include flexColumn;
+                gap: $size-24;
+                &:nth-child(1) {
+                    padding: 0 0;
+                }
+                &:nth-child(2) {
+                    padding: 0 0;
+                }
+                
+            }
+        }
+    }  
+
+    @media (min-width: map-get($breakpoints, "xs")) {
+        .product-banner {
+            @include flexColumn;
+            border-radius: $size-32;
+        }
+        
+    }
+    @media (min-width: map-get($breakpoints, "sm")) {
+        padding-top: 128px;
+        .product-extra-details {
+            @include flexRow;
+            gap: $size-48;
+        }
+    }
+    @media (min-width: map-get($breakpoints, "md")) {
+        padding-top: 128px;
+        
+        .reviews {
+            .column {
+                gap: $size-48;
+                .flex {
+                    @include flexRow;
+                    gap: $size-48;
+                    &:nth-child(1) {
+                        padding: 0 0;
+                    }
+                    &:nth-child(2) {
+                        padding: 0 $size-24;
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: map-get($breakpoints, "lg")) {
+        .product-banner {
+            @include flexRow;
+            padding: $size-64;
+        }
+        .reviews {
+            .column {
+                .flex {
+                    @include flexRow;
+                    &:nth-child(1) {
+                        padding: 0 0;
+                    }
+                    &:nth-child(2) {
+                        padding: 0 $size-48;
+                    }
+                }
+            }
+        }
+       
+    }
+    
+    @media (min-width: map-get($breakpoints, "xl")) {
+    }
+    @media (min-width: map-get($breakpoints, "xxl")) {
+
+    }
+}

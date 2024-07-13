@@ -15,11 +15,18 @@ import Regeneration from '../../public/images/icon/icon-regeneration.svg'
 import Relax from '../../public/images/icon/icon-relax.svg'
 import SkinCare from '../../public/images/icon/icon-skin-care.svg'
 
-import SmokvinList from '../../public/images/caj/Caj-biljka-1.png';
-import SlatkiPelin from '../../public/images/caj/Caj-biljka-2.png';
-import EnergijaJutra from '../../public/images/caj/Caj-biljka-3.png';
-import DetoxCaj from '../../public/images/caj/Caj-biljka-4.png';
-import ImunoCaj from '../../public/images/caj/Caj-biljka-5.png';
+// import SmokvinList from '../../public/images/caj/biljka-smokvin-list.png';
+// import SlatkiPelin from '../../public/images/caj/biljka-slatki-pelin.png';
+// import EnergijaJutra from '../../public/images/caj/biljka-energija-jutra.png';
+// import DetoxCaj from '../../public/images/caj/biljka-detox.png';
+// import ImunoCaj from '../../public/images/caj/biljka-imuno.png';
+
+import SmokvinList from '../../public/images/product/caj/biljka-smokvin-list.png';
+import SlatkiPelin from '../../public/images/product/caj/biljka-slatki-pelin.png';
+import EnergijaJutra from '../../public/images/product/caj/biljka-energija-jutra.png';
+import DetoxCaj from '../../public/images/product/caj/biljka-detox.png';
+import ImunoCaj from '../../public/images/product/caj/biljka-imuno.png';
+
 
 import { Metadata } from 'next'
 export const metadata = { 
@@ -100,7 +107,7 @@ export default function Cajevi() {
                 productDetailsPrice="4 €"
                 productDetailsImageURL= {SmokvinList}
                 productDetailsImageAlt="Smokvin list"
-                productURL="/cajevi/cajProduct"
+                productURL="/cajevi/CajSmokvaList"
                 productChips1="Protupalno"
                 productChips2="Opušta"
                 imageClass="image-small"
@@ -111,7 +118,7 @@ export default function Cajevi() {
                 productDetailsPrice="3.8 €"
                 productDetailsImageURL= {SlatkiPelin}
                 productDetailsImageAlt="Slatki pelin"
-                productURL="/cajevi/cajProduct"
+                productURL="/cajevi/CajSlatkiPelin"
                 productChips1="Smirujuće"
                 productChips2="Opušta"
                 imageClass="image-small"
@@ -122,7 +129,7 @@ export default function Cajevi() {
                 productDetailsPrice="3.5 €"
                 productDetailsImageURL= {EnergijaJutra}
                 productDetailsImageAlt="Energija jutra"
-                productURL="/cajevi/cajProduct"
+                productURL="/cajevi/CajEnergijaJutra"
                 productChips1="Razbuđuje"
                 productChips2="Umjesto kave"
                 imageClass="image-small"
@@ -133,7 +140,7 @@ export default function Cajevi() {
                 productDetailsPrice="4.2 €"
                 productDetailsImageURL= {DetoxCaj}
                 productDetailsImageAlt="Detox čaj"
-                productURL="/cajevi/cajProduct"
+                productURL="/cajevi/CajDetox"
                 productChips1="Čisti organizam"
                 productChips2="Hidracija"
                 imageClass="image-small"
@@ -144,7 +151,7 @@ export default function Cajevi() {
                 productDetailsPrice="3.5 €"
                 productDetailsImageURL= {ImunoCaj}
                 productDetailsImageAlt="Imuno čaj"
-                productURL="/cajevi/cajProduct"
+                productURL="/cajevi/CajImuno"
                 productChips1="Protupalno"
                 productChips2="Opušta"
                 imageClass="image-small"

@@ -16,7 +16,8 @@ import ProductPromotioCard from '../../organism/productPromotioCard/productPromo
 import ProductBlue from '../../../assets/image/product/product-promotion-card-blue.png'
 import ProductGreen from '../../../assets/image/product/product-promotion-card-green.png'
 import ProductOrange from '../../../assets/image/product/product-promotion-card-orange.png'
-import KapiSlatkogPelina from '../../../../public/images/product/kozmetika/KapiSlatkogPelina.png';
+// import KapiSlatkogPelina from '../../../../public/images/product/kozmetika/KapiSlatkogPelina.png';
+// import SlatkiPelin from '../../../../public/images/product/caj/biljka-slatki-pelin.png';
 
 export default function SliderProductsCaj() {
 

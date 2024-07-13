@@ -2,20 +2,18 @@ import React from "react";
 import './_tab.scss';
 import ProductCard from '../productCard/productCard';
 
-import KapiSlatkogPelina from '../../../../public/images/product/kozmetika/KapiSlatkogPelina.png';
-import Smiloljat from '../../../../public/images/product/kozmetika/Smiloljat.png';
-import HydratingDayCream from '../../../../public/images/product/kozmetika/HydratingDayCream.png';
-import CalmingGel from '../../../../public/images/product/kozmetika/CalmingGel.png';
-import Lavandolat from '../../../../public/images/product/kozmetika/Lavandolat.png';
+import CalmingGel from '../../../../public/images/product/kozmetika/ambalaza-CalmingGel.jpg';
+import CareAndMassageOil from '../../../../public/images/product/kozmetika/ambalaza-CareAndMassageOil.jpg';
+import HairBoost from '../../../../public/images/product/kozmetika/ambalaza-HairBoost.jpg';
 
 const FirstTab = () => {
   return (
     <div className="tab-container">
       <ProductCard
-        productDetailsTitle="Kapi Slatkog Pelina"
+        productDetailsTitle="Calming Gel"
         productDetailsPrice="4 €"
-        productDetailsImageURL= {KapiSlatkogPelina}
-        productDetailsImageAlt="Kapi Slatkog Pelina"
+        productDetailsImageURL= {CalmingGel}
+        productDetailsImageAlt="Calming Gel"
         productURL="/kozmetika/kozmetikaProduct"
         productChips1="Protupalno"
         productChips2="Opušta"
@@ -23,10 +21,10 @@ const FirstTab = () => {
         hoverOutline="primary"
       />
       <ProductCard
-        productDetailsTitle="Smiloljat"
+        productDetailsTitle="Care & Massage Oil"
         productDetailsPrice="4 €"
-        productDetailsImageURL= {Smiloljat}
-        productDetailsImageAlt="Smiloljat"
+        productDetailsImageURL= {CareAndMassageOil}
+        productDetailsImageAlt="CareAndMassageOil"
         productURL="/cajevi/cajProduct"
         productChips1="Protupalno"
         productChips2="Opušta"
@@ -34,10 +32,10 @@ const FirstTab = () => {
         hoverOutline="primary"
       />
       <ProductCard
-        productDetailsTitle="Hydrating Day Cream"
+        productDetailsTitle="Hair Boost"
         productDetailsPrice="4 €"
-        productDetailsImageURL= {HydratingDayCream}
-        productDetailsImageAlt="HydratingDayCream"
+        productDetailsImageURL= {HairBoost}
+        productDetailsImageAlt="Hair Boost"
         productURL="/cajevi/cajProduct"
         productChips1="Protupalno"
         productChips2="Opušta"

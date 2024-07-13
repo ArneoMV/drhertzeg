@@ -11,6 +11,7 @@ a .productCard  {
 a.product-card {
     border-radius: $size-16;
     width: 100%;
+
     box-sizing: border-box;
     overflow: hidden;
     @include flexColumn;
@@ -108,9 +109,8 @@ a.product-card {
         }
     }
     @media (min-width: map-get($breakpoints, "md")) {
-        .product-card-image {
-
-        }
+        // min-width: 350px;
+        // max-width: 350px;
     }
     @media (min-width: map-get($breakpoints, "lg")) {
         .product-card-image {

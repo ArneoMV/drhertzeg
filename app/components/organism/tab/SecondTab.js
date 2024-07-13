@@ -2,17 +2,21 @@ import React from "react";
 import './_tab.scss';
 import ProductCard from '../productCard/productCard';
 
-import Caj1 from '../../../../public/images/caj/Caj-biljka-1.png';
-import Caj2 from '../../../../public/images/caj/Caj-biljka-2.png';
-import Caj3 from '../../../../public/images/caj/Caj-biljka-3.png';
+
+
+import SmokvinList from '../../../../public/images/product/caj/biljka-smokvin-list.png';
+import SlatkiPelin from '../../../../public/images/product/caj/biljka-slatki-pelin.png';
+import EnergijaJutra from '../../../../public/images/product/caj/biljka-energija-jutra.png';
+import DetoxCaj from '../../../../public/images/product/caj/biljka-detox.png';
+import ImunoCaj from '../../../../public/images/product/caj/biljka-imuno.png';
 
 const SecondTab = () => {
   return (
     <div className="tab-container">
       <ProductCard
-        productDetailsTitle="Kapi Slatkog Pelina"
+        productDetailsTitle="Smokvin list"
         productDetailsPrice="4 €"
-        productDetailsImageURL= {Caj1}
+        productDetailsImageURL= {SmokvinList}
         productDetailsImageAlt="Kapi Slatkog Pelina"
         productURL="/kozmetika/kozmetikaProduct"
         productChips1="Protupalno"
@@ -21,9 +25,9 @@ const SecondTab = () => {
         hoverOutline="primary"
       />
       <ProductCard
-        productDetailsTitle="Smiloljat"
+        productDetailsTitle="Slatki pelin"
         productDetailsPrice="4 €"
-        productDetailsImageURL= {Caj2}
+        productDetailsImageURL= {SlatkiPelin}
         productDetailsImageAlt="Smiloljat"
         productURL="/cajevi/cajProduct"
         productChips1="Protupalno"
@@ -32,9 +36,9 @@ const SecondTab = () => {
         hoverOutline="primary"
       />
       <ProductCard
-        productDetailsTitle="Hydrating Day Cream"
+        productDetailsTitle="Energija jutra"
         productDetailsPrice="4 €"
-        productDetailsImageURL= {Caj3}
+        productDetailsImageURL= {EnergijaJutra}
         productDetailsImageAlt="HydratingDayCream"
         productURL="/cajevi/cajProduct"
         productChips1="Protupalno"
