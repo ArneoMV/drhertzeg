@@ -68,8 +68,11 @@
     padding: $size-64 $margin-sm;
     color: $neutral-100;
     overflow: visible;
-
+    background-color: $primary-800;
+    z-index: 999;
     &::after {
+        @include background-vawe;
+        background-image: url(/images/vawe/vawe-top-green-800.svg);
         content: "";
         position: absolute; 
         top: -20px;

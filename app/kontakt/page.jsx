@@ -47,7 +47,7 @@ export default function Contact() {
                       quality={100}
                   />
                 </div>
-                <p>info@colloidag.hr</p>
+                <p>office@colloidag.hr</p>
               </div>
               <div className="contact-icon">
                 <div className="icon">

@@ -43,7 +43,8 @@ const Footer = ({ color }) => {
 
 
   return (
-    <footer className={`footer ${className}`}>
+    <footer className="footer">
+    {/* <footer className={`footer ${className}`}> */}
       <div className="footer-container">
 
         <div className="footerTop">
