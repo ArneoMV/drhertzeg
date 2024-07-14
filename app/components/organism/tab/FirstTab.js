@@ -2,9 +2,9 @@ import React from "react";
 import './_tab.scss';
 import ProductCard from '../productCard/productCard';
 
-import CalmingGel from '../../../../public/images/product/kozmetika/ambalaza-CalmingGel.jpg';
-import CareAndMassageOil from '../../../../public/images/product/kozmetika/ambalaza-CareAndMassageOil.jpg';
-import HairBoost from '../../../../public/images/product/kozmetika/ambalaza-HairBoost.jpg';
+import CalmingGel from '../../../../public/images/product/kozmetika/ambalaza-CalmingGel.png';
+import CareAndMassageOil from '../../../../public/images/product/kozmetika/ambalaza-CareAndMassageOil.png';
+import HairBoost from '../../../../public/images/product/kozmetika/ambalaza-HairBoost.png';
 
 const FirstTab = () => {
   return (

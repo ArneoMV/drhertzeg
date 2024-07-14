@@ -14,9 +14,6 @@ import AdBanner from '../../components/organism/adBanner/adBanner';
 import { Icon } from '../../utilities/images';
 import UserImage1 from '../../assets/image/person-review/user_review_01.png';
 import UserImage2 from '../../assets/image/person-review/user_review_02.png';
-import UserImage3 from '../../assets/image/person-review/user_review_03.png';
-import UserImage4 from '../../assets/image/person-review/user_review_04.png';
-
 
 import ButtonIcon from '../../components/atoms/buttonIcon/buttonIcon';
 import SliderProductsCaj from "../../components/organism/sliderProductsCaj/sliderProductsCaj.jsx"
@@ -40,7 +37,7 @@ export default function VitaminNightCream() {
 
   // Images
   const slides = [
-    { src: '/images/product/kozmetika/ambalaza-VitaminNightCream.jpg', title: 'Vitamin Night Cream' },
+    { src: '/images/product/kozmetika/ambalaza-VitaminNightCream.png', title: 'Vitamin Night Cream' },
   ];
 
   // * Slick Slider Promotion Images * \\

@@ -18,14 +18,14 @@ import SkinCare from '../../public/images/icon/icon-skin-care.svg'
 
 import SlatkiPelin from '../../public/images/product/caj/biljka-slatki-pelin.png';
 
-import CalmingGel from '../../public/images/product/kozmetika/ambalaza-CalmingGel.jpg';
-import HairBoost from '../../public/images/product/kozmetika/ambalaza-HairBoost.jpg';
-import Smiljolat from '../../public/images/product/kozmetika/ambalaza-Smiljolat.jpg';
-import Lavandolat from '../../public/images/product/kozmetika/ambalaza-Lavandolat.jpg';
-import SerumOdSmilja from '../../public/images/product/kozmetika/ambalaza-SerumOdSmilja.jpg';
-import CareAndMassageOil from '../../public/images/product/kozmetika/ambalaza-CareAndMassageOil.jpg';
-import VitaminNightCream from '../../public/images/product/kozmetika/ambalaza-VitaminNightCream.jpg';
-import HydratingDayCream from '../../public/images/product/kozmetika/ambalaza-HydratingDayCream.jpg';
+import CalmingGel from '../../public/images/product/kozmetika/ambalaza-CalmingGel.png';
+import HairBoost from '../../public/images/product/kozmetika/ambalaza-HairBoost.png';
+import Smiljolat from '../../public/images/product/kozmetika/ambalaza-Smiljolat.png';
+import Lavandolat from '../../public/images/product/kozmetika/ambalaza-Lavandolat.png';
+import SerumOdSmilja from '../../public/images/product/kozmetika/ambalaza-SerumOdSmilja.png';
+import CareAndMassageOil from '../../public/images/product/kozmetika/ambalaza-CareAndMassageOil.png';
+import VitaminNightCream from '../../public/images/product/kozmetika/ambalaza-VitaminNightCream.png';
+import HydratingDayCream from '../../public/images/product/kozmetika/ambalaza-HydratingDayCream.png';
 
 import { Metadata } from 'next'
 export const metadata = { 

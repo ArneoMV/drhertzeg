@@ -14,8 +14,6 @@ import AdBanner from '../../components/organism/adBanner/adBanner';
 import { Icon } from '../../utilities/images';
 import UserImage1 from '../../assets/image/person-review/user_review_01.png';
 import UserImage2 from '../../assets/image/person-review/user_review_02.png';
-import UserImage3 from '../../assets/image/person-review/user_review_03.png';
-import UserImage4 from '../../assets/image/person-review/user_review_04.png';
 
 
 import ButtonIcon from '../../components/atoms/buttonIcon/buttonIcon';
@@ -40,7 +38,7 @@ export default function CalmingGel() {
 
   // Images
   const slides = [
-    { src: '/images/product/kozmetika/ambalaza-CalmingGel.jpg', title: 'Calming Gel' },
+    { src: '/images/product/kozmetika/ambalaza-CalmingGel.png', title: 'Calming Gel' },
   ];
 
   // * Slick Slider Promotion Images * \\
