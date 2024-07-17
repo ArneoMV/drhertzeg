@@ -27,11 +27,11 @@ export default function HeroTea() {
         <div className='hero-banner gooey-background '>
             <div className="hero-content-title">
                 <div className='title-text'>
-                <h1>Okus iz prirode <br /> ima novi izgled</h1>
-                <p>Marzipan caramels brownie jelly beans bear claw jelly-o shortbread macaroon candy canes.</p>
+                <h1>Uživajte u zdravlju  sa <br /> Slatkim Pelinom </h1>
+                <p>Opustite se uz ljekoviti čaj Slatki Pelin, savršeni saveznik za zdravlje i smanjenje stresa.</p>
                 </div>
-                <Link href="/kozmetika/kozmetikaProduct">
-                    <Button type="primary">Pročitaj više</Button>
+                <Link href="./kontakt">
+                    <Button type="primary">Naručite sada</Button>
                 </Link>
             </div>
         </div>
@@ -65,11 +65,11 @@ export default function HeroTea() {
         <div className='hero-banner gooey-background '>
             <div className="hero-content-title">
                 <div className='title-text'>
-                <h1>Okus iz prirode <br /> ima novi izgled</h1>
-                <p>Marzipan caramels brownie jelly beans bear claw jelly-o shortbread macaroon candy canes.</p>
+                    <h1>Uživajte u zdravlju  sa <br /> Slatkim Pelinom </h1>
+                    <p>Opustite se uz ljekoviti čaj Slatki Pelin, savršeni saveznik za zdravlje i smanjenje stresa.</p>
                 </div>
-                <Link href="/kozmetika/kozmetikaProduct">
-                    <Button type="primary">Pročitaj više</Button>
+                <Link href="./kontakt">
+                    <Button type="primary">Naručite sada</Button>
                 </Link>
             </div>
 
@@ -88,11 +88,11 @@ export default function HeroTea() {
         <div className='hero-banner gooey-background '>
             <div className="hero-content-title">
                 <div className='title-text'>
-                <h1>Okus iz prirode <br /> ima novi izgled</h1>
-                <p>Marzipan caramels brownie jelly beans bear claw jelly-o shortbread macaroon candy canes.</p>
+                    <h1>Uživajte u zdravlju  sa <br /> Slatkim Pelinom </h1>
+                    <p>Opustite se uz ljekoviti čaj Slatki Pelin, savršeni saveznik za zdravlje i smanjenje stresa.</p>
                 </div>
-                <Link href="/kozmetika/kozmetikaProduct">
-                    <Button type="primary">Pročitaj više</Button>
+                <Link href="./kontakt">
+                    <Button type="primary">Naručite sada</Button>
                 </Link>
             </div>
 

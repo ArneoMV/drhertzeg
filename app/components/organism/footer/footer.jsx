@@ -1,3 +1,5 @@
+
+"use client"
 import Link from 'next/link';
 import Image from 'next/image';
 import Logo from '../../../assets/logos/logo-white.svg';
@@ -6,45 +8,16 @@ import Instagram from '../../../../public/images/icon/socialLogo/Instagram-fill.
 import Linkedin from '../../../../public/images/icon/socialLogo/Linkedin-fill.svg';
 import TikTok from '../../../../public/images/icon/socialLogo/TikTok-fill.svg';
 
-
 import BABIO101 from '../../../assets/image/BA-BIO-101.svg';
 import Organic from '../../../assets/image/Organic.svg';
 import Natural from '../../../assets/image/Natural.svg';
-import './_footer.scss';
+import './_footer.scss';  // Import as a CSS module
 
 
-const Footer = ({ color }) => {
 
-  let className = '';
-
-  // Provjerite primljenu boju i postavite odgovarajuću klasu
-  switch (color) {
-    case 'primary-200':
-      className = 'primary-200';
-    break;
-    case 'primary-800':
-      className = 'primary-800';
-    break;
-    case 'red-200':
-      className = 'red-200';
-    break;
-    case 'red-300':
-      className = 'red-300';
-    break;
-    case 'blue-200':
-      className = 'blue-800';
-    break;
-    case 'blue-800':
-        className = 'blue-800';
-    break;
-    default:
-      className = '';
-  }
-
-
+const Footer = () => {
   return (
     <footer className="footer">
-    {/* <footer className={`footer ${className}`}> */}
       <div className="footer-container">
 
         <div className="footerTop">
@@ -55,7 +28,7 @@ const Footer = ({ color }) => {
                 width={70}
                 quality={100}
               />
-            <h2>Neki nas cool slogan</h2>
+            <h2>Za zdravlje koje zaslužujete</h2>
           </div>
 
           <div className='topNav'>
@@ -140,4 +113,5 @@ const Footer = ({ color }) => {
     </footer>
   )
 }
+
 export default Footer;
