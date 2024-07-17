@@ -47,19 +47,19 @@ export default function Blog() {
               productTitle="Od antičke Europe do suvremenih istraživanja"
               productDetailsImageURL="/images/blog/BlogCardImage_1.png"
               productDetailsImageAlt="Smokvin List"
-              productDetailsURL="/blog/blog-1"
+              productDetailsURL="/blog/slatki-pelin-povijest-i-suvremena-istrazivanja"
             />
             <CardBlog
               productTitle="Hidrolati: prirodna čarolija za savršenu kožu"
               productDetailsImageURL="/images/blog/BlogCardImage_2.png"
-              productDetailsImageAlt="Smokvin List"
-              productDetailsURL="/blog/blog-2"
+              productDetailsImageAlt="Hidrolati prirodna carolija za savrsenu kozu"
+              productDetailsURL="/blog/hidrolati-prirodna-carolija-za-savrsenu-kozu"
             />
             <CardBlog
-              productTitle="Organski trendovi koji očaravaju Svijet"
+              productTitle="Prirodna kozmetika i organski cajevi trendovi koji ocaravaju svijet"
               productDetailsImageURL="/images/blog/BlogCardImage_3.png"
-              productDetailsImageAlt="Smokvin List"
-              productDetailsURL="/blog/blog-3"
+              productDetailsImageAlt="prirodna kozmetika i organski cajevi trendovi koji ocaravaju svijet"
+              productDetailsURL="/blog/prirodna-kozmetika-i-organski-cajevi-trendovi-koji-ocaravaju-svijet"
             />
           </section>
 

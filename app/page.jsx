@@ -37,7 +37,7 @@ export default function Page() {
         {/* Ponuda proizvoda */}
         <section className='container tabs-container'>
           <h3>Ponuda proizvoda</h3>
-            <Tabs/>
+          <Tabs/>
           <Link href="/kozmetika">
               <Button type="primary">Ostali proizvodi</Button>
           </Link>

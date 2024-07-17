@@ -13,7 +13,7 @@ import UserImage2 from '../../../../public/images/user/user_review_02.png';
 import UserImage3 from '../../../../public/images/user/user_review_03.png';
 import UserImage4 from '../../../../public/images/user/user_review_04.png';
 
-import heroProduct1 from '../../../assets/image/product/heroProduct1.png';
+import CalmingGel from '../../../../public/images/product/kozmetika/proizvod-CalmingGel.png';
 import heroProduct2 from '../../../assets/image/product/heroProduct2.png';
 import heroProduct3 from '../../../assets/image/product/heroProduct3.png';
 import heroProductImage1 from '../../../../public/images/product/HeroProductImage1.png';
@@ -55,18 +55,18 @@ export default function Hero() {
                         <div className="flex">
                             <div className='popular-product'>
                                 <Image
-                                    src={heroProduct1}
-                                    alt="kozmetikaProduct"
+                                    src={CalmingGel}
+                                    alt="CalmingGel"
                                     quality={100}
                                     width={50}
                                     height={50}
                                 />
                                 <div className="promotion-content">
-                                    <Link href="/kozmetika/kozmetikaProduct">
-                                        <p>Serum od smilja</p>
+                                    <Link href="/kozmetika/CalmingGel">
+                                        <p>Calming gel</p>
                                     </Link>
-                                    <Link href="/kozmetika/kozmetikaProduct">
-                                        <p>€ 4.3</p>
+                                    <Link href="/kozmetika/CalmingGel">
+                                        <p>€ 3.8</p>
                                     </Link>
                                 </div>
                             </div>
@@ -164,18 +164,18 @@ export default function Hero() {
                         <div className="flex">
                             <div className='popular-product'>
                                 <Image
-                                    src={heroProduct1}
-                                    alt="kozmetikaProduct"
+                                    src={CalmingGel}
+                                    alt="CalmingGel"
                                     quality={100}
                                     width={50}
                                     height={50}
                                 />
                                 <div className="promotion-content">
-                                    <Link href="/kozmetika/kozmetikaProduct">
-                                        <p>Serum od smilja</p>
+                                    <Link href="/kozmetika/CalmingGel">
+                                    <p>Calming gel</p>
                                     </Link>
-                                    <Link href="/kozmetika/kozmetikaProduct">
-                                        <p>€ 4.3</p>
+                                    <Link href="/kozmetika/CalmingGel">
+                                        <p>€ 3.8</p>
                                     </Link>
                                 </div>
                             </div>
@@ -257,18 +257,18 @@ export default function Hero() {
                         <div className="flex">
                             <div className='popular-product'>
                                 <Image
-                                    src={heroProduct1}
-                                    alt="kozmetikaProduct"
+                                    src={CalmingGel}
+                                    alt="CalmingGel"
                                     quality={100}
                                     width={50}
                                     height={50}
                                 />
                                 <div className="promotion-content">
-                                    <Link href="/kozmetika/kozmetikaProduct">
+                                    <Link href="/kozmetika/CalmingGel">
                                         <p>Serum od smilja</p>
                                     </Link>
-                                    <Link href="/kozmetika/kozmetikaProduct">
-                                        <p>€ 4.3</p>
+                                    <Link href="/kozmetika/CalmingGel">
+                                        <p>€ 3.8</p>
                                     </Link>
                                 </div>
                             </div>
@@ -349,16 +349,16 @@ export default function Hero() {
                         <div className="flex">
                             <div className='popular-product'>
                                 <Image
-                                    src={heroProduct1}
-                                    alt="kozmetikaProduct"
+                                    src={CalmingGel}
+                                    alt="CalmingGel"
                                     quality={100}
                                 />
                                 <div className="promotion-content">
-                                    <Link href="/kozmetika/kozmetikaProduct">
-                                        <p>Serum od smilja</p>
+                                    <Link href="/kozmetika/CalmingGel">
+                                        <p>Calming Gel</p>
                                     </Link>
-                                    <Link href="/kozmetika/kozmetikaProduct">
-                                        <p>€ 4.3</p>
+                                    <Link href="/kozmetika/CalmingGel">
+                                        <p>€ 3.8</p>
                                     </Link>
                                 </div>
                             </div>
@@ -395,20 +395,8 @@ export default function Hero() {
                     {/* Review */}
                     <div className="hero-review">
                         <div className="review-text">
-                            <p>“Serum od smilja je zaista nevjerojatan proizvod!</p>
-                            <p>Moja koža nikad nije izgledala bolje. Ovaj serum zaista čini čuda - koža mi je osvijetljena, hidrirana i sjajna.</p>
-                        </div>
-                        <div className="review-grade">
-                            <p>Ocijena</p>
-                            <div className="line"></div>
-                            <div className="row">
-                                <p>4.9</p>
-                                <Image 
-                                    src={Icon.star}
-                                    alt='star'
-                                    quality={100}
-                                />
-                            </div>
+                            <p>Neizostavan proizvod za ljetne večeri!</p>
+                            <p>Dr Hertzeg Calming Gel brzo smiruje iritacije od komaraca i buba, savršeno za bezbrižno ljeto.</p>
                         </div>
                         <div className="user-info-row">
                             <Image
@@ -419,8 +407,7 @@ export default function Hero() {
                                 height={150}
                             />
                             <div className="column">
-                                <p>Ivana Horvat</p>
-                                <p>Kozmetičarka</p>
+                                <p>Ana Marić</p>
                             </div>
                         </div>
                     </div>
