@@ -43,7 +43,7 @@ export default function Kozmetika() {
             <HeroCosmetics />
             
             <div className="promotion-title col-12-sm col-8md col-8-lg">
-              <h4>Prepusti se očaravajućoj harmoniji prirode s našom kolekcijom prirodne kozmetike.</h4>
+              <h4>Blagodati Dr Hertzeg Kozmetike</h4>
             </div>
             <div className="flex">
               <div className="info-card">
@@ -52,8 +52,8 @@ export default function Kozmetika() {
                     alt='BannerImage'
                     quality={100}
                   />
-                <h5>Njega kože</h5>
-                <p>Marzipan caramels brownie jelly beans bear claw jelly-o shortbread macaroon candy canes.</p>
+                <h5>Hidratacija i Njega</h5>
+                <p>Naši proizvodi pružaju duboku hidrataciju i njeguju kožu, čineći je mekom, glatkom i zaštićenom od vanjskih utjecaja. Idealno za svakodnevnu njegu i obnovu kože.</p>
               </div>
               <div className="info-card">
                   <Image 
@@ -61,8 +61,8 @@ export default function Kozmetika() {
                     alt='BannerImage'
                     quality={100}
                   />
-                <h5>Regeneracija</h5>
-                <p>Marzipan caramels brownie jelly beans bear claw jelly-o shortbread macaroon candy canes.</p>
+                <h5>Regeneracija i Obnova</h5>
+                <p>Dr Hertzeg kozmetika pomaže u regeneraciji i obnovi kože, koristeći snagu prirodnih sastojaka. Naši serumi i kreme smanjuju znakove starenja i poboljšavaju elastičnost kože.</p>
               </div>
               <div className="info-card">
                   <Image 
@@ -70,8 +70,8 @@ export default function Kozmetika() {
                     alt='BannerImage'
                     quality={100}
                   />
-                <h5>Opuštanje</h5>
-                <p>Marzipan caramels brownie jelly beans bear claw jelly-o shortbread macaroon candy canes.</p>
+                <h5>Umirivanje i Zaštita</h5>
+                <p>Proizvodi su formulirani da umire iritacije, smanjuju upale i štite kožu. Naša kozmetika koristi biljke poput lavande i smilja za prirodnu i učinkovitu njegu.</p>
               </div>
             </div>
           </section>
@@ -81,7 +81,7 @@ export default function Kozmetika() {
             <div className="product-cards-title">
               <div className="column">
                 <h4>Upoznaj proizvode</h4>
-                <p>Marzipan caramels brownie jelly beans bear claw jelly-o shortbread macaroon candy canes.</p>
+                <p>Upoznajte proizvode Dr Hertzeg kozmetike i uživajte u prirodnoj ljepoti i njezi, koristeći proizvode s visokim udjelom prirodnih sastojaka.</p>
               </div>
               <div className="column">
                 <div className="row">
@@ -90,13 +90,8 @@ export default function Kozmetika() {
                     alt='BannerImage'
                     quality={100}
                   />
-                  <p>100% PLANT BASE VEGAN</p>
+                  <p>PRIRODNI SASTOJCI</p>
                 </div>
-                <ul>
-                  <li>Marzipan caramels brownie</li>
-                  <li>Jelly beans bear claw</li>
-                  <li>Shortbread shortbread macaroon candy</li>
-                </ul>
               </div>
             </div>
 

@@ -27,8 +27,8 @@ export default function HeroCosmetics() {
         <div className='hero-banner gooey-background '>
             <div className="hero-content-title">
                 <div className='title-text'>
-                    <h1>Prirodna kozmetika <br /> ima novu formulu.</h1>
-                    <p>Marzipan caramels brownie jelly beans bear claw jelly-o shortbread macaroon candy canes.</p>
+                    <h1>Prirodna Ljepota i Njega</h1>
+                    <p>Otkrijte tajne prirodne ljepote uz Dr Hertzeg kozmetiku. Naši proizvodi koriste moć biljnih ekstrakata i eteričnih ulja kako bi Vaša koža bila zdrava, hidratizirana i zaštićena.</p>
                 </div>
                 <Link href="/kozmetika/kozmetikaProduct">
                     <Button type="primary">Pročitaj više</Button>
@@ -42,11 +42,12 @@ export default function HeroCosmetics() {
         <div className='hero-banner gooey-background '>
             <div className="hero-content-title">
                 <div className='title-text'>
-                    <h1>Prirodna kozmetika <br /> ima novu formulu.</h1>
-                    <p>Marzipan caramels brownie jelly beans bear claw jelly-o shortbread macaroon candy canes.</p>
+                    <h1>Prirodna Ljepota i Njega</h1>
+                    <p>Otkrijte tajne prirodne ljepote uz Dr Hertzeg kozmetiku. Naši proizvodi koriste moć biljnih ekstrakata i eteričnih ulja kako bi Vaša koža bila zdrava, hidratizirana i zaštićena.</p>
+
                 </div>
                 <Link href="/kozmetika/kozmetikaProduct">
-                    <Button type="primary">Pročitaj više</Button>
+                    <Button type="primary">Saznajte više</Button>
                 </Link>
             </div>
 
@@ -65,11 +66,11 @@ export default function HeroCosmetics() {
         <div className='hero-banner gooey-background '>
             <div className="hero-content-title">
                 <div className='title-text'>
-                    <h1>Prirodna kozmetika <br /> ima novu formulu.</h1>
-                    <p>Marzipan caramels brownie jelly beans bear claw jelly-o shortbread macaroon candy canes.</p>
+                    <h1>Prirodna Ljepota i Njega</h1>
+                    <p>Otkrijte tajne prirodne ljepote uz Dr Hertzeg kozmetiku. Naši proizvodi koriste moć biljnih ekstrakata i eteričnih ulja kako bi Vaša koža bila zdrava, hidratizirana i zaštićena.</p>
                 </div>
                 <Link href="/kozmetika/kozmetikaProduct">
-                    <Button type="primary">Pročitaj više</Button>
+                    <Button type="primary">Saznajte Više</Button>
                 </Link>
             </div>
 
@@ -88,11 +89,11 @@ export default function HeroCosmetics() {
         <div className='hero-banner gooey-background '>
             <div className="hero-content-title">
                 <div className='title-text'>
-                    <h1>Prirodna kozmetika <br /> ima novu formulu.</h1>
-                    <p>Marzipan caramels brownie jelly beans bear claw jelly-o shortbread macaroon candy canes.</p>
+                    <h1>Prirodna Ljepota i Njega</h1>
+                    <p>Otkrijte tajne prirodne ljepote uz Dr Hertzeg kozmetiku. Naši proizvodi koriste moć biljnih ekstrakata i eteričnih ulja kako bi Vaša koža bila zdrava, hidratizirana i zaštićena.</p>
                 </div>
                 <Link href="/kozmetika/kozmetikaProduct">
-                    <Button type="primary">Pročitaj više</Button>
+                    <Button type="primary">Saznajte Više</Button>
                 </Link>
             </div>
 

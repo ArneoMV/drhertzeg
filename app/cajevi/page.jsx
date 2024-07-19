@@ -55,18 +55,12 @@ export default function Cajevi() {
             <div className="product-cards-title">
               <div className="column">
                 <h4>Upoznaj proizvode</h4>
-                <p>Uživajte u bogatom svijetu čajeva koji nude jedinstvena iskustva i dobrobiti za tijelo i um.</p>
               </div>
               <div className="column">
                 <div className="row">
                   <Image src={PlantIcon} alt='BannerImage' quality={100} />
-                  <p>100% PRIRODNI VEGANSKI PROIZVODI</p>
+                  <p>100% PRIRODAN PROIZVOD</p>
                 </div>
-                <ul>
-                  <li>Čaj za njegu kože</li>
-                  <li>Čaj za regeneraciju i revitalizaciju</li>
-                  <li>Čaj za opuštanje i smirenje</li>
-                </ul>
               </div>
             </div>
             <div className="product-cards-container">
