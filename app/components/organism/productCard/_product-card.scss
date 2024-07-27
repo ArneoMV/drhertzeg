@@ -30,12 +30,11 @@ a.product-card {
         background-color: $neutral-200;
         border-radius: $size-16 $size-16 0 0;
         border: 1px solid transparent;
-        img {
+        img.image-default {
+            height: auto;
             width: auto;
             object-fit: cover;
-        }
-        img.image-default {
-            height: 230px;
+            max-height: 260px
         }
     }
     .product-card-content {

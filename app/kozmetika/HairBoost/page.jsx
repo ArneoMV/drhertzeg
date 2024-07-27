@@ -2,22 +2,14 @@
 import React from 'react';
 import { useRouter } from 'next/navigation';
 import { notFound } from "next/navigation";
-// import Image from 'next/image';
-import ProductSlika from '../../assets/image/product/product-promotion-card-red.png';
-import Chip from '../../components/atoms/chip/Chip';
+import { Logos, Icons, Social, User, Cosmetics } from "../../utilities/images.js";
 
+import Chip from '../../components/atoms/chip/Chip';
 import ProductPromotioCard from '../../components/organism/productPromotioCard/productPromotioCard';
 import Carousel from '../../components/organism/carousel/carousel';
 import AdBanner from '../../components/organism/adBanner/adBanner';
-
-
-import { Icon } from '../../utilities/images';
-import UserImage1 from '../../assets/image/person-review/user_review_01.png';
-import UserImage2 from '../../assets/image/person-review/user_review_02.png';
-
 import ButtonIcon from '../../components/atoms/buttonIcon/buttonIcon';
 import SliderProductsCaj from "../../components/organism/sliderProductsCaj/sliderProductsCaj.jsx"
-
 import ReviewLeft from '../../components/molecules/review/review-left';
 import ReviewRight from '../../components/molecules/review/review-right';
 
@@ -37,7 +29,8 @@ export default function HairBoost() {
 
   // Images
   const slides = [
-    { src: '/images/product/kozmetika/ambalaza-HairBoost.png', title: 'Hair Boost' },
+    { src: Cosmetics.packaging_hair_boost, title: 'Hair Boost protiv čelavosti njega kose' },
+    { src: Cosmetics.product_hair_boost, title: 'Hair Boost protiv čelavosti njega kose' },
   ];
 
   // * Slick Slider Promotion Images * \\
@@ -71,7 +64,7 @@ export default function HairBoost() {
     arrows: true,
     nextArrow: (
       <ButtonIcon
-        iconSrc={Icon.arrowRight}
+        iconSrc={Icons.arrowRight}
         onClick={handleNext}
         className="slick-next"
         alt="Next"
@@ -79,7 +72,7 @@ export default function HairBoost() {
     ),
     prevArrow: (
       <ButtonIcon
-        iconSrc={Icon.arrowLeft}
+        iconSrc={Icons.arrowLeft}
         onClick={handlePrev}
         className="slick-prev"
         alt="Previous" 
@@ -190,11 +183,11 @@ export default function HairBoost() {
           <div className="column">
             <div className="flex">
               <ReviewLeft 
-                userImage={UserImage1}
+                userImage={User.user_review_12}
                 userReview="Ovaj losion mi je pomogao da se riješim prhuti i da kosi vratim sjaj i vitalnost. Sviđa mi se što prirodno njeguje i ne opterećuje kosu."
               />
               <ReviewRight 
-                userImage={UserImage2}
+                userImage={User.user_review_12}
                 userReview="Povećao je volumen moje kose i osjećam da mi je vlasište zdravije. Prava stvar za svakodnevnu njegu i jačanje korijena."
               />
             </div>

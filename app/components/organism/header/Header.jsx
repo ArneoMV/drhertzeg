@@ -2,7 +2,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import './_header.scss';
-import Logo from '../../../assets/Logo.svg';
+import { Logos, Wawe, Icons, TeasImages, CosmeticsImages, SocialImages, BlogImages } from "../../../utilities/images.js";
+
 import React, { useState, useEffect } from 'react';
 
 const Header = () => {
@@ -17,7 +18,7 @@ const Header = () => {
       <div className="navBar">
         <Link href="/" className="logo">
           <Image 
-            src={Logo}
+            src={Logos.logo}
             alt='logo'
             width={52}
             quality={100}

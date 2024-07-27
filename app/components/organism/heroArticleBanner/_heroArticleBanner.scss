@@ -23,8 +23,9 @@ section.hero-article-banner {
         height: 26px;
         background-size: cover; 
         z-index: 1; 
-        background-image: url(../../../../public/images/vawe/vawe-top-green-100.svg);
+        background-image: url('../../../assets/illustrations/vawe/vawe-top-green-100.svg');
     }
+
     &::after {
         content: "";
         position: absolute; 
@@ -34,7 +35,7 @@ section.hero-article-banner {
         height: 26px;
         background-size: cover; 
         z-index: 1; 
-        background-image: url(../../../../public//images/vawe/vawe-bottom-green-100.svg);
+        background-image: url('../../../assets/illustrations/vawe/vawe-bottom-green-100.svg');
     }
     .hero-article-banner-container {
         display: grid;

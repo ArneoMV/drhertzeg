@@ -2,8 +2,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import Chip from '../components/atoms/chip/Chip';
+import { Logos, Icons, Social, BlogImg } from "../utilities/images.js";
 
-import HeroImage from '../assets/image/CoverKozmetika.png'
 import CardBlog from '../components/organism/cardBlog/cardBlog'
 import AdBanner from '../components/organism/adBanner/adBanner'
 
@@ -20,7 +20,7 @@ export default function Blog() {
             <div className="heroAsset_inner">
               <div className="heroAsset_asset">
                 <Image 
-                  src={HeroImage}
+                  src={Social.cover_kozmetika}
                   alt='image'
                   quality={100}
                 />
@@ -45,19 +45,19 @@ export default function Blog() {
           <section className="blog-article-container">
             <CardBlog
               productTitle="Od antičke Europe do suvremenih istraživanja"
-              productDetailsImageURL="/images/blog/BlogCardImage_1.png"
+              productDetailsImageURL={BlogImg.blog_card_image_1}
               productDetailsImageAlt="Smokvin List"
               productDetailsURL="/blog/slatki-pelin-povijest-i-suvremena-istrazivanja"
             />
             <CardBlog
               productTitle="Hidrolati: prirodna čarolija za savršenu kožu"
-              productDetailsImageURL="/images/blog/BlogCardImage_2.png"
+              productDetailsImageURL={BlogImg.blog_card_image_2}
               productDetailsImageAlt="Hidrolati prirodna carolija za savrsenu kozu"
               productDetailsURL="/blog/hidrolati-prirodna-carolija-za-savrsenu-kozu"
             />
             <CardBlog
               productTitle="Prirodna kozmetika i organski cajevi trendovi koji ocaravaju svijet"
-              productDetailsImageURL="/images/blog/BlogCardImage_3.png"
+              productDetailsImageURL={BlogImg.blog_card_image_3}
               productDetailsImageAlt="prirodna kozmetika i organski cajevi trendovi koji ocaravaju svijet"
               productDetailsURL="/blog/prirodna-kozmetika-i-organski-cajevi-trendovi-koji-ocaravaju-svijet"
             />

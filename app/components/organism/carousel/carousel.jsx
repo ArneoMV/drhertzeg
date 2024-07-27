@@ -1,6 +1,7 @@
 "use client";
+
 import { useState } from "react";
-import { Icon } from "../../../utilities/images.js";
+import { Icons } from "../../../utilities/images.js";
 import './_carousel.scss';
 import Image from 'next/image';
 
@@ -29,7 +30,7 @@ const Carousel = ({ slides }) => {
         <div className='carousel-container'>
             <div className="arrow">
                 <Image 
-                    src={Icon.arrowLeft}
+                    src={Icons.arrowLeft}
                     alt='arrowLeft'
                     quality={100}
                     width={100}
@@ -49,7 +50,7 @@ const Carousel = ({ slides }) => {
             </div>
             <div className="arrow">
                 <Image 
-                    src={Icon.arrowRight}
+                    src={Icons.arrowRight}
                     alt='arrowLeft'
                     quality={100}
                     width={100}

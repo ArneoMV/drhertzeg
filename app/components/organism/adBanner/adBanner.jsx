@@ -4,9 +4,7 @@ import "./_adBanner.scss";
 import Image from 'next/image'
 import Link from 'next/link'
 import Button from "../../atoms/button/Button";
-
-import SlikaCover from '../../../assets/image/caj-blog.jpg'
-
+import { Logos, Social, User, Illustrations } from "../../../utilities/images.js";
 
 export default function AdBanner() {
   return (
@@ -35,7 +33,7 @@ export default function AdBanner() {
         <div className="productCardImageContainer">
             <div className="productCardImage">
                 <Image 
-                    src={SlikaCover}
+                    src={Social.tea_cover}
                     alt='image'
                     quality={100}
                 />

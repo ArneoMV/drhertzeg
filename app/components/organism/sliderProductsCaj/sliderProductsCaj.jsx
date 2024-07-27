@@ -8,14 +8,15 @@ import "slick-carousel/slick/slick-theme.css";
 
 import CardBlog from '../cardBlog/cardBlog.jsx';
 import ButtonIcon from "../../atoms/buttonIcon/buttonIcon.jsx";
-import { Icon } from "../../../utilities/images.js";
+
 import useWindowResize from '../../../utilities/useWindowResize.js'
 
+import { Logos, Icons, Social, Teas } from "../../../utilities/images.js";
 
 import ProductPromotioCard from '../../organism/productPromotioCard/productPromotioCard';
-import ProductBlue from '../../../assets/image/product/product-promotion-card-blue.png'
-import ProductGreen from '../../../assets/image/product/product-promotion-card-green.png'
-import ProductOrange from '../../../assets/image/product/product-promotion-card-orange.png'
+// import ProductBlue from '../../../assets/image/product/product-promotion-card-blue.png'
+// import ProductGreen from '../../../assets/image/product/product-promotion-card-green.png'
+// import ProductOrange from '../../../assets/image/product/product-promotion-card-orange.png'
 // import KapiSlatkogPelina from '../../../../public/images/product/kozmetika/KapiSlatkogPelina.png';
 // import SlatkiPelin from '../../../../public/images/product/caj/biljka-slatki-pelin.png';
 
@@ -96,7 +97,7 @@ export default function SliderProductsCaj() {
                     title="Njega kože"
                     description="Marzipan caramels brownie jelly beans."
                     buttonURL="/caj/cajProduct"
-                    imageSRC={ProductBlue}
+                    imageSRC={Social.product_promotion_card_blue}
                     imageALT="Njega kože"
                     color="blue"
                     productNumber="2"
@@ -105,7 +106,7 @@ export default function SliderProductsCaj() {
                     title="Njega kose"
                     description="Gingerbread tootsie roll icing carrot cake. Brownie candy canes cotton candy."
                     buttonURL="/caj/cajProduct"
-                    imageSRC={ProductGreen}
+                    imageSRC={Social.product_promotion_card_green}
                     imageALT="Njega kose"
                     color="green"
                     productNumber="3"
@@ -114,7 +115,7 @@ export default function SliderProductsCaj() {
                     title="Njega lica"
                     description="Icing soufflé chocolate candy jelly beans cake. "
                     buttonURL="/caj/cajProduct"
-                    imageSRC={ProductOrange}
+                    imageSRC={Social.product_promotion_card_orange}
                     imageALT="Njega lica"
                     color="red"
                     productNumber="4"
@@ -123,7 +124,7 @@ export default function SliderProductsCaj() {
                     title="Njega tijela"
                     description="Cupcake sweet roll chocolate bar candy canes soufflé jelly-o."
                     buttonURL="/caj/cajProduct"
-                    imageSRC={ProductOrange}
+                    imageSRC={Social.product_promotion_card_red}
                     imageALT="Njega tijela"
                     color="orange"
                     productNumber="5"
@@ -132,13 +133,13 @@ export default function SliderProductsCaj() {
             </Slider>
             <div className="buttons-container">
                 <ButtonIcon
-                    iconSrc={Icon.arrowLeft}
+                    iconSrc={Icons.arrowLeft}
                     onClick={previous}
                     // className="slick-prev"
                     alt="Previous" 
                 />
                 <ButtonIcon
-                    iconSrc={Icon.arrowRight}
+                    iconSrc={Icons.arrowRight}
                     onClick={next}
                     // className="slick-next"
                     alt="Next"
@@ -154,13 +155,13 @@ export default function SliderProductsCaj() {
                 <h4>Ostali proizvodi</h4>
                 <div className="row">
                     <ButtonIcon
-                        iconSrc={Icon.arrowLeft}
+                        iconSrc={Icons.arrowLeft}
                         onClick={previous}
                         // className="slick-prev"
                         alt="Previous" 
                     />
                     <ButtonIcon
-                        iconSrc={Icon.arrowRight}
+                        iconSrc={Icons.arrowRight}
                         onClick={next}
                         // className="slick-next"
                         alt="Next"
@@ -178,7 +179,7 @@ export default function SliderProductsCaj() {
                     title="Njega kože"
                     description="Marzipan caramels brownie jelly beans."
                     buttonURL="/caj/cajProduct"
-                    imageSRC={ProductBlue}
+                    imageSRC={Social.product_promotion_card_blue}
                     imageALT="Njega kože"
                     color="blue"
                     productNumber="2"
@@ -187,7 +188,7 @@ export default function SliderProductsCaj() {
                     title="Njega kose"
                     description="Gingerbread tootsie roll icing carrot cake. Brownie candy canes cotton candy."
                     buttonURL="/caj/cajProduct"
-                    imageSRC={ProductGreen}
+                    imageSRC={Social.product_promotion_card_green}
                     imageALT="Njega kose"
                     color="green"
                     productNumber="3"
@@ -196,7 +197,7 @@ export default function SliderProductsCaj() {
                     title="Njega lica"
                     description="Icing soufflé chocolate candy jelly beans cake. "
                     buttonURL="/caj/cajProduct"
-                    imageSRC={ProductOrange}
+                    imageSRC={Social.product_promotion_card_orange}
                     imageALT="Njega lica"
                     color="red"
                     productNumber="4"
@@ -205,7 +206,7 @@ export default function SliderProductsCaj() {
                     title="Njega tijela"
                     description="Cupcake sweet roll chocolate bar candy canes soufflé jelly-o."
                     buttonURL="/caj/cajProduct"
-                    imageSRC={ProductOrange}
+                    imageSRC={Social.product_promotion_card_red}
                     imageALT="Njega tijela"
                     color="orange"
                     productNumber="5"
@@ -221,13 +222,13 @@ export default function SliderProductsCaj() {
                 <h4>Ostali proizvodi</h4>
                 <div className="row">
                     <ButtonIcon
-                        iconSrc={Icon.arrowLeft}
+                        iconSrc={Icons.arrowLeft}
                         onClick={previous}
                         // className="slick-prev"
                         alt="Previous" 
                     />
                     <ButtonIcon
-                        iconSrc={Icon.arrowRight}
+                        iconSrc={Icons.arrowRight}
                         onClick={next}
                         // className="slick-next"
                         alt="Next"
@@ -245,7 +246,7 @@ export default function SliderProductsCaj() {
                     title="Njega kože"
                     description="Marzipan caramels brownie jelly beans."
                     buttonURL="/caj/cajProduct"
-                    imageSRC={ProductBlue}
+                    imageSRC={Social.product_promotion_card_blue}
                     imageALT="Njega kože"
                     color="blue"
                     productNumber="2"
@@ -254,7 +255,7 @@ export default function SliderProductsCaj() {
                     title="Njega kose"
                     description="Gingerbread tootsie roll icing carrot cake. Brownie candy canes cotton candy."
                     buttonURL="/caj/cajProduct"
-                    imageSRC={ProductGreen}
+                    imageSRC={Social.product_promotion_card_green}
                     imageALT="Njega kose"
                     color="green"
                     productNumber="3"
@@ -263,7 +264,7 @@ export default function SliderProductsCaj() {
                     title="Njega lica"
                     description="Icing soufflé chocolate candy jelly beans cake. "
                     buttonURL="/caj/cajProduct"
-                    imageSRC={ProductOrange}
+                    imageSRC={Social.product_promotion_card_orange}
                     imageALT="Njega lica"
                     color="red"
                     productNumber="4"
@@ -272,7 +273,7 @@ export default function SliderProductsCaj() {
                     title="Njega tijela"
                     description="Cupcake sweet roll chocolate bar candy canes soufflé jelly-o."
                     buttonURL="/caj/cajProduct"
-                    imageSRC={ProductOrange}
+                    imageSRC={Social.product_promotion_card_red}
                     imageALT="Njega tijela"
                     color="orange"
                     productNumber="5"

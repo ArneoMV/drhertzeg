@@ -1,16 +1,10 @@
 
 "use client"
-import Link from 'next/link';
-import Image from 'next/image';
-import Logo from '../../../assets/logos/logo-white.svg';
-import Facebook from '../../../../public/images/icon/socialLogo/Facebook-fill.svg';
-import Instagram from '../../../../public/images/icon/socialLogo/Instagram-fill.svg';
-import Linkedin from '../../../../public/images/icon/socialLogo/Linkedin-fill.svg';
-import TikTok from '../../../../public/images/icon/socialLogo/TikTok-fill.svg';
+import { Logos, Wawe, Icons, Teas, Cosmetics, Social, Blog } from "../../../utilities/images.js";
 
-import BABIO101 from '../../../assets/image/BA-BIO-101.svg';
-import Organic from '../../../assets/image/Organic.svg';
-import Natural from '../../../assets/image/Natural.svg';
+
+import Link from 'next/link';
+import Image from 'next/image';;
 import './_footer.scss';  // Import as a CSS module
 
 
@@ -23,8 +17,8 @@ const Footer = () => {
         <div className="footerTop">
           <div className='logo'>
             <Image 
-                src={Logo}
-                alt='Dr Hertzeg logo'
+                src={Logos.logo_white}
+                alt='Logo'
                 width={70}
                 quality={100}
               />
@@ -55,26 +49,14 @@ const Footer = () => {
               <p>Pratite nas</p>
               <div className="row">
                 <Image 
-                  src={Facebook}
+                  src={Logos.Facebook_fill}
                   alt='facebook'
                   width={32}
                   quality={100}
                 />
                 <Image 
-                  src={Instagram}
+                  src={Logos.Instagram_fill}
                   alt='Instagram'
-                  width={32}
-                  quality={100}
-                />
-                <Image 
-                  src={TikTok}
-                  alt='TikTok'
-                  width={32}
-                  quality={100}
-                />
-                <Image 
-                  src={Linkedin}
-                  alt='Linkedin'
                   width={32}
                   quality={100}
                 />
@@ -88,19 +70,19 @@ const Footer = () => {
         <div className="footerBottom">
           <div className="row">
             <Image 
-                src={Natural}
+                src={Logos.natural}
                 alt='Natural'
                 width={70}
                 quality={100}
             />
             <Image 
-                src={Organic}
+                src={Logos.organic}
                 alt='Organic'
                 width={70}
                 quality={100}
             />
             <Image 
-                src={BABIO101}
+                src={Logos.BA_BIO_101}
                 alt='BABIO101'
                 width={70}
                 quality={100}

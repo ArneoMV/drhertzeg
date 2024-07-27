@@ -6,7 +6,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Button from '../../atoms/button/Button';
 import useWindowResize from "../../../utilities/useWindowResize";
-import BannerImage from '../../../assets/image/hero-image-caj.png'
+import { Logos, Social, User, Illustrations } from "../../../utilities/images.js";
 
 export default function HeroTea() {
   // resize 
@@ -52,7 +52,7 @@ export default function HeroTea() {
 
             <div className="hero-image">
                 <Image 
-                    src={BannerImage}
+                    src={Social.tea_banner_image}
                     alt='BannerImage'
                     quality={100}
                 />
@@ -75,7 +75,7 @@ export default function HeroTea() {
 
             <div className="hero-image">
                 <Image 
-                    src={BannerImage}
+                    src={Social.tea_banner_image}
                     alt='BannerImage'
                     quality={100}
                 />
@@ -98,7 +98,7 @@ export default function HeroTea() {
 
             <div className="hero-image">
                 <Image 
-                src={BannerImage}
+                src={Social.tea_banner_image}
                 alt='BannerImage'
                 quality={100}
                 />

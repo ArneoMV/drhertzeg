@@ -44,7 +44,8 @@
         height: 26px;
         background-size: cover; 
         z-index: 10; 
-        background-image: url(../../../../public/images/vawe/vawe-top-green-50.svg);
+        background-image: url('../../../assets/illustrations/vawe/vawe-top-green-50.svg');
+
     }
     .container {
         gap: $size-48;
@@ -304,8 +305,6 @@
                     @include flexColumn;
                     gap: $size-12;
                     .popular-product {
-                        img {
-                        }
                         .promotion-content {
                             a {
                                 width: 100%;

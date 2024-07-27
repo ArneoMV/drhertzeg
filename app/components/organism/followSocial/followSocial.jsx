@@ -1,14 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
+import { Logos, Social, User, Illustrations } from "../../../utilities/images.js";
 
-import Facebook from '../../../../public/images/icon/socialLogo/Facebook-fill.svg';
-import Instagram from '../../../../public/images/icon/socialLogo/Instagram-fill.svg';
-import Linkedin from '../../../../public/images/icon/socialLogo/Linkedin-fill.svg';
-import TikTok from '../../../../public/images/icon/socialLogo/TikTok-fill.svg';
-import Social1 from '../../../../public/images/image/social/Image1.png';
-import Social2 from '../../../../public/images/image/social/Image2.png';
-import Social3 from '../../../../public/images/image/social/Image3.png';
-import Social4 from '../../../../public/images/image/social/Image4.png';
 import './_followSocial.scss';
 
 const FollowSocial = ({ color }) => {
@@ -45,26 +38,14 @@ const FollowSocial = ({ color }) => {
           <h4>Pratite nas na društvenim mrežama</h4>
           <div className="row">
             <Image
-              src={Facebook}
+              src={Logos.Facebook_fill}
               alt="Facebook logo"
               width={32}
               quality={100}
             />
             <Image
-              src={Instagram}
+              src={Logos.Instagram_fill}
               alt="Instagram logo"
-              width={32}
-              quality={100}
-            />
-            <Image
-              src={TikTok}
-              alt="TikTok logo"
-              width={32}
-              quality={100}
-            />
-            <Image
-              src={Linkedin}
-              alt="Linkedin logo"
               width={32}
               quality={100}
             />
@@ -74,22 +55,22 @@ const FollowSocial = ({ color }) => {
       <div className="followSocialContainer">
         <div className="images-container">
           <Image
-            src={Social1}
+            src={Social.image_1}
             alt="Social1"
             quality={100}
           />
           <Image
-            src={Social2}
+            src={Social.image_2}
             alt="Social1"
             quality={100}
           />
           <Image
-            src={Social3}
+            src={Social.image_3}
             alt="Social1"
             quality={100}
           />
           <Image
-            src={Social4}
+            src={Social.image_4}
             alt="Social1"
             quality={100}
           />

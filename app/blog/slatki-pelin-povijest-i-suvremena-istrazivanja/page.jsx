@@ -1,13 +1,10 @@
 import React from 'react'
 import Image from 'next/image';
 import Head from 'next/head';
-import { Icon } from '../../utilities/images'
+import { Logos, Icons, Social, BlogImg } from "../../utilities/images.js";
 
 import "./_style.scss";
 import "../../styles/_index.scss";
-import Slika1 from '../../../public/images/image/blog/BlogSlika_1.jpg'
-import Slika2 from '../../../public/images/image/blog/BlogSlika_2.jpg'
-import Slika3 from '../../../public/images/image/blog/BlogSlika_3.jpg'
 import Chip from '../../components/atoms/chip/Chip'
 import FollowSocial from '../../components/organism/followSocial/followSocial.jsx';
 
@@ -39,7 +36,7 @@ export default function demoArticle() {
           <div className="row">
             <div className="info">
               <Image
-                src={Icon.calendar}
+                src={Icons.calendar}
                 alt='kalendar'
                 quality={100}
                 width={100}
@@ -49,7 +46,7 @@ export default function demoArticle() {
             </div>
             <div className="info">
               <Image
-                src={Icon.personCircle}
+                src={Icons.personCircle}
                 alt='autor'
                 quality={100}
               />
@@ -68,7 +65,7 @@ export default function demoArticle() {
         {/* Content */}
         <section className='blog-content col-10-sm col-10-md col-10-lg'>
           <Image
-            src={Slika1}
+            src={BlogImg.post_0101}
             alt='slika'
             quality={100}
             className='hero-image'
@@ -97,7 +94,7 @@ export default function demoArticle() {
 
             <figure className='card-thumbnail'>
                 <Image
-                  src={Slika3}
+                  src={BlogImg.post_0102}
                   alt='slika'
                   quality={100}
 

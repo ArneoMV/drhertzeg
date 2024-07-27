@@ -7,8 +7,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import CardBlog from '../cardBlog/cardBlog.jsx';
-import ButtonIcon from "../../atoms/buttonIcon/buttonIcon.jsx";
-import { Icon } from "../../../utilities/images.js";
+import ButtonIcon from '../../atoms/buttonIcon/buttonIcon.jsx';
+import { Icons } from "../../../utilities/images.js";
+
 import useWindowResize from '../../../utilities/useWindowResize.js'
 
 export default function SliderArticles() {
@@ -123,13 +124,13 @@ export default function SliderArticles() {
             </Slider>
             <div className="buttons-container">
                 <ButtonIcon
-                    iconSrc={Icon.arrowLeft}
+                    iconSrc={Icons.arrowLeft}
                     onClick={previous}
                     // className="slick-prev"
                     alt="Previous" 
                 />
                 <ButtonIcon
-                    iconSrc={Icon.arrowRight}
+                    iconSrc={Icons.arrowRight}
                     onClick={next}
                     // className="slick-next"
                     alt="Next"
@@ -145,13 +146,13 @@ export default function SliderArticles() {
                 <h4>Novosti i zanimljivosti</h4>
                 <div className="row">
                     <ButtonIcon
-                        iconSrc={Icon.arrowLeft}
+                        iconSrc={Icons.arrowLeft}
                         onClick={previous}
                         // className="slick-prev"
                         alt="Previous" 
                     />
                     <ButtonIcon
-                        iconSrc={Icon.arrowRight}
+                        iconSrc={Icons.arrowRight}
                         onClick={next}
                         // className="slick-next"
                         alt="Next"
@@ -212,13 +213,13 @@ export default function SliderArticles() {
                 <h4>Novosti i zanimljivosti</h4>
                 <div className="row">
                     <ButtonIcon
-                        iconSrc={Icon.arrowLeft}
+                        iconSrc={Icons.arrowLeft}
                         onClick={previous}
                         // className="slick-prev"
                         alt="Previous" 
                     />
                     <ButtonIcon
-                        iconSrc={Icon.arrowRight}
+                        iconSrc={Icons.arrowRight}
                         onClick={next}
                         // className="slick-next"
                         alt="Next"

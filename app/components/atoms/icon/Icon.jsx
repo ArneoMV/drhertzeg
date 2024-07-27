@@ -1,9 +1,11 @@
 import React from 'react';
-import { IconImage } from './Images';
+import { Logos, Social, User, Illustrations } from "../../../utilities/images.js";
+
+// import { IconImage } from './Images';
 import Image from 'next/image'
 
 const Icon = ({ name, className, color, size }) => {
-  const iconImageSrc = IconImage[name];
+  const iconImageSrc = IconLogosImage[name];
   
   if (!iconImageSrc) {
     return null;

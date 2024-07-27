@@ -4,8 +4,7 @@ import "./_heroArticleBanner.scss";
 import Image from 'next/image'
 import Link from 'next/link'
 import Button from "../../atoms/button/Button";
-
-import SlikaCover from '../../../assets/image/caj-blog.jpg'
+import { Logos, Wawe, Icons, Teas, Cosmetics, Social, Blog } from "../../../utilities/images.js";
 
 
 export default function HeroArticleBanner() {
@@ -37,7 +36,7 @@ export default function HeroArticleBanner() {
             </div>
             <div className="image-container">
                 <Image 
-                    src={SlikaCover}
+                    src={Social.cover_caj}
                     alt='image'
                     quality={100}
                 />

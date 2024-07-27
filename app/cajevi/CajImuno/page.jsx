@@ -2,19 +2,13 @@
 import React from 'react';
 import { useRouter } from 'next/navigation';
 import { notFound } from "next/navigation";
-// import Image from 'next/image';
-import ProductSlika from '../../assets/image/product/product-promotion-card-red.png';
 import Chip from '../../components/atoms/chip/Chip';
 
 import ProductPromotioCard from '../../components/organism/productPromotioCard/productPromotioCard';
 import Carousel from '../../components/organism/carousel/carousel';
 import AdBanner from '../../components/organism/adBanner/adBanner';
 
-
-import { Icon } from '../../utilities/images';
-import UserImage1 from '../../assets/image/person-review/user_review_01.png';
-import UserImage2 from '../../assets/image/person-review/user_review_02.png';
-
+import { Icons, Social, User, Teas } from "../../utilities/images.js";
 
 import ButtonIcon from '../../components/atoms/buttonIcon/buttonIcon';
 import SliderProductsCaj from "../../components/organism/sliderProductsCaj/sliderProductsCaj.jsx"
@@ -38,8 +32,8 @@ export default function ekoCajSmokvaList() {
 
   // Images
   const slides = [
-    { src: '/images/caj/Caj_Imuno.png', title: 'Caj Imuno' },
-    { src: '/images/caj/biljka-imuno.png', title: 'biljka-imuno' },
+    { src: Teas.packaging_imuno_caj, title: 'Caj Imuno' },
+    { src: Teas.product_imuno_caj, title: 'biljka imuno' },
   ];
   
   // * Slick Slider Promotion Images * \\
@@ -73,7 +67,7 @@ export default function ekoCajSmokvaList() {
     arrows: true,
     nextArrow: (
       <ButtonIcon
-        iconSrc={Icon.arrowRight}
+        iconSrc={Icons.arrowRight}
         onClick={handleNext}
         className="slick-next"
         alt="Next"
@@ -81,7 +75,7 @@ export default function ekoCajSmokvaList() {
     ),
     prevArrow: (
       <ButtonIcon
-        iconSrc={Icon.arrowLeft}
+        iconSrc={Icons.arrowLeft}
         onClick={handlePrev}
         className="slick-prev"
         alt="Previous" 
@@ -192,11 +186,11 @@ export default function ekoCajSmokvaList() {
           <div className="column">
             <div className="flex">
               <ReviewLeft 
-                userImage={UserImage1}
+                userImage={User.user_review_05}
                 userReview="Ovaj čaj mi je pomogao da se osjećam bolje i snažnije. Preporučujem ga svima za jačanje imuniteta."
               />
               <ReviewRight 
-                userImage={UserImage2}
+                userImage={User.user_review_06}
                 userReview="Odličan okus i učinkovitost. Osjećam se zdravije i energičnije otkad pijem ovaj čaj."
               />
             </div>

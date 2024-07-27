@@ -3,7 +3,6 @@ import React from 'react';
 import { useRouter } from 'next/navigation';
 import { notFound } from "next/navigation";
 // import Image from 'next/image';
-import ProductSlika from '../../assets/image/product/product-promotion-card-red.png';
 import Chip from '../../components/atoms/chip/Chip';
 
 import ProductPromotioCard from '../../components/organism/productPromotioCard/productPromotioCard';
@@ -11,9 +10,8 @@ import Carousel from '../../components/organism/carousel/carousel';
 import AdBanner from '../../components/organism/adBanner/adBanner';
 
 
-import { Icon } from '../../utilities/images';
-import UserImage1 from '../../assets/image/person-review/user_review_01.png';
-import UserImage2 from '../../assets/image/person-review/user_review_02.png';
+import { Logos, Icons, Social, User, Cosmetics } from "../../utilities/images.js";
+
 
 import ButtonIcon from '../../components/atoms/buttonIcon/buttonIcon';
 import SliderProductsCaj from "../../components/organism/sliderProductsCaj/sliderProductsCaj.jsx"
@@ -37,7 +35,8 @@ export default function CareAndMassageOil() {
 
   // Images
   const slides = [
-    { src: '/images/product/kozmetika/ambalaza-CareAndMassageOil.png', title: 'Care And Massage Oil' },
+    { src: Cosmetics.packaging_care_and_massage_oil, title: 'Care And Massage Oil' },
+    { src: Cosmetics.product_care_and_massage_oil, title: 'Care And Massage Oil' },
   ];
 
   // * Slick Slider Promotion Images * \\
@@ -71,7 +70,7 @@ export default function CareAndMassageOil() {
     arrows: true,
     nextArrow: (
       <ButtonIcon
-        iconSrc={Icon.arrowRight}
+        iconSrc={Icons.arrowRight}
         onClick={handleNext}
         className="slick-next"
         alt="Next"
@@ -79,7 +78,7 @@ export default function CareAndMassageOil() {
     ),
     prevArrow: (
       <ButtonIcon
-        iconSrc={Icon.arrowLeft}
+        iconSrc={Icons.arrowLeft}
         onClick={handlePrev}
         className="slick-prev"
         alt="Previous" 
@@ -190,11 +189,11 @@ export default function CareAndMassageOil() {
           <div className="column">
             <div className="flex">
               <ReviewLeft 
-                userImage={UserImage1}
+                userImage={User.user_review_11}
                 userReview="Fantastično ulje koje je moj favorit za masažu. Koža mi je glatka i mekana, a miris lavande je umirujuć. Odlično za opuštanje nakon napornog dana."
               />
               <ReviewRight 
-                userImage={UserImage2}
+                userImage={User.user_review_12}
                 userReview="Koristim ovo ulje svakodnevno nakon tuširanja i koža mi se znatno poboljšala. Također pomaže u smanjenju suhoće i daje koži prirodan sjaj."
               />
             </div>

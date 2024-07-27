@@ -6,7 +6,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Button from '../../atoms/button/Button';
 import useWindowResize from "../../../utilities/useWindowResize";
-import BannerImage from '../../../assets/image/hero-image-cosmetics.png'
+import { Logos, Social, User, Illustrations } from "../../../utilities/images.js";
+
 
 export default function HeroCosmetics() {
   // resize 
@@ -53,7 +54,7 @@ export default function HeroCosmetics() {
 
             <div className="hero-image">
                 <Image 
-                    src={BannerImage}
+                    src={Social.tea_banner_image}
                     alt='BannerImage'
                     quality={100}
                 />
@@ -76,7 +77,7 @@ export default function HeroCosmetics() {
 
             <div className="hero-image">
                 <Image 
-                    src={BannerImage}
+                    src={Social.tea_banner_image}
                     alt='BannerImage'
                     quality={100}
                 />
@@ -99,7 +100,7 @@ export default function HeroCosmetics() {
 
             <div className="hero-image">
                 <Image 
-                src={BannerImage}
+                src={Social.tea_banner_image}
                 alt='BannerImage'
                 quality={100}
                 />

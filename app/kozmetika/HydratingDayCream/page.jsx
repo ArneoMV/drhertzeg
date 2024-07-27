@@ -2,26 +2,16 @@
 import React from 'react';
 import { useRouter } from 'next/navigation';
 import { notFound } from "next/navigation";
-// import Image from 'next/image';
-import ProductSlika from '../../assets/image/product/product-promotion-card-red.png';
-import Chip from '../../components/atoms/chip/Chip';
+import { Logos, Icons, Social, User, Cosmetics } from "../../utilities/images.js";
 
+import Chip from '../../components/atoms/chip/Chip';
 import ProductPromotioCard from '../../components/organism/productPromotioCard/productPromotioCard';
 import Carousel from '../../components/organism/carousel/carousel';
 import AdBanner from '../../components/organism/adBanner/adBanner';
-
-
-import { Icon } from '../../utilities/images';
-import UserImage1 from '../../assets/image/person-review/user_review_01.png';
-import UserImage2 from '../../assets/image/person-review/user_review_02.png';
-
 import ButtonIcon from '../../components/atoms/buttonIcon/buttonIcon';
 import SliderProductsCaj from "../../components/organism/sliderProductsCaj/sliderProductsCaj.jsx"
-
 import ReviewLeft from '../../components/molecules/review/review-left';
 import ReviewRight from '../../components/molecules/review/review-right';
-
-
 import productsCaj from '../../data/productKozmetika';
 
 
@@ -37,7 +27,8 @@ export default function HydratingDayCream() {
 
   // Images
   const slides = [
-    { src: '/images/product/kozmetika/ambalaza-HydratingDayCream.png', title: 'Hydrating Day Cream' },
+    { src: Cosmetics.packaging_hydrating_day_cream, title: 'Hydrating Day Cream' },
+    { src: Cosmetics.product_hydrating_day_cream, title: 'Hydrating Day Cream' },
   ];
 
   // * Slick Slider Promotion Images * \\
@@ -71,7 +62,7 @@ export default function HydratingDayCream() {
     arrows: true,
     nextArrow: (
       <ButtonIcon
-        iconSrc={Icon.arrowRight}
+        iconSrc={Icons.arrowRight}
         onClick={handleNext}
         className="slick-next"
         alt="Next"
@@ -79,7 +70,7 @@ export default function HydratingDayCream() {
     ),
     prevArrow: (
       <ButtonIcon
-        iconSrc={Icon.arrowLeft}
+        iconSrc={Icons.arrowLeft}
         onClick={handlePrev}
         className="slick-prev"
         alt="Previous" 
@@ -190,12 +181,8 @@ export default function HydratingDayCream() {
           <div className="column">
             <div className="flex">
               <ReviewLeft 
-                userImage={UserImage1}
+                userImage={User.user_review_12}
                 userReview="Krema je odlična za dnevnu njegu. Koža mi je hidratizirana i mekana tijekom cijelog dana. Volim što se brzo upija i ne ostavlja masni trag."
-              />
-              <ReviewRight 
-                userImage={UserImage2}
-                userReview="Savršena krema za dnevnu rutinu. Dobro se slaže s ostalim proizvodima i daje koži sjaj i svježinu."
               />
             </div>
           </div>

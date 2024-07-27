@@ -3,7 +3,7 @@ import { useRef } from 'react';
 import Loading from '../loading';
 import Image from 'next/image';
 import './_style.scss';
-import { Icon } from '../utilities/images.js';
+import { Icons   } from "../utilities/images.js";
 
 import Input from '../components/molecules/input/input';
 import TextBox from '../components/molecules/textbox/textbox';
@@ -31,7 +31,7 @@ export default function Contact() {
                 <div className="icon-title">
                   <div className="icon">
                   <Image 
-                      src={Icon.geoAlt}
+                      src={Icons.geoAlt}
                       alt='geoAlt'
                       quality={100}
                   />
@@ -42,7 +42,7 @@ export default function Contact() {
               <div className="contact-icon">
                 <div className="icon">
                   <Image 
-                      src={Icon.envelope}
+                      src={Icons.envelope}
                       alt='geoAlt'
                       quality={100}
                   />
@@ -53,7 +53,7 @@ export default function Contact() {
                 <div className="icon">
                   <div className="icon">
                     <Image 
-                        src={Icon.telephone}
+                        src={Icons.telephone}
                         alt='geoAlt'
                         quality={100}
                     />

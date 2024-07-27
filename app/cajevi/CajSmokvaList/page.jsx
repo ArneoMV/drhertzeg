@@ -2,21 +2,12 @@
 import React from 'react';
 import { useRouter } from 'next/navigation';
 import { notFound } from "next/navigation";
-// import Image from 'next/image';
-import ProductSlika from '../../assets/image/product/product-promotion-card-red.png';
+import { Icons, Social, User, Teas } from "../../utilities/images.js";
 import Chip from '../../components/atoms/chip/Chip';
 
 import ProductPromotioCard from '../../components/organism/productPromotioCard/productPromotioCard';
 import Carousel from '../../components/organism/carousel/carousel';
 import AdBanner from '../../components/organism/adBanner/adBanner';
-
-
-import { Icon } from '../../utilities/images';
-import UserImage1 from '../../assets/image/person-review/user_review_01.png';
-import UserImage2 from '../../assets/image/person-review/user_review_02.png';
-import UserImage3 from '../../assets/image/person-review/user_review_03.png';
-import UserImage4 from '../../assets/image/person-review/user_review_04.png';
-
 
 import ButtonIcon from '../../components/atoms/buttonIcon/buttonIcon';
 import SliderProductsCaj from "../../components/organism/sliderProductsCaj/sliderProductsCaj.jsx"
@@ -40,8 +31,8 @@ export default function ekoCajSmokvaList() {
 
   // Images
   const slides = [
-    { src: '/images/caj/Caj_Smokva.png', title: 'Caj Smokva' },
-    { src: '/images/caj/biljka-smokvin-list.png', title: 'biljka-smokvin-list' },
+    { src: Teas.packaging_eko_caj_smokva_list, title: 'Caj Smokva' },
+    { src: Teas.product_eko_caj_smokva_list, title: 'Caj Smokva' },
   ];
 
   // * Slick Slider Promotion Images * \\
@@ -75,7 +66,7 @@ export default function ekoCajSmokvaList() {
     arrows: true,
     nextArrow: (
       <ButtonIcon
-        iconSrc={Icon.arrowRight}
+        iconSrc={Icons.arrowRight}
         onClick={handleNext}
         className="slick-next"
         alt="Next"
@@ -83,7 +74,7 @@ export default function ekoCajSmokvaList() {
     ),
     prevArrow: (
       <ButtonIcon
-        iconSrc={Icon.arrowLeft}
+        iconSrc={Icons.arrowLeft}
         onClick={handlePrev}
         className="slick-prev"
         alt="Previous" 
@@ -194,23 +185,12 @@ export default function ekoCajSmokvaList() {
           <div className="column">
             <div className="flex">
               <ReviewLeft 
-                userImage={UserImage1}
+                userImage={User.user_review_01}
                 userReview="Stavrno je vrlo ukusan čaj, inace nisam veliki obozavatelj smokvi, ali ovo je stvarno brutalno, svaka preporuka, pijem ga i ujutro i navecer. Odličan je, okus je aromatican i jak, bas se osjeti."
               />
               <ReviewRight 
-                userImage={UserImage2}
+                userImage={User.user_review_02}
                 userReview="Čaj pijem svakodnevno zbog regulacije šećera i zbog zdravlja!"
-              />
-            </div>
-
-            <div className="flex">
-              <ReviewLeft 
-                userImage={UserImage3}
-                userReview="Čaj ima odličan okus i pomaže mi u regulaciji šećera. Jako sam zadovoljna!"
-              />
-              <ReviewRight 
-                userImage={UserImage4}
-                userReview="Odličan čaj s prirodnim sastojcima. Primijetio sam značajna poboljšanja u svom zdravlju"
               />
             </div>
           </div>

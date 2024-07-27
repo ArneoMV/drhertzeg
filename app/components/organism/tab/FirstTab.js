@@ -1,10 +1,7 @@
 import React from "react";
 import './_tab.scss';
 import ProductCard from '../productCard/productCard';
-
-import CalmingGel from '../../../../public/images/product/kozmetika/ambalaza-CalmingGel.png';
-import CareAndMassageOil from '../../../../public/images/product/kozmetika/ambalaza-CareAndMassageOil.png';
-import HairBoost from '../../../../public/images/product/kozmetika/ambalaza-HairBoost.png';
+import { Teas, Cosmetics } from "../../../utilities/images.js";
 
 const FirstTab = () => {
   return (
@@ -12,7 +9,7 @@ const FirstTab = () => {
       <ProductCard
         productDetailsTitle="Calming Gel"
         productDetailsPrice="4 €"
-        productDetailsImageURL= {CalmingGel}
+        productDetailsImageURL= {Cosmetics.packaging_calming_gel}
         productDetailsImageAlt="Calming Gel"
         productURL="/kozmetika/kozmetikaProduct"
         productChips1="Protupalno"
@@ -23,7 +20,7 @@ const FirstTab = () => {
       <ProductCard
         productDetailsTitle="Care & Massage Oil"
         productDetailsPrice="4 €"
-        productDetailsImageURL= {CareAndMassageOil}
+        productDetailsImageURL= {Cosmetics.packaging_care_and_massage_oil}
         productDetailsImageAlt="CareAndMassageOil"
         productURL="/cajevi/cajProduct"
         productChips1="Protupalno"
@@ -34,7 +31,7 @@ const FirstTab = () => {
       <ProductCard
         productDetailsTitle="Hair Boost"
         productDetailsPrice="4 €"
-        productDetailsImageURL= {HairBoost}
+        productDetailsImageURL= {Cosmetics.packaging_hair_boost}
         productDetailsImageAlt="Hair Boost"
         productURL="/cajevi/cajProduct"
         productChips1="Protupalno"

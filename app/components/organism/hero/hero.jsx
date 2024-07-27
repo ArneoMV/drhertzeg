@@ -6,22 +6,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import ButtonIcon from '../../atoms/buttonIcon/buttonIcon.jsx';
 import Button from '../../atoms/button/Button.jsx';
-
-import { Icon } from '../../../utilities/images.js'
-import UserImage1 from '../../../../public/images/user/user_review_01.png';
-import UserImage2 from '../../../../public/images/user/user_review_02.png';
-import UserImage3 from '../../../../public/images/user/user_review_03.png';
-import UserImage4 from '../../../../public/images/user/user_review_04.png';
-
-import CalmingGel from '../../../../public/images/product/kozmetika/proizvod-CalmingGel.png';
-import heroProduct2 from '../../../assets/image/product/heroProduct2.png';
-import heroProduct3 from '../../../assets/image/product/heroProduct3.png';
-import heroProductImage1 from '../../../../public/images/product/HeroProductImage1.png';
-import ilustracija_1 from '../../../assets/image/ilustracije/biljka_1.svg';
-import ilustracija_2 from '../../../assets/image/ilustracije/biljka_2.svg';
-import ilustracija_3 from '../../../assets/image/ilustracije/biljka_3.svg';
-import ilustracija_4 from '../../../assets/image/ilustracije/biljka_4.svg';
-
+import { Logos, Social, User, Illustrations } from "../../../utilities/images.js";
 import CardBlog from '../cardBlog/cardBlog.jsx';
 
 import useWindowResize from '../../../utilities/useWindowResize.js'
@@ -55,7 +40,7 @@ export default function Hero() {
                         <div className="flex">
                             <div className='popular-product'>
                                 <Image
-                                    src={CalmingGel}
+                                    src={Social.hero_product_1}
                                     alt="CalmingGel"
                                     quality={100}
                                     width={50}
@@ -72,7 +57,7 @@ export default function Hero() {
                             </div>
                             <div className='popular-product'>
                                 <Image
-                                    src={heroProduct2}
+                                    src={Social.hero_product_2}
                                     alt="kozmetikaProduct"
                                     quality={100}
                                     width={50}
@@ -164,7 +149,7 @@ export default function Hero() {
                         <div className="flex">
                             <div className='popular-product'>
                                 <Image
-                                    src={CalmingGel}
+                                    src={Social.hero_product_1}
                                     alt="CalmingGel"
                                     quality={100}
                                     width={50}
@@ -181,7 +166,7 @@ export default function Hero() {
                             </div>
                             <div className='popular-product'>
                                 <Image
-                                    src={heroProduct2}
+                                    src={Social.hero_product_2}
                                     alt="kozmetikaProduct"
                                     quality={100}
                                     width={50}
@@ -205,7 +190,7 @@ export default function Hero() {
                     {/* Image */}
                     <div className="hero-image-container">
                         <Image
-                            src={heroProductImage1}
+                            src={Social.hero_product_image_1}
                             alt="kozmetikaProduct"
                             quality={100}
                         />
@@ -214,25 +199,25 @@ export default function Hero() {
             </div>
             <div className="illustrations">
                 <Image 
-                    src={ilustracija_1}
+                    src={Illustrations.biljka_1}
                     alt='biljka ilustracija'
                     quality={100}
                     className='ilustracija_1'
                 />
                 <Image 
-                    src={ilustracija_2}
+                    src={Illustrations.biljka_2}
                     alt='biljka ilustracija'
                     quality={100}
                     className='ilustracija_2'
                 />
                 <Image 
-                    src={ilustracija_3}
+                    src={Illustrations.biljka_3}
                     alt='biljka ilustracija'
                     quality={100}
                     className='ilustracija_3'
                 />
                 <Image 
-                    src={ilustracija_4}
+                    src={Illustrations.biljka_4}
                     alt='biljka ilustracija'
                     quality={100}
                     className='ilustracija_4'
@@ -257,7 +242,7 @@ export default function Hero() {
                         <div className="flex">
                             <div className='popular-product'>
                                 <Image
-                                    src={CalmingGel}
+                                    src={Social.hero_product_1}
                                     alt="CalmingGel"
                                     quality={100}
                                     width={50}
@@ -274,7 +259,7 @@ export default function Hero() {
                             </div>
                             <div className='popular-product'>
                                 <Image
-                                    src={heroProduct2}
+                                    src={Social.hero_product_2}
                                     alt="kozmetikaProduct"
                                     quality={100}
                                     width={50}
@@ -296,7 +281,7 @@ export default function Hero() {
                     {/* Image */}
                     <div className="hero-image-container">
                         <Image
-                            src={heroProductImage1}
+                            src={Social.hero_product_image1}
                             alt="kozmetikaProduct"
                             quality={100}
                         />
@@ -349,7 +334,7 @@ export default function Hero() {
                         <div className="flex">
                             <div className='popular-product'>
                                 <Image
-                                    src={CalmingGel}
+                                    src={Social.hero_product_1}
                                     alt="CalmingGel"
                                     quality={100}
                                 />
@@ -364,7 +349,7 @@ export default function Hero() {
                             </div>
                             <div className='popular-product'>
                                 <Image
-                                    src={heroProduct2}
+                                    src={Social.hero_product_2}
                                     alt="kozmetikaProduct"
                                     quality={100}
                                 />
@@ -386,7 +371,7 @@ export default function Hero() {
                     {/* Image */}
                     <div className="hero-image-container">
                         <Image
-                            src={heroProductImage1}
+                            src={Social.hero_product_image_1}
                             alt="kozmetikaProduct"
                             quality={100}
                         />
@@ -400,7 +385,7 @@ export default function Hero() {
                         </div>
                         <div className="user-info-row">
                             <Image
-                                src={UserImage1}
+                                src={User.user_review_01}
                                 alt="User"
                                 quality={100}
                                 width={150}
@@ -416,25 +401,25 @@ export default function Hero() {
             </div>
             <div className="illustrations">
                 <Image 
-                    src={ilustracija_1}
+                    src={Illustrations.biljka_1}
                     alt='biljka ilustracija'
                     quality={100}
                     className='ilustracija_1'
                 />
                 <Image 
-                    src={ilustracija_2}
+                    src={Illustrations.biljka_2}
                     alt='biljka ilustracija'
                     quality={100}
                     className='ilustracija_2'
                 />
                 <Image 
-                    src={ilustracija_3}
+                    src={Illustrations.biljka_3}
                     alt='biljka ilustracija'
                     quality={100}
                     className='ilustracija_3'
                 />
                 <Image 
-                    src={ilustracija_4}
+                    src={Illustrations.biljka_4}
                     alt='biljka ilustracija'
                     quality={100}
                     className='ilustracija_4'
