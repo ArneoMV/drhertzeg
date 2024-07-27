@@ -87,40 +87,34 @@ export default function SliderArticles() {
                 {...settings}
             >
                 <CardBlog
+                    productTitle="Slatki Pelin Povijest i suvremena istrazivanja"
+                    productDetailsImageURL={BlogImg.blog_card_image_1}
+                    productDetailsImageAlt="Slatki Pelin Povijest i suvremena istrazivanja"
+                    productDetailsURL="/blog/slatki-pelin-povijest-i-suvremena-istrazivanja"
+                />
+                <CardBlog
+                    productTitle="Prirodna kozmetika i organski cajevi trendovi koji ocaravaju svijet"
+                    productDetailsImageURL={BlogImg.blog_card_image_2}
+                    productDetailsImageAlt="Prirodna kozmetika i organski cajevi trendovi koji ocaravaju svijet"
+                    productDetailsURL="/blog/prirodna-kozmetika-i-organski-cajevi-trendovi-koji-ocaravaju-svijet"
+                />
+                <CardBlog
+                    productTitle="Ljekovite kreme"
+                    productDetailsImageURL={BlogImg.blog_card_image_3}
+                    productDetailsImageAlt="Ljekovite kreme"
+                    productDetailsURL="/blog/ljekoviteKreme"
+                />
+                <CardBlog
                     productTitle="Od antičke Europe do suvremenih istraživanja"
-                    productDetailsImageURL="/images/blog/BlogCardImage_1.png"
-                    productDetailsImageAlt="Smokvin List"
+                    productDetailsImageURL={BlogImg.blog_card_image_4}
+                    productDetailsImageAlt="Od antičke Europe do suvremenih istraživanja"
                     productDetailsURL="/blog/blog-1"
                 />
                 <CardBlog
                     productTitle="Hidrolati: prirodna čarolija za savršenu kožu"
-                    productDetailsImageURL="/images/blog/BlogCardImage_2.png"
-                    productDetailsImageAlt="Smokvin List"
-                    productDetailsURL="/blog/blog-2"
-                />
-                <CardBlog
-                    productTitle="Organski trendovi koji očaravaju Svijet"
-                    productDetailsImageURL="/images/blog/BlogCardImage_3.png"
-                    productDetailsImageAlt="Smokvin List"
-                    productDetailsURL="/blog/blog-3"
-                />
-                <CardBlog
-                    productTitle="Od antičke Europe do suvremenih istraživanja"
-                    productDetailsImageURL="/images/blog/BlogCardImage_1.png"
-                    productDetailsImageAlt="Smokvin List"
-                    productDetailsURL="/blog/blog-1"
-                />
-                <CardBlog
-                    productTitle="Hidrolati: prirodna čarolija za savršenu kožu"
-                    productDetailsImageURL="/images/blog/BlogCardImage_2.png"
-                    productDetailsImageAlt="Smokvin List"
-                    productDetailsURL="/blog/blog-2"
-                />
-                <CardBlog
-                    productTitle="Organski trendovi koji očaravaju Svijet"
-                    productDetailsImageURL="/images/blog/BlogCardImage_3.png"
-                    productDetailsImageAlt="Smokvin List"
-                    productDetailsURL="/blog/blog-3"
+                    productDetailsImageURL={BlogImg.blog_card_image_5}
+                    productDetailsImageAlt="Hidrolati: prirodna čarolija za savršenu kožu"
+                    productDetailsURL="/blog/hidrolati-prirodna-carolija-za-savrsenu-kozu"
                 />
             </Slider>
             <div className="buttons-container">
@@ -168,40 +162,34 @@ export default function SliderArticles() {
                 {...settings}
             >
                 <CardBlog
-                    productTitle="Od antičke Europe do suvremenih istraživanja"
+                    productTitle="Slatki Pelin Povijest i suvremena istrazivanja"
                     productDetailsImageURL={BlogImg.blog_card_image_1}
-                    productDetailsImageAlt="Smokvin List"
-                    productDetailsURL="/blog/blog-1"
+                    productDetailsImageAlt="Slatki Pelin Povijest i suvremena istrazivanja"
+                    productDetailsURL="/blog/slatki-pelin-povijest-i-suvremena-istrazivanja"
                 />
                 <CardBlog
-                    productTitle="Hidrolati: prirodna čarolija za savršenu kožu"
+                    productTitle="Prirodna kozmetika i organski cajevi trendovi koji ocaravaju svijet"
                     productDetailsImageURL={BlogImg.blog_card_image_2}
-                    productDetailsImageAlt="Smokvin List"
-                    productDetailsURL="/blog/blog-2"
+                    productDetailsImageAlt="Prirodna kozmetika i organski cajevi trendovi koji ocaravaju svijet"
+                    productDetailsURL="/blog/prirodna-kozmetika-i-organski-cajevi-trendovi-koji-ocaravaju-svijet"
                 />
                 <CardBlog
-                    productTitle="Organski trendovi koji očaravaju Svijet"
+                    productTitle="Ljekovite kreme"
                     productDetailsImageURL={BlogImg.blog_card_image_3}
-                    productDetailsImageAlt="Smokvin List"
-                    productDetailsURL="/blog/blog-3"
+                    productDetailsImageAlt="Ljekovite kreme"
+                    productDetailsURL="/blog/ljekoviteKreme"
                 />
                 <CardBlog
                     productTitle="Od antičke Europe do suvremenih istraživanja"
                     productDetailsImageURL={BlogImg.blog_card_image_4}
-                    productDetailsImageAlt="Smokvin List"
+                    productDetailsImageAlt="Od antičke Europe do suvremenih istraživanja"
                     productDetailsURL="/blog/blog-1"
                 />
                 <CardBlog
                     productTitle="Hidrolati: prirodna čarolija za savršenu kožu"
                     productDetailsImageURL={BlogImg.blog_card_image_5}
-                    productDetailsImageAlt="Smokvin List"
-                    productDetailsURL="/blog/blog-2"
-                />
-                <CardBlog
-                    productTitle="Organski trendovi koji očaravaju Svijet"
-                    productDetailsImageURL={BlogImg.blog_card_image_6}
-                    productDetailsImageAlt="Smokvin List"
-                    productDetailsURL="/blog/blog-3"
+                    productDetailsImageAlt="Hidrolati: prirodna čarolija za savršenu kožu"
+                    productDetailsURL="/blog/hidrolati-prirodna-carolija-za-savrsenu-kozu"
                 />
             </Slider>
         </div>
@@ -235,40 +223,34 @@ export default function SliderArticles() {
                 {...settings}
             >
                 <CardBlog
-                    productTitle="Od antičke Europe do suvremenih istraživanja"
+                    productTitle="Slatki Pelin Povijest i suvremena istrazivanja"
                     productDetailsImageURL={BlogImg.blog_card_image_1}
-                    productDetailsImageAlt="Smokvin List"
-                    productDetailsURL="/blog/blog-1"
+                    productDetailsImageAlt="Slatki Pelin Povijest i suvremena istrazivanja"
+                    productDetailsURL="/blog/slatki-pelin-povijest-i-suvremena-istrazivanja"
                 />
                 <CardBlog
-                    productTitle="Hidrolati: prirodna čarolija za savršenu kožu"
+                    productTitle="Prirodna kozmetika i organski cajevi trendovi koji ocaravaju svijet"
                     productDetailsImageURL={BlogImg.blog_card_image_2}
-                    productDetailsImageAlt="Smokvin List"
-                    productDetailsURL="/blog/blog-2"
+                    productDetailsImageAlt="Prirodna kozmetika i organski cajevi trendovi koji ocaravaju svijet"
+                    productDetailsURL="/blog/prirodna-kozmetika-i-organski-cajevi-trendovi-koji-ocaravaju-svijet"
                 />
                 <CardBlog
-                    productTitle="Organski trendovi koji očaravaju Svijet"
+                    productTitle="Ljekovite kreme"
                     productDetailsImageURL={BlogImg.blog_card_image_3}
-                    productDetailsImageAlt="Smokvin List"
-                    productDetailsURL="/blog/blog-3"
+                    productDetailsImageAlt="Ljekovite kreme"
+                    productDetailsURL="/blog/ljekoviteKreme"
                 />
                 <CardBlog
                     productTitle="Od antičke Europe do suvremenih istraživanja"
                     productDetailsImageURL={BlogImg.blog_card_image_4}
-                    productDetailsImageAlt="Smokvin List"
+                    productDetailsImageAlt="Od antičke Europe do suvremenih istraživanja"
                     productDetailsURL="/blog/blog-1"
                 />
                 <CardBlog
                     productTitle="Hidrolati: prirodna čarolija za savršenu kožu"
                     productDetailsImageURL={BlogImg.blog_card_image_5}
-                    productDetailsImageAlt="Smokvin List"
-                    productDetailsURL="/blog/blog-2"
-                />
-                <CardBlog
-                    productTitle="Organski trendovi koji očaravaju Svijet"
-                    productDetailsImageURL={BlogImg.blog_card_image_6}
-                    productDetailsImageAlt="Smokvin List"
-                    productDetailsURL="/blog/blog-3"
+                    productDetailsImageAlt="Hidrolati: prirodna čarolija za savršenu kožu"
+                    productDetailsURL="/blog/hidrolati-prirodna-carolija-za-savrsenu-kozu"
                 />
             </Slider>
         </div>
