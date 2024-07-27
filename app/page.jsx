@@ -20,9 +20,10 @@ import { Homepage } from './utilities/images.js'
 import { Metadata } from 'next'
 export const metadata = { 
   title: 'Dr Hertzeg',
-  description: 'Homepage description',
+  description: 'Dobrodošli na službenu stranicu brenda Dr Hertzeg. Otkrijte našu ponudu prirodnih čajeva i kozmetičkih proizvoda koji promiču zdravlje i blagostanje. Uživajte u kvaliteti i snazi prirode.',
+  keywords: 'Dr Hertzeg, prirodni čajevi, kozmetika, zdravlje, blagostanje, prirodni proizvodi',
+  author: 'Dr Hertzeg'
 }
-
 
 
 // Homepage
@@ -50,7 +51,6 @@ export default function Page() {
         <div className="container">
           <SliderArticle />              
         </div>
-        
       </main>
   )
 }

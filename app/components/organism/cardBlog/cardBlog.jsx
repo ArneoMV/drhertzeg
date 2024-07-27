@@ -11,11 +11,10 @@ export default function OtherProductCard({ productTitle, productDetailsImageURL,
           src={productDetailsImageURL}
           alt={productDetailsImageAlt}
           quality={100}
-          objectFit='cover'
           width={0}
           height={0}
           sizes="100vw"
-          style={{ width: '100%', height: '100%' }} 
+          style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
         />
         <span className='blog-text-container'>
             <p className='title-gooey'>{productTitle}</p>

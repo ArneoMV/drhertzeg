@@ -17,8 +17,10 @@ import "./_style.scss";
 
 import { Metadata } from 'next'
 export const metadata = { 
-  title: 'Kozmetika',
-  description: 'Asortiman kozmetike',
+  title: 'Kozmetika - Dr Hertzeg',
+  description: 'Otkrijte našu liniju prirodnih kozmetičkih proizvoda brenda Dr Hertzeg. Uživajte u čistoći i učinkovitosti naših proizvoda koji njeguju vašu kožu i poboljšavaju vašu prirodnu ljepotu.',
+  keywords: 'kozmetika, Dr Hertzeg, prirodni proizvodi, njega kože, ljepota, prirodna kozmetika',
+  author: 'Dr Hertzeg'
 }
 
 
@@ -162,9 +164,7 @@ export default function Kozmetika() {
 
           <AdBanner />
       </main>
-        <FollowSocial 
-          color="primary-200"
-        />
+        <FollowSocial />
     </div>
   )
 }

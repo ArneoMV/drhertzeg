@@ -21,6 +21,7 @@ const Header = () => {
             src={Logos.logo}
             alt='logo'
             width={52}
+            height={52}
             quality={100}
           />
           Dr Hertzeg

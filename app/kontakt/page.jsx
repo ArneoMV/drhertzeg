@@ -1,13 +1,22 @@
 "use client"
 import { useRef } from 'react';
-import Loading from '../loading';
 import Image from 'next/image';
-import './_style.scss';
-import { Icons   } from "../utilities/images.js";
 
+import { Logos, Icons } from "../utilities/images.js";
+import Loading from '../loading';
 import Input from '../components/molecules/input/input';
 import TextBox from '../components/molecules/textbox/textbox';
 import FormContainer from '../components/organism/form/form'
+
+import './_style.scss';
+
+// import { Metadata } from 'next'
+// export const metadata = { 
+//   title: 'Kontakt - Dr Hertzeg',
+//   description: 'Imate pitanja ili želite više informacija? Kontaktirajte nas putem naše kontakt forme. Dr Hertzeg je ovdje da vam pomogne!',
+//   keywords: 'kontakt, Dr Hertzeg, kontakt forma, podrška, pitanja',
+//   author: 'Dr Hertzeg'
+// }
 
 export default function Contact() {
 

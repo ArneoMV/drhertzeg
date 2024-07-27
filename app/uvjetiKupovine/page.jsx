@@ -1,12 +1,21 @@
 import Loading from '../loading';
 
+import FollowSocial from '../components/organism/followSocial/followSocial';
+
 import './_privacy-policy.scss';
 import '../components/organism/footer/_footer.scss';
 import '../styles/_index.scss';
 import '../styles/layout/_breakpoint.scss';
 import '../styles/layout/_grid.scss';
 
-import FollowSocial from '../components/organism/followSocial/followSocial';
+import { Metadata } from 'next'
+export const metadata = { 
+  title: 'Česta pitanja - Dr Hertzeg',
+  description: 'Pogledajte našu stranicu s čestim pitanjima i saznajte više o našim proizvodima, uslugama i procesima kupovine. Dr Hertzeg je ovdje da vam pomogne!',
+  keywords: 'FAQ, česta pitanja, Dr Hertzeg, proizvodi, usluge, kupovina, informacije',
+  author: 'Dr Hertzeg'
+}
+
 
 export default function PrivacyPolicy() {
 

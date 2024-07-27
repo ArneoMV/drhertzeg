@@ -5,7 +5,6 @@
 // export default nextConfig;
 
 // V3
-
 import withBundleAnalyzer from '@next/bundle-analyzer';
 import path from 'path';
 

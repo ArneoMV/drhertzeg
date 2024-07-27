@@ -374,6 +374,7 @@ export default function Hero() {
                             src={Social.hero_product_image_1}
                             alt="kozmetikaProduct"
                             quality={100}
+                            priority 
                         />
                     </div>
 

@@ -6,25 +6,8 @@ import Link from 'next/link';
 import Image from 'next/image'
 
 
-export default function ProductPromotionCard({ title, description, buttonURL, imageSRC, imageALT, color, productNumber }) {
+export default function ProductPromotionCard({ title, description, buttonURL, imageSRC, imageALT, productNumber }) {
     let className = "product-promotion-card";
-  
-    switch (color) {
-      case 'green':
-        className += ' green';
-        break;
-      case 'red':
-        className += ' red';
-        break;
-      case 'blue':
-        className += ' blue';
-        break;
-      case 'orange':
-        className += ' orange';
-        break;
-      default:
-        break;
-    }
   
     return (
       

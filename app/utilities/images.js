@@ -88,96 +88,86 @@ const User = {
 
 
 const Teas = {
-  packaging_caj_od_slatkog_pelina: require('../../public/images/products/teas/caj-od-slatkog-pelina/packaging-caj-od-slatkog-pelina.png').default,
-  product_caj_od_slatkog_pelina: require('../../public/images/products/teas/caj-od-slatkog-pelina/product-caj-od-slatkog-pelina.png').default,
+  packaging_caj_od_slatkog_pelina: require('../../public/images/products/teas/caj-od-slatkog-pelina/packaging-caj-od-slatkog-pelina.webp').default,
+  product_caj_od_slatkog_pelina: require('../../public/images/products/teas/caj-od-slatkog-pelina/product-caj-od-slatkog-pelina.webp').default,
 
-  packaging_detox_caj: require('../../public/images/products/teas/detox-caj/packaging-detox-caj.png').default,
-  product_detox_caj: require('../../public/images/products/teas/detox-caj/product-detox-caj.png').default,
+  packaging_detox_caj: require('../../public/images/products/teas/detox-caj/packaging-detox-caj.webp').default,
+  product_detox_caj: require('../../public/images/products/teas/detox-caj/product-detox-caj.webp').default,
 
-  packaging_eko_caj_smokva_list: require('../../public/images/products/teas/eko-caj-smokva-list/packaging-eko-caj-smokva-list.png').default,
-  product_eko_caj_smokva_list: require('../../public/images/products/teas/eko-caj-smokva-list/product-eko-caj-smokva-list.png').default,
+  packaging_eko_caj_smokva_list: require('../../public/images/products/teas/eko-caj-smokva-list/packaging-eko-caj-smokva-list.webp').default,
+  product_eko_caj_smokva_list: require('../../public/images/products/teas/eko-caj-smokva-list/product-eko-caj-smokva-list.webp').default,
 
-  packaging_energija_jutra_caj: require('../../public/images/products/teas/energija-jutra-caj/packaging-energija-jutra-caj.png').default,
-  product_energija_jutra_caj: require('../../public/images/products/teas/energija-jutra-caj/product-energija-jutra-caj.png').default,
+  packaging_energija_jutra_caj: require('../../public/images/products/teas/energija-jutra-caj/packaging-energija-jutra-caj.webp').default,
+  product_energija_jutra_caj: require('../../public/images/products/teas/energija-jutra-caj/product-energija-jutra-caj.webp').default,
 
-  packaging_imuno_caj: require('../../public/images/products/teas/imuno-caj/packaging-imuno-caj.png').default,
-  product_imuno_caj: require('../../public/images/products/teas/imuno-caj/product-imuno-caj.png').default,
+  packaging_imuno_caj: require('../../public/images/products/teas/imuno-caj/packaging-imuno-caj.webp').default,
+  product_imuno_caj: require('../../public/images/products/teas/imuno-caj/product-imuno-caj.webp').default,
 
 };
 
 const Cosmetics = {
-  packaging_calming_gel: require('../../public/images/products/cosmetics/calming-gel/packaging-calming-gel.png').default,
-  product_calming_gel: require('../../public/images/products/cosmetics/calming-gel/product-calming-gel.png').default,
+  packaging_calming_gel: require('../../public/images/products/cosmetics/calming-gel/packaging-calming-gel.webp').default,
+  product_calming_gel: require('../../public/images/products/cosmetics/calming-gel/product-calming-gel.webp').default,
 
-  packaging_care_and_massage_oil: require('../../public/images/products/cosmetics/care-and-massage-oil/packaging-care-and-massage-oil.png').default,
-  product_care_and_massage_oil: require('../../public/images/products/cosmetics/care-and-massage-oil/product-care-and-massage-oil.png').default,
+  packaging_care_and_massage_oil: require('../../public/images/products/cosmetics/care-and-massage-oil/packaging-care-and-massage-oil.webp').default,
+  product_care_and_massage_oil: require('../../public/images/products/cosmetics/care-and-massage-oil/product-care-and-massage-oil.webp').default,
 
-  packaging_hair_boost: require('../../public/images/products/cosmetics/hair-boost/packaging-hair-boost.png').default,
-  product_hair_boost: require('../../public/images/products/cosmetics/hair-boost/product-hair-boost.png').default,
+  packaging_hair_boost: require('../../public/images/products/cosmetics/hair-boost/packaging-hair-boost.webp').default,
+  product_hair_boost: require('../../public/images/products/cosmetics/hair-boost/product-hair-boost.webp').default,
 
-  packaging_hydrating_day_cream: require('../../public/images/products/cosmetics/hydrating-day-cream/packaging-hydrating-day-cream.png').default,
-  product_hydrating_day_cream: require('../../public/images/products/cosmetics/hydrating-day-cream/product-hydrating-day-cream.png').default,
+  packaging_hydrating_day_cream: require('../../public/images/products/cosmetics/hydrating-day-cream/packaging-hydrating-day-cream.webp').default,
+  product_hydrating_day_cream: require('../../public/images/products/cosmetics/hydrating-day-cream/product-hydrating-day-cream.webp').default,
 
-  packaging_lavandolat: require('../../public/images/products/cosmetics/lavandolat/packaging-lavandolat.png').default,
-  product_lavandolat: require('../../public/images/products/cosmetics/lavandolat/product-lavandolat.png').default,
+  packaging_lavandolat: require('../../public/images/products/cosmetics/lavandolat/packaging-lavandolat.webp').default,
+  product_lavandolat: require('../../public/images/products/cosmetics/lavandolat/product-lavandolat.webp').default,
 
-  packaging_serum_od_smilja: require('../../public/images/products/cosmetics/serum-od-smilja/packaging-serum-od-smilja.png').default,
-  product_serum_od_smilja: require('../../public/images/products/cosmetics/serum-od-smilja/product-serum-od-smilja.png').default,
+  packaging_serum_od_smilja: require('../../public/images/products/cosmetics/serum-od-smilja/packaging-serum-od-smilja.webp').default,
+  product_serum_od_smilja: require('../../public/images/products/cosmetics/serum-od-smilja/product-serum-od-smilja.webp').default,
 
-  packaging_smiljolat: require('../../public/images/products/cosmetics/smiljolat/packaging-smiljolat.png').default,
-  product_smiljolat: require('../../public/images/products/cosmetics/smiljolat/product-smiljolat.png').default,
+  packaging_smiljolat: require('../../public/images/products/cosmetics/smiljolat/packaging-smiljolat.webp').default,
+  product_smiljolat: require('../../public/images/products/cosmetics/smiljolat/product-smiljolat.webp').default,
 
-  packaging_vitamin_night_cream: require('../../public/images/products/cosmetics/vitamin-night-cream/packaging-vitamin-night-cream.png').default,
-  product_vitamin_night_cream: require('../../public/images/products/cosmetics/vitamin-night-cream/product-vitamin-night-cream.png').default,
+  packaging_vitamin_night_cream: require('../../public/images/products/cosmetics/vitamin-night-cream/packaging-vitamin-night-cream.webp').default,
+  product_vitamin_night_cream: require('../../public/images/products/cosmetics/vitamin-night-cream/product-vitamin-night-cream.webp').default,
 
 };
 
 const Social = {
-  cover_caj: require('../../public/images/social/CoverCaj.png').default,
-  cover_kozmetika: require('../../public/images/social/CoverKozmetika.png').default,
-  ad_product_1: require('../../public/images/social/adProduct1.png').default,
-  ad_product_2: require('../../public/images/social/adProduct2.png').default,
-  ad_product_3: require('../../public/images/social/adProduct3.png').default,
-  ad_product_4: require('../../public/images/social/adProduct4.png').default,
-  hero_product_1: require('../../public/images/social/heroProduct1.png').default,
-  hero_product_2: require('../../public/images/social/heroProduct2.png').default,
-  hero_product_3: require('../../public/images/social/heroProduct3.png').default,
-  hero_product_image_1: require('../../public/images/social/HeroProductImage1.png').default,
-  image_1: require('../../public/images/social/Image1.png').default,
-  image_2: require('../../public/images/social/Image2.png').default,
-  image_3: require('../../public/images/social/Image3.png').default,
-  image_4: require('../../public/images/social/Image4.png').default,
-  tea_banner_image: require('../../public/images/social/hero-image-caj.png').default,
-  tea_cover: require('../../public/images/social/caj-blog.jpg').default,
-  tea_banner_image: require('../../public/images/social/hero-image-cosmetics.png').default,
-  product_promotion_card_blue: require('../../public/images/social/product-promotion-card-blue.png').default,
-  product_promotion_card_green: require('../../public/images/social/product-promotion-card-green.png').default,
-  product_promotion_card_orange: require('../../public/images/social/product-promotion-card-orange.png').default,
-  product_promotion_card_red: require('../../public/images/social/product-promotion-card-red.png').default,
+  cover_caj: require('../../public/images/social/CoverCaj.webp').default,
+  cover_kozmetika: require('../../public/images/social/CoverKozmetika.webp').default,
+  ad_product_1: require('../../public/images/social/adProduct1.webp').default,
+  ad_product_2: require('../../public/images/social/adProduct2.webp').default,
+  ad_product_3: require('../../public/images/social/adProduct3.webp').default,
+  ad_product_4: require('../../public/images/social/adProduct4.webp').default,
+  hero_product_1: require('../../public/images/social/heroProduct1.webp').default,
+  hero_product_2: require('../../public/images/social/heroProduct2.webp').default,
+  hero_product_3: require('../../public/images/social/heroProduct3.webp').default,
+  hero_product_image_1: require('../../public/images/social/HeroProductImage1.webp').default,
+  image_1: require('../../public/images/social/Image1.webp').default,
+  image_2: require('../../public/images/social/Image2.webp').default,
+  image_3: require('../../public/images/social/Image3.webp').default,
+  image_4: require('../../public/images/social/Image4.webp').default,
+  tea_banner_image: require('../../public/images/social/hero-image-caj.webp').default,
+  tea_cover: require('../../public/images/social/caj-blog.webp').default,
+  tea_banner_image: require('../../public/images/social/hero-image-cosmetics.webp').default,
+  product_promotion_card_blue: require('../../public/images/social/product-promotion-card-blue.webp').default,
+  product_promotion_card_green: require('../../public/images/social/product-promotion-card-green.webp').default,
+  product_promotion_card_orange: require('../../public/images/social/product-promotion-card-orange.webp').default,
+  product_promotion_card_red: require('../../public/images/social/product-promotion-card-red.webp').default,
 };
 
 const BlogImg = {
-  blog_card_image_1: require('../../public/images/blog/BlogCardImage_1.png').default,
-  blog_card_image_2: require('../../public/images/blog/BlogCardImage_2.png').default,
-  blog_card_image_3: require('../../public/images/blog/BlogCardImage_3.png').default,
-  blog_card_image_4: require('../../public/images/blog/BlogCardImage_4.png').default,
-  blog_card_image_5: require('../../public/images/blog/BlogCardImage_5.png').default,
-  blog_card_image_6: require('../../public/images/blog/BlogCardImage_6.png').default,
+  blog_card_image_1: require('../../public/images/blog/BlogCardImage_1.webp').default,
+  blog_card_image_2: require('../../public/images/blog/BlogCardImage_2.webp').default,
+  blog_card_image_3: require('../../public/images/blog/BlogCardImage_3.webp').default,
+  blog_card_image_4: require('../../public/images/blog/BlogCardImage_4.webp').default,
+  blog_card_image_5: require('../../public/images/blog/BlogCardImage_5.webp').default,
+  blog_card_image_6: require('../../public/images/blog/BlogCardImage_6.webp').default,
 
-  post_0101: require('../../public/images/blog/post_01/post_0101.jpg').default,
-  post_0102: require('../../public/images/blog/post_01/post_0102.jpg').default,
-  post_0103: require('../../public/images/blog/post_01/post_0103.jpg').default,
+  post_0101: require('../../public/images/blog/post_01/post_0101.webp').default,
+  post_0102: require('../../public/images/blog/post_01/post_0102.webp').default,
+  post_0103: require('../../public/images/blog/post_01/post_0103.webp').default,
 };
-
-
-// const HomepageImages = {
-//   heromage: require('../assets/image/heroImage.png').default,
-// };
-
-// const Homepage = {
-//   heroImage: require('../../public/images/image/heroImage.png').default,
-//   Image2: require('../../public/images/image/image2.png').default,
-// };
 
 
 export { Logos, Wawe, Icons, Teas, Cosmetics, Social, BlogImg, Illustrations, User };

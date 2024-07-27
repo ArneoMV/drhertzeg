@@ -1,16 +1,21 @@
 // import { Suspense } from "react";
 import Image from 'next/image'
 import Link from 'next/link'
-import Chip from '../components/atoms/chip/Chip';
-import { Logos, Icons, Social, BlogImg } from "../utilities/images.js";
 
+import { Logos, Icons, Social, BlogImg } from "../utilities/images.js";
+import Chip from '../components/atoms/chip/Chip';
 import CardBlog from '../components/organism/cardBlog/cardBlog'
 import AdBanner from '../components/organism/adBanner/adBanner'
-
 import Loading from "../loading";
 import "./_style.scss";
 
-import FollowSocial from '../components/organism/followSocial/followSocial';
+import { Metadata } from 'next'
+export const metadata = { 
+  title: 'Blog - Dr Hertzeg',
+  description: 'Posjetite naš blog i otkrijte savjete, članke i inspiraciju vezane uz zdravlje, ljepotu i korištenje naših proizvoda. Pridružite se našoj zajednici i saznajte više!',
+  keywords: 'blog, Dr Hertzeg, savjeti, zdravlje, ljepota, prirodni čajevi, prirodna kozmetika',
+  author: 'Dr Hertzeg'
+}
 
 export default function Blog() {
     return (

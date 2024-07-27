@@ -8,10 +8,13 @@ import FollowSocial from '../components/organism/followSocial/followSocial';
 import './_style.scss';
 import { Logos, Icons, Social, User, Illustrations, Teas } from "../utilities/images.js";
 
-export const metadata = {
-  title: 'Cajevi',
-  description: 'Asortiman čajeva',
-};
+import { Metadata } from 'next'
+export const metadata = { 
+  title: 'Čajevi - Dr Hertzeg',
+  description: 'Istražite našu raznoliku ponudu prirodnih čajeva brenda Dr Hertzeg. Svaki čaj je pažljivo odabran kako bi vam pružio optimalno iskustvo i blagodati za zdravlje.',
+  keywords: 'čajevi, Dr Hertzeg, prirodni čajevi, zdravi čajevi, wellness, blagodati čaja',
+  author: 'Dr Hertzeg'
+}
 
 export default function Cajevi() {
   return (
@@ -114,7 +117,7 @@ export default function Cajevi() {
           </section>
           <AdBanner />
         </main>
-        <FollowSocial color="primary-200" />
+        <FollowSocial />
       </div>
   );
 }

@@ -15,55 +15,17 @@
     z-index: 1;
 }
 
-.primary-200 {
-    background-color: $primary-200;
-    &::after {
-        @include background-vawe;
-        background-image: url(/images/vawe/vawe-top-green-200.svg);
-    } 
-}
-.primary-800 {
-    background-color: $primary-800;
-    &::after {
-        @include background-vawe;
-        background-image: url(/images/vawe/vawe-top-green-800.svg);
-    } 
-}
-.red-200 {
-    background-color: $red-200;
-    &::after {
-        @include background-vawe;
-        background-image: url(/images/vawe/vawe-top-red-200.svg);
-    } 
-}
-.red-300 {
-    background-color: $red-300;
-    &::after {
-        @include background-vawe;
-        background-image: url(/images/vawe/vawe-top-red-300.svg);
-    } 
-}
-.blue-200 {
-    background-color: $blue-200;
-    &::after {
-        @include background-vawe;
-        background-image: url(/images/vawe/vawe-top-blue-200.svg);
-    } 
-}
-.blue-800 {
-    background-color: $blue-800;
-    &::after {
-        @include background-vawe;
-        background-image: url(/images/vawe/vawe-top-blue-800.svg);
-    } 
-}
-
 .follow-social {
+    background-color: $primary-200;
     @include flexRow;
     position: relative;
     @include flexRow;
     justify-content: space-around;
     align-items: center;
+    &::after {
+        @include background-vawe;
+        background-image: url(../../../assets/illustrations/vawe/vawe-top-green-200.svg);
+    }
 
     .followSocialContainer {
         display: flex;

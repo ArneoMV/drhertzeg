@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image'
-import { Icon } from '../../../utilities/images.js'
+import { Icons } from "../../../utilities/images.js";
+
 import './_input.scss';
 
 
@@ -13,16 +14,16 @@ const Input = ({ label, placeholder, error, success, disabled, register }) => {
       
       <div className="input-wrapper">
         { hasError && ( <Image 
-                          src={Icon.check}
-                          alt='geoAlt'
+                          src={Icons.check}
+                          alt='check'
                           quality={100}
                           className="input-icon input-icon-error"
                         /> 
                       )
         }
         { success && <Image 
-                      src={Icon.checkFill}
-                      alt='geoAlt'
+                      src={Icons.checkFill}
+                      alt='checkFill'
                       quality={100}
                       className="input-icon input-icon-success"
                     /> 

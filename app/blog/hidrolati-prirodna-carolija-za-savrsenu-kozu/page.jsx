@@ -116,9 +116,7 @@ export default function blog_02() {
           
         </main>
 
-        <FollowSocial 
-          color="primary-200"
-        />
+        <FollowSocial />
       </div>
     </>
   )

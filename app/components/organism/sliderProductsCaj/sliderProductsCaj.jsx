@@ -1,5 +1,8 @@
 "use client"
 import React, { useRef } from "react";
+
+import { Logos, Icons, Social, Teas } from "../../../utilities/images.js";
+
 import './_slider.scss'
 // React Slick
 import Slider from "react-slick";
@@ -8,17 +11,9 @@ import "slick-carousel/slick/slick-theme.css";
 
 import CardBlog from '../cardBlog/cardBlog.jsx';
 import ButtonIcon from "../../atoms/buttonIcon/buttonIcon.jsx";
-
 import useWindowResize from '../../../utilities/useWindowResize.js'
-
-import { Logos, Icons, Social, Teas } from "../../../utilities/images.js";
-
 import ProductPromotioCard from '../../organism/productPromotioCard/productPromotioCard';
-// import ProductBlue from '../../../assets/image/product/product-promotion-card-blue.png'
-// import ProductGreen from '../../../assets/image/product/product-promotion-card-green.png'
-// import ProductOrange from '../../../assets/image/product/product-promotion-card-orange.png'
-// import KapiSlatkogPelina from '../../../../public/images/product/kozmetika/KapiSlatkogPelina.png';
-// import SlatkiPelin from '../../../../public/images/product/caj/biljka-slatki-pelin.png';
+
 
 export default function SliderProductsCaj() {
 

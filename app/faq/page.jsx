@@ -3,12 +3,17 @@ import React, { useState } from 'react';
 import Loading from '../loading';
 
 import './_faq.scss';
-// import "../styles/pages/_products-page.scss";
 import '../styles/_index.scss';
 import '../styles/layout/_breakpoint.scss';
 import '../styles/layout/_grid.scss';
 
-
+// import { Metadata } from 'next'
+// export const metadata = { 
+//   title: 'Česta pitanja - Dr Hertzeg',
+//   description: 'Pogledajte našu stranicu s čestim pitanjima i saznajte više o našim proizvodima, uslugama i procesima kupovine. Dr Hertzeg je ovdje da vam pomogne!',
+//   keywords: 'FAQ, česta pitanja, Dr Hertzeg, proizvodi, usluge, kupovina, informacije',
+//   author: 'Dr Hertzeg'
+// }
 
 export default function Faq() {
 

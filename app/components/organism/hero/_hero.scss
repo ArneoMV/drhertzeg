@@ -24,17 +24,10 @@
 .hero {
     height: auto;
     padding-top: $size-24;
-
     box-sizing: border-box;
     background-color: $primary-100;
-
     display: flex;
-
     position: relative;
-    // mask-image: url(/public/images/vawe/vawe-bottom.svg);
-
-    // mask-repeat: no-repeat;
-    // mask-position: center;
     &::before {
         content: "";
         position: absolute; 
