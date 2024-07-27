@@ -30,7 +30,7 @@ export default function HeroArticleBanner() {
                     </div>
 
                 </div>
-                <Link href="/blog/LjekoviteKreme">
+                <Link href="/blog/ljekoviteKreme">
                     <Button type="primary">Saznaj Više</Button>
                 </Link>
             </div>
