@@ -8,7 +8,7 @@ import "../../styles/_index.scss";
 import Chip from '../../components/atoms/chip/Chip.jsx'
 import FollowSocial from '../../components/organism/followSocial/followSocial.jsx';
 
-export default function demoArticle() {
+export default function ljekoviteKreme() {
   return (
     <>
     <Head>
