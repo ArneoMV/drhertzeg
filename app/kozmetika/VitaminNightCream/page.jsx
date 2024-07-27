@@ -16,14 +16,12 @@ import productsCaj from '../../data/productKozmetika';
 
 
 export default function VitaminNightCream() {
-
+  const router = useRouter();
   const product = productsCaj.find(p => p.id === "VitaminNightCream");
   
   if (!product) {
     return <p>Proizvod nije pronađen.</p>;
   }
-
-  const router = useRouter()
 
   // Images
   const slides = [

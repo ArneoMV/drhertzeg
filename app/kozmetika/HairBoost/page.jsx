@@ -12,20 +12,16 @@ import ButtonIcon from '../../components/atoms/buttonIcon/buttonIcon';
 import SliderProductsCaj from "../../components/organism/sliderProductsCaj/sliderProductsCaj.jsx"
 import ReviewLeft from '../../components/molecules/review/review-left';
 import ReviewRight from '../../components/molecules/review/review-right';
-
-
 import productsCaj from '../../data/productKozmetika';
 
 
 export default function HairBoost() {
-
+  const router = useRouter();
   const product = productsCaj.find(p => p.id === "HairBoost");
   
   if (!product) {
     return <p>Proizvod nije pronađen.</p>;
   }
-
-  const router = useRouter()
 
   // Images
   const slides = [

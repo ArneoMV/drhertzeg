@@ -9,11 +9,11 @@
     "lint": "next lint",
     "analyze": "cross-env ANALYZE=true next build",
     "analyze:server": "cross-env BUNDLE_ANALYZE=server next build",
-    "analyze:browser": "cross-env BUNDLE_ANALYZE=browser next build"
+    "analyze:browser": "cross-env BUNDLE_ANALYZE=browser next build",
+    "export": "next export"
   },
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
-    "@next/bundle-analyzer": "^14.2.2",
     "axios": "^1.6.8",
     "classnames": "^2.5.1",
     "cross-env": "^7.0.3",
@@ -26,8 +26,9 @@
     "yup": "^1.4.0"
   },
   "devDependencies": {
+    "@next/bundle-analyzer": "^14.2.5",
     "eslint": "^8",
     "eslint-config-next": "14.1.0",
-    "sass": "^1.71.0"
+    "sass": "^1.77.8"
   }
 }

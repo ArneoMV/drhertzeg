@@ -16,15 +16,12 @@ import productsCaj from '../../data/productKozmetika';
 
 
 export default function Smiljolat() {
-
+  const router = useRouter();
   const product = productsCaj.find(p => p.id === "Smiljolat");
   
   if (!product) {
     return <p>Proizvod nije pronađen.</p>;
   }
-
-  const router = useRouter()
-
   // Images
   const slides = [
     { src: Cosmetics.packaging_smiljolat, title: 'Smiljolat' },

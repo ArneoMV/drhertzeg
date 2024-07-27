@@ -1,17 +1,13 @@
 "use client"
 import React, { useRef } from 'react';
 import { useRouter } from 'next/navigation';
-
 import emailjs from '@emailjs/browser';
-
-// import { Field, Form, Formik, FormikProps } from 'formik';
 import { useFormik } from "formik";
 import * as Yup from "yup";
-
 import './_form.scss'
 import Checkbox from '../../atoms/checkbox/checkbox';
 
-export default function FormContainer({className}) {
+export default function FormContainer({ className }) {
   const router = useRouter();
   const form = useRef();
 
@@ -33,7 +29,7 @@ export default function FormContainer({className}) {
         .email("Pogrešna email adresa")
         .required("Email je obavezan"),
       message: Yup.string()
-        .max(15, "Must be 15 characters or less")
+        .max(250, "Must be 250 characters or less")
         .required("Poruka je obavezna"),
       terms: Yup.boolean().oneOf([true], "Morate prihvatiti uvjete usluge"),
     }),
@@ -55,14 +51,12 @@ export default function FormContainer({className}) {
             console.log('FAILED...', error.text);
           },
         );
-    }, 
+    },
   });
 
   const handleCheckboxChange = (checked) => {
-    // Postavite logiku validacije ako je potrebno
-    // Pozovite handleChange i setFieldTouched iz Formik-a
-    formik.setFieldValue("terms", checked); // Postavite vrijednost checkboxa u Formik vrijednost
-    formik.setFieldTouched("terms", true); // Postavite da je polje dirnuto kako bi se prikazale validacijske poruke
+    formik.setFieldValue("terms", checked);
+    formik.setFieldTouched("terms", true);
   };
 
   return (
@@ -93,7 +87,7 @@ export default function FormContainer({className}) {
           <input
             type="text"
             name="user_name"
-            placeholder="Enter your name"
+            placeholder="Unesite ime i prezime"
             onChange={formik.handleChange}
             value={formik.values.user_name}
             onBlur={formik.handleBlur}
@@ -102,24 +96,23 @@ export default function FormContainer({className}) {
 
         {/* Email input field */}
         <div className="input-field">
-        <label
-          htmlFor="user_email"
-          className={`text-neutral-800 ${
-            formik.submitCount > 0 && formik.touched.user_email && formik.errors.user_email
-              ? "text-red-400"
-              : ""
-          }`}
-        >
-          {formik.submitCount > 0 && formik.touched.user_email && formik.errors.user_email
-            ? formik.errors.user_email
-            : "Email"}
-        </label>
-
+          <label
+            htmlFor="user_email"
+            className={`text-neutral-800 ${
+              formik.submitCount > 0 && formik.touched.user_email && formik.errors.user_email
+                ? "text-red-400"
+                : ""
+            }`}
+          >
+            {formik.submitCount > 0 && formik.touched.user_email && formik.errors.user_email
+              ? formik.errors.user_email
+              : "Email"}
+          </label>
 
           <input
             type="email"
             name="user_email"
-            placeholder="Enter your email address"
+            placeholder="Unesite email"
             onChange={formik.handleChange}
             value={formik.values.user_email}
             onBlur={formik.handleBlur}
@@ -128,7 +121,7 @@ export default function FormContainer({className}) {
 
         {/* Textbox */}
         <div className="input-field">
-        <label
+          <label
             htmlFor="message"
             className={`text-neutral-800 ${
               formik.submitCount > 0 && formik.touched.message && formik.errors.message
@@ -142,23 +135,13 @@ export default function FormContainer({className}) {
           </label>
           <textarea
             name="message"
-            // value={formik.values.message}
             onChange={(e) => formik.setFieldValue('message', e.target.value)}
             onBlur={formik.handleBlur}
             rows="4" 
             cols="50"
           />
-
-          {/* <textarea
-            type="textarea"
-            name="message"
-            value={formik.values.message}
-            onBlur={formik.handleBlur}
-            placeholder="Kako Vam možemo pomoći..."
-            rows="4" cols="50"
-          ></textarea> */}
         </div>
-        
+
         {/* Terms of service*/}
         <div className='terms-container'>
           <div className="row">

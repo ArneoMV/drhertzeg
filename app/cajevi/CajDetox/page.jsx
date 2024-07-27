@@ -4,29 +4,25 @@ import { useRouter } from 'next/navigation';
 import { notFound } from "next/navigation";
 
 import { Icons, Social, User, Teas } from "../../utilities/images.js";
-import Chip from '../../components/atoms/chip/Chip';
 
+import Chip from '../../components/atoms/chip/Chip';
 import ProductPromotioCard from '../../components/organism/productPromotioCard/productPromotioCard';
 import Carousel from '../../components/organism/carousel/carousel';
 import AdBanner from '../../components/organism/adBanner/adBanner';
-
 import ButtonIcon from '../../components/atoms/buttonIcon/buttonIcon';
 import SliderProductsCaj from "../../components/organism/sliderProductsCaj/sliderProductsCaj.jsx"
-
 import ReviewLeft from '../../components/molecules/review/review-left';
 import ReviewRight from '../../components/molecules/review/review-right';
 
 import productsCaj from '../../data/productCaj';
 
-export default function ekoCajSmokvaList() {
-
+export default function CajSmokvaList() {
+  const router = useRouter();
   const product = productsCaj.find(p => p.id === "CajDetox");
   
   if (!product) {
     return <p>Proizvod nije pronađen.</p>;
   }
-
-  const router = useRouter()
 
   // Images
   const slides = [
