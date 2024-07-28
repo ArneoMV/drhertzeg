@@ -1,5 +1,7 @@
 "use client"
 import React, { useRef } from 'react';
+// import Button from "../components/atoms/button/Button";
+import '../../../components/atoms/button/_button.scss';
 import { useRouter } from 'next/navigation';
 import emailjs from '@emailjs/browser';
 import { useFormik } from "formik";
@@ -167,7 +169,7 @@ export default function FormContainer({ className }) {
             and sold.
           </p>
         </div>
-        <button type="submit">Pošalji</button>
+        <button type="submit" className='button primary'>Pošalji</button>
       </div>
     </form>
   );

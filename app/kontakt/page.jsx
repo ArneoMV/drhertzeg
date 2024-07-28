@@ -1,7 +1,6 @@
 "use client"
 import { useRef } from 'react';
 import Image from 'next/image';
-
 import { Logos, Icons } from "../utilities/images.js";
 import Loading from '../loading';
 import Input from '../components/molecules/input/input';
@@ -31,7 +30,7 @@ export default function Contact() {
             <span>
               <h3 className='title-gooey'>Kontakt</h3>
             </span>
-            <p>Shortbread dragée wafer cupcake ice cream cookie pie. Apple pie gummies pudding wafer pastry liquorice. Wafer tootsie roll cupcake ice cream liquorice. Tiramisu cupcake marshmallow halvah pastry sugar plum ice cream. </p>
+            <p>Hvala vam na posjeti! Ako imate pitanja ili trebate dodatne informacije, slobodno nam se obratite putem obrasca ispod. Naš tim će vam se javiti u najkraćem roku. </p>
           </section>
             
             

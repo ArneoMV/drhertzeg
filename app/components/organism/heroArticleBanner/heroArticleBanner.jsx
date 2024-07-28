@@ -4,7 +4,7 @@ import "./_heroArticleBanner.scss";
 import Image from 'next/image'
 import Link from 'next/link'
 import Button from "../../atoms/button/Button";
-import { Logos, Wawe, Icons, Teas, Cosmetics, Social, Blog } from "../../../utilities/images.js";
+import { Logos, Wawe, Teas, Cosmetics, Social, Blog } from "../../../utilities/images.js";
 
 
 export default function HeroArticleBanner() {

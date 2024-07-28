@@ -1,5 +1,6 @@
 
 import Head from 'next/head';
+import Button from "../components/atoms/button/Button";
 import Image from 'next/image';
 import HeroTea from '../components/organism/heroTea/heroTea';
 import ProductCard from '../components/organism/productCard/productCard';

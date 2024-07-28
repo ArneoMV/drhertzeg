@@ -32,7 +32,7 @@ export default function demoArticle() {
           {/* Title */}
           <section className="blog-title col-10-sm col-10-md col-10-lg">
             <span>
-              <h3 className='title-gooey'>Od antičke Europe do<br /> suvremenih istraživanja</h3>
+              <h3 className='title-gooey'>Prirodna kozmetika i organski <br />cajevi trendovi koji ocaravaju svijet</h3>
             </span>
             <div className="row">
               <div className="info">

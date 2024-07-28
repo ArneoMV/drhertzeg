@@ -30,7 +30,7 @@ export default function blog_02() {
           {/* Title */}
           <section className="blog-title col-10-sm col-10-md col-10-lg">
             <span>
-              <h3 className='title-gooey'>Hidrolati: Prirodna Čarolija za Savršenu Kožu</h3>
+              <h3 className='title-gooey'>Hidrolati:<br/> Prirodna Čarolija za Savršenu Kožu</h3>
             </span>
             <div className="row">
               <div className="info">

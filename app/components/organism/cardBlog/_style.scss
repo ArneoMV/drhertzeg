@@ -17,7 +17,7 @@ a.blog-card-link-container {
     @include flexRow;
     filter: url('#title-gooey');
     box-decoration-break: clone;
-    border-radius: $size-16;
+    border-radius: $size-32;
     /* Cards titles styling */
     .card__title {
         align-self: flex-end; padding: 0.5rem;

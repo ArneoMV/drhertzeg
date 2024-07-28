@@ -219,6 +219,7 @@
                 .user-info-row {
                     @include flexRow;
                     gap: $size-16;
+                    align-items: center;
                     img {
                         height: 52px;
                         width: auto;

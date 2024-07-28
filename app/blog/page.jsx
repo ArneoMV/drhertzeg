@@ -40,7 +40,7 @@ export default function Blog() {
                   <Chip text="Blog" colorBg="#D8F3DC" colorText="#1B4332" />
                   <h3>Novosti i zanimljivosti</h3>
                 </div>
-                <p>Tips and tutorials on how to build better tea experience </p>
+                <p>Savjeti i upute o tome kako izgraditi bolje iskustvo ispijanja čaja</p>
               </div>  
             </div>
           </div>
