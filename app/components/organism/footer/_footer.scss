@@ -20,7 +20,7 @@
 
 
 
-  &::after {
+  &::before {
     content: "";
     position: absolute; 
     top: -20px;
@@ -30,6 +30,15 @@
     background-size: cover; 
     z-index: 9999; 
     background-image: url('../../../assets/illustrations/vawe/vawe-bottom-green-800.svg');
+      // content: "";
+      // position: absolute; 
+      // top: -20px;
+      // left: 0;
+      // width: 100%;
+      // height: 26px;
+      // background-size: cover; 
+      // z-index: 1; 
+      // background-image: url('../../../assets/illustrations/vawe/vawe-bottom-green-800.svg');
 }
   .footer-container {
     @include flexColumn;

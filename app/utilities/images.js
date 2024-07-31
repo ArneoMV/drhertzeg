@@ -149,7 +149,7 @@ const Social = {
   image_4: require('../../public/images/social/Image4.webp').default,
   tea_banner_image: require('../../public/images/social/hero-image-caj.webp').default,
   tea_cover: require('../../public/images/social/caj-blog.webp').default,
-  tea_banner_image: require('../../public/images/social/hero-image-cosmetics.webp').default,
+  cosmetics_banner_image: require('../../public/images/social/hero-image-cosmetics.webp').default,
   product_promotion_card_blue: require('../../public/images/social/product-promotion-card-blue.webp').default,
   product_promotion_card_green: require('../../public/images/social/product-promotion-card-green.webp').default,
   product_promotion_card_orange: require('../../public/images/social/product-promotion-card-orange.webp').default,

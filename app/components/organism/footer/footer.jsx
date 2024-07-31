@@ -2,10 +2,9 @@
 "use client"
 import { Logos, Wawe, Icons, Teas, Cosmetics, Social, Blog } from "../../../utilities/images.js";
 
-
 import Link from 'next/link';
-import Image from 'next/image';;
-import './_footer.scss';  // Import as a CSS module
+import Image from 'next/image';
+import './_footer.scss';
 
 
 

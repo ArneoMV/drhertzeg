@@ -54,7 +54,7 @@ export default function HeroCosmetics() {
 
             <div className="hero-image">
                 <Image 
-                    src={Social.tea_banner_image}
+                    src={Social.cosmetics_banner_image}
                     alt='BannerImage'
                     quality={100}
                 />
@@ -77,7 +77,7 @@ export default function HeroCosmetics() {
 
             <div className="hero-image">
                 <Image 
-                    src={Social.tea_banner_image}
+                    src={Social.cosmetics_banner_image}
                     alt='BannerImage'
                     quality={100}
                 />
@@ -100,7 +100,7 @@ export default function HeroCosmetics() {
 
             <div className="hero-image">
                 <Image 
-                src={Social.tea_banner_image}
+                src={Social.cosmetics_banner_image}
                 alt='BannerImage'
                 quality={100}
                 />

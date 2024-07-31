@@ -1,10 +1,11 @@
 import React from 'react'
-import "./_heroArticleBanner.scss";
-
-import Image from 'next/image'
-import Link from 'next/link'
-import Button from "../../atoms/button/Button";
 import { Logos, Wawe, Teas, Cosmetics, Social, Blog } from "../../../utilities/images.js";
+
+import Image from 'next/image';
+import Link from 'next/link';
+import Button from "../../atoms/button/Button";
+
+import "./_heroArticleBanner.scss";
 
 
 export default function HeroArticleBanner() {
