@@ -190,7 +190,7 @@ export default function Hero() {
                     {/* Image */}
                     <div className="hero-image-container">
                         <Image
-                            src={Social.Social.hero_product_image_1}
+                            src={Social.hero_product_image_1}
                             alt="kozmetikaProduct"
                             quality={100}
                         />
@@ -281,7 +281,7 @@ export default function Hero() {
                     {/* Image */}
                     <div className="hero-image-container">
                         <Image
-                            src={Social.Social.hero_product_image_1}
+                            src={Social.hero_product_image_1}
                             alt="kozmetikaProduct"
                             quality={100}
                         />
@@ -371,7 +371,7 @@ export default function Hero() {
                     {/* Image */}
                     <div className="hero-image-container">
                         <Image
-                            src={Social.Social.hero_product_image_1}
+                            src={Social.hero_product_image_1}
                             alt="kozmetikaProduct"
                             quality={100}
                         />
