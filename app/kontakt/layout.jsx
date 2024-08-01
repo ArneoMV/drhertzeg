@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import './_style.scss';
 import Header from '../components/organism/header/Header';
-import Footer from "../components/organism/footer/Footer";
 
 import { Metadata } from 'next'
 export const metadata = { 
