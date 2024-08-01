@@ -291,25 +291,25 @@ export default function Hero() {
             </div>
             <div className="illustrations">
                 <Image 
-                    src={ilustracija_1}
+                    src={Illustrations.biljka_1}
                     alt='biljka ilustracija'
                     quality={100}
                     className='ilustracija_1'
                 />
                 <Image 
-                    src={ilustracija_2}
+                    src={Illustrations.biljka_2}
                     alt='biljka ilustracija'
                     quality={100}
                     className='ilustracija_2'
                 />
                 <Image 
-                    src={ilustracija_3}
+                    src={Illustrations.biljka_3}
                     alt='biljka ilustracija'
                     quality={100}
                     className='ilustracija_3'
                 />
                 <Image 
-                    src={ilustracija_4}
+                    src={Illustrations.biljka_3}
                     alt='biljka ilustracija'
                     quality={100}
                     className='ilustracija_4'
