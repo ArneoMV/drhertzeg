@@ -102,13 +102,13 @@ export default function SliderArticles() {
                     productTitle="Ljekovite kreme"
                     productDetailsImageURL={BlogImg.blog_card_image_3}
                     productDetailsImageAlt="Ljekovite kreme"
-                    productDetailsURL="/blog/ljekoviteKreme"
+                    productDetailsURL="/blog/ljekovite-kreme"
                 />
                 <CardBlog
                     productTitle="Od antičke Europe do suvremenih istraživanja"
                     productDetailsImageURL={BlogImg.blog_card_image_4}
                     productDetailsImageAlt="Od antičke Europe do suvremenih istraživanja"
-                    productDetailsURL="/blog/blog-1"
+                    productDetailsURL="/blog/od-antičke-Europe-do-suvremenih-istraživanja"
                 />
                 <CardBlog
                     productTitle="Hidrolati: prirodna čarolija za savršenu kožu"

@@ -3,12 +3,12 @@ import Image from 'next/image';
 import Head from 'next/head';
 import { Logos, Icons, Social, BlogImg } from "../../utilities/images.js";
 
-import "./_ljekoviteKreme.scss";
+import "./_style.scss";
 import "../../styles/_index.scss";
 import Chip from '../../components/atoms/chip/Chip.jsx'
 import FollowSocial from '../../components/organism/followSocial/followSocial.jsx';
 
-export default function ljekoviteKreme() {
+export default function blog_02() {
   return (
     <>
     <Head>

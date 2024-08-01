@@ -8,7 +8,7 @@ import "../../styles/_index.scss";
 import Chip from '../../components/atoms/chip/Chip'
 import FollowSocial from '../../components/organism/followSocial/followSocial.jsx';
 
-export default function blog_01() {
+export default function blog_03() {
   return (
     <>
       <Head>
@@ -18,10 +18,10 @@ export default function blog_01() {
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.drhertzeg.hr/hidrolati-prirodna-carolija-za-savrsenu-kozu" />
         {/* Open Graph meta tags for social media */}
-        <meta property="og:title" content="Hidrolati: Prirodna Čarolija za Savršenu Kožu | Dr. Hertzeg" />
-        <meta property="og:description" content="Otkrijte čarobnu moć hidrolata i kako prirodni cvjetni eliksiri mogu transformirati vašu njegu kože. Saznajte kako hidrolati Dr. Hertzeg mogu poboljšati zdravlje vaše kože, s preporukama za zrelu i osjetljivu kožu." />
+        <meta property="og:title" content="Od antičke Europe do suvremenih istraživanja | Dr. Hertzeg" />
+        <meta property="og:description" content="Od antičke Europe do suvremenih istraživanja." />
         <meta property="og:image" content="https://www.drhertzeg.hr/images/hidrolati.jpg" />
-        <meta property="og:url" content="https://www.drhertzeg.hr/hidrolati-prirodna-carolija-za-savrsenu-kozu" />
+        <meta property="og:url" content="https://www.drhertzeg.hr/od-antičke-Europe-do-suvremenih-istraživanja" />
         <meta property="og:type" content="article" />
       </Head>
       <div className="article-page">
@@ -30,7 +30,7 @@ export default function blog_01() {
           {/* Title */}
           <section className="blog-title col-10-sm col-10-md col-10-lg">
             <span>
-              <h3 className='title-gooey'>Hidrolati:<br/> Prirodna Čarolija za Savršenu Kožu</h3>
+              <h3 className='title-gooey'>Od antičke Europe do<br/> suvremenih istraživanja</h3>
             </span>
             <div className="row">
               <div className="info">
