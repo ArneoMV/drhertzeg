@@ -74,7 +74,7 @@ export default function Hero() {
                             </div>
                             <div className='popular-product'>
                                 <Image
-                                    src={heroProduct2}
+                                    src={Social.hero_product_3}
                                     alt="kozmetikaProduct"
                                     quality={100}
                                     width={50}
@@ -281,7 +281,7 @@ export default function Hero() {
                     {/* Image */}
                     <div className="hero-image-container">
                         <Image
-                            src={Social.hero_product_image1}
+                            src={Social.hero_product_image_1}
                             alt="kozmetikaProduct"
                             quality={100}
                         />
