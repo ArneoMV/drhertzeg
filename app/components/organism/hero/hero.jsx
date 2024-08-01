@@ -97,7 +97,7 @@ export default function Hero() {
                     {/* Image */}
                     <div className="hero-image-container">
                         <Image
-                            src={hero_ProductImage_1}
+                            src={hero_Product_Image_1}
                             alt="kozmetikaProduct"
                             quality={100}
                         />
