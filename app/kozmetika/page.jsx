@@ -72,10 +72,10 @@ export default function Kozmetika() {
             <div className="product-cards-container">
               <ProductCard
                 productDetailsTitle="Calming Gel"
-                productDetailsPrice="3.8 €"
+                // productDetailsPrice="3.8 €"
                 productDetailsImageURL= {Cosmetics.product_calming_gel}
                 productDetailsImageAlt="Calming Gel"
-                productURL="/kozmetika/CalmingGel"
+                productURL="/kozmetika/calming-gel"
                 productChips1="Protupalno"
                 productChips2="Opušta"
                 imageClass="image-default"
@@ -83,10 +83,10 @@ export default function Kozmetika() {
               />
               <ProductCard
                 productDetailsTitle="Hair Boost"
-                productDetailsPrice="3.5 €"
+                // productDetailsPrice="3.5 €"
                 productDetailsImageURL= {Cosmetics.product_hair_boost}
                 productDetailsImageAlt="Hair Boost"
-                productURL="/kozmetika/HairBoost"
+                productURL="/kozmetika/hair-boost"
                 productChips1="Protupalno"
                 productChips2="Opušta"
                 imageClass="image-default"
@@ -94,10 +94,10 @@ export default function Kozmetika() {
               />
               <ProductCard
                 productDetailsTitle="Smiljolat"
-                productDetailsPrice="4.2 €"
+                // productDetailsPrice="4.2 €"
                 productDetailsImageURL= {Cosmetics.product_smiljolat}
                 productDetailsImageAlt="Smiljolat"
-                productURL="/kozmetika/Smiljolat"
+                productURL="/kozmetika/smiljolat"
                 productChips1="Protupalno"
                 productChips2="Opušta"
                 imageClass="image-default"
@@ -105,10 +105,10 @@ export default function Kozmetika() {
               />
               <ProductCard
                 productDetailsTitle="Lavandolat"
-                productDetailsPrice="3.5 €"
+                // productDetailsPrice="3.5 €"
                 productDetailsImageURL= {Cosmetics.product_lavandolat}
                 productDetailsImageAlt="Lavandolat"
-                productURL="/kozmetika/Lavandolat"
+                productURL="/kozmetika/lavandolat"
                 productChips1="Protupalno"
                 productChips2="Opušta"
                 imageClass="image-default"
@@ -116,10 +116,10 @@ export default function Kozmetika() {
               />
                <ProductCard
                 productDetailsTitle="Serum od Smilja"
-                productDetailsPrice="3.5 €"
+                // productDetailsPrice="3.5 €"
                 productDetailsImageURL= {Cosmetics.product_serum_od_smilja}
-                productDetailsImageAlt="SerumOdSmilja"
-                productURL="/kozmetika/SerumOdSmilja"
+                productDetailsImageAlt="Serum od smilja"
+                productURL="/kozmetika/serum-od-smilja"
                 productChips1="Protupalno"
                 productChips2="Opušta"
                 imageClass="image-default"
@@ -127,10 +127,10 @@ export default function Kozmetika() {
               />
               <ProductCard
                 productDetailsTitle="Care And Massage Oil"
-                productDetailsPrice="3.5 €"
+                // productDetailsPrice="3.5 €"
                 productDetailsImageURL= {Cosmetics.product_care_and_massage_oil}
-                productDetailsImageAlt="CareAndMassageOil"
-                productURL="/kozmetika/CareAndMassageOil"
+                productDetailsImageAlt="Care and massage oil"
+                productURL="/kozmetika/care-and-massage-oil"
                 productChips1="Protupalno"
                 productChips2="Opušta"
                 imageClass="image-default"
@@ -138,10 +138,10 @@ export default function Kozmetika() {
               />
                <ProductCard
                 productDetailsTitle="Vitamin Night Cream"
-                productDetailsPrice="3.5 €"
+                // productDetailsPrice="3.5 €"
                 productDetailsImageURL= {Cosmetics.product_vitamin_night_cream}
-                productDetailsImageAlt="VitaminNightCream"
-                productURL="/kozmetika/VitaminNightCream"
+                productDetailsImageAlt="Vitamin night cream"
+                productURL="/kozmetika/vitamin-night-cream"
                 productChips1="Protupalno"
                 productChips2="Opušta"
                 imageClass="image-default"
@@ -149,10 +149,10 @@ export default function Kozmetika() {
               />
                <ProductCard
                 productDetailsTitle="Hydrating Day Cream"
-                productDetailsPrice="3.5 €"
+                // productDetailsPrice="3.5 €"
                 productDetailsImageURL= {Cosmetics.product_hydrating_day_cream}
-                productDetailsImageAlt="HydratingDayCream"
-                productURL="/kozmetika/HydratingDayCream"
+                productDetailsImageAlt="Hydrating day cream"
+                productURL="/kozmetika/hydrating-day-cream"
                 productChips1="Protupalno"
                 productChips2="Opušta"
                 imageClass="image-default"

@@ -2,22 +2,23 @@
 import React from 'react';
 import { useRouter } from 'next/navigation';
 import { notFound } from "next/navigation";
-import { Logos, Icons, Social, User, Cosmetics } from "../../utilities/images.js";
 
+import { Icons, Social, User, Teas } from "../../utilities/images.js";
 import Chip from '../../components/atoms/chip/Chip.jsx';
 import ProductPromotioCard from '../../components/organism/productPromotioCard/productPromotioCard.jsx';
 import Carousel from '../../components/organism/carousel/carousel.jsx';
 import AdBanner from '../../components/organism/adBanner/adBanner.jsx';
 import ButtonIcon from '../../components/atoms/buttonIcon/buttonIcon.jsx';
-import SliderProductCosmetics from "../../components/organism/sliderProductCosmetics/sliderProductCosmetics.jsx"
+import SliderProductsTea from "../../components/organism/sliderProductsTea/sliderProductsTea.jsx"
 import ReviewLeft from '../../components/molecules/review/review-left.jsx';
 import ReviewRight from '../../components/molecules/review/review-right.jsx';
-import productCosmetics from '../../data/productCosmetics.js';
+import productsCaj from '../../data/productCaj.js';
 
+import './_style.scss';
 
-export default function Lavandolat() {
+export default function CajSmokvaList() {
   const router = useRouter();
-  const product = productCosmetics.find(p => p.id === "Lavandolat");
+  const product = productsCaj.find(p => p.id === "CajSlatkiPelin");
   
   if (!product) {
     return <p>Proizvod nije pronađen.</p>;
@@ -25,10 +26,10 @@ export default function Lavandolat() {
 
   // Images
   const slides = [
-    { src: Cosmetics.packaging_lavandolat, title: 'Lavandolat' },
-    { src: Cosmetics.product_lavandolat, title: 'Lavandolat' },
+    { src: Teas.packaging_caj_od_slatkog_pelina, title: 'Caj Slatki Pelin' },
+    // { src: Teas.product_caj_od_slatkog_pelina, title: 'biljka slatki pelin' },
   ];
-
+  
   // * Slick Slider Promotion Images * \\
   const handleNext = () => {
     // Dohvatite referencu na slider pomoću react-slick
@@ -179,8 +180,12 @@ export default function Lavandolat() {
           <div className="column">
             <div className="flex">
               <ReviewLeft 
-                userImage={User.user_review_12}
-                userReview="Hidrolat lavande je odličan za moju osjetljivu kožu sklona aknama. Koristim ga svaki dan i primijetila sam poboljšanje u čistoći kože."
+                userImage={User.user_review_03}
+                userReview="Ovaj čaj je fantastičan za moj imunitet. Osjećam se puno bolje otkad ga pijem."
+              />
+              <ReviewRight 
+                userImage={User.user_review_04}
+                userReview="Stvarno dobar čaj, okus je jak i ugodan. Pijem ga svakodnevno i zadovoljan sam rezultatima."
               />
             </div>
           </div>
@@ -189,7 +194,7 @@ export default function Lavandolat() {
 
       {/* Promotion Image slider */}
 
-      <SliderProductCosmetics /> 
+      <SliderProductsTea /> 
 
       <AdBanner />
     </main>

@@ -150,10 +150,16 @@ const Social = {
   tea_banner_image: require('../../public/images/social/hero-image-caj.webp').default,
   tea_cover: require('../../public/images/social/caj-blog.webp').default,
   cosmetics_banner_image: require('../../public/images/social/hero-image-cosmetics.webp').default,
-  product_promotion_card_blue: require('../../public/images/social/product-promotion-card-blue.webp').default,
-  product_promotion_card_green: require('../../public/images/social/product-promotion-card-green.webp').default,
-  product_promotion_card_orange: require('../../public/images/social/product-promotion-card-orange.webp').default,
-  product_promotion_card_red: require('../../public/images/social/product-promotion-card-red.webp').default,
+  
+  product_tea_promotion_detox_caj: require('../../public/images/social/product-tea-promotion-detox-caj.webp').default,
+  product_tea_promotion_imuno_caj: require('../../public/images/social/product-tea-promotion-imuno-caj.webp').default,
+  product_tea_promotion_slatki_pelin_caj: require('../../public/images/social/product-tea-promotion-slatki-pelin-caj.webp').default,
+  product_tea_promotion_smokva_list_caj: require('../../public/images/social/product-tea-promotion-smokva-list-caj.webp').default,
+  
+  product_cosmetics_promotion_smiljolat: require('../../public/images/social/product-cosmetics-promotion-smiljolat.webp').default,
+  product_cosmetics_promotion_hair_boost: require('../../public/images/social/product-cosmetics-promotion-hair-boost.webp').default,
+  product_cosmetics_promotion_serum_od_smilja: require('../../public/images/social/product-cosmetics-promotion-serum-od-smilja.webp').default,
+  product_cosmetics_promotion_calming_gel: require('../../public/images/social/product-cosmetics-promotion-calming-gel.webp').default,
 };
 
 const BlogImg = {

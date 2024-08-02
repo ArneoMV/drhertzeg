@@ -2,8 +2,8 @@
 import React from 'react';
 import { useRouter } from 'next/navigation';
 import { notFound } from "next/navigation";
-import { Logos, Icons, Social, User, Cosmetics } from "../../utilities/images.js";
 
+import { Logos, Icons, Social, User, Cosmetics } from "../../utilities/images.js";
 import Chip from '../../components/atoms/chip/Chip.jsx';
 import ProductPromotioCard from '../../components/organism/productPromotioCard/productPromotioCard.jsx';
 import Carousel from '../../components/organism/carousel/carousel.jsx';
@@ -15,18 +15,19 @@ import ReviewRight from '../../components/molecules/review/review-right.jsx';
 import productCosmetics from '../../data/productCosmetics.js';
 
 
-export default function Lavandolat() {
+export default function CareAndMassageOil() {
   const router = useRouter();
-  const product = productCosmetics.find(p => p.id === "Lavandolat");
+  const product = productCosmetics.find(p => p.id === "CareAndMassageOil");
   
   if (!product) {
     return <p>Proizvod nije pronađen.</p>;
   }
 
+
   // Images
   const slides = [
-    { src: Cosmetics.packaging_lavandolat, title: 'Lavandolat' },
-    { src: Cosmetics.product_lavandolat, title: 'Lavandolat' },
+    { src: Cosmetics.packaging_care_and_massage_oil, title: 'Care And Massage Oil' },
+    { src: Cosmetics.product_care_and_massage_oil, title: 'Care And Massage Oil' },
   ];
 
   // * Slick Slider Promotion Images * \\
@@ -179,8 +180,12 @@ export default function Lavandolat() {
           <div className="column">
             <div className="flex">
               <ReviewLeft 
+                userImage={User.user_review_11}
+                userReview="Fantastično ulje koje je moj favorit za masažu. Koža mi je glatka i mekana, a miris lavande je umirujuć. Odlično za opuštanje nakon napornog dana."
+              />
+              <ReviewRight 
                 userImage={User.user_review_12}
-                userReview="Hidrolat lavande je odličan za moju osjetljivu kožu sklona aknama. Koristim ga svaki dan i primijetila sam poboljšanje u čistoći kože."
+                userReview="Koristim ovo ulje svakodnevno nakon tuširanja i koža mi se znatno poboljšala. Također pomaže u smanjenju suhoće i daje koži prirodan sjaj."
               />
             </div>
           </div>

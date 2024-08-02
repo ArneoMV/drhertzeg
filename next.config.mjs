@@ -43,3 +43,25 @@ export default nextConfig;
 // export default withBundleAnalyzer({
 //   enabled: process.env.ANALYZE === 'true',
 // })(nextConfig);
+
+
+//   /** @type {import('next').NextConfig} */
+// const nextConfig = {
+//     assetPrefix: process.env.ASSET_PREFIX || '',
+  
+//     webpack: (config, { isServer }) => {
+//       // Adding custom rule for handling SVGs with url-loader
+//       config.module.rules.push({
+//         test: /\.svg$/,
+//         type: 'asset/resource',
+//         generator: {
+//           filename: 'static/media/[name].[hash][ext]',
+//         },
+//       });
+  
+//       return config;
+//     },
+//   };
+  
+//   export default nextConfig;
+  

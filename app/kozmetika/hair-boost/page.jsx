@@ -15,9 +15,9 @@ import ReviewRight from '../../components/molecules/review/review-right.jsx';
 import productCosmetics from '../../data/productCosmetics.js';
 
 
-export default function Lavandolat() {
+export default function HairBoost() {
   const router = useRouter();
-  const product = productCosmetics.find(p => p.id === "Lavandolat");
+  const product = productCosmetics.find(p => p.id === "HairBoost");
   
   if (!product) {
     return <p>Proizvod nije pronađen.</p>;
@@ -25,8 +25,8 @@ export default function Lavandolat() {
 
   // Images
   const slides = [
-    { src: Cosmetics.packaging_lavandolat, title: 'Lavandolat' },
-    { src: Cosmetics.product_lavandolat, title: 'Lavandolat' },
+    { src: Cosmetics.packaging_hair_boost, title: 'Hair Boost protiv čelavosti njega kose' },
+    { src: Cosmetics.product_hair_boost, title: 'Hair Boost protiv čelavosti njega kose' },
   ];
 
   // * Slick Slider Promotion Images * \\
@@ -180,7 +180,11 @@ export default function Lavandolat() {
             <div className="flex">
               <ReviewLeft 
                 userImage={User.user_review_12}
-                userReview="Hidrolat lavande je odličan za moju osjetljivu kožu sklona aknama. Koristim ga svaki dan i primijetila sam poboljšanje u čistoći kože."
+                userReview="Ovaj losion mi je pomogao da se riješim prhuti i da kosi vratim sjaj i vitalnost. Sviđa mi se što prirodno njeguje i ne opterećuje kosu."
+              />
+              <ReviewRight 
+                userImage={User.user_review_12}
+                userReview="Povećao je volumen moje kose i osjećam da mi je vlasište zdravije. Prava stvar za svakodnevnu njegu i jačanje korijena."
               />
             </div>
           </div>

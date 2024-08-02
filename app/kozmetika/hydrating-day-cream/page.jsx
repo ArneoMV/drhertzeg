@@ -15,9 +15,9 @@ import ReviewRight from '../../components/molecules/review/review-right.jsx';
 import productCosmetics from '../../data/productCosmetics.js';
 
 
-export default function Lavandolat() {
+export default function HydratingDayCream() {
   const router = useRouter();
-  const product = productCosmetics.find(p => p.id === "Lavandolat");
+  const product = productCosmetics.find(p => p.id === "HydratingDayCream");
   
   if (!product) {
     return <p>Proizvod nije pronađen.</p>;
@@ -25,8 +25,8 @@ export default function Lavandolat() {
 
   // Images
   const slides = [
-    { src: Cosmetics.packaging_lavandolat, title: 'Lavandolat' },
-    { src: Cosmetics.product_lavandolat, title: 'Lavandolat' },
+    { src: Cosmetics.packaging_hydrating_day_cream, title: 'Hydrating Day Cream' },
+    { src: Cosmetics.product_hydrating_day_cream, title: 'Hydrating Day Cream' },
   ];
 
   // * Slick Slider Promotion Images * \\
@@ -180,7 +180,7 @@ export default function Lavandolat() {
             <div className="flex">
               <ReviewLeft 
                 userImage={User.user_review_12}
-                userReview="Hidrolat lavande je odličan za moju osjetljivu kožu sklona aknama. Koristim ga svaki dan i primijetila sam poboljšanje u čistoći kože."
+                userReview="Krema je odlična za dnevnu njegu. Koža mi je hidratizirana i mekana tijekom cijelog dana. Volim što se brzo upija i ne ostavlja masni trag."
               />
             </div>
           </div>

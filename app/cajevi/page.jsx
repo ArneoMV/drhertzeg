@@ -64,7 +64,7 @@ export default function Cajevi() {
                 productDetailsPrice="4 €"
                 productDetailsImageURL={Teas.packaging_eko_caj_smokva_list}
                 productDetailsImageAlt="Smokvin list"
-                productURL="/cajevi/CajSmokvaList"
+                productURL="/cajevi/smokvin-list-caj"
                 productChips1="Protupalno"
                 productChips2="Opušta"
                 imageClass="image-default"
@@ -75,7 +75,7 @@ export default function Cajevi() {
                 productDetailsPrice="3.8 €"
                 productDetailsImageURL={Teas.packaging_caj_od_slatkog_pelina}
                 productDetailsImageAlt="Slatki pelin"
-                productURL="/cajevi/CajSlatkiPelin"
+                productURL="/cajevi/caj-od-slatkog-pelina"
                 productChips1="Smirujuće"
                 productChips2="Opušta"
                 imageClass="image-default"
@@ -86,7 +86,7 @@ export default function Cajevi() {
                 productDetailsPrice="3.5 €"
                 productDetailsImageURL={Teas.packaging_energija_jutra_caj}
                 productDetailsImageAlt="Energija jutra"
-                productURL="/cajevi/CajEnergijaJutra"
+                productURL="/cajevi/energija-jutra-caj"
                 productChips1="Razbuđuje"
                 productChips2="Umjesto kave"
                 imageClass="image-default"
@@ -97,7 +97,7 @@ export default function Cajevi() {
                 productDetailsPrice="4.2 €"
                 productDetailsImageURL={Teas.packaging_detox_caj}
                 productDetailsImageAlt="Detox čaj"
-                productURL="/cajevi/CajDetox"
+                productURL="/cajevi/detox-caj"
                 productChips1="Čisti organizam"
                 productChips2="Hidracija"
                 imageClass="image-default"
@@ -108,7 +108,7 @@ export default function Cajevi() {
                 productDetailsPrice="3.5 €"
                 productDetailsImageURL={Teas.packaging_imuno_caj}
                 productDetailsImageAlt="Imuno čaj"
-                productURL="/cajevi/CajImuno"
+                productURL="/cajevi/imuno-caj"
                 productChips1="Protupalno"
                 productChips2="Opušta"
                 imageClass="image-default"

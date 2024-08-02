@@ -15,9 +15,9 @@ import ReviewRight from '../../components/molecules/review/review-right.jsx';
 import productCosmetics from '../../data/productCosmetics.js';
 
 
-export default function Lavandolat() {
+export default function VitaminNightCream() {
   const router = useRouter();
-  const product = productCosmetics.find(p => p.id === "Lavandolat");
+  const product = productCosmetics.find(p => p.id === "VitaminNightCream");
   
   if (!product) {
     return <p>Proizvod nije pronađen.</p>;
@@ -25,8 +25,8 @@ export default function Lavandolat() {
 
   // Images
   const slides = [
-    { src: Cosmetics.packaging_lavandolat, title: 'Lavandolat' },
-    { src: Cosmetics.product_lavandolat, title: 'Lavandolat' },
+    { src: Cosmetics.packaging_vitamin_night_cream, title: 'Vitamin Night Cream' },
+    { src: Cosmetics.product_vitamin_night_cream, title: 'Vitamin Night Cream' },
   ];
 
   // * Slick Slider Promotion Images * \\
@@ -180,7 +180,7 @@ export default function Lavandolat() {
             <div className="flex">
               <ReviewLeft 
                 userImage={User.user_review_12}
-                userReview="Hidrolat lavande je odličan za moju osjetljivu kožu sklona aknama. Koristim ga svaki dan i primijetila sam poboljšanje u čistoći kože."
+                userReview="Noćna krema je izvrstan završni korak u mojoj noćnoj rutini. Koža je ujutro vidljivo hidratizirana i obnovljena, a miris je vrlo umirujuć."
               />
             </div>
           </div>
