@@ -15,7 +15,7 @@ import ReviewRight from '../../components/molecules/review/review-right.jsx';
 import productCosmetics from '../../data/productCosmetics.js';
 
 
-export default function SerumodSmilja() {
+export default function SerumOdSmilja() {
   const router = useRouter();
   const product = productCosmetics.find(p => p.id === "SerumOdSmilja");
   
@@ -115,7 +115,7 @@ export default function SerumodSmilja() {
           </div>
           <div className="product-details">
             <h3>{product.naziv}</h3>
-            <p className='price'>{product.cijena}</p>
+            {/* <p className='price'>{product.cijena}</p> */}
             <div className="row-chips">
               <Chip 
                 text={product.tag1}

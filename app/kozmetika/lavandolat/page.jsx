@@ -115,7 +115,7 @@ export default function Lavandolat() {
           </div>
           <div className="product-details">
             <h3>{product.naziv}</h3>
-            <p className='price'>{product.cijena}</p>
+            {/* <p className='price'>{product.cijena}</p> */}
             <div className="row-chips">
               <Chip 
                 text={product.tag1}
