@@ -15,7 +15,7 @@ import useWindowResize from '../../../utilities/useWindowResize.js'
 import ProductPromotioCard from '../productPromotioCard/productPromotioCard.jsx';
 
 
-export default function sliderProductsTea() {
+export default function SliderProductsTea() {
 
     // resize 
     const { screenWidth, screenHeight } = useWindowResize();
@@ -91,7 +91,7 @@ export default function sliderProductsTea() {
                 <ProductPromotioCard
                     title="Detox čaj"
                     description="Detox čaj je pažljivo odabrana mješavina biljaka koje blagotvorno djeluju na organizam."
-                    buttonURL="/cajevi/cajDetox"
+                    buttonURL="/cajevi/detox-caj"
                     imageSRC={Social.product_tea_promotion_detox_caj}
                     imageALT="Detox caj"
                     color="blue"
@@ -100,7 +100,7 @@ export default function sliderProductsTea() {
                 <ProductPromotioCard
                     title="Imuno čaj"
                     description="Pažljivo odabrana mješavina aromatičnih biljaka koje jačaju imunitet i štite organizam od upala i virusa."
-                    buttonURL="/cajevi/CajImuno"
+                    buttonURL="/cajevi/imuno-caj"
                     imageSRC={Social.product_tea_promotion_imuno_caj}
                     imageALT="Imuno čaj"
                     color="green"
@@ -109,7 +109,7 @@ export default function sliderProductsTea() {
                 <ProductPromotioCard
                     title="Čaj od Slatkog Pelina"
                     description="Čaj od Slatkog pelina je prirodni čaj bogat artemizinom koji ima antibakterijsko i antivirusno djelovanje."
-                    buttonURL="/cajevi/CajSlatkiPelin"
+                    buttonURL="/cajevi/caj-od-slatkog-pelina"
                     imageSRC={Social.product_tea_promotion_slatki_pelin_caj}
                     imageALT="Caj od slatkog pelina"
                     color="red"
@@ -118,7 +118,7 @@ export default function sliderProductsTea() {
                 <ProductPromotioCard
                     title="Eko čaj Smokva list"
                     description="Čaj od smokivinog lista pruža profinjen okus i obiluje antioksidansima te vlaknima."
-                    buttonURL="/cajevi/CajSmokvaList"
+                    buttonURL="/cajevi/smokvin-list-caj"
                     imageSRC={Social.product_tea_promotion_smokva_list_caj}
                     imageALT="Eko čaj Smokva list"
                     color="orange"
@@ -173,7 +173,7 @@ export default function sliderProductsTea() {
                 <ProductPromotioCard
                     title="Detox čaj"
                     description="Detox čaj je pažljivo odabrana mješavina biljaka koje blagotvorno djeluju na organizam."
-                    buttonURL="/cajevi/cajDetox"
+                    buttonURL="/cajevi/detox-caj"
                     imageSRC={Social.product_tea_promotion_detox_caj}
                     imageALT="Detox caj"
                     color="blue"
@@ -182,7 +182,7 @@ export default function sliderProductsTea() {
                 <ProductPromotioCard
                     title="Imuno čaj"
                     description="Pažljivo odabrana mješavina aromatičnih biljaka koje jačaju imunitet i štite organizam od upala i virusa."
-                    buttonURL="/cajevi/CajImuno"
+                    buttonURL="/cajevi/imuno-caj"
                     imageSRC={Social.product_tea_promotion_imuno_caj}
                     imageALT="Imuno čaj"
                     color="green"
@@ -191,7 +191,7 @@ export default function sliderProductsTea() {
                 <ProductPromotioCard
                     title="Čaj od Slatkog Pelina"
                     description="Čaj od Slatkog pelina je prirodni čaj bogat artemizinom koji ima antibakterijsko i antivirusno djelovanje."
-                    buttonURL="/cajevi/CajSlatkiPelin"
+                    buttonURL="/cajevi/caj-od-slatkog-pelina"
                     imageSRC={Social.product_tea_promotion_slatki_pelin_caj}
                     imageALT="Caj od slatkog pelina"
                     color="red"
@@ -200,7 +200,7 @@ export default function sliderProductsTea() {
                 <ProductPromotioCard
                     title="Eko čaj Smokva list"
                     description="Čaj od smokivinog lista pruža profinjen okus i obiluje antioksidansima te vlaknima."
-                    buttonURL="/cajevi/CajSmokvaList"
+                    buttonURL="/cajevi/smokvin-list-caj"
                     imageSRC={Social.product_tea_promotion_smokva_list_caj}
                     imageALT="Eko čaj Smokva list"
                     color="orange"
@@ -244,6 +244,8 @@ export default function sliderProductsTea() {
                     buttonURL="/cajevi/detox-caj"
                     imageSRC={Social.product_tea_promotion_detox_caj}
                     imageALT="Detox caj"
+                    color="blue"
+                    productNumber="2"
                 />
                 <ProductPromotioCard
                     title="Imuno čaj"
@@ -251,13 +253,17 @@ export default function sliderProductsTea() {
                     buttonURL="/cajevi/imuno-caj"
                     imageSRC={Social.product_tea_promotion_imuno_caj}
                     imageALT="Imuno čaj"
+                    color="green"
+                    productNumber="3"
                 />
                 <ProductPromotioCard
                     title="Čaj od Slatkog Pelina"
-                    description="Bogat artemizinom koji ima antibakterijsko i antivirusno djelovanje."
+                    description="Čaj od Slatkog pelina je prirodni čaj bogat artemizinom koji ima antibakterijsko i antivirusno djelovanje."
                     buttonURL="/cajevi/caj-od-slatkog-pelina"
                     imageSRC={Social.product_tea_promotion_slatki_pelin_caj}
                     imageALT="Caj od slatkog pelina"
+                    color="red"
+                    productNumber="4"
                 />
                 <ProductPromotioCard
                     title="Eko čaj Smokva list"
@@ -265,6 +271,8 @@ export default function sliderProductsTea() {
                     buttonURL="/cajevi/smokvin-list-caj"
                     imageSRC={Social.product_tea_promotion_smokva_list_caj}
                     imageALT="Eko čaj Smokva list"
+                    color="orange"
+                    productNumber="5"
                 />
                 
             </Slider>

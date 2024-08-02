@@ -15,7 +15,7 @@ import useWindowResize from '../../../utilities/useWindowResize.js'
 import ProductPromotioCard from '../../organism/productPromotioCard/productPromotioCard';
 
 
-export default function sliderProductCosmetics() {
+export default function SliderProductCosmetics() {
 
     // resize 
     const { screenWidth, screenHeight } = useWindowResize();
@@ -89,40 +89,32 @@ export default function sliderProductCosmetics() {
                 {...settings}
             >
                 <ProductPromotioCard
-                    title="Njega kože"
-                    description="Marzipan caramels brownie jelly beans."
-                    buttonURL="/caj/cajProduct"
+                    title="Smiljolat"
+                    description="Organski hidrolat smilja za njegu, čišćenje i hidrataciju zrele kože."
+                    buttonURL="/kozmetika/smiljolat"
                     imageSRC={Social.product_cosmetics_promotion_smiljolat}
-                    imageALT="Njega kože"
-                    color="blue"
-                    productNumber="2"
+                    imageALT="Smiljolat"
                 />
                 <ProductPromotioCard
-                    title="Njega kose"
-                    description="Gingerbread tootsie roll icing carrot cake. Brownie candy canes cotton candy."
-                    buttonURL="/caj/cajProduct"
+                    title="Hair boost"
+                    description="Biljni losion s cvijetom arnike za umirenje vlasišta, pomoć pri otklanjanju prhuti i davanje sjaja kosi."
+                    buttonURL="/kozmetika/hair-boost"
                     imageSRC={Social.product_cosmetics_promotion_hair_boost}
-                    imageALT="Njega kose"
-                    color="green"
-                    productNumber="3"
+                    imageALT="/kozmetika/Hair boost"
                 />
                 <ProductPromotioCard
-                    title="Njega lica"
-                    description="Icing soufflé chocolate candy jelly beans cake. "
-                    buttonURL="/caj/cajProduct"
+                    title="Calming gel"
+                    description="Gel jedinstvene formulacije i brzog učinka koji rashlađuje, umiruje i smanjuje otekline od uboda insekata ili opeklina od sunca."
+                    buttonURL="/kozmetika/calming-gel"
                     imageSRC={Social.product_cosmetics_promotion_calming_gel}
-                    imageALT="Njega lica"
-                    color="red"
-                    productNumber="4"
+                    imageALT="Calming gel"
                 />
                 <ProductPromotioCard
-                    title="Njega tijela"
-                    description="Cupcake sweet roll chocolate bar candy canes soufflé jelly-o."
-                    buttonURL="/caj/cajProduct"
+                    title="Serum od smilja"
+                    description="Efikasan anti-age serum obogaćen vitaminom E koji dubinski hrani kožu, smanjuje znakove starenja i smiruje upalne promjene."
+                    buttonURL="/kozmetika/serum-od-smilja"
                     imageSRC={Social.product_cosmetics_promotion_serum_od_smilja}
-                    imageALT="Njega tijela"
-                    color="orange"
-                    productNumber="5"
+                    imageALT="Serum od smilja"
                 />
                 
             </Slider>
@@ -171,40 +163,32 @@ export default function sliderProductCosmetics() {
                 {...settings}
             >
                 <ProductPromotioCard
-                    title="Njega kože"
-                    description="Marzipan caramels brownie jelly beans."
-                    buttonURL="/caj/cajProduct"
+                    title="Smiljolat"
+                    description="Organski hidrolat smilja za njegu, čišćenje i hidrataciju zrele kože."
+                    buttonURL="/kozmetika/smiljolat"
                     imageSRC={Social.product_cosmetics_promotion_smiljolat}
-                    imageALT="Njega kože"
-                    color="blue"
-                    productNumber="2"
+                    imageALT="Smiljolat"
                 />
                 <ProductPromotioCard
-                    title="Njega kose"
-                    description="Gingerbread tootsie roll icing carrot cake. Brownie candy canes cotton candy."
-                    buttonURL="/caj/cajProduct"
+                    title="Hair boost"
+                    description="Biljni losion s cvijetom arnike za umirenje vlasišta, pomoć pri otklanjanju prhuti i davanje sjaja kosi."
+                    buttonURL="/kozmetika/hair-boost"
                     imageSRC={Social.product_cosmetics_promotion_hair_boost}
-                    imageALT="Njega kose"
-                    color="green"
-                    productNumber="3"
+                    imageALT="/kozmetika/Hair boost"
                 />
                 <ProductPromotioCard
-                    title="Njega lica"
-                    description="Icing soufflé chocolate candy jelly beans cake. "
-                    buttonURL="/caj/cajProduct"
+                    title="Calming gel"
+                    description="Gel jedinstvene formulacije i brzog učinka koji rashlađuje, umiruje i smanjuje otekline od uboda insekata ili opeklina od sunca."
+                    buttonURL="/kozmetika/calming-gel"
                     imageSRC={Social.product_cosmetics_promotion_calming_gel}
-                    imageALT="Njega lica"
-                    color="red"
-                    productNumber="4"
+                    imageALT="Calming gel"
                 />
                 <ProductPromotioCard
-                    title="Njega tijela"
-                    description="Cupcake sweet roll chocolate bar candy canes soufflé jelly-o."
-                    buttonURL="/caj/cajProduct"
+                    title="Serum od smilja"
+                    description="Efikasan anti-age serum obogaćen vitaminom E koji dubinski hrani kožu, smanjuje znakove starenja i smiruje upalne promjene."
+                    buttonURL="/kozmetika/serum-od-smilja"
                     imageSRC={Social.product_cosmetics_promotion_serum_od_smilja}
-                    imageALT="Njega tijela"
-                    color="orange"
-                    productNumber="5"
+                    imageALT="Serum od smilja"
                 />
                 
             </Slider>
@@ -248,7 +232,7 @@ export default function sliderProductCosmetics() {
                 <ProductPromotioCard
                     title="Hair boost"
                     description="Biljni losion s cvijetom arnike za umirenje vlasišta, pomoć pri otklanjanju prhuti i davanje sjaja kosi."
-                    buttonURL="/kozmetika/hai-boost"
+                    buttonURL="/kozmetika/hair-boost"
                     imageSRC={Social.product_cosmetics_promotion_hair_boost}
                     imageALT="/kozmetika/Hair boost"
                 />
