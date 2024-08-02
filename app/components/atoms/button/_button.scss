@@ -1,0 +1,138 @@
+@use '../../../styles/abstract/color' as *;
+@use '../../../styles/base/variable' as *;
+
+// COMPONENT STYLES
+@mixin Button {
+  height: 48px;
+  max-width: fit-content;
+  padding: 0 $size-24;
+  border: none;
+  border-radius: $size-12;
+  cursor: pointer;
+  text-transform: uppercase;
+
+  font-family: "Work Sans", sans-serif;
+  color: $primary-100;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 130%;
+  text-align: left;
+}
+
+a .button {
+  text-decoration: none;
+}
+.button {
+  @include Button();
+  filter: url('#title-gooey');
+}
+
+.button.primary {
+  background-color: $primary-600;
+  color: $neutral-100;
+  display: flex;
+  align-items: center;
+  gap: $gap-sm;
+
+  &:hover {
+    box-sizing: border-box;
+    box-shadow: $shadow-sm;
+    background-color: $primary-400;
+    box-shadow: $shadow-lg;
+  }
+  &:focus {
+    box-shadow: $shadow-sm; 
+    background-color: $primary-200;
+  }
+  &:disabled {
+    background-color: $neutral-300;
+    color: $neutral-500;
+    cursor: not-allowed;
+    box-shadow: none;
+  }
+  
+  img {
+    height: 18px !important;
+    width: auto !important;
+    fill: white;
+  }
+}
+
+.button.secondary {
+  @include Button();
+  background-color: transparent;
+  color: $neutral-800;
+  border: 0px;
+
+  &:hover {
+    background-color: transparent;
+    box-shadow: $base-shadow-3;
+    color: $neutral-800;
+    text-decoration: none;
+  }
+  &:focus {
+    background-color: $neutral-100;
+    box-shadow: $shadow-sm;
+    color: $primary-600;
+    border: 2px solid $neutral-300;
+  }
+  &:disabled {
+    background-color: transparent;
+    color: $neutral-300;
+    border: 2px solid $neutral-300;
+    cursor: not-allowed;
+  }
+}
+
+.button.link {
+  max-width: fit-content;
+  border: none;
+  cursor: pointer;
+  height: auto;
+  font-family: "Work Sans", sans-serif;
+  color: $primary-900;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 115%;
+  letter-spacing: 0.07em;
+  text-align: left;
+  background-color: transparent;
+  padding: 0;
+  text-decoration: none;
+  &:hover {
+    background-color: transparent;
+    color: $primary-600;
+    text-decoration: underline;
+    font-weight: 600;
+  }
+  &:focus {
+    background-color: transparent;
+    color: $primary-600;
+    text-decoration: underline;
+    
+  }
+  &:disabled {
+    background-color: transparent;
+    color: $neutral-500;
+    text-decoration: none;
+    cursor: not-allowed;
+  }
+}
+
+.gooey-svg {
+  visibility: hidden;
+  position: absolute;
+}
+.title-gooey {
+  line-height: 100%;
+  display: inline;
+  box-decoration-break: clone;
+  background: $primary-600;
+  padding: 0.5rem 1rem;
+  filter: url('#title-gooey');
+  color: $neutral-100;
+  line-height: 125%;
+}
+.title-gooey:focus {
+  outline: 0;
+}

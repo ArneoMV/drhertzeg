@@ -1,0 +1,88 @@
+@use "sass:math";
+@use "../abstract/color.scss" as *;
+@use "../base/variable.scss" as *;
+@use './breakpoint' as *;
+
+$grid-columns: 12;
+$grid-gaps: (
+    "0": 0,
+    "1": 10px,
+    "2": 24px,
+    "3": 30px,
+);
+
+$layout-values: flex-start, flex-end, center, space-between, space-around;
+
+// justify content classes
+@each $val in $layout-values {
+    .justify-#{$val} {
+        justify-content: $val;
+    }
+}
+
+// base layout classes
+.container {
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-flow: row;
+}
+
+// grid gaps
+@each $key, $val in $grid-gaps {
+    .gap-#{$key} > * {
+        margin: $val / -2;
+        box-sizing: border-box;
+        padding: $val / 2;
+    }
+}
+
+// Mixin to generate column classes for different breakpoints
+@mixin generate-column-classes($breakpoint) {
+    @for $i from 1 through $grid-columns {
+        .col-#{$i}-#{$breakpoint} {
+            box-sizing: border-box;
+            flex-grow: 0;
+            width: percentage($i / $grid-columns);
+        }
+    }
+}
+
+// Generate column classes for each breakpoint
+@include xxs {
+    @include generate-column-classes(xxs);
+}
+
+@include xs {
+    @include generate-column-classes(xs);
+}
+
+@include sm {
+    @include generate-column-classes(sm);
+}
+
+@include md {
+    @include generate-column-classes(md);
+}
+
+@include lg {
+    @include generate-column-classes(lg);
+}
+
+@include xl {
+    @include generate-column-classes(xl);
+}
+
+@include xxl {
+    @include generate-column-classes(xxl);
+}

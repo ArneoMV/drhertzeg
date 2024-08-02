@@ -1,0 +1,206 @@
+@use '../styles/base/_variable' as *;
+@use '../styles/abstract/_color' as *;
+@use '../styles/abstract/_typo' as *;
+@use '../styles/layout/_breakpoint' as *;
+@use '../styles/layout/_layout' as *;
+@use '../styles/base/_mixin' as *;
+
+.column {
+    @include flexColumn;
+}
+.row {
+    @include flexRow;
+}
+
+.products-page {
+    @include main-page-layout;
+    main.products-page-container {
+        @include main-page-container;
+
+        h1, h2, h3, h4, h5 p { color: $blue-800; }
+        .product-promotion {
+            @include flexColumn;
+            justify-content: center;
+            gap: $size-48;
+            .promotion-title {
+                @include flexColumn;
+                gap: $size-12;
+                margin: 0 auto;
+                h4 {
+                    font-size: 24px;
+                    text-align: center;
+                    line-height: 115%;
+                }
+                p {
+                    font-weight: 700;
+                }
+            }
+            .flex {
+                @include flexColumn;
+                gap: $size-24;
+                .info-card {
+                    @include flexColumn;
+                    gap: $size-12;
+                    background-color: $neutral-100;
+                    box-shadow: $base-shadow-3;
+                    padding: $size-24;
+                    border-radius: $size-16;
+                    box-sizing: border-box;
+                    h5, p {
+                        text-align: center;
+                    }
+                    h5 {
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+
+        .product-cards {
+            @include flexColumn;
+            gap: $size-24;
+            width: 100%;
+            .product-cards-title {
+                width: 100%;
+                @include flexColumn;
+                gap: $size-24;
+                justify-content: space-between;
+                align-items: center;
+                h3,p  {
+                    text-align: left;
+                }
+                .column {
+                    width: auto;
+                    @include flexColumn;
+                    
+                    gap: $size-12;
+                    &:nth-child(1) {
+                        width: 100%;
+                        h3  {
+                            font-weight: 900;
+                        }
+                        p {
+                            max-width: 420px;
+                        }
+                    }
+                    &:nth-child(2) {
+                        width: 100%;
+                        .row {
+                            align-items: center;
+                            gap: $size-12;
+                            p {
+                                font-size: 18px;
+                                font-weight: 700;
+                            }
+                            img {
+                                height: 38px;
+                                width: auto;
+                            }
+                        }
+                        ul {
+                            @include flexColumn;
+                            gap: $size-12;
+                            padding-left: $size-24;
+                            box-sizing: border-box;
+                            li {
+                                font-size: 16px;
+                                font-weight: 500;
+                                color: $blue-800;
+                            }
+                        } 
+                    }
+                    
+                }
+            }
+            .product-cards-container {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                gap: $size-24;
+                box-sizing: border-box;
+                a {
+                    // width: auto;
+                    text-decoration: none;
+                }
+                .otherProductCard {
+                    max-width: 420px;
+                }
+            }
+        }
+
+        @media (min-width: map-get($breakpoints, "xxs")) {
+            .product-promotion {
+                .promotion-title {
+                    h4{
+                        font-size: 32px;
+                    }
+                    p {
+                        font-size: 26px;
+                    }
+                }
+                .flex {
+                    @include flexColumn;
+                }
+            }
+            .product-cards {
+                .product-cards-title {
+                    @include flexColumn;
+                    gap: $size-24;
+                    padding: 0;
+                }
+            } 
+        }
+        @media (min-width: map-get($breakpoints, "xs")) {
+            .product-cards {
+                .product-cards-container { 
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
+        }
+        @media (min-width: map-get($breakpoints, "sm")) {
+            .product-cards {
+                .product-cards-container { 
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+        }
+        @media (min-width: map-get($breakpoints, "md")) {
+            .product-promotion {
+                .promotion-title {
+                    h4{
+                        font-size: 48px;
+                    }
+                    p {
+                        font-size: 38px;
+                    }
+                }
+                .flex {
+                    @include flexRow;
+                }
+            }
+            .product-cards {
+                .product-cards-title {
+                    @include flexRow;
+                    gap: $size-48;
+                    padding: 0;
+                    .column {
+                        &:nth-child(1) {
+                            width: auto;
+                        }
+                        &:nth-child(2) {
+                            width: auto;
+                        }
+                    }
+                }
+                .product-cards-container { 
+                    grid-template-columns: repeat(3, 1fr);
+                }
+            }
+        }
+        @media (min-width: map-get($breakpoints, "lg")) {
+        }
+        @media (min-width: map-get($breakpoints, "xl")) {
+        }
+        @media (min-width: map-get($breakpoints, "xxl")) {
+        }
+    }
+}

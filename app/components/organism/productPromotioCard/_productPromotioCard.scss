@@ -1,0 +1,160 @@
+
+@use '../../../styles/base/_variable' as *;
+@use '../../../styles/abstract/_color' as *;
+@use '../../../styles/abstract/_typo' as *;
+@use '../../../styles/layout/_breakpoint' as *;
+@use '../../../styles/layout/_layout' as *;
+@use '../../../styles/base/_mixin' as *;
+
+  
+.product-promotion-card {
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    @include flexColumn;
+    border-radius: $size-16;
+    padding: $size-24;
+    box-sizing: border-box;
+    transition: background-color 0.3s;
+    background-color: $neutral-100;
+    a {
+        text-decoration: none;
+        @include flexColumn;
+        justify-content: space-between;
+        gap: $size-24;
+        .promotion-content {
+            @include flexColumn;
+            justify-content: space-between;
+            gap: $size-12;
+            h4, p {
+                color: $neutral-800;
+            }
+            p {
+                font-size: 14px;
+                line-height: 130%;
+                height: 100px;
+            }
+        }
+        .image-container {
+            width: auto;
+            display: grid;
+            img {
+                place-self: center;
+                height: auto;
+                width: 180px;
+                object-fit: cover;
+            }
+        }
+
+
+    }
+    &.green {
+        background-color:  $primary-100;
+      
+        &:hover {
+          background-color:  $primary-200;
+        }
+    }
+    &.red {
+        background-color:  $red-100;
+    
+        &:hover {
+            background-color:  $red-200;
+        }
+    }
+    &.blue {
+        background-color: $blue-100;
+        
+        &:hover {
+            background-color: $blue-200;
+        }
+    }
+    &.orange {
+        background-color: $orange-100;
+        
+        &:hover {
+            background-color: $orange-200;
+        }
+    }
+    &:hover {
+        cursor: pointer;
+    }
+
+
+    
+
+    
+
+
+
+    @media (min-width: map-get($breakpoints, "xxs")) {
+        @include flexColumn;
+    }
+    @media (min-width: map-get($breakpoints, "xs")) {
+
+    }
+    @media (min-width: map-get($breakpoints, "sm")) {
+
+    }
+    @media (min-width: map-get($breakpoints, "md")) {
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        overflow: hidden;
+        @include flexRow;
+        gap: $size-24;
+        border-radius: $size-16;
+        padding: $size-24;
+        box-sizing: border-box;
+        a {
+            @include flexRow;
+            justify-content: space-between;
+            gap: $size-24;
+            .promotion-content {
+                @include flexColumn;
+                justify-content: space-between;
+                width: 80%;
+                .promotion-content-title {
+                    @include flexColumn;
+                    gap: $size-8;
+                }
+            }
+            .promotion-image {
+                width: 20%;
+            }
+        }
+    }
+    @media (min-width: map-get($breakpoints, "lg")) {
+
+    }
+    @media (min-width: map-get($breakpoints, "xl")) {
+
+    }
+    @media (min-width: map-get($breakpoints, "xxl")) {
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        overflow: hidden;
+        @include flexRow;
+        gap: $size-24;
+        border-radius: $size-16;
+        padding: $size-24;
+        box-sizing: border-box;
+        a {
+            .promotion-content {
+                @include flexColumn;
+                justify-content: space-between;
+                width: 80%;
+                .promotion-content-title {
+                    @include flexColumn;
+                    gap: $size-8;
+                }
+            }
+            .promotion-image {
+                width: 20%;
+            }
+        }
+   
+    }
+}

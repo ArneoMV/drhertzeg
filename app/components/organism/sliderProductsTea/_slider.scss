@@ -1,0 +1,50 @@
+@use '../../../styles/base/_variable' as *;
+@use '../../../styles/abstract/_color' as *;
+@use '../../../styles/abstract/_typo' as *;
+@use '../../../styles/layout/_breakpoint' as *;
+@use '../../../styles/layout/_layout' as *;
+@use '../../../styles/base/_mixin' as *;
+
+
+.slider-container { 
+    @include flexColumn;
+    gap: $size-12;
+    width: 100%;
+    box-sizing: border-box;
+
+
+
+    .title-container {
+        width: 100%;
+        h4 {
+            text-align: center;
+        }
+    }
+    .buttons-container {
+        @include flexRow;
+        justify-content: center;
+        gap: $size-12;
+        width: 100%;
+    }
+
+
+    .slider-container-header {
+        @include flexRow;
+        justify-content: space-between;
+        gap: $size-12;
+        .row {
+            gap: $size-12;
+        }
+    }
+    .slick-track { 
+        display: flex !important;
+        gap: $size-24;
+     }
+
+    .slick-slide {height: auto;}
+
+    .slick-track {
+        display: flex !important;
+    }
+    
+}

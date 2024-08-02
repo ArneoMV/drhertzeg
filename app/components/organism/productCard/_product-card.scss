@@ -1,0 +1,129 @@
+@use '../../../styles/layout/_breakpoint' as *;
+@use '../../../styles/base/_variable' as *;
+@use '../../../styles/abstract/_color' as *;
+@use '../../../styles/base/_mixin' as *;
+
+a .productCard  {
+    max-width: 350px;
+    text-decoration: none;
+}
+
+a.product-card {
+    border-radius: $size-16;
+    width: 100%;
+
+    box-sizing: border-box;
+    overflow: hidden;
+    @include flexColumn;
+    text-decoration: none;
+    background-color: $neutral-100;
+    border: 1px solid transparent;
+    .product-card-image {
+        width: auto;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // padding: $size-48 0;
+        box-sizing: border-box;
+        box-sizing: content-box;
+        background-color: $neutral-200;
+        border-radius: $size-16 $size-16 0 0;
+        border: 1px solid transparent;
+        img.image-default {
+            height: auto;
+            width: auto;
+            object-fit: cover;
+            max-height: 260px
+        }
+    }
+    .product-card-content {
+        width: auto;
+        height: auto;
+        @include flexColumn;
+        gap: $size-24;
+        justify-content: space-between;
+        padding: $size-24;
+        box-sizing: border-box;
+
+        .product-card-content-title {
+            @include flexColumn;
+            gap: $size-4;
+            h5, p {
+                text-align: center;
+            }
+            h5 {
+                color: $neutral-800;
+                font-weight: bold;
+                font-size: 38px;
+                line-height: 115%;
+                height: auto;
+            }
+            p {
+                font-size: 24px;
+                color: $neutral-800;
+                font-weight: 700;
+            }
+        }
+        .product-card-content-chips {
+            @include flexRow;
+            gap: $size-12;
+            justify-content: center;
+        }
+       
+    }
+
+    &:hover {
+        border: 1px solid $primary-300;
+        .product-card-content {
+            h5 {
+                color: $primary-700;
+            }
+            p {
+                color: $primary-800;
+            }
+            .product-card-content-chips {
+                .chip {
+                    background-color: $primary-500;
+                }
+            }
+        }
+
+    }
+
+
+    @media (min-width: map-get($breakpoints, "xxs")) {
+        .product-card-image {
+
+        }
+    }
+    @media (min-width: map-get($breakpoints, "xs")) {
+        .product-card-image {
+
+        }
+    }
+    @media (min-width: map-get($breakpoints, "sm")) {
+        .product-card-image {
+
+        }
+    }
+    @media (min-width: map-get($breakpoints, "md")) {
+        // min-width: 350px;
+        // max-width: 350px;
+    }
+    @media (min-width: map-get($breakpoints, "lg")) {
+        .product-card-image {
+
+        }
+    }
+    @media (min-width: map-get($breakpoints, "xl")) {
+        .product-card-image {
+
+        }
+    }
+    @media (min-width: map-get($breakpoints, "xxl")) {
+        .product-card-image {
+
+        }
+    }
+}

@@ -1,0 +1,87 @@
+// spacing
+$base-padding: 1.5rem;
+$base-margin: 1.5rem;
+$base-gap: 1.5rem;
+
+$base-lineHeight: 0;
+
+
+
+// Sizes
+$size-2: 2px;
+$size-4: 4px;
+$size-8: 8px;
+$size-12: 12px;
+$size-16: 16px;
+$size-21: 21px;
+$size-24: 24px;
+$size-32: 32px;
+$size-48: 48px;
+$size-64: 64px;
+$size-98: 98px;
+$size-128: 128px;
+$size-192: 192px;
+$size-256: 256px;
+
+
+// Page Margin
+$margin-sm: 12px;
+$margin-md: 48px;
+$margin-xmd: 96px;
+$margin-lg: 192px;
+$margin-xl: 232px;
+$margin-xxl: 256px;
+
+// Padding (10,20,30px)
+$padding-xs: 4px;
+$padding-sm: 8px;
+$padding-md: 16px;
+$padding-xmd: 24px;
+$padding-lg: 32px;
+$padding-xl: 64px;
+$padding-xxl: 128px;
+
+// borders
+$base-border-thickness: 1px;
+
+// Gap
+$gap-xs: 4px;
+$gap-sm: 8px;
+$gap-md: 16px;
+$gap-lg: 32px;
+$gap-xl: 64px;
+$gap-xxl: 128px;
+
+// border-radius
+$radius-xm: 8px;
+$radius-sm: 16px;
+$radius-md: 32px;
+$radius-lg: 64px;
+$radius-xxl: 999px;
+
+
+// font-sizes
+$base-font-size: 1rem;
+$font-size-sm: $base-font-size * 0.75;
+$font-size-lg: $base-font-size * 1.5;
+$font-size-xl: $base-font-size * 2;
+$font-size-xxl: $base-font-size * 3;
+
+// z-index
+$layer-0: 0;
+$layer-1: 100;
+$layer-2: 200;
+$layer-3: 300;
+
+// shadow
+$shadow-sm: 1px 1px 4px 0px rgba(22, 24, 27, 0.16);
+$shadow-md: 1px 1px 4px 0px rgba(22, 24, 27, 0.13);
+$shadow-lg: 1px 5px 30px 0px rgba(22, 24, 27, 0.1);
+
+
+$base-shadow-1: 1px 3px 30px rgba(52, 52, 52, 0.15);
+$base-shadow-2: 1px 3px 16px 0px rgba(240, 235, 235, 0.15);
+$base-shadow-3: 0 6px 20px rgba(0, 0, 0, .06);
+$base-shadow-4: 0 6px 38px rgba(0, 0, 0, .07);
+$base-shadow-5: 0 10px 15px -3px rgba(46, 41, 51, 0.08),
+                0 4px 6px -2px rgba(71, 63, 79, 0.16);

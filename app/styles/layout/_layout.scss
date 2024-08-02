@@ -1,0 +1,68 @@
+@use '../abstract/_color' as *;
+@use '../base/variable' as *;
+@use '../base/mixin' as *;
+@use './breakpoint' as *;
+
+
+
+@mixin layout-container {
+    padding: 0 $margin-sm;
+    @media (min-width: map-get($breakpoints, "xxs")) {
+        padding: 0 $margin-sm;
+    }
+    @media (min-width: map-get($breakpoints, "xs")) {
+        padding: 0 $margin-md;
+    }
+    @media (min-width: map-get($breakpoints, "sm")) {
+        padding: 0 $size-98;
+    }
+    @media (min-width: map-get($breakpoints, "md")) {
+        padding: 0 $size-98;
+    }
+    @media (min-width: map-get($breakpoints, "lg")) {
+        padding: 0 $size-128;
+    }
+    @media (min-width: map-get($breakpoints, "xl")) {
+        padding: 0 $size-128;
+    }
+    @media (min-width: map-get($breakpoints, "xxl")) {
+        padding: 0 $size-192;
+    }
+
+}
+
+
+
+// .layout-main {
+//     @include layout-container;
+// }
+
+
+// Page layout
+@mixin main-page-layout {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    gap: $size-98;
+    padding-top: $size-128;
+    // box-sizing: border-box;
+}
+
+@mixin main-page-container {
+    @include layout-container;
+    position: relative; 
+    @include flexColumn;
+    align-items: center;
+    gap: $size-128;
+    .second-nav-container {
+        @include flexRow;
+        width: 100%;
+    }
+}
+
+

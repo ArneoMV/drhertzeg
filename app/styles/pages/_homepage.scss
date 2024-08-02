@@ -1,0 +1,90 @@
+@use '../base/_variable' as *;
+@use '../layout/_breakpoint' as *;
+@use '../layout/layout' as *;
+@use '../abstract/_color' as *;
+@use '../base/_mixin' as *;
+
+.container {
+    @include layout-container;
+}
+
+.homepage {
+    @include flexColumn;
+    gap: $gap-xl;
+    padding-bottom: $size-128;
+    padding-top: $size-98;
+    // img {
+    //     border-radius: $radius-sm; 
+    // }
+
+
+    .tabs-container {
+        @include flexColumn;
+        gap: $size-24;
+        align-items: center;
+        a {
+            text-decoration: none;
+        }
+    }
+    .blog-section {
+        @include flexColumn;
+        gap: $size-24;
+        .blog-section-header {
+            @include flexRow;
+            align-items: center;
+            justify-content: space-between;
+            .row {
+                @include flexRow;
+                gap: $size-12;
+            }
+        }
+        .cards-container {
+            @include flexColumn;
+            gap: $size-24;
+        }
+    }
+
+    
+
+    @media (min-width: map-get($breakpoints, "xxs")) {
+        
+    }
+
+    @media (min-width: map-get($breakpoints, "xs")) {
+
+    }
+
+    @media (min-width: map-get($breakpoints, "sm")) {
+
+    }
+
+    @media (min-width: map-get($breakpoints, "md")) {
+        .blog-section {
+            .blog-section-header {
+                @include flexRow;
+                align-items: center;
+                justify-content: space-between;
+                .row {
+                    @include flexRow;
+                    gap: $size-12;
+                }
+            }
+            .cards-container {
+                @include flexRow;
+                gap: $size-24;
+            }
+        }
+    }
+
+    @media (min-width: map-get($breakpoints, "lg")) {
+
+    }
+
+    @media (min-width: map-get($breakpoints, "xl")) {
+       
+    }
+
+    @media (min-width: map-get($breakpoints, "xxl")) {
+
+    }
+}

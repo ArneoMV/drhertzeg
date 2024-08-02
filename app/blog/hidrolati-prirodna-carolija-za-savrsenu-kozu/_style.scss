@@ -1,0 +1,195 @@
+@use '../../styles/abstract/_color' as *;
+@use '../../styles/base/_variable' as *;
+@use '../../styles/base/_mixin' as *;
+@use '../../styles/layout/_breakpoint' as *;
+@use '../../styles/layout/_layout' as *;
+@use '../../styles/abstract/_gooey' as *;
+
+.row {
+    @include flexRow;
+}
+.column {
+    @include flexColumn;
+}
+.article-page {
+    @include main-page-layout;
+    .article-page-container {
+        @include main-page-container;
+        @include flexColumn;
+        padding-bottom: $size-128;
+        box-sizing: border-box;
+    }
+    .blog-title {
+        @include flexColumn;
+        gap: $size-24;
+        .row {
+            gap: $size-24;
+            .info {
+                @include flexRow;
+                gap: $size-8;
+                align-items: center;
+
+                background-color: $neutral-100;
+                padding: $size-12 $size-16;
+                border-radius: $size-16;
+                box-shadow: $base-shadow-1;
+                p { 
+                    color: $neutral-800;
+                    font-weight: 600;
+                    font-size: 15px;
+                }
+                img {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+        }
+    }
+    .blog-quote {
+        q {
+            quotes: "“" "”" "‘" "’";
+          }
+          q::before {
+              content: open-quote;
+          }
+          q::after {
+              content: close-quote;
+          }
+        p {
+            font-style: italic;
+            font-weight: 600;
+            text-align: center;
+            font-size: 18px;
+            line-height: 130%;
+            color: $primary-800;
+        }
+    }
+
+    .blog-content {
+        @include flexColumn;
+        gap: $size-48;
+        align-items: center;
+        .blog-text-section {
+            @include flexColumn;
+            gap: $size-8;
+            width: 100%;
+            h5 {
+                color: $neutral-800;
+                font-weight: bold;
+            }
+            p {
+                font-size: 18px;
+                color: $neutral-700;
+                font-weight: 500;
+                line-height: 130%;
+            }
+        }
+        .content-column {
+            @include flexColumn;
+            gap: $size-48;
+        }
+    }
+
+    .blog-tag {
+        @include flexColumn;
+        flex-wrap: wrap;
+        gap: $size-12;
+        .column {
+            @include flexRow;
+            flex-wrap: wrap;
+            gap: $size-12;
+        }
+    }
+
+    @media (min-width: map-get($breakpoints, "xxs")) {
+        
+    }
+    @media (min-width: map-get($breakpoints, "xs")) {
+        
+    }
+    @media (min-width: map-get($breakpoints, "sm")) {
+        .blog-content {
+            @include flexColumn;
+            gap: $size-48;
+        }
+        .blog-title {
+            p { 
+                color: $neutral-800;
+                font-weight: 600;
+                font-size: 21px;
+            }
+        }
+    }
+    @media (min-width: map-get($breakpoints, "md")) {
+        .blog-content {
+            .blog-tag-container {
+                @include flexRow;
+                justify-content: flex-end;
+                gap: $size-8;
+                width: 100%;
+            }
+        }
+        .blog-quote {
+            p {
+                font-size: 24px;
+            }
+        }
+    }
+    @media (min-width: map-get($breakpoints, "lg")) {
+    }
+    @media (min-width: map-get($breakpoints, "xl")) {
+        
+    }
+    @media (min-width: map-get($breakpoints, "xxl")) {
+        
+    }
+
+}
+
+.hero-image {
+    height: 360px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: $size-16;
+
+}
+
+
+/* The image container */
+.card-thumbnail {
+    position: relative;
+    overflow: hidden;  
+    display: flex;
+    justify-content: center; /* horizontal center */
+    align-items: center; /* vertical center */
+    @include flexColumn;
+    width: 100%; /* Thumbnail dimensions. */
+    height: auto; /*** Change the height to make the image smaller ***/
+    margin: 0;
+    border-radius: $size-16;
+    img {
+        width: 100%;
+        object-fit: cover;
+        height: 300px;
+    }
+    /* Styles the title inside the img container */
+    span.blog-text-container {
+        position: absolute; 
+        left: 0; 
+        bottom: 0;
+        margin: $size-24;
+        background-color: $neutral-100;
+        padding: $size-4 $size-12;
+        border-radius: $size-12;
+        h3 {
+            color: $neutral-100;
+        }
+        p {
+            font-size: 15px;
+            color: $neutral-800;
+            font-weight: 600;
+            line-height: 160%;
+        }
+    }
+        
+}

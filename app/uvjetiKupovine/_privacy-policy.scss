@@ -1,0 +1,80 @@
+@use '../styles/base/_variable' as *;
+@use '../styles/abstract/_color' as *;
+@use '../styles/abstract/_typo' as *;
+@use '../styles/layout/_breakpoint' as *;
+@use '../styles/layout/_layout' as *;
+@use '../styles/base/_mixin' as *;
+@use '../styles/abstract/_gooey' as *;
+
+.faq-title {
+    width: 100%;
+    @include flexColumn;
+    .faq-text-container {
+        @include flexColumn;
+        gap: $size-12;
+        p {
+            width: 360px;
+        }
+    }
+
+
+    .row {
+        gap: $size-24;
+        .info {
+            @include flexRow;
+            gap: $size-8;
+            align-items: center;
+
+            background-color: $neutral-100;
+            padding: $size-12 $size-16;
+            border-radius: $size-16;
+            box-shadow: $base-shadow-1;
+            p { 
+                color: $neutral-800;
+                font-weight: 600;
+            }
+            img {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+}
+  
+// Product Page
+.privacy-policy-page {
+    @include main-page-layout;
+    padding-bottom: $size-128;
+    box-sizing: border-box;
+    main.privacy-policy-page-contianer {
+        @include main-page-container;
+        gap: $size-64;
+
+        .privacy-description {
+            @include flexColumn;
+            gap: $size-12;
+        }
+        .column {
+            @include flexColumn;
+            gap: $size-48;
+            .privacy {
+                @include flexColumn;
+                gap: $size-12;
+            }
+        }
+     
+    }
+
+    @media (min-width: map-get($breakpoints, "xs")) { 
+    }
+    @media (min-width: map-get($breakpoints, "sm")) {
+    }
+    @media (min-width: map-get($breakpoints, "md")) {
+    }
+    @media (min-width: map-get($breakpoints, "lg")) {
+    }
+    @media (min-width: map-get($breakpoints, "xl")) {
+    }
+    @media (min-width: map-get($breakpoints, "xxl")) {
+    }
+}

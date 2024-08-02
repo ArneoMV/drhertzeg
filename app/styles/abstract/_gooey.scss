@@ -1,0 +1,60 @@
+
+@use "../base/mixin.scss" as *;
+@use "../base/variable.scss" as *;
+@use './color.scss' as *;
+
+
+ /* Gooey */
+
+.gooey-svg {
+    visibility: hidden;
+    position: absolute;
+}
+.gooey-background {
+    line-height: 100%;
+    display: inline;
+    box-decoration-break: clone;
+    filter: url('#gooey-background');
+}
+
+.title-gooey {
+    line-height: 100%;
+    display: inline;
+    box-decoration-break: clone;
+    background: $primary-600;
+    padding: 0.5rem 1rem;
+    filter: url('#title-gooey');
+    color: $neutral-100;
+    line-height: 125%;
+}
+.title-gooey:focus {
+    outline: 0;
+}
+
+.title-gooey {
+    line-height: 100%;
+    display: inline;
+    box-decoration-break: clone;
+    background: $primary-600;
+    padding: 0.5rem 1rem;
+    filter: url('#title-gooey');
+    color: $neutral-100;
+    line-height: 125%;
+}
+
+
+
+
+.goo {
+    font-size: 1rem;
+    line-height: 1.35;
+    display: inline;
+    box-decoration-break: clone;
+    background: $neutral-100;
+    padding: 0.5rem 1rem;
+    filter: url('#goo');
+}
+
+.goo:focus {
+outline: 0;
+}
