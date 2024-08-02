@@ -102,7 +102,7 @@ export default function Kozmetika() {
               />
               <ProductCard
                 productDetailsTitle="Lavandolat"
-                productDetailsImageURL= {Cosmetics.product_lavandolat}
+                productDetailsImageURL={Cosmetics.product_lavandolat}
                 productDetailsImageAlt="lavandolat"
                 productURL="/kozmetika/lavandolat"
                 productChips1="Protupalno"
@@ -110,6 +110,7 @@ export default function Kozmetika() {
                 imageClass="image-default"
                 hoverOutline="primary"
               />
+
                <ProductCard
                 productDetailsTitle="Serum od Smilja"
                 productDetailsImageURL= {Cosmetics.product_serum_od_smilja}
