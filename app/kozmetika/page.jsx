@@ -107,7 +107,7 @@ export default function Kozmetika() {
                 productDetailsTitle="Lavandolat"
                 // productDetailsPrice="3.5 €"
                 productDetailsImageURL= {Cosmetics.product_lavandolat}
-                productDetailsImageAlt="Lavandolat"
+                productDetailsImageAlt="lavandolat"
                 productURL="/kozmetika/lavandolat"
                 productChips1="Protupalno"
                 productChips2="Opušta"
