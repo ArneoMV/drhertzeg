@@ -72,7 +72,6 @@ export default function Kozmetika() {
             <div className="product-cards-container">
               <ProductCard
                 productDetailsTitle="Calming Gel"
-                // productDetailsPrice="3.8 €"
                 productDetailsImageURL= {Cosmetics.product_calming_gel}
                 productDetailsImageAlt="Calming Gel"
                 productURL="/kozmetika/calming-gel"
@@ -83,7 +82,6 @@ export default function Kozmetika() {
               />
               <ProductCard
                 productDetailsTitle="Hair Boost"
-                // productDetailsPrice="3.5 €"
                 productDetailsImageURL= {Cosmetics.product_hair_boost}
                 productDetailsImageAlt="Hair Boost"
                 productURL="/kozmetika/hair-boost"
@@ -94,7 +92,6 @@ export default function Kozmetika() {
               />
               <ProductCard
                 productDetailsTitle="Smiljolat"
-                // productDetailsPrice="4.2 €"
                 productDetailsImageURL= {Cosmetics.product_smiljolat}
                 productDetailsImageAlt="Smiljolat"
                 productURL="/kozmetika/smiljolat"
@@ -105,7 +102,6 @@ export default function Kozmetika() {
               />
               <ProductCard
                 productDetailsTitle="Lavandolat"
-                // productDetailsPrice="3.5 €"
                 productDetailsImageURL= {Cosmetics.product_lavandolat}
                 productDetailsImageAlt="lavandolat"
                 productURL="/kozmetika/lavandolat"
@@ -116,7 +112,6 @@ export default function Kozmetika() {
               />
                <ProductCard
                 productDetailsTitle="Serum od Smilja"
-                // productDetailsPrice="3.5 €"
                 productDetailsImageURL= {Cosmetics.product_serum_od_smilja}
                 productDetailsImageAlt="Serum od smilja"
                 productURL="/kozmetika/serum-od-smilja"
@@ -127,7 +122,6 @@ export default function Kozmetika() {
               />
               <ProductCard
                 productDetailsTitle="Care And Massage Oil"
-                // productDetailsPrice="3.5 €"
                 productDetailsImageURL= {Cosmetics.product_care_and_massage_oil}
                 productDetailsImageAlt="Care and massage oil"
                 productURL="/kozmetika/care-and-massage-oil"
@@ -138,7 +132,6 @@ export default function Kozmetika() {
               />
                <ProductCard
                 productDetailsTitle="Vitamin Night Cream"
-                // productDetailsPrice="3.5 €"
                 productDetailsImageURL= {Cosmetics.product_vitamin_night_cream}
                 productDetailsImageAlt="Vitamin night cream"
                 productURL="/kozmetika/vitamin-night-cream"
@@ -149,7 +142,6 @@ export default function Kozmetika() {
               />
                <ProductCard
                 productDetailsTitle="Hydrating Day Cream"
-                // productDetailsPrice="3.5 €"
                 productDetailsImageURL= {Cosmetics.product_hydrating_day_cream}
                 productDetailsImageAlt="Hydrating day cream"
                 productURL="/kozmetika/hydrating-day-cream"
