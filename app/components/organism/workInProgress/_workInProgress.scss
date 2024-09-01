@@ -1,0 +1,25 @@
+@use '../../../styles/base/_variable' as *;
+@use '../../../styles/abstract/_color' as *;
+@use '../../../styles/abstract/_typo' as *;
+@use '../../../styles/layout/_breakpoint' as *;
+@use '../../../styles/layout/_layout' as *;
+@use '../../../styles/base/_mixin' as *;
+
+
+.work-in-progress {
+    background-color: $primary-100;;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    .card {
+        background-color: $neutral-100;
+        height: auto;
+        width: auto;
+        border-radius: $radius-sm;
+        padding: $padding-lg;
+        text-align: center;
+        box-shadow: $shadow-lg;
+    }
+}

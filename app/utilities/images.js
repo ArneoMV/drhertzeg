@@ -175,5 +175,11 @@ const BlogImg = {
   post_0103: require('../../public/images/blog/post_01/post_0103.webp').default,
 };
 
+const Construction = {
+  // animacija: '/images/animacija-2.gif'
+  //  animacija: '/images/animacija-2.gif'
+  animacija: require('../../public/images/animacija-2.gif').default,
+}
 
-export { Logos, Wawe, Icons, Teas, Cosmetics, Social, BlogImg, Illustrations, User };
+
+export { Logos, Wawe, Icons, Teas, Cosmetics, Social, BlogImg, Illustrations, User, Construction };
