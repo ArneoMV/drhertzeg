@@ -3,7 +3,7 @@ import './styles/_index.scss';
 import './globals.css';
 // import Header from './components/organism/header/Header.jsx'
 // import Footer from "./components/organism/footer/footer.jsx";
-import WorkInProgress from './components/organism/workInProgress/WorkInProgress.jsx';
+import WorkInProgress from './components/organism/workInProgress/workInProgress.jsx';
 import './styles/abstract/_typo.scss';
 import { Work_Sans } from "next/font/google";
 
