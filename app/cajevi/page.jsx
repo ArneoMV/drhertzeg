@@ -61,7 +61,7 @@ export default function Cajevi() {
             <div className="product-cards-container">
               <ProductCard
                 productDetailsTitle="Smokvin list"
-                productDetailsPrice="4 €"
+                productDetailsPrice="3,95 €"
                 productDetailsImageURL={Teas.packaging_eko_caj_smokva_list}
                 productDetailsImageAlt="Smokvin list"
                 productURL="/cajevi/smokvin-list-caj"
@@ -72,7 +72,7 @@ export default function Cajevi() {
               />
               <ProductCard
                 productDetailsTitle="Slatki pelin"
-                productDetailsPrice="3.8 €"
+                productDetailsPrice="3,95 €"
                 productDetailsImageURL={Teas.packaging_caj_od_slatkog_pelina}
                 productDetailsImageAlt="Slatki pelin"
                 productURL="/cajevi/caj-od-slatkog-pelina"
@@ -83,7 +83,7 @@ export default function Cajevi() {
               />
               <ProductCard
                 productDetailsTitle="Energija jutra"
-                productDetailsPrice="3.5 €"
+                productDetailsPrice="3,95 €"
                 productDetailsImageURL={Teas.packaging_energija_jutra_caj}
                 productDetailsImageAlt="Energija jutra"
                 productURL="/cajevi/energija-jutra-caj"
@@ -94,7 +94,7 @@ export default function Cajevi() {
               />
               <ProductCard
                 productDetailsTitle="Detox čaj"
-                productDetailsPrice="4.2 €"
+                productDetailsPrice="3,95 €"
                 productDetailsImageURL={Teas.packaging_detox_caj}
                 productDetailsImageAlt="Detox čaj"
                 productURL="/cajevi/detox-caj"
@@ -105,7 +105,7 @@ export default function Cajevi() {
               />
               <ProductCard
                 productDetailsTitle="Imuno čaj"
-                productDetailsPrice="3.5 €"
+                productDetailsPrice="3,95 €"
                 productDetailsImageURL={Teas.packaging_imuno_caj}
                 productDetailsImageAlt="Imuno čaj"
                 productURL="/cajevi/imuno-caj"
