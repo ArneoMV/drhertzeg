@@ -1,8 +1,8 @@
 import Head from 'next/head';
 import './styles/_index.scss';
 import './globals.css';
-// import Header from './components/organism/header/Header.jsx'
-// import Footer from "./components/organism/footer/footer.jsx";
+import Header from './components/organism/header/Header.jsx'
+import Footer from "./components/organism/footer/footer.jsx";
 import WorkInProgress from './components/organism/workInProgress/workInProgress.jsx';
 import './styles/abstract/_typo.scss';
 import { Work_Sans } from "next/font/google";
@@ -28,15 +28,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${workSans.variable}`}>
 
-      <body>
+      {/* <body>
         <WorkInProgress />
-      </body>
+      </body> */}
 
-       {/* <Head>
+      <Head>
           <title>Dr Hertzeg</title>
           <meta name="viewport" content="initial-scale=1.0, width=device-width" /> 
           <link rel="icon" href="/icon.ico" sizes="any" />    
-        </Head>
+      </Head>
 
         <body>
           <Header />
@@ -60,7 +60,7 @@ export default function RootLayout({ children }) {
                 </filter>
               </defs>
           </svg>
-        </body> */}
+        </body>
     </html>
   )
 }
