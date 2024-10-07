@@ -48,13 +48,13 @@ const Footer = () => {
               <p>Pratite nas</p>
               <div className="row">
                 <Image 
-                  src={Logos.Facebook_fill}
+                  src={Logos.facebook}
                   alt='facebook'
                   width={32}
                   quality={100}
                 />
                 <Image 
-                  src={Logos.Instagram_fill}
+                  src={Logos.instagram}
                   alt='Instagram'
                   width={32}
                   quality={100}
