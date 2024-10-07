@@ -87,7 +87,7 @@ const User = {
 
 const Teas = {
   packaging_caj_od_slatkog_pelina:  require('../../public/assets/images/products/teas/caj-od-slatkog-pelina/packaging-caj-od-slatkog-pelina.webp').default,
-  product_caj_od_slatkog_pelina:    require('../../public/assets/images/products/teas/caj-od-slatkog-pelina/product-caj-od-slatkog-pelina.webp').default,
+  // product_caj_od_slatkog_pelina:    require('../../public/assets/images/products/teas/caj-od-slatkog-pelina/product-caj-od-slatkog-pelina.webp').default,
 
   packaging_detox_caj:              require('../../public/assets/images/products/teas/detox-caj/packaging-detox-caj.webp').default,
   // product_detox_caj:                require('../../public/assets/images/products/teas/detox-caj/product-detox-caj.webp').default,

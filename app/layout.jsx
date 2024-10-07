@@ -18,8 +18,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${workSans.variable}`}>
       <Head>
         {/* Google Search Console */}
-        <meta name="google-site-verification" content="a2v0" />
-        
+        <meta name="google-site-verification" content="a2v0q3TL_Unq1cJYio3Pi6rtIgCg7Cczk8XhjVGZRao" />        
         <title>Dr Hertzeg</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="icon" href="/icon.ico" sizes="any" />
@@ -27,7 +26,7 @@ export default function RootLayout({ children }) {
 
       <body>
         {/* Google Analytics */}
-        <Script
+        {/* <Script
           strategy="afterInteractive"
           src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}`}
         />
@@ -44,7 +43,7 @@ export default function RootLayout({ children }) {
               });
             `,
           }}
-        />
+        /> */}
         
         <Header />
         {children}
