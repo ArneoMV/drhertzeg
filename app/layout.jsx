@@ -1,3 +1,5 @@
+
+import Script from 'next/script';
 import Head from 'next/head';
 import './styles/_index.scss';
 import './globals.css';
@@ -28,9 +30,26 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${workSans.variable}`}>
 
-      {/* <body>
-        <WorkInProgress />
-      </body> */}
+      <head>
+        {/* Google Analytics */}
+        <Script
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}`}        />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', ${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}', {
+                page_path: window.location.pathname,
+              });
+            `,
+          }}
+        />
+      </head>
 
       <Head>
           <title>Dr Hertzeg</title>
@@ -42,6 +61,8 @@ export default function RootLayout({ children }) {
           <Header />
           {children}
           <Footer />
+
+
           <svg className="gooey-svg" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
               <defs>
                 <filter id="title-gooey">
