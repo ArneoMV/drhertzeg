@@ -1,7 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     // output: 'export',
+    devIndicators: {
+        buildActivity: false,
+    },
 };
+
 export default nextConfig;
 
 

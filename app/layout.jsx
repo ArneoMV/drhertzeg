@@ -1,5 +1,4 @@
-import Head from 'next/head';
-import Script from 'next/script';
+// import Script from 'next/script';
 import './styles/_index.scss';
 import './globals.css';
 import Header from './components/organism/header/Header.jsx';
@@ -12,18 +11,17 @@ const workSans = Work_Sans({
   weight: '400',
   variable: '--font-workSans',
 });
+export const metadata = {
+  title: 'Dr Hertzeg',
+  description: 'Posjetite službenu stranicu brenda Dr. Hertzeg i otkrijte visokokvalitetne prirodne proizvode, uključujući čajeve, kozmetiku i wellness rješenja. Pružamo zdravlje iz prirode uz detaljne opise i recenzije svakog proizvoda.',
+  other: {
+    'google-site-verification': 'a2v0q3TL_Unq1cJYio3Pi6rtIgCg7Cczk8XhjVGZRao',
+  },
+};
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${workSans.variable}`}>
-      <Head>
-        {/* Google Search Console */}
-        <meta name="google-site-verification" content="a2v0q3TL_Unq1cJYio3Pi6rtIgCg7Cczk8XhjVGZRao" />        
-        <title>Dr Hertzeg</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <link rel="icon" href="/icon.ico" sizes="any" />
-      </Head>
-
       <body>
         <Header />
         {children}
