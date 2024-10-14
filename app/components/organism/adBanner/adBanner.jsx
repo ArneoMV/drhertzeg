@@ -1,8 +1,7 @@
-import React from 'react'
+import React from 'react';
 import "./_adBanner.scss";
-
-import Image from 'next/image'
-import Link from 'next/link'
+import Image from 'next/image';
+import Link from 'next/link';
 import Button from "../../atoms/button/Button";
 import { Logos, Social, User, Illustrations } from "../../../utilities/images.js";
 
@@ -26,7 +25,7 @@ export default function AdBanner() {
                 </div>
 
             </div>
-            <Link href="/blog/ljekoviteKreme">
+            <Link href="/blog/ljekovite-kreme">
                 <Button type="primary">Saznaj Više</Button>
             </Link>
         </div>

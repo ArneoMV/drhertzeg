@@ -14,13 +14,13 @@ const FollowSocial = () => {
           <h4>Pratite nas na društvenim mrežama</h4>
           <div className="row">
             <Image
-              src={Logos.Facebook_fill}
+              src={Logos.facebook}
               alt="Facebook logo"
               width={32}
               quality={100}
             />
             <Image
-              src={Logos.Instagram_fill}
+              src={Logos.instagram}
               alt="Instagram logo"
               width={32}
               quality={100}

@@ -1,0 +1,60 @@
+@use '../styles/base/_variable' as *;
+@use '../styles/abstract/_color' as *;
+@use '../styles/abstract/_typo' as *;
+@use '../styles/layout/_breakpoint' as *;
+@use '../styles/layout/_layout' as *;
+@use '../styles/base/_mixin' as *;
+
+.column {
+    @include flexColumn;
+}
+.row {
+    @include flexRow;
+}
+
+
+.sitemap {
+    padding-bottom: $size-128;
+    @include main-page-layout;
+    .sitemap-container {
+        @include main-page-container;
+        align-items: flex-start;
+        gap: $gap-lg;
+        .links-container {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            align-items: start;
+            justify-items: start;
+        }
+    }
+    .column {
+        @include flexColumn;
+        gap: $gap-md;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+        @include flexColumn;
+        gap: $gap-sm;
+    }
+    li {
+        a {
+            text-decoration: none;
+            color: $primary-800;
+            &:hover {
+                text-decoration: underline; 
+            }
+        }
+    }
+    @media (min-width: map-get($breakpoints, "xxs")) { }
+    @media (min-width: map-get($breakpoints, "xs")) { 
+        justify-items: center;
+    }
+    @media (min-width: map-get($breakpoints, "sm")) { }
+    @media (min-width: map-get($breakpoints, "md")) { }
+    @media (min-width: map-get($breakpoints, "lg")) { }
+    @media (min-width: map-get($breakpoints, "xl")) { }
+    @media (min-width: map-get($breakpoints, "xxl")) { }
+}

@@ -39,7 +39,8 @@ const Footer = () => {
                   <Link href="/kontakt">Kontakt</Link>
                   <Link href="/blog">Blog</Link>
                   <Link href="/faq">Cesta Pitanja</Link>
-                  <Link href="/uvjetiKupovine">Uvijeti kupovine</Link>
+                  <Link href="/uvjeti-kupovine">Uvijeti kupovine</Link>
+                  <Link href="/sitemap">Sitemap</Link>
                 </div>
               </div>
             </nav>

@@ -77,7 +77,7 @@
             }
         }
     }
-    main.blog-page-container {
+    .blog-page-container {
         @include layout-container;
         position: relative; 
         display: grid;

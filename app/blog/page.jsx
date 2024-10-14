@@ -46,7 +46,7 @@ export default function Blog() {
           </div>
         </div>
 
-        <main className="blog-page-container">
+        <div className="blog-page-container">
           <section className="blog-article-container">
             <CardBlog
               productTitle="Od antičke Europe do suvremenih istraživanja"
@@ -69,7 +69,7 @@ export default function Blog() {
           </section>
 
           <AdBanner />
-        </main>
+        </div>
       </div>
     )
 }
