@@ -1,7 +1,7 @@
 // pages/sitemap.xml.js
 import { GetServerSideProps } from 'next';
 
-const EXTERNAL_DATA_URL = 'https://www.drhertzeg.hr';
+const externalDataUrl = 'https://www.drhertzeg.hr'; // Preimenovanje varijable
 
 const SITEMAP_URLS = [
   { url: '/', priority: 1.0 },
@@ -36,7 +36,7 @@ const generateSiteMap = () => {
     ${SITEMAP_URLS.map((item) => {
       return `
         <url>
-          <loc>${EXTERNAL_DATA_URL}${item.url}</loc>
+          <loc>${externalDataUrl}${item.url}</loc>
           <priority>${item.priority}</priority>
         </url>
       `;
