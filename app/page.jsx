@@ -1,18 +1,14 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import './styles/_index.scss';
 import './styles/pages/_homepage.scss';
 import './styles/base/_base.scss';
 
-import { Logos, Wawe, Icons, Teas, Cosmetics, Social, Blog } from "./utilities/images.js";
-import Hero from './components/organism/hero/hero.jsx';
+// import Hero from './components/organism/hero/hero.jsx';
 import Tabs from "./components/organism/tab/Tabs.jsx";
 import Button from "./components/atoms/button/Button.jsx";
 import ButtonIcon from "./components/atoms/buttonIcon/buttonIcon.jsx";
 import SliderArticle from "./components/organism/sliderArticles/sliderArticles.jsx"
 import HeroArticleBanner from './components/organism/heroArticleBanner/heroArticleBanner.jsx';
-import { HomepageImages } from './utilities/images.js'
-import { Homepage } from './utilities/images.js'
 
 import { Metadata } from 'next'
 export const metadata = { 
@@ -30,7 +26,7 @@ export default function Page() {
       <main className='homepage'>
 
         {/* Hero */}
-        <Hero/>
+        {/* <Hero/> */}
          
         {/* Ponuda proizvoda */}
         <section className='container tabs-container'>

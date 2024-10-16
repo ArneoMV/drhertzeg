@@ -4,11 +4,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Chip from '../../atoms/chip/Chip';
 
-export default function ProductCard({ productDetailsTitle, productDetailsPrice, productDetailsImageURL, productDetailsImageAlt, productURL, productChips1, productChips2, imageClass, hoverOutline }) {
+export default function ProductCard({ productDetailsTitle, productDetailsPrice, productDetailsImageURL, productDetailsImageAlt, productDetailsPagePath, productChips1, productChips2, imageClass, hoverOutline }) {
 
   
   return (
-    <Link href={productURL} className='product-card'>
+    <Link href={productDetailsPagePath} className='product-card'>
       <div className="product-card-image">
         <Image 
           src={productDetailsImageURL}

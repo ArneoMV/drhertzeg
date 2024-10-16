@@ -1,9 +1,9 @@
-@use '../../styles/base/_variable' as *;
-@use '../../styles/abstract/_color' as *;
-@use '../../styles/abstract/_typo' as *;
-@use '../../styles/layout/_breakpoint' as *;
-@use '../../styles/layout/_layout' as *;
-@use '../../styles/base/_mixin' as *;
+@use '../styles/base/_variable' as *;
+@use '../styles/abstract/_color' as *;
+@use '../styles/abstract/_typo' as *;
+@use '../styles/layout/_breakpoint' as *;
+@use '../styles/layout/_layout' as *;
+@use '../styles/base/_mixin' as *;
 
 
 @mixin user-review-bubble {
@@ -102,7 +102,7 @@
     gap: $size-98;
     padding-bottom: $size-128;
 
-    main.product-page-contianer {
+    .product-page-contianer {
         @include layout-container;
         @include flexColumn;
         gap: $size-128;
@@ -139,7 +139,6 @@
             }
             p.price { font-size: 38px; }
             p { color: $neutral-800; }
-
             .row-chips {
                 @include flexRow;
                 gap: $size-12;
@@ -147,11 +146,28 @@
                 justify-content: flex-start;
                 .chip { background-color: $primary-200; }
             }
-
             .product-details-list {
                 @include flexColumn;
                 gap: $gap-md;
 
+            }
+
+            .dm-cta {
+                @include flexRow;
+                // background-color: $primary-200;
+                padding: $padding-md;
+                border-radius: $radius-md;
+                width: auto;
+                .dm-logo-img {
+                    width: 73px;
+                    height: auto;
+                    object-fit: contain;
+                }
+                .dm-cta-link {
+                    @include flexRow;
+                    padding: $padding-md;
+                    text-decoration: none;
+                }
             }
 
         }

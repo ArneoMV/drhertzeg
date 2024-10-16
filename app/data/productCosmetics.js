@@ -4,7 +4,7 @@ const productCosmetics = [
       id: "CalmingGel",
       naziv: "Calming Gel",
       opis: "Gel jedinstvene formulacije i brzog učinka koji rashlađuje, umiruje i smanjuje otekline od uboda insekata ili opeklina od sunca. Kombinacija biljnih ekstrakata smiruje upale, iritacije te obnavlja i regenerira oštećenu kožu.",
-      // cijena: "3,95 €",
+      cijena: "4,90 €",
       tag1: "Umirivanje",
       tag2: "Ubodi insekata",
       tag3: "Opekline od sunca",
@@ -14,13 +14,16 @@ const productCosmetics = [
       proizvodnja: "Premium Quality 100% Natural Product",
       pomaze: "Uboda insekata, opeklina od sunca, smirivanja upala i iritacija.",
       pohrana: "Čuvati u organskoj ambalaži na tamnom i suhom mjestu pri temperaturi do 25 °C.",
-      upozorenje: "Samo za vanjsku uporabu Čuvati  izvan dohvata djece. Trudnice i dojilje trebaju se konzultirati s liječnikom prije uporabe."
+      upozorenje: "Samo za vanjsku uporabu Čuvati  izvan dohvata djece. Trudnice i dojilje trebaju se konzultirati s liječnikom prije uporabe.",
+      link: "https://www.dm.hr/dr-hertzeg-umirujuci-gel-nakon-uboda-insekata-calming-gel-p3875001482523.html",
+      pagePath: "/kozmetika/calming-gel",
+      imageKey: "product_calming_gel"
     },
     {
       id: "CareAndMassageOil",
       naziv: "Care & Massage Oil",
       opis: "Ulje božanstvenog mirisa koje opušta i umiruje, prodire duboko u kožu, njeguje, hrani i štiti od vanjskih utjecaja. Pomaže oporavku suhe kože, održavajući zdrav i svjež izgled. Nakon uporabe, koža ostaje glatka i meka.",
-      // cijena: "3,95 €",
+      cijena: "17,30 €",
       tag1: "Njega kože",
       tag2: "Masažno ulje",
       tag3: "Eterična ulja",
@@ -30,13 +33,16 @@ const productCosmetics = [
       proizvodnja: "Premium Quality 100% Natural Product",
       pomaze: "Suha koža, opuštanje, njegu kože",
       pohrana: "Čuvati u organskoj ambalaži na tamnom i suhom mjestu pri temperaturi do 25 °C.",
-      upozorenje: "Samo za vanjsku uporabu Čuvati  izvan dohvata djece. Trudnice i dojilje trebaju se konzultirati s liječnikom prije uporabe."
+      upozorenje: "Samo za vanjsku uporabu Čuvati  izvan dohvata djece. Trudnice i dojilje trebaju se konzultirati s liječnikom prije uporabe.",
+      link: "https://www.dm.hr/dr-hertzeg-ulje-za-masazu-sa-smiljem-p3875001482455.html",
+      pagePath: "/kozmetika/care-and-massage-oil",
+      imageKey: "product_care_and_massage_oil"
     },
     {
       id: "HairBoost",
       naziv: "Hair Boost",
       opis: "Biljni losion s cvijetom arnike za umirenje vlasišta, pomoć pri otklanjanju prhuti i davanje sjaja kosi.",
-      // cijena: "3,95 €",
+      cijena: "7,70 €",
       tag1: "Rast kose",
       tag2: "Prhut",
       tag3: "Sjaj",
@@ -46,13 +52,16 @@ const productCosmetics = [
       proizvodnja: "Premium Quality 100% Natural Product",
       pomaze: "Suha koža, opuštanje, njegu kože",
       pohrana: "Čuvati u organskoj ambalaži na tamnom i suhom mjestu pri temperaturi do 25 °C.",
-      upozorenje: "Samo za vanjsku uporabu Čuvati  izvan dohvata djece. Trudnice i dojilje trebaju se konzultirati s liječnikom prije uporabe."
+      upozorenje: "Samo za vanjsku uporabu Čuvati  izvan dohvata djece. Trudnice i dojilje trebaju se konzultirati s liječnikom prije uporabe.",
+      link: "https://www.dm.hr/dr-hertzeg-biljni-losion-za-njegu-kose-hair-boost-p3875001482769.html",
+      pagePath: "/kozmetika/hair-boost",
+      imageKey: "product_hair_boost"
     },
     {
       id: "HydratingDayCream",
       naziv: "Hydrating Day Cream",
       opis: "Krema za njegu kože lica koja pruža duboku hidrataciju i nježno njeguje kožu, idealna za dnevnu njegu.",
-      // cijena: "3,95 €",
+      cijena: "14,90 €",
       tag1: "Hidratacija",
       tag2: "Njega lica",
       tag3: "Dnevna krema",
@@ -62,13 +71,16 @@ const productCosmetics = [
       proizvodnja: "Premium Quality 100% Natural Product",
       pomaze: "Hidratacija, njega lica",
       pohrana: "Čuvati u organskoj ambalaži na tamnom i suhom mjestu pri temperaturi do 25 °C.",
-      upozorenje: "Samo za vanjsku uporabu Čuvati izvan dohvata djece."
+      upozorenje: "Samo za vanjsku uporabu Čuvati izvan dohvata djece.",
+      link: "https://www.dm.hr/dr-hertzeg-hidratantna-dnevna-krema-za-lice-s-uljem-smilja-p3875001480000.html",
+      pagePath: "/kozmetika/hydrating-day-cream",
+      imageKey: "product_hydrating_day_cream"
     },
     {
       id: "Lavandolat",
       naziv: "Lavandolat",
       opis: "Aromatična vodica lavande koja čisti i njeguje kožu sklone aknama. Pruža hidrataciju i osvježava kožu.",
-      // cijena: "3,95 €",
+      cijena: "9,00 €",
       tag1: "Hidrolat",
       tag2: "Akne",
       tag3: "Njega kože", 
@@ -78,13 +90,16 @@ const productCosmetics = [
       proizvodnja: "Premium Quality 100% Natural Product",
       pomaze: "Čišćenje i njega kože sklone aknama, hidratacija, smirivanje upalnih stanja kože",
       pohrana: "Čuvati u organskoj ambalaži na tamnom i suhom mjestu pri temperaturi do 25 °C.",
-      upozorenje: "Samo za vanjsku uporabu Čuvati izvan dohvata djece."
+      upozorenje: "Samo za vanjsku uporabu Čuvati izvan dohvata djece.",
+      link: "https://www.dm.hr/dr-hertzeg-hidrolat-za-lice-od-lavande-lavandolat-p3875001483896.html",
+      pagePath: "/kozmetika/lavandolat",
+      imageKey: "product_lavandolat"
     },
     {
       id: "SerumOdSmilja",
-      naziv: "Serum od smilja",
+      naziv: "Serum od smlja",
       opis: "Efikasan anti-age serum obogaćen vitaminom E koji dubinski hrani kožu, smanjuje znakove starenja i smiruje upalne promjene. Čini kožu mekom i glatkom.",
-      // cijena: "3,95 €",
+      cijena: "19,90 €",
       tag1: "Anti-age",
       tag2: "Vitamin E",
       tag3: "Zrela koža",
@@ -94,13 +109,16 @@ const productCosmetics = [
       proizvodnja: "Premium Quality 100% Natural Product",
       pomaze: "Ublažavanje znakova starenja, smirivanje upalnih promjena na koži, hranjenje i omekšavanje kože",
       pohrana: "Čuvati u organskoj ambalaži na tamnom i suhom mjestu pri temperaturi do 25 °C.",
-      upozorenje: "Samo za vanjsku uporabu Čuvati izvan dohvata djece."
+      upozorenje: "Samo za vanjsku uporabu Čuvati izvan dohvata djece.",
+      link: "https://www.dm.hr/dr-hertzeg-serum-za-lice-od-smilja-p3875001482813.html",
+      pagePath: "/kozmetika/serum-od-smilja",
+      imageKey: "product_serum_od_smilja"
     },
     {
       id: "Smiljolat",
       naziv: "Smiljolat",
       opis: "Organski hidrolat smilja za njegu, čišćenje i hidrataciju zrele kože. Pomaže u održavanju vlage i elastičnosti kože, te je odličan za njegu s izraženim znakovima starenja.",
-      // cijena: "3,95 €",
+      cijena: "3,70 €",
       tag1: "Hidrolat",
       tag2: "Zrela koža",
       tag3: "Organsko",
@@ -110,13 +128,16 @@ const productCosmetics = [
       proizvodnja: "Premium Quality 100% Natural Product",
       pomaze: "Njega zrele kože, održavanje vlage i elastičnosti, čišćenje i hidratacija",
       pohrana: "Čuvati u organskoj ambalaži na tamnom i suhom mjestu pri temperaturi do 25 °C.",
-      upozorenje: "Samo za vanjsku uporabu Čuvati izvan dohvata djece."
+      upozorenje: "Samo za vanjsku uporabu Čuvati izvan dohvata djece.",
+      link: "https://www.dm.hr/dr-hertzeg-hidrolat-za-lice-od-smilja-smiljolat-p3875001483889.html",
+      pagePath: "/kozmetika/smiljolat",
+      imageKey: "product_smiljolat"
     },
     {
       id: "VitaminNightCream",
       naziv: "Vitamin Night Cream",
       opis: "Noćna krema obogaćena uljem smilja, namijenjena za njegu kože lica. Djeluje obnavljajuće, hidratantno i anti-age.",
-      // cijena: "3,95 €",
+      cijena: "14,90 €",
       tag1: "Noćna krema",
       tag2: "Ulje smilja",
       tag3: "Anti-age",
@@ -126,7 +147,10 @@ const productCosmetics = [
       proizvodnja: "Premium Quality 100% Natural Product",
       pomaze: "Njega zrele kože, održavanje vlage i elastičnosti, čišćenje i hidratacija",
       pohrana: "Čuvati u organskoj ambalaži na tamnom i suhom mjestu pri temperaturi do 25 °C.",
-      upozorenje: "Samo za vanjsku uporabu Čuvati izvan dohvata djece."
+      upozorenje: "Samo za vanjsku uporabu Čuvati izvan dohvata djece.",
+      link: "https://www.dm.hr/dr-hertzeg-hidrolat-za-lice-od-smilja-smiljolat-p3875001483889.html",
+      pagePath: "/kozmetika/vitamin-night-cream",
+      imageKey: "product_vitamin_night_cream"
     },
     // Dodaj više proizvoda po potrebi
   ];

@@ -6,12 +6,24 @@ import Image from 'next/image';
 import Link from 'next/link';
 import ButtonIcon from '../../atoms/buttonIcon/buttonIcon.jsx';
 import Button from '../../atoms/button/Button.jsx';
+import PopularProduct from '../../molecules/popular-product/PopularProduct';
 import { Logos, Social, User, Illustrations } from "../../../utilities/images.js";
 import CardBlog from '../cardBlog/cardBlog.jsx';
-
 import useWindowResize from '../../../utilities/useWindowResize.js'
 
+import productsCaj from '../../../data/productCaj.js';
+import productCosmetics from '../../../data/productCosmetics.js';
+
+
 export default function Hero() {
+
+    // Fetch the product from the productsCaj array
+    const productCajSlatkiPelin = productsCaj.find(p => p.id === "CajSlatkiPelin");
+    // Fetch the product from the productCosmetics array
+    const productOil = productCosmetics.find(p => p.id === "CareAndMassageOil");
+    const productSerum = productCosmetics.find(p => p.id === "SerumOdSmilja");
+
+
 
     // resize 
     const { screenWidth, screenHeight } = useWindowResize();
@@ -22,6 +34,26 @@ export default function Hero() {
     const lg = '1280'; // BLUE
     const xl = '1440'; // BROWN
     const xxl = '1600'; // BLACK
+
+
+    const EkoCajSlatkiPelin = {
+        imageSrc: Social.hero_product_1,
+        name: productCajSlatkiPelin.naziv,
+        link: productCajSlatkiPelin.link,
+        price: productCajSlatkiPelin.cijena
+    };
+    const CareAndMassageOil = {
+        imageSrc: Social.hero_product_2,
+        name: productOil.naziv,
+        link: productOil.link,
+        price: productOil.cijena
+    };
+    const SerumOdSmlja = {
+        imageSrc: Social.hero_product_3,
+        name: productSerum.naziv,
+        link: productSerum.link,
+        price: productSerum.cijena
+    };
 
   return (
     <>
@@ -38,57 +70,9 @@ export default function Hero() {
                     <div className="hero-popular">
                         <h6>Popularni proizvodi</h6>
                         <div className="flex">
-                            <div className='popular-product'>
-                                <Image
-                                    src={Social.hero_product_1}
-                                    alt="CalmingGel"
-                                    quality={100}
-                                    width={50}
-                                    height={50}
-                                />
-                                <div className="promotion-content">
-                                    <Link href="/kozmetika/CalmingGel">
-                                        <p>Calming gel</p>
-                                    </Link>
-                                    <Link href="/kozmetika/CalmingGel">
-                                        <p>€ 3.8</p>
-                                    </Link>
-                                </div>
-                            </div>
-                            <div className='popular-product'>
-                                <Image
-                                    src={Social.hero_product_2}
-                                    alt="kozmetikaProduct"
-                                    quality={100}
-                                    width={50}
-                                    height={50}
-                                />
-                                <div className="promotion-content">
-                                    <Link href="/kozmetika/kozmetikaProduct">
-                                        <p>Serum od smilja</p>
-                                    </Link>
-                                    <Link href="/kozmetika/kozmetikaProduct">
-                                        <p>€ 4.3</p>
-                                    </Link>
-                                </div>
-                            </div>
-                            <div className='popular-product'>
-                                <Image
-                                    src={Social.hero_product_3}
-                                    alt="kozmetikaProduct"
-                                    quality={100}
-                                    width={50}
-                                    height={50}
-                                />
-                                <div className="promotion-content">
-                                    <Link href="/kozmetika/kozmetikaProduct">
-                                        <p>Serum od smilja</p>
-                                    </Link>
-                                    <Link href="/kozmetika/kozmetikaProduct">
-                                        <p>€ 4.3</p>
-                                    </Link>
-                                </div>
-                            </div>
+                            <PopularProduct product={EkoCajSlatkiPelin} />
+                            <PopularProduct product={CareAndMassageOil} />
+                            <PopularProduct product={SerumOdSmlja} />
                         </div>
                         <Link href="/kozmetika">
                             <Button type="primary">Ostali proizvodi</Button>
@@ -147,46 +131,10 @@ export default function Hero() {
                     <div className="hero-popular">
                         <h6>Popularni proizvodi</h6>
                         <div className="flex">
-                            <div className='popular-product'>
-                                <Image
-                                    src={Social.hero_product_1}
-                                    alt="CalmingGel"
-                                    quality={100}
-                                    width={50}
-                                    height={50}
-                                />
-                                <div className="promotion-content">
-                                    <Link href="/kozmetika/CalmingGel">
-                                    <p>Calming gel</p>
-                                    </Link>
-                                    <Link href="/kozmetika/CalmingGel">
-                                        <p>€ 3.8</p>
-                                    </Link>
-                                </div>
-                            </div>
-                            <div className='popular-product'>
-                                <Image
-                                    src={Social.hero_product_2}
-                                    alt="kozmetikaProduct"
-                                    quality={100}
-                                    width={50}
-                                    height={50}
-                                />
-                                <div className="promotion-content">
-                                    <Link href="/kozmetika/kozmetikaProduct">
-                                        <p>Serum od smilja</p>
-                                    </Link>
-                                    <Link href="/kozmetika/kozmetikaProduct">
-                                        <p>€ 4.3</p>
-                                    </Link>
-                                </div>
-                            </div>
+                            <PopularProduct product={EkoCajSlatkiPelin} />
+                            <PopularProduct product={CareAndMassageOil} />
                         </div>
-                        {/* <Link href="/kozmetika">
-                            <Button type="primary">Ostali proizvodi</Button>
-                        </Link> */}
                     </div>
-
                     {/* Image */}
                     <div className="hero-image-container">
                         <Image
@@ -240,40 +188,8 @@ export default function Hero() {
                     <div className="hero-popular">
                         <h6>Popularni proizvodi</h6>
                         <div className="flex">
-                            <div className='popular-product'>
-                                <Image
-                                    src={Social.hero_product_1}
-                                    alt="CalmingGel"
-                                    quality={100}
-                                    width={50}
-                                    height={50}
-                                />
-                                <div className="promotion-content">
-                                    <Link href="/kozmetika/CalmingGel">
-                                        <p>Serum od smilja</p>
-                                    </Link>
-                                    <Link href="/kozmetika/CalmingGel">
-                                        <p>€ 3.8</p>
-                                    </Link>
-                                </div>
-                            </div>
-                            <div className='popular-product'>
-                                <Image
-                                    src={Social.hero_product_2}
-                                    alt="kozmetikaProduct"
-                                    quality={100}
-                                    width={50}
-                                    height={50}
-                                />
-                                <div className="promotion-content">
-                                    <Link href="/kozmetika/kozmetikaProduct">
-                                        <p>Serum od smilja</p>
-                                    </Link>
-                                    <Link href="/kozmetika/kozmetikaProduct">
-                                        <p>€ 4.3</p>
-                                    </Link>
-                                </div>
-                            </div>
+                            <PopularProduct product={EkoCajSlatkiPelin} />
+                            <PopularProduct product={CareAndMassageOil} />
                         </div>
 
                     </div>
@@ -332,36 +248,8 @@ export default function Hero() {
                     <div className="hero-popular">
                         <h6>Popularni proizvodi</h6>
                         <div className="flex">
-                            <div className='popular-product'>
-                                <Image
-                                    src={Social.hero_product_1}
-                                    alt="CalmingGel"
-                                    quality={100}
-                                />
-                                <div className="promotion-content">
-                                    <Link href="/kozmetika/CalmingGel">
-                                        <p>Calming Gel</p>
-                                    </Link>
-                                    <Link href="/kozmetika/CalmingGel">
-                                        <p>€ 3.8</p>
-                                    </Link>
-                                </div>
-                            </div>
-                            <div className='popular-product'>
-                                <Image
-                                    src={Social.hero_product_2}
-                                    alt="kozmetikaProduct"
-                                    quality={100}
-                                />
-                                <div className="promotion-content">
-                                    <Link href="/kozmetika/kozmetikaProduct">
-                                        <p>Serum od smilja</p>
-                                    </Link>
-                                    <Link href="/kozmetika/kozmetikaProduct">
-                                        <p>€ 4.3</p>
-                                    </Link>
-                                </div>
-                            </div>
+                            <PopularProduct product={EkoCajSlatkiPelin} />
+                            <PopularProduct product={CareAndMassageOil} />
                         </div>
                         <Link href="/kozmetika">
                             <Button type="primary">Ostali proizvodi</Button>

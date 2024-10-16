@@ -11,7 +11,8 @@ const FirstTab = () => {
         // productDetailsPrice="4 €"
         productDetailsImageURL= {Cosmetics.packaging_calming_gel}
         productDetailsImageAlt="Calming Gel"
-        productURL="/kozmetika/calming-gel"
+        // productDetailsPagePath="/kozmetika/calming-gel"
+        productDetailsPagePath="/kozmetika/calming-gel"
         productChips1="Protupalno"
         productChips2="Opušta"
         imageClass="image-default"
@@ -22,7 +23,7 @@ const FirstTab = () => {
         // productDetailsPrice="4 €"
         productDetailsImageURL= {Cosmetics.packaging_care_and_massage_oil}
         productDetailsImageAlt="Care And Massage Oil"
-        productURL="/kozmetika/care_and_massage_oil"
+        productDetailsPagePath="/kozmetika/care_and_massage_oil"
         productChips1="Protupalno"
         productChips2="Opušta"
         imageClass="image-default"
@@ -33,7 +34,7 @@ const FirstTab = () => {
         // productDetailsPrice="4 €"
         productDetailsImageURL= {Cosmetics.packaging_hair_boost}
         productDetailsImageAlt="Hair Boost"
-        productURL="/kozmetika/hair-boost"
+        productDetailsPagePath="/kozmetika/hair-boost"
         productChips1="Protupalno"
         productChips2="Opušta"
         imageClass="image-default"

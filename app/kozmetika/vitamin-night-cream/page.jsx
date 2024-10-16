@@ -2,10 +2,9 @@
 import React from 'react';
 import { useRouter } from 'next/navigation';
 import { notFound } from "next/navigation";
-import { Logos, Icons, Social, User, Cosmetics } from "../../utilities/images.js";
-
+import Image from 'next/image';
+import { Icons, Logos, User, Cosmetics } from "../../utilities/images.js";
 import Chip from '../../components/atoms/chip/Chip.jsx';
-import ProductPromotioCard from '../../components/organism/productPromotioCard/productPromotioCard.jsx';
 import Carousel from '../../components/organism/carousel/carousel.jsx';
 import AdBanner from '../../components/organism/adBanner/adBanner.jsx';
 import ButtonIcon from '../../components/atoms/buttonIcon/buttonIcon.jsx';
@@ -13,7 +12,9 @@ import SliderProductCosmetics from "../../components/organism/sliderProductCosme
 import ReviewLeft from '../../components/molecules/review/review-left.jsx';
 import ReviewRight from '../../components/molecules/review/review-right.jsx';
 import productCosmetics from '../../data/productCosmetics.js';
-
+import Button from "../../components/atoms/button/Button.jsx";
+import Link from 'next/link';
+import '../_product-page.scss';
 
 export default function VitaminNightCream() {
   const router = useRouter();
@@ -115,7 +116,7 @@ export default function VitaminNightCream() {
           </div>
           <div className="product-details">
             <h3>{product.naziv}</h3>
-            {/* <p className='price'>{product.cijena}</p> */}
+            <p className='price'>{product.cijena}</p>
             <div className="row-chips">
               <Chip 
                 text={product.tag1}
@@ -130,13 +131,27 @@ export default function VitaminNightCream() {
                 colorBg="#D8F3DC"
               />
             </div>
-            <p>{product.opis}</p>
+            <div className="dm-cta">
+              <Image
+                  src={Logos.Dm}
+                  alt='Dm_Logo'
+                  quality={100}
+                  className='dm-logo-img'
+                />
+              <Link href={product.link} className="dm-cta-link" target="_blank">
+                <Button type="primary">Kupi u DM Webshopu 🛒</Button>
+              </Link>
+            </div>
           </div>
         </section>
 
         {/* Extra information */}
         <section className='product-extra-details'>
           <div className="column col-5-lg">
+            {/* Opis */}
+            <div className="collapse-item">
+              <p className="collapse-description">{product.opis}</p>
+            </div>
             {/* Sastojci */}
             <div className="collapse-item">
               <p className="collapse-title">Sastojci</p>

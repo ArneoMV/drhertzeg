@@ -8,10 +8,9 @@ const SecondTab = () => {
     <div className="tab-container">
       <ProductCard
         productDetailsTitle="Smokvin list"
-        productDetailsPrice="4 €"
         productDetailsImageURL= {Teas.packaging_eko_caj_smokva_list}
         productDetailsImageAlt="Kapi Slatkog Pelina"
-        productURL="/kozmetika/smokvin-list-caj"
+        productDetailsPagePath="/kozmetika/smokvin-list-caj"
         productChips1="Protupalno"
         productChips2="Opušta"
         imageClass="image-default"
@@ -19,10 +18,9 @@ const SecondTab = () => {
       />
       <ProductCard
         productDetailsTitle="Slatki pelin"
-        productDetailsPrice="4 €"
         productDetailsImageURL= {Teas.packaging_caj_od_slatkog_pelina}
         productDetailsImageAlt="Slatki pelin"
-        productURL="/cajevi/caj-od-slatkog-pelina"
+        productDetailsPagePath="/cajevi/caj-od-slatkog-pelina"
         productChips1="Protupalno"
         productChips2="Opušta"
         imageClass="image-default"
@@ -30,10 +28,9 @@ const SecondTab = () => {
       />
       <ProductCard
         productDetailsTitle="Energija jutra"
-        productDetailsPrice="4 €"
         productDetailsImageURL= {Teas.packaging_energija_jutra_caj}
         productDetailsImageAlt="Energija jutra"
-        productURL="/cajevi/energija-jutra-caj"
+        productDetailsPagePath="/cajevi/energija-jutra-caj"
         productChips1="Protupalno"
         productChips2="Opušta"
         imageClass="image-default"

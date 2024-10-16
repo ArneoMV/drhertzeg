@@ -2,12 +2,12 @@ import { Metadata } from 'next'
 export const metadata = {
   title: {
     absolute: "",
-    default: "Ime proizvoda",
+    default: "Caj od slatkog pelina",
     template: "%s | Dr Hertzeg"
   }
 };
 
-import './_style.scss';
+import '../_product-page.scss';
 
 // components
 import Footer from '../../components/organism/footer/footer'

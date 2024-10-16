@@ -7,7 +7,7 @@ export const metadata = {
   }
 };
 
-import './_style.scss';
+import '../_product-page.scss';
 
 // components
 import Footer from '../../components/organism/footer/footer'

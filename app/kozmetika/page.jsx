@@ -1,18 +1,12 @@
+import Button from "../components/atoms/button/Button";
 import Image from 'next/image'
-import Link from 'next/link'
-import Loading from "../loading";
-import Chip from "../components/atoms/chip/Chip";
-import Icon from "../components/atoms/icon/Icon";
-import { Logos, Icons, Social, User, Illustrations, Cosmetics } from "../utilities/images.js";
-
 import HeroCosmetics from '../components/organism/heroCosmetics/heroCosmetics.jsx';
-import ProductPromotioCard from '../components/organism/productPromotioCard/productPromotioCard.jsx';
-import ProductCard from '../components/organism/productCard/productCard.jsx'
+import ProductCard from '../components/organism/productCard/productCard';
 import AdBanner from '../components/organism/adBanner/adBanner.jsx'
 import FollowSocial from '../components/organism/followSocial/followSocial';
-import Footer from '../components/organism/footer/footer';
-
 import "./_style.scss";
+import { Logos, Icons, Social, User, Illustrations, Cosmetics } from "../utilities/images.js";
+import productCosmetics from '../data/productCosmetics.js';
 
 
 import { Metadata } from 'next'
@@ -31,7 +25,6 @@ export default function Kozmetika() {
           {/* Promotion section */}
           <section className="product-promotion">
             <HeroCosmetics />
-            
             <div className="promotion-title col-12-sm col-8md col-8-lg">
               <h4>Blagodati Dr Hertzeg Kozmetike</h4>
             </div>
@@ -70,87 +63,21 @@ export default function Kozmetika() {
             </div>
 
             <div className="product-cards-container">
-              <ProductCard
-                productDetailsTitle="Calming Gel"
-                productDetailsImageURL= {Cosmetics.product_calming_gel}
-                productDetailsImageAlt="Calming Gel"
-                productURL="/kozmetika/calming-gel"
-                productChips1="Protupalno"
-                productChips2="Opušta"
-                imageClass="image-default"
-                hoverOutline="primary"
-              />
-              <ProductCard
-                productDetailsTitle="Hair Boost"
-                productDetailsImageURL= {Cosmetics.product_hair_boost}
-                productDetailsImageAlt="Hair Boost"
-                productURL="/kozmetika/hair-boost"
-                productChips1="Protupalno"
-                productChips2="Opušta"
-                imageClass="image-default"
-                hoverOutline="primary"
-              />
-              <ProductCard
-                productDetailsTitle="Smiljolat"
-                productDetailsImageURL= {Cosmetics.product_smiljolat}
-                productDetailsImageAlt="Smiljolat"
-                productURL="/kozmetika/smiljolat"
-                productChips1="Protupalno"
-                productChips2="Opušta"
-                imageClass="image-default"
-                hoverOutline="primary"
-              />
-              <ProductCard
-                productDetailsTitle="Lavandolat"
-                productDetailsImageURL={Cosmetics.product_lavandolat}
-                productDetailsImageAlt="lavandolat"
-                productURL="/kozmetika/lavandolat"
-                productChips1="Protupalno"
-                productChips2="Opušta"
-                imageClass="image-default"
-                hoverOutline="primary"
-              />
 
-               <ProductCard
-                productDetailsTitle="Serum od Smilja"
-                productDetailsImageURL= {Cosmetics.product_serum_od_smilja}
-                productDetailsImageAlt="Serum od smilja"
-                productURL="/kozmetika/serum-od-smilja"
-                productChips1="Protupalno"
-                productChips2="Opušta"
-                imageClass="image-default"
-                hoverOutline="primary"
-              />
+            {productCosmetics.map((product) => (
               <ProductCard
-                productDetailsTitle="Care And Massage Oil"
-                productDetailsImageURL= {Cosmetics.product_care_and_massage_oil}
-                productDetailsImageAlt="Care and massage oil"
-                productURL="/kozmetika/care-and-massage-oil"
-                productChips1="Protupalno"
-                productChips2="Opušta"
+                key={product.id}
+                productDetailsTitle={product.naziv}
+                productDetailsPrice={product.cijena}
+                productDetailsImageURL={Cosmetics[product.imageKey]}
+                productDetailsImageAlt={product.naziv}
+                productDetailsPagePath={product.pagePath}
+                productChips1={product.tag1}
+                productChips2={product.tag2}
                 imageClass="image-default"
                 hoverOutline="primary"
               />
-               <ProductCard
-                productDetailsTitle="Vitamin Night Cream"
-                productDetailsImageURL= {Cosmetics.product_vitamin_night_cream}
-                productDetailsImageAlt="Vitamin night cream"
-                productURL="/kozmetika/vitamin-night-cream"
-                productChips1="Protupalno"
-                productChips2="Opušta"
-                imageClass="image-default"
-                hoverOutline="primary"
-              />
-               <ProductCard
-                productDetailsTitle="Hydrating Day Cream"
-                productDetailsImageURL= {Cosmetics.product_hydrating_day_cream}
-                productDetailsImageAlt="Hydrating day cream"
-                productURL="/kozmetika/hydrating-day-cream"
-                productChips1="Protupalno"
-                productChips2="Opušta"
-                imageClass="image-default"
-                hoverOutline="primary"
-              />
+            ))}
               
             </div>
           </section>

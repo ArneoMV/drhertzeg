@@ -9,6 +9,8 @@ const Logos = {
 
   facebook:                 require('../../public/assets/logos/facebook.svg').default,
   instagram:                require('../../public/assets/logos/instagram.svg').default,
+
+  Dm:                require('../../public/assets/logos/Dm_Logo.svg').default,
 };
 
 
@@ -29,6 +31,10 @@ const Icons = {
   relax:                    require('../assets/icons/relax.svg').default,
   regeneration:             require('../assets/icons/regeneration.svg').default,
   skin_care:                require('../assets/icons/skin-care.svg').default,
+  
+  arrow_right_long:               require('../assets/icons/arrow-right-long.svg').default,
+  arrow_right_short:               require('../assets/icons/arrow-right-short.svg').default,
+  
 };
 
 const Wawe = {

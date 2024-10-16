@@ -1,5 +1,3 @@
-
-import Head from 'next/head';
 import Button from "../components/atoms/button/Button";
 import Image from 'next/image';
 import HeroTea from '../components/organism/heroTea/heroTea';
@@ -8,6 +6,7 @@ import AdBanner from '../components/organism/adBanner/adBanner';
 import FollowSocial from '../components/organism/followSocial/followSocial';
 import './_style.scss';
 import { Logos, Icons, Social, User, Illustrations, Teas } from "../utilities/images.js";
+import productsCaj from '../data/productCaj.js';
 
 import { Metadata } from 'next'
 export const metadata = { 
@@ -59,61 +58,22 @@ export default function Cajevi() {
               </div>
             </div>
             <div className="product-cards-container">
+
+            {productsCaj.map((product) => (
               <ProductCard
-                productDetailsTitle="Smokvin list"
-                productDetailsPrice="3,95 €"
-                productDetailsImageURL={Teas.packaging_eko_caj_smokva_list}
-                productDetailsImageAlt="Smokvin list"
-                productURL="/cajevi/smokvin-list-caj"
-                productChips1="Protupalno"
-                productChips2="Opušta"
+                key={product.id}
+                productDetailsTitle={product.naziv}
+                productDetailsPrice={product.cijena}
+                productDetailsImageURL={Teas[product.imageKey]} // Dinamički pristupi slici
+                productDetailsImageAlt={product.naziv}
+                productDetailsPagePath={product.pagePath}
+                productChips1={product.tag1}
+                productChips2={product.tag2}
                 imageClass="image-default"
                 hoverOutline="primary"
               />
-              <ProductCard
-                productDetailsTitle="Slatki pelin"
-                productDetailsPrice="3,95 €"
-                productDetailsImageURL={Teas.packaging_caj_od_slatkog_pelina}
-                productDetailsImageAlt="Slatki pelin"
-                productURL="/cajevi/caj-od-slatkog-pelina"
-                productChips1="Smirujuće"
-                productChips2="Opušta"
-                imageClass="image-default"
-                hoverOutline="primary"
-              />
-              <ProductCard
-                productDetailsTitle="Energija jutra"
-                productDetailsPrice="3,95 €"
-                productDetailsImageURL={Teas.packaging_energija_jutra_caj}
-                productDetailsImageAlt="Energija jutra"
-                productURL="/cajevi/energija-jutra-caj"
-                productChips1="Razbuđuje"
-                productChips2="Umjesto kave"
-                imageClass="image-default"
-                hoverOutline="primary"
-              />
-              <ProductCard
-                productDetailsTitle="Detox čaj"
-                productDetailsPrice="3,95 €"
-                productDetailsImageURL={Teas.packaging_detox_caj}
-                productDetailsImageAlt="Detox čaj"
-                productURL="/cajevi/detox-caj"
-                productChips1="Čisti organizam"
-                productChips2="Hidracija"
-                imageClass="image-default"
-                hoverOutline="primary"
-              />
-              <ProductCard
-                productDetailsTitle="Imuno čaj"
-                productDetailsPrice="3,95 €"
-                productDetailsImageURL={Teas.packaging_imuno_caj}
-                productDetailsImageAlt="Imuno čaj"
-                productURL="/cajevi/imuno-caj"
-                productChips1="Protupalno"
-                productChips2="Opušta"
-                imageClass="image-default"
-                hoverOutline="primary"
-              />
+            ))}
+
             </div>
           </section>
           <AdBanner />

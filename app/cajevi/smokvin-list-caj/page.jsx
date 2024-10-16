@@ -2,10 +2,9 @@
 import React from 'react';
 import { useRouter } from 'next/navigation';
 import { notFound } from "next/navigation";
-import { Icons, Social, User, Teas } from "../../utilities/images.js";
-
+import Image from 'next/image';
+import { Icons, Logos, User, Teas } from "../../utilities/images.js";
 import Chip from '../../components/atoms/chip/Chip.jsx';
-import ProductPromotioCard from '../../components/organism/productPromotioCard/productPromotioCard.jsx';
 import Carousel from '../../components/organism/carousel/carousel.jsx';
 import AdBanner from '../../components/organism/adBanner/adBanner.jsx';
 import ButtonIcon from '../../components/atoms/buttonIcon/buttonIcon.jsx';
@@ -13,8 +12,9 @@ import SliderProductsTea from "../../components/organism/sliderProductsTea/slide
 import ReviewLeft from '../../components/molecules/review/review-left.jsx';
 import ReviewRight from '../../components/molecules/review/review-right.jsx';
 import productsCaj from '../../data/productCaj.js';
-
-import './_style.scss';
+import Button from "../../components/atoms/button/Button.jsx";
+import Link from 'next/link';
+import '../_product-page.scss';
 
 export default function CajSmokvaList() {
   const router = useRouter();
@@ -104,7 +104,7 @@ export default function CajSmokvaList() {
   };
 
   return (
-    <main className='product-page-contianer'>
+    <div className='product-page-contianer'>
       <section className='product-section'>
 
         {/* Product */}
@@ -131,12 +131,26 @@ export default function CajSmokvaList() {
                 colorBg="#D8F3DC"
               />
             </div>
-            <p>{product.opis}</p>
+            <div className="dm-cta">
+              <Image
+                  src={Logos.Dm}
+                  alt='Dm_Logo'
+                  quality={100}
+                  className='dm-logo-img'
+                />
+              <Link href={product.link} className="dm-cta-link" target="_blank">
+                <Button type="primary">Kupi u DM Webshopu 🛒</Button>
+              </Link>
+            </div>
           </div>
         </section>
 
         {/* Extra information */}
         <section className='product-extra-details'>
+          {/* Opis */}
+          <div className="collapse-item">
+              <p className="collapse-description">{product.opis}</p>
+            </div>
           <div className="column col-5-lg">
             {/* Sastojci */}
             <div className="collapse-item">
@@ -197,6 +211,6 @@ export default function CajSmokvaList() {
       <SliderProductsTea /> 
 
       <AdBanner />
-    </main>
+    </div>
   )
 }
