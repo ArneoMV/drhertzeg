@@ -195,11 +195,11 @@ export default function CalmingGel() {
             <div className="flex">
               <ReviewLeft 
                 userImage={User.user_review_11}
-                userReview="Fantastično ulje koje je moj favorit za masažu. Koža mi je glatka i mekana, a miris lavande je umirujuć. Odlično za opuštanje nakon napornog dana."
+                userReview="Calming Gel od Dr. Hertzeg stvarno me oduševio - samo malo stavim na kožu, i već osjećam kako nestaje iritacija i hladi sve što treba, posebno nakon sunčanja ili uboda komaraca"
               />
               <ReviewRight 
                 userImage={User.user_review_12}
-                userReview="Koristim ovo ulje svakodnevno nakon tuširanja i koža mi se znatno poboljšala. Također pomaže u smanjenju suhoće i daje koži prirodan sjaj."
+                userReview="Lagan, prirodan i trenutno umiruje kožu, savršen za sve sitne iritacije nakon sunčanja ili uboda!"
               />
             </div>
           </div>
